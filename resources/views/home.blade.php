@@ -7,11 +7,11 @@
 @section('content')
   <h1>Acceuil</h1>
 
-<div>menu</div>
+<div>Menu</div>
 
-<div>LOREM ISPUM</div>
+<p>LOREM ISPUM</p>
 
-<div>ici un slider image des lieux()</div>
+<div>Ici un slider image des lieux(lieu recent)</div>
 
 <p>LOREM UPSUM</p>
 

@@ -5,20 +5,13 @@
     <title>@yield('title')</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="{{ route('contact-view') }}">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
     <header id="menu">
       <ul>
         <li><a href="{{ route('home') }}">Acceuil</a></li>
-        <li><a href="{{ route('lieux') }}">Lieux
+        {{-- <li><a href="{{ route('lieux') }}">Lieux
            <ul><li><a href="{{ route('add_lieux') }}">Ajouter un lieux</a></li></ul>
-         </a></li>
+         </a></li> --}}
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
       </ul>
     </header>
