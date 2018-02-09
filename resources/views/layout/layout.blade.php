@@ -7,6 +7,7 @@
   <body>
 
     <header id="menu">
+<<<<<<< HEAD
       <nav>
         <ul>
           <li><a href="{{ route('home') }}">Accueil</a></li>
@@ -16,6 +17,19 @@
           <li><a href="{{ route('contact-view') }}">Contact</a></li>
           <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
         </ul>
+=======
+
+      <ul>
+        <li><a href="{{ route('home') }}">Accueil</a></li>
+
+        {{-- <li><a href="{{ route('lieux') }}">Lieux --}}
+           <ul><li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li></ul>
+         {{-- </a></li> --}}
+
+        <li><a href="{{ route('contact-view') }}">Contact</a></li>
+        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+      </ul>
+>>>>>>> 563d98e5a45eb5313ca991f4164d0a0cd6504504
 
         <ul class="nav navbar-nav navbar-right">
               <!-- Authentication Links -->
@@ -46,6 +60,7 @@
                 @endif
         </ul>
       <nav>
+
     </header>
 
     <div class="content">
