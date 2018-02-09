@@ -7,7 +7,7 @@
   <body>
 
     <header id="menu">
-<<<<<<< HEAD
+
       <nav>
         <ul>
           <li><a href="{{ route('home') }}">Acceuil</a></li>
