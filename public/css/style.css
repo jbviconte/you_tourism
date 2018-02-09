@@ -1,0 +1,24 @@
+header ul li
+{
+  width: 100%;
+  background: #C23623;
+  display: inline-block;
+  text-align: center;
+}
+.slideshow {
+   width: 1000px;
+   height: 300px;
+   overflow:  hidden;
+   border: 3px solid #F2F2F2;
+}
+
+.slideshow ul {
+    /* 4 images donc 4 x 100% */
+   width: 400%;
+   height: 300px;
+   padding:0; margin:0;
+   list-style: none;
+}
+.slideshow li {
+   float: center;
+}
