@@ -7,6 +7,7 @@
   <body>
 
     <header id="menu">
+<<<<<<< HEAD
       <nav>
         <ul>
           <li><a href="{{ route('home') }}">Acceuil</a></li>
@@ -20,8 +21,8 @@
         <ul class="nav navbar-nav navbar-right">
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a href="{{ route('login') }}">Login</a></li>
-                  <li><a href="{{ route('register') }}">Register</a></li>
+                  <li><a href="{{ route('login') }}">Se connecté</a></li>
+                  <li><a href="{{ route('register') }}">S'enregistré</a></li>
                 @else
                   {{-- @if ( Auth::user()->role == 'admin') --}}
                     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>

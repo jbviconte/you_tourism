@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-  <h1>Acceuil</h1>
+  <h1>Accueil</h1>
 
 <div>Menu</div>
 
@@ -13,6 +13,6 @@
 
 <div>Ici un slider image des lieux(lieu recent)</div>
 
-<p>LOREM UPSUM</p>
+<p>LOREM IPSUM</p>
 
 @endsection

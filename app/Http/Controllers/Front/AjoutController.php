@@ -10,7 +10,7 @@ class AjoutController extends Controller
 {
     public function ajoutForm()
     {
-      return view('formulaire/formulaire');
+      return view('ajout/ajout');
     }
 
     public function action(FormulaireRequest $request)

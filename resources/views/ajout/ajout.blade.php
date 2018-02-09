@@ -8,7 +8,7 @@
 
   <p>Ajouter un lieu</p>
 
-    {!! Form::open(['route' => 'formulaire-ajout', 'method' => 'post']) !!}
+    {!! Form::open(['route' => 'ajout-action', 'method' => 'post']) !!}
 
     {!! Form::text('nom', null, ['class' => 'frenchcaba', 'placeholder' => 'Nom du lieu']) !!}
     {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
