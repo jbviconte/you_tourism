@@ -7,18 +7,10 @@
   <body>
 
     <header id="menu">
-<<<<<<< HEAD
-=======
-
->>>>>>> 101e06e31f7d955f07110e34ecfaf09845d01e60
       <nav>
       <ul>
         <li><a href="{{ route('home') }}">Accueil</a></li>
-
-        {{-- <li><a href="{{ route('lieux') }}">Lieux --}}
            <ul><li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li></ul>
-         {{-- </a></li> --}}
-
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
       </ul>
@@ -41,7 +33,7 @@
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                                    Logout
+                                    Se déconnecté
                         </a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
