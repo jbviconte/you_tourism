@@ -6,16 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\FormulaireRequest;
 
-class FormulaireController extends Controller
+class AjoutController extends Controller
 {
-    public function form()
+    public function ajoutForm()
     {
       return view('formulaire/formulaire');
     }
 
     public function action(FormulaireRequest $request)
     {
-      return redirect()->route('lieux')->with('status', 'lieu ajouté !');  
+      return redirect()->route('lieux')->with('status', 'lieu ajouté !');
     }
 
 }

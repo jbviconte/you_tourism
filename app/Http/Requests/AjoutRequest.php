@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class FormulaireRequest extends FormRequest
+class AjoutRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -34,7 +34,7 @@ class FormulaireRequest extends FormRequest
        return [
           'nom.required'         => 'Veuillez indiquer le nom de votre lieu',
           'description.required' => 'Une petite description, voyageur ?'
-       ];  
+       ];
     }
 
 }

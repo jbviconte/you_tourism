@@ -18,6 +18,10 @@ Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
 
+  Route::get('/ajout', 'AjoutController@ajoutForm')->name('ajout-view');
+  Route::post('/ajout', 'AjoutController@action')->name('ajout-action');
+
+
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
