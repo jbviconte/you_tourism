@@ -7,6 +7,10 @@
   <body>
 
     <header id="menu">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 101e06e31f7d955f07110e34ecfaf09845d01e60
       <nav>
       <ul>
         <li><a href="{{ route('home') }}">Accueil</a></li>
