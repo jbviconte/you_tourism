@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests\FormulaireRequest;
+use App\Http\Requests\AjoutRequest;
 
 class AjoutController extends Controller
 {
@@ -13,9 +13,9 @@ class AjoutController extends Controller
       return view('ajout/ajout');
     }
 
-    public function action(FormulaireRequest $request)
+    public function action(AjoutRequest $request)
     {
-      return redirect()->route('lieux')->with('status', 'lieu ajouté !');
+      return redirect()->route('home')->with('status', 'lieu ajouté !');
     }
 
 }
