@@ -14,7 +14,11 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::group(['namespace' => 'Front'], function (){
 
-Route::get('/home', 'HomeController@home')->name('home');
+  Route::get('/', 'HomeController@home')->name('home');
+
+  Route::get('contact', 'ContactController@contactForm')->name('contact-view');
+  Route::post('contact', 'ContactController@action')->name('contact-action');
 
 Auth::routes();
