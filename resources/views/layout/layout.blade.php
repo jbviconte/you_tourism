@@ -7,10 +7,9 @@
   <body>
 
     <header id="menu">
-<<<<<<< HEAD
       <nav>
         <ul>
-          <li><a href="{{ route('home') }}">Acceuil</a></li>
+          <li><a href="{{ route('home') }}">Accueil</a></li>
           {{-- <li><a href="{{ route('lieux') }}">Lieux
             <ul><li><a href="{{ route('add_lieux') }}">Ajouter un lieux</a></li></ul>
           </a></li> --}}
@@ -21,8 +20,8 @@
         <ul class="nav navbar-nav navbar-right">
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a href="{{ route('login') }}">Se connecté</a></li>
-                  <li><a href="{{ route('register') }}">S'enregistré</a></li>
+                  <li><a href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
                   {{-- @if ( Auth::user()->role == 'admin') --}}
                     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -32,7 +31,7 @@
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
-
+                        <br><br>
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
