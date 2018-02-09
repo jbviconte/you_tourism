@@ -21,5 +21,4 @@ Route::group(['namespace' => 'Front'], function (){
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
-});
 Auth::routes();
