@@ -4,8 +4,12 @@
   YouTourism-Accueil
 @endsection
 
+  <link rel="stylesheet" href="css/flexslider.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
 
 @section('content')
+
 
 <div id="wrapper">
   <h1>Accueil</h1>
@@ -98,5 +102,8 @@
      });
    });
 </script>
+
+</div>
+
 
 @endsection
