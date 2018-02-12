@@ -5,22 +5,22 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
 
     <header id="menu">
       <nav>
-      <ul>
+      <ul id="liens">
         <li><a href="{{ route('home') }}">Accueil</a></li>
-           <ul><li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li></ul>
+        <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
-      </ul>
+        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
 
-        <ul class="nav navbar-nav navbar-right">
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a href="{{ route('login') }}">Se connecter</a></li>
-                  <li><a href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
                   {{-- @if ( Auth::user()->role == 'admin') --}}
                     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -34,7 +34,7 @@
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                                    Se déconnecté
+                                    Se déconnecter
                         </a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -44,7 +44,11 @@
                   </li>
                 @endif
         </ul>
-      <nav>
+
+        <div class="connexion">
+            @yield('connexion')
+        </div>
+      </nav>
 
     </header>
 
