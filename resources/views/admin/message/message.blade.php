@@ -1,7 +1,7 @@
 @extends('layout/layout_back')
 
 @section('title')
-  Dashboard Lieux
+  Dashboard Message
 @endsection
 
 @section('content')
