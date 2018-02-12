@@ -129,10 +129,11 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
 }
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
-  font-size: 40px;
+  font-size: 50px;
   display: inline-block;
   content: '\f001';
   color: rgba(0, 0, 0, 0.8);
