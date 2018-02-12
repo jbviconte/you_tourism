@@ -24,14 +24,6 @@
     </div>
 
 
-{{-- <div><div class="slideshow slideshow_1">
-	<ul>
-		<li><img src="images/lapointedurozel.jpg"/></li>
-		<li><img src="images/lapointe.jpg"/></li>
-		<li><img src="images/lerozel.jpg"/></li>
-		<li><img src="images/rozel.jpg"/></li>
-	</ul>
-</div></div> --}}
 <div class="flexslider flexslider_1">
   <ul class="slides">
     <li>
@@ -47,36 +39,6 @@
       <img src="images/rozel.jpg" />
     </li>
   </ul>
-
-</div>
-
-<div class="flexslider flexslider_1">
-  <ul class="slides">
-
-    <li data-thumb="images/lapointedurozel.jpg">
-      <a href="home"><img src="images/lapointedurozel.jpg" /></a>
-    </li>
-
-    <li data-thumb="images/lapointe.jpg">
-      <a href="home"><img src="images/lapointe.jpg" /></a>
-    </li>
-
-    <li data-thumb="images/lerozel.jpg">
-      <a href="home"><img src="images/lerozel.jpg" /></a>
-    </li>
-
-    <li data-thumb="images/rozel.jpg">
-      <a href="home"><img src="images/rozel.jpg" /></a>
-    </li>
-
-  </ul>
-</div>
-
-
-<div>Ici un slider image des lieux (lieux recent)</div>
-
-
-
 
 <div>
     <p>
