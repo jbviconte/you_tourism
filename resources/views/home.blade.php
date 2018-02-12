@@ -17,6 +17,32 @@
           </p>
     </div>
 
+<<<<<<< HEAD
+=======
+{{-- <div><div class="slideshow slideshow_1">
+	<ul>
+		<li><img src="images/lapointedurozel.jpg"/></li>
+		<li><img src="images/lapointe.jpg"/></li>
+		<li><img src="images/lerozel.jpg"/></li>
+		<li><img src="images/rozel.jpg"/></li>
+	</ul>
+</div></div> --}}
+<div class="flexslider flexslider_1">
+  <ul class="slides">
+    <li>
+      <img src="images/lapointedurozel.jpg" />
+    </li>
+    <li>
+      <img src="images/lapointe.jpg" />
+    </li>
+    <li>
+      <img src="images/lerozel.jpg" />
+    </li>
+    <li>
+      <img src="images/rozel.jpg" />
+    </li>
+  </ul>
+>>>>>>> 7dc3162e4c0953654cd7af242e49bbdcbbe65ed1
 </div>
 
 <div class="flexslider flexslider_1">
@@ -40,6 +66,13 @@
 
   </ul>
 </div>
+<<<<<<< HEAD
+=======
+
+<div>Ici un slider image des lieux (lieux recent)</div>
+
+
+>>>>>>> 7dc3162e4c0953654cd7af242e49bbdcbbe65ed1
 
 <div>
     <p>
