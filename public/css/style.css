@@ -1,13 +1,16 @@
-
+<<<<<<< HEAD
+body
+{
+  width: auto;
+  Max-height: 2000px;
+}
 #wrapper {
   margin: auto;
   padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
+=======
 header ul
 {
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
   width: 100%;
   height: 75px;
   display: inline-block;
@@ -77,8 +80,12 @@ header
    float: center;
 
 }
+<<<<<<< HEAD
+header
+=======
 
 .add
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
 {
   text-align: center;
 }
@@ -95,14 +102,46 @@ header
 
 #wrapper
 {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+<<<<<<< HEAD
+
+}
+.flexslider {
+  background: silver;
+  color: silver;
+  border-color: #C23623;
+}
+#menu ul li
+{
+  text-align: center;
+  list-style-type: none;
+  float: right;
+  border: 2px solid red;
+=======
   border-width: 5px;
   border-color: #C0C0C0;
   border-radius: 10px;
+  border-style: solid;
 }
 
 h1
 {
-  border-width: 5px;
-  border-color: #C0C0C0;
-  border-radius: 10px;
+  background-color: red;
+  width: 20%;
+  text-align: center;
+  margin-left: 40%;
+}
+
+#bienvenu
+{
+  background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
+}
+
+#degrade
+{
+  background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
 }
