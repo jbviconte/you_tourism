@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-ul
-=======
+
 #wrapper {
   margin: auto;
   padding: 0;
@@ -8,7 +6,7 @@ ul
   text-align: center;
 }
 header ul li
->>>>>>> 8b3fca65f374fc4631a55d4765fb300fdbd014d5
+
 {
   width: 100%;
   height: 75px;
@@ -17,7 +15,7 @@ header ul li
   padding: 0;
   margin: 0;
 }
-<<<<<<< HEAD
+
 
 header
 {
@@ -80,15 +78,7 @@ header
 }
 .slideshow li {
    float: center;
-=======
-.flexslider {
-  background: ;
-  color: silver;
-  /* border-color: aqua; */
-  width: 540px;
-  height: 500px;
-  text-align: center;
->>>>>>> 8b3fca65f374fc4631a55d4765fb300fdbd014d5
+
 }
 
 .add
