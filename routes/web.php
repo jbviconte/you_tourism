@@ -14,6 +14,8 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+//
+// Route Front///////////////////////////////////////////////////////////////////
 Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
@@ -29,6 +31,14 @@ Route::group(['namespace' => 'Front'], function (){
 Auth::routes();
 
 
+//Route Admin////////////////////////////////////////////////////////////////////
 Route::group(['namespace' => 'Admin'], function (){
+
   Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');
+
+  Route::get('message', 'AdminController@messageView')->name('message');
+
+  Route::get('lieux', 'AdminLieuxController@lieux')->name('lieu');
+
+  Route::get('admin/user/user', 'AdminUserController@User')->name('user');
 });

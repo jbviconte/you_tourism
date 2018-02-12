@@ -17,7 +17,6 @@
           </p>
     </div>
 
-<<<<<<< HEAD
 {{-- <div><div class="slideshow slideshow_1">
 	<ul>
 		<li><img src="images/lapointedurozel.jpg"/></li>
@@ -59,9 +58,9 @@
     </li>
   </ul>
 </div>
-=======
+
 <div>Ici un slider image des lieux (lieux recent)</div>
->>>>>>> 259f83d61ed1a136034388d8ce2c12c36dda5b47
+
 
 
 <div>
