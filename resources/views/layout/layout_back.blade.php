@@ -68,7 +68,7 @@
     									<i class="fa fa-angle-down pull-right"></i>
     									<div class="user-mini pull-right">
     										<span class="welcome">Bienvenue,</span>
-    										<span>nom de la personne connecté</span>
+    										<span>{{ Auth::user()->name }}</span>
     									</div>
     								</a>
     								<ul class="dropdown-menu">
