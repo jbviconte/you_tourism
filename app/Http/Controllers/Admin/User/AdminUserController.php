@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\User;
+use App\Users;
 
 class AdminUserController extends Controller
 {
@@ -13,7 +13,7 @@ class AdminUserController extends Controller
     // $users = User::all();
     $users = User::orderBy('created_at', 'desc')->get();
 
-    return view('admin/dashboard', compact('users'));
+    return view('dashboard', compact('users'));
     // return view('user');
   }
 }
