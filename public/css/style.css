@@ -1,21 +1,31 @@
+body
+{
+  width: auto;
+  Max-height: 2000px;
+}
 #wrapper {
   margin: auto;
   padding: 0;
   width: 100%;
   text-align: center;
 }
-header ul li
+header
 {
   width: 100%;
   background: #C23623;
   display: inline-block;
   text-align: center;
+
 }
 .flexslider {
-  background: ;
+  background: silver;
   color: silver;
-  /* border-color: aqua; */
-  width: 540px;
-  height: 500px;
+  border-color: #C23623;
+}
+#menu ul li
+{
   text-align: center;
+  list-style-type: none;
+  float: right;
+  border: 2px solid red;
 }

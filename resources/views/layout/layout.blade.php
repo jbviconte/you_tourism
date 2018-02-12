@@ -12,7 +12,7 @@
       <nav>
       <ul>
         <li><a href="{{ route('home') }}">Accueil</a></li>
-           <ul><li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li></ul>
+        <li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li>
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
       </ul>
 
