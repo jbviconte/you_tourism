@@ -15,7 +15,6 @@
         <li><a href="{{ route('home') }}">Accueil</a></li>
         <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
-        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
 
               <!-- Authentication Links -->
               @if (Auth::guest())
