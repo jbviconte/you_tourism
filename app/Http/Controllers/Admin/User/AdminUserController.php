@@ -8,10 +8,12 @@ use App\User;
 
 class AdminUserController extends Controller
 {
-  public function user()
+  public function userView()
   {
-    $users = Users::orderBy('created_at', 'desc')->get();
-    return view('admin/user/user', compact('users'));
+    // $users = User::all();
+    $users = User::orderBy('created_at', 'desc')->get();
+
+    return view('admin/dashboard', compact('users'));
     // return view('user');
   }
 }

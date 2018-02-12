@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body
 {
   width: auto;
@@ -6,15 +7,106 @@ body
 #wrapper {
   margin: auto;
   padding: 0;
-  width: 100%;
-  text-align: center;
-}
-header
+=======
+header ul
 {
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
   width: 100%;
-  background: #C23623;
+  height: 75px;
   display: inline-block;
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+header
+{
+  background-image:linear-gradient(#87CEEB, #2E8B57);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #C0C0C0;
+  border-radius: 10px;
+}
+
+
+
+#liens li
+{
+  float: left;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 5px;
+
+}
+
+#liensco
+{
+  float: right;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1200px;
+}
+
+#liensco2
+{
+  float: right;
+  display: inline;
+  padding : 0 0.5em;
+}
+
+.connexion
+{
+  position: absolute;
+  top: 70px;
+  right: 15px;
+}
+
+.slideshow {
+   width: 1000px;
+   height: 300px;
+   overflow:  hidden;
+   border: 3px solid #F2F2F2;
+}
+
+.slideshow ul {
+    /* 4 images donc 4 x 100% */
+   width: 400%;
+   height: 300px;
+   padding:0; margin:0;
+   list-style: none;
+}
+.slideshow li {
+   float: center;
+
+}
+<<<<<<< HEAD
+header
+=======
+
+.add
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
+{
+  text-align: center;
+}
+
+.dede
+{
+  text-align: center;
+}
+
+.container
+{
+  text-align: center;
+}
+
+#wrapper
+{
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+<<<<<<< HEAD
 
 }
 .flexslider {
@@ -28,4 +120,28 @@ header
   list-style-type: none;
   float: right;
   border: 2px solid red;
+=======
+  border-width: 5px;
+  border-color: #C0C0C0;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+h1
+{
+  background-color: red;
+  width: 20%;
+  text-align: center;
+  margin-left: 40%;
+}
+
+#bienvenu
+{
+  background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
+}
+
+#degrade
+{
+  background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
+>>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
 }

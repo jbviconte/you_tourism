@@ -1,7 +1,7 @@
 @extends('layout/layout')
 
 @section('title')
-  formulaire ajout de lieu
+  Formulaire ajout de lieu
 @endsection
 
 @section('content')
@@ -29,13 +29,13 @@
 
     {!! Form::label('description', 'Description') !!}
     <br>
-    {!! Form::textarea('description', null, ['class' => 'frenchcaba', 'placeholder' => 'description du lieu']) !!}
+    {!! Form::textarea('description', null, ['class' => 'frenchcaba', 'placeholder' => 'Description du lieu']) !!}
     {!! $errors->first('description', '<small class="help-block">:message</small>') !!}
     <br>
 
-    {{-- {!! Form:label('nom', 'Nom du lieu') !!}
+    {{-- {!! Form:label('nom', 'Image du lieu') !!}
     <br> --}}
-    {{-- {!! Form::text('image', null, ['class' => 'frenchcaba', 'placeholder' => 'image du lieu']) !!}
+    {{-- {!! Form::text('image', null, ['class' => 'frenchcaba', 'placeholder' => 'Image du lieu']) !!}
     {!! $errors->first('image', '<small class="help-block">:message</small>') !!} --}}
 
     {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
