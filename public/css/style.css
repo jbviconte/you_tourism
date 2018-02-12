@@ -93,10 +93,16 @@ header
   text-align: center;
 }
 
-#bienvenu
+#wrapper
 {
   border-width: 5px;
   border-color: #C0C0C0;
   border-radius: 10px;
-  background-color: red;
+}
+
+h1
+{
+  border-width: 5px;
+  border-color: #C0C0C0;
+  border-radius: 10px;
 }
