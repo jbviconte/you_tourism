@@ -13,11 +13,11 @@
       <nav>
       <ul id="liens">
         <li><a href="{{ route('home') }}">Accueil</a></li>
-<<<<<<< HEAD
+
         <li><a href="{{ route('ajout-view') }}">Ajouter un lieux</a></li>
-=======
+
         <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
->>>>>>> 6d16b7acfd0297bada4ace8990bd5960f1bc6f41
+
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
 
               <!-- Authentication Links -->
