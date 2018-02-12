@@ -127,7 +127,7 @@
     			<div class="preloader">
     				<img src="back/img/devoops_getdata.gif" class="devoops-getdata" alt="preloader"/>
     			</div>
-    			<div id="ajax-content"></div>
+    			{{-- <div id="ajax-content"></div> --}}
     		</div>
         <div class="content">
           @yield('content')
