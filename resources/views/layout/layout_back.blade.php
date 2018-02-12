@@ -55,7 +55,7 @@
     								</a>
     							</li>
     							<li class="hidden-xs">
-    								<a href="ajax/page_messages.html" class="ajax-link">
+    								<a href="{{ route('message')}}" class="ajax-link">
     									<i class="fa fa-envelope"></i>
     									<span class="badge">7</span>
     								</a>
@@ -73,7 +73,7 @@
     								</a>
     								<ul class="dropdown-menu">
     									<li>
-    										<a href="ajax/page_messages.html" class="ajax-link">
+    										<a href="{{ route('message')}}" class="ajax-link">
     											<i class="fa fa-envelope"></i>
     											<span>Messages</span>
     										</a>
@@ -96,6 +96,9 @@
                                     document.getElementById('logout-form').submit();">
                                     Se déconnecté
                           </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              {{ csrf_field() }}
+                          </form>
     									</li>
     								</ul>
     							</li>
@@ -112,26 +115,21 @@
   		  <div id="sidebar-left" class="col-xs-2 col-sm-2">
   			  <ul class="nav main-menu">
 
-              <li><a class="ajax-link add-full" href="back/ajax/page_messages.html">Messages</a></li>
-              <li><a class="ajax-link" href="back/ajax/page_contacts.html">Contacts</a></li>
+              <li><a class="ajax-link" href="{{ route('lieu') }}">Lieux</a></li>
+              <li><a class="ajax-link" href="">Utilisateurs</a></li>
+              <li><a class="ajax-link add-full" href="{{ route('message') }}">Messages</a></li>
+              <li><a class="ajax-link" href="#">Contacts</a></li>
 
 			    </ul>
         </div>
         <div id="content" class="col-xs-12 col-sm-10">
-    			<div id="about">
-    				<div class="about-inner">
-    					<h4 class="page-header">Open-source admin theme for you</h4>
 
-    				</div>
     			</div>
-    			<div class="preloader">
-    				<img src="back/img/devoops_getdata.gif" class="devoops-getdata" alt="preloader"/>
-    			</div>
-    			{{-- <div id="ajax-content"></div> --}}
+    			<div id="ajax-content">
+              @yield('content')
+          </div>
+
     		</div>
-        <div class="content">
-          @yield('content')
-        </div>
 		  </div>
     </div>
 
