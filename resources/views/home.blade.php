@@ -3,9 +3,9 @@
 @section('title')
   YouTourism-Accueil
 @endsection
-  <link rel="stylesheet" href="js/flexslider.css" />
-  <link rel="stylesheet" href="css/style.css" />
 @section('content')
+
+<div id="wrapper">
   <h1>Accueil</h1>
 
     <div id="bienvenu">
@@ -17,6 +17,8 @@
           </p>
     </div>
 
+<<<<<<< HEAD
+=======
 {{-- <div><div class="slideshow slideshow_1">
 	<ul>
 		<li><img src="images/lapointedurozel.jpg"/></li>
@@ -40,28 +42,37 @@
       <img src="images/rozel.jpg" />
     </li>
   </ul>
+>>>>>>> 7dc3162e4c0953654cd7af242e49bbdcbbe65ed1
 </div>
 
-<div class="flexslider flexslider_2">
+<div class="flexslider flexslider_1">
   <ul class="slides">
+
     <li data-thumb="images/lapointedurozel.jpg">
-      <img src="images/lapointedurozel.jpg" />
+      <a href="home"><img src="images/lapointedurozel.jpg" /></a>
     </li>
+
     <li data-thumb="images/lapointe.jpg">
-      <img src="images/lapointe.jpg" />
+      <a href="home"><img src="images/lapointe.jpg" /></a>
     </li>
+
     <li data-thumb="images/lerozel.jpg">
-      <img src="images/lerozel.jpg" />
+      <a href="home"><img src="images/lerozel.jpg" /></a>
     </li>
+
     <li data-thumb="images/rozel.jpg">
-      <img src="images/rozel.jpg" />
+      <a href="home"><img src="images/rozel.jpg" /></a>
     </li>
+
   </ul>
 </div>
+<<<<<<< HEAD
+=======
 
 <div>Ici un slider image des lieux (lieux recent)</div>
 
 
+>>>>>>> 7dc3162e4c0953654cd7af242e49bbdcbbe65ed1
 
 <div>
     <p>
@@ -69,37 +80,21 @@
     </p>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
-<script src="js/slider.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
 <script type="text/javascript">
 
-   // $(function(){
-   //    setInterval(function(){
-   //       $(".slideshow ul").animate({marginright:-350},500,function(){
-   //          $(this).css({marginright:0}).find("li:last").after($(this).find("li:first"));
-   //       })
-   //    }, 1500);
-   // });
 
    $(".flexslider_1").ready(function() {
      $('.flexslider_1').flexslider({
        animation: "slide",
-       animationSpeed: 1,
-       slideshowSpeed: 10,
+       controlNav: "thumbnails",
+       animationSpeed: 5000,
+       slideshowSpeed: 3000,
        easing: "linear",
-       direction: "vertical",
-       pauseOnHover: "Boolean"
-     });
-   });
-
-   $(".flexslider_2").ready(function() {
-     $('.flexslider_2').flexslider({
-       animation: "slide",
-       controlNav: "thumbnails"
+       //direction: "vertical",
      });
    });
 </script>
