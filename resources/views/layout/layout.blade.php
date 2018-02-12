@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/style.css">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/flexslider.css" />
+=======
+>>>>>>> 8b3fca65f374fc4631a55d4765fb300fdbd014d5
   </head>
   <body>
 
