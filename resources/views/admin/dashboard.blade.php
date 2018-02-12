@@ -78,7 +78,7 @@
 
         <div class="box box-primary">
           <h3 class="box-title">Utilisateur enregistrer</h2>
-          @foreach ($users as $user)
+          {{-- @foreach ($users as $user)
             <table>
               <th>
                 <td>Nom: </td>
@@ -89,7 +89,7 @@
                 <td>{{ $user['email'] }}</td>
               </tr>
             </table>
-          @endforeach
+          @endforeach --}}
         </div>
         <!-- /.box -->
 

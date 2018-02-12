@@ -39,14 +39,14 @@ Auth::routes();
 Route::group(['namespace' => 'Admin'], function (){
 
   Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');
-  
+
 
   Route::get('message', 'AdminController@messageView')->name('message');
 
-  Route::get('lieux', 'AdminLieuxController@lieux')->name('lieu');
-  Route::put('lieux', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
-  Route::post('lieux', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
-  Route::delete('lieux', 'AdminLieuxController@lieuxDelete')->name('lieu-delete-action');
+  Route::get('lieux', 'Lieux\AdminLieuxController@lieux')->name('lieu');
+  Route::put('lieux', 'Lieux\AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
+  Route::post('lieux', 'Lieux\AdminLieuxController@lieuNew')->name('lieu-new-action');
+  Route::delete('lieux', 'Lieux\AdminLieuxController@lieuxDelete')->name('lieu-delete-action');
 
   Route::get('user', 'User\AdminUserController@userView')->name('user');
   Route::delete('user', 'User\AdminUserController@userDelete')->name('user-delete-action');
