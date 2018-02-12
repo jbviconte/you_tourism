@@ -39,6 +39,7 @@ Auth::routes();
 Route::group(['namespace' => 'Admin'], function (){
 
   Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');
+  
 
   Route::get('message', 'AdminController@messageView')->name('message');
 
