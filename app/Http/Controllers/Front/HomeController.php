@@ -24,6 +24,8 @@ class HomeController extends Controller
      */
     public function home()
     {
+
+      // $lieux = Lieux::all();
         return view('home');
     }
 }
