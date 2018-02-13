@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-  </head>
+
 
     <header id="menu">
       <nav>
@@ -47,7 +47,10 @@
         </ul>
 </header>
 
+</head>
+
     <body>
+
 
         <div class="connexion">
             @yield('connexion')
@@ -59,6 +62,11 @@
 
 
     <div class="content">
+      @if (session('success'))
+        <div class="alert alert-success">
+          {{ session('success') }}
+        </div>
+      @endif
       @yield('content')
     </div>
 
