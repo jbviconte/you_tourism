@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="css/style.css">
 
-  </head>
+
 
     <header id="menu">
       <nav>
@@ -46,8 +46,10 @@
         </ul>
 </header>
 
+</head>
+
     <body>
-      
+
         <div class="connexion">
             @yield('connexion')
         </div>

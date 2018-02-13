@@ -1,9 +1,10 @@
 @extends('layout/layout')
 
-@section('connexion')
-
 <link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/style.css">
+
+@section('connexion')
+
 
 <div class="container">
     <div class="row">
