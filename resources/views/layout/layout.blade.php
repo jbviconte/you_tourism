@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="css/style.css">
 
-  </head>
+
 
     <header id="menu">
       <nav>
@@ -46,6 +46,8 @@
                 @endif
         </ul>
 </header>
+
+</head>
 
     <body>
 
