@@ -52,13 +52,6 @@ header
   padding : 0 0.5em;
 }
 
-#name
-{
-  position: absolute;
-  right: 0px;
-  padding : 0 0.5em;
-  margin-left: 1200px;
-}
 
 #deco
 {
@@ -66,7 +59,7 @@ header
   right: 0px;
   display: inline;
   padding : 0 0.5em;
-    margin-left: 1400px;
+  margin-left: 1400px;
 }
 
 .connexion
@@ -78,6 +71,7 @@ header
 .add
 {
   text-align: center;
+  padding: 75px;
 }
 
 .dede
@@ -88,6 +82,7 @@ header
 .container
 {
   text-align: center;
+  padding: 75px;
 }
 
 #wrapper
@@ -108,26 +103,41 @@ header
 {
   list-style-type: none;
   float: right;
-  border-width: 5px;
   border-color: #395066;
-  border-radius: 10px;
-  border-style: solid;
 }
 
 h1
 {
-  background-color: red;
+  background-color: #7fd3e6;
   width: 20%;
   text-align: center;
   margin-left: 40%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #395066;
 }
 
 /* #bienvenu
 {
   background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
+}*/
+
+#bienvenu
+{
+
 }
 
-#degrade
+/*#degrade
 {
   background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
+} */
+#contact_pad
+{
+  padding: 75px;
+}
+
+
+/* #pad
+{
+  padding: 75px;
 } */

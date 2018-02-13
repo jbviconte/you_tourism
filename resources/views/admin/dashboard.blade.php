@@ -74,7 +74,7 @@
       <section class="col-lg-7 connectedSortable">
 
 
-        </div>
+
 
         <div class="box box-primary">
           <h3 class="box-title">Utilisateur enregistrer</h2>
@@ -124,12 +124,10 @@
         </div>
 
       </section>
-      <!-- /.Left col -->
-      <!-- right col (We are only adding the ID to make the widgets sortable)-->
 
-      <!-- right col -->
+
+
     </div>
-    <!-- /.row (main row) -->
 
   </section>
   <!-- /.content -->

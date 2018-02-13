@@ -20,8 +20,13 @@ Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
 
-  Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
-  Route::post('ajout', 'AjoutController@action')->name('ajout-action');
+  Route::group(['namespace' => 'Ajout'], function (){
+    
+    Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
+    Route::post('ajout', 'AjoutController@action')->name('ajout-action');
+  });
+
+
 
   Route::group(['namespace' => 'Lieux'], function (){
 
@@ -33,7 +38,7 @@ Route::group(['namespace' => 'Front'], function (){
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
   Route::group(['namespace' => 'Commentaire'], function (){
-    
+
     Route::get('commentaire', 'CommentaireController@commentaire')->name('commentaire');
     Route::post('commentaire', 'CommentaireController@commentaireNew')->name('commentaire-new-action');
     Route::delete('commentaire', 'CommentaireController@commentaireDelete')->name('commentaire-delete-action');
