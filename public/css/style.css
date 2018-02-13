@@ -3,10 +3,7 @@ body
   width: auto;
   Max-height: 2000px;
 }
-#wrapper {
-  margin: auto;
-  padding: 0;
-}
+
 header ul
 {
   width: 100%;
@@ -25,9 +22,14 @@ header
   border-style: solid;
   border-color: #C0C0C0;
   border-radius: 10px;
+  text-align: center;
 }
 
-
+.content
+{
+  width: 100%;
+  text-align: center;
+}
 
 #liens li
 {
@@ -78,7 +80,7 @@ header
    float: center;
 
 }
-header
+
 
 .add
 {
@@ -107,7 +109,7 @@ header
   color: silver;
   border-color: #C23623;
 }
-#menu ul li
+#menu
 {
   text-align: center;
   list-style-type: none;
@@ -127,7 +129,7 @@ h1
   margin-left: 40%;
 }
 
-#bienvenu
+/* #bienvenu
 {
   background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
 }
@@ -135,4 +137,4 @@ h1
 #degrade
 {
   background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
-}
+} */
