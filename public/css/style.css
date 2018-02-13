@@ -2,6 +2,8 @@ body
 {
   width: auto;
   Max-height: 2000px;
+  padding: 0;
+  margin: 0;
 }
 
 header
@@ -50,10 +52,21 @@ header
   padding : 0 0.5em;
 }
 
-.dropdown
+#name
 {
-  float: right;
+  position: absolute;
+  right: 0px;
+  padding : 0 0.5em;
+  margin-left: 1200px;
+}
+
+#deco
+{
+  position: absolute;
+  right: 0px;
   display: inline;
+  padding : 0 0.5em;
+    margin-left: 1400px;
 }
 
 .connexion
@@ -88,7 +101,7 @@ header
 .flexslider {
   background: silver;
   color: silver;
-  border-color: #C23623;
+  border-color: #395066;
 }
 
 #menu

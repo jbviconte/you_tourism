@@ -12,7 +12,7 @@
       <nav>
       <ul id="liens">
         <li><a href="{{ route('home') }}">Accueil</a></li>
-        <li><a href="{{ route('lieux') }}">Lieux Touristique</a></li>
+        <li><a href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
         @yield('liste')
 
@@ -27,12 +27,15 @@
                     <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
                   {{-- @endif --}}
                   <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <a href="#" id="name" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
+                  </li>
 
-                        <br><br>
-                        <a href="{{ route('logout') }}"
+                      <br />
+
+                  <li>
+                        <a href="{{ route('logout') }}" id="deco"
                             onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
                                     Se déconnecter
