@@ -26,7 +26,7 @@ class AjoutController extends Controller
           $request->image->move(public_path($path->path()), $path->imageName());
 
           $inputs = array_merge($request->all(),[
-            'name_image'  => $path->imageName(),
+            'name_image'  => $path->originalName(),
             'new_name_image' => $path->imageName(),
             'path_image' => $path->path(),
           ]);

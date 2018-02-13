@@ -29,7 +29,7 @@ class PathUpload
 
   public function imageName()
   {
-    $name = $this->generatelittleslug(). '.' . time(). '.' . $this->request->getClientOriginalExtension();
+    $name = $this->generatelittleslug() . '-' . time() . '-' . $this->request->getClientOriginalExtension();
     return $name;
   }
 
