@@ -3,6 +3,7 @@
 @section('title')
   You Tourism-Lieux Touristique
 @endsection
+
 @section('liste')
 <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
 @endsection
