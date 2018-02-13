@@ -23,6 +23,8 @@ Route::group(['namespace' => 'Front'], function (){
   Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
   Route::post('ajout', 'AjoutController@action')->name('ajout-action');
 
+  Route::get('lieux/lieux', 'Lieux\LieuxController@lieux')->name('lieux');
+
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 

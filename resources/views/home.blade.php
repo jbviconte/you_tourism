@@ -9,7 +9,7 @@
 
 
 @section('content')
-  
+
   <div class="flexslider flexslider_1">
     <ul class="slides">
       <li>
