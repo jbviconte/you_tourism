@@ -2,6 +2,8 @@ body
 {
   width: auto;
   Max-height: 2000px;
+  padding: 0;
+  margin: 0;
 }
 
 header
@@ -50,10 +52,23 @@ header
   padding : 0 0.5em;
 }
 
-.dropdown
+
+#deco
 {
-  float: right;
+  position: absolute;
+  right: 0px;
   display: inline;
+  padding : 0 0.5em;
+  margin-left: 1400px;
+}
+
+#name
+{
+  position: absolute;
+  right: 0px;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1400px;
 }
 
 .connexion
@@ -76,6 +91,7 @@ header
 .container
 {
   text-align: center;
+  padding: 75px;
 }
 
 #wrapper
@@ -89,33 +105,38 @@ header
 .flexslider {
   background: silver;
   color: silver;
-  border-color: #C23623;
+  border-color: #395066;
 }
 
 #menu
 {
   list-style-type: none;
   float: right;
-  border-width: 5px;
   border-color: #395066;
-  border-radius: 10px;
-  border-style: solid;
 }
 
 h1
 {
-  background-color: red;
+  background-color: #7fd3e6;
   width: 20%;
   text-align: center;
   margin-left: 40%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #395066;
 }
 
 /* #bienvenu
 {
   background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
+}*/
+
+#bienvenu
+{
+
 }
 
-#degrade
+/*#degrade
 {
   background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
 } */
@@ -123,7 +144,9 @@ h1
 {
   padding: 75px;
 }
-#pad
+
+
+/* #pad
 {
   padding: 75px;
-}
+} */
