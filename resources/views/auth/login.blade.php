@@ -1,6 +1,10 @@
 @extends('layout/layout')
 
 @section('connexion')
+
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/style.css">
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -54,7 +58,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     Connexion
                                 </button>
-
+                                  <br />
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Mot de passe oublié ?
                                 </a>

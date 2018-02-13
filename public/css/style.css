@@ -3,10 +3,7 @@ body
   width: auto;
   Max-height: 2000px;
 }
-#wrapper {
-  margin: auto;
-  padding: 0;
-}
+
 header ul
 {
   width: 100%;
@@ -20,14 +17,20 @@ header ul
 
 header
 {
+  width: 100%;
   background-image:linear-gradient(#87CEEB, #2E8B57);
   border-width: 5px;
   border-style: solid;
   border-color: #C0C0C0;
   border-radius: 10px;
+  text-align: center;
 }
 
-
+/* .content
+{
+  width: 100%;
+  text-align: center;
+} */
 
 #liens li
 {
@@ -55,30 +58,9 @@ header
 
 .connexion
 {
-  position: absolute;
-  top: 70px;
-  right: 15px;
+  text-align: center;
 }
 
-.slideshow {
-   width: 1000px;
-   height: 300px;
-   overflow:  hidden;
-   border: 3px solid #F2F2F2;
-}
-
-.slideshow ul {
-    /* 4 images donc 4 x 100% */
-   width: 400%;
-   height: 300px;
-   padding:0; margin:0;
-   list-style: none;
-}
-.slideshow li {
-   float: center;
-
-}
-header
 
 .add
 {
@@ -102,13 +84,16 @@ header
   width: 100%;
   text-align: center;
 }
+
 .flexslider {
   background: silver;
   color: silver;
   border-color: #C23623;
 }
-#menu ul li
+
+/* #menu
 {
+  width: 2000px;
   text-align: center;
   list-style-type: none;
   float: right;
@@ -117,7 +102,7 @@ header
   border-color: #C0C0C0;
   border-radius: 10px;
   border-style: solid;
-}
+} */
 
 h1
 {
@@ -127,7 +112,7 @@ h1
   margin-left: 40%;
 }
 
-#bienvenu
+/* #bienvenu
 {
   background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
 }
@@ -135,4 +120,4 @@ h1
 #degrade
 {
   background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
-}
+} */
