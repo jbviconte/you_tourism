@@ -33,7 +33,7 @@
     {!! $errors->first('description', '<small class="help-block">:message</small>') !!}
     <br>
 
-    {{-- {!! Form:label('nom', 'Image du lieu') !!}
+    {{-- {!! Form:label('image', 'Image du lieu') !!}
     <br> --}}
     {{-- {!! Form::text('image', null, ['class' => 'frenchcaba', 'placeholder' => 'Image du lieu']) !!}
     {!! $errors->first('image', '<small class="help-block">:message</small>') !!} --}}

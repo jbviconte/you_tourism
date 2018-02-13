@@ -4,8 +4,7 @@
   YouTourism-Accueil
 @endsection
 
-  <link rel="stylesheet" href="css/flexslider.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
 
 
 @section('content')

@@ -14,4 +14,10 @@ class LieuxController extends Controller
     $lieux = Lieux::all();
       return view('lieux/lieux', compact('lieux'));
   }
+
+  public function single($id)
+  {
+    $lieux = Lieux::all()->where('id', $id);
+      return view('lieux/single', compact('lieux'));
+  }
 }
