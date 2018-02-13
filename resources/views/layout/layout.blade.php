@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/style.css"> --}}
 
   </head>
-  <body>
 
     <header id="menu">
       <nav>
       <ul id="liens">
         <li><a href="{{ route('home') }}">Accueil</a></li>
+        <li><a href="{{ route('lieux') }}">Lieux Touristique</a></li>
 
         <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
 
@@ -45,17 +45,24 @@
                   </li>
                 @endif
         </ul>
+</header>
 
+    <body>
+      
         <div class="connexion">
             @yield('connexion')
         </div>
       </nav>
 
-    </header>
+
+
+
 
     <div class="content">
       @yield('content')
     </div>
+
+
 
   </body>
 </html>
