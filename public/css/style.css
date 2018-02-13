@@ -6,6 +6,8 @@ body
 #wrapper {
   margin: auto;
   padding: 0;
+  width: 100%;
+  text-align: center;
 }
 header ul
 {
@@ -59,25 +61,6 @@ header
   top: 70px;
   right: 15px;
 }
-
-.slideshow {
-   width: 1000px;
-   height: 300px;
-   overflow:  hidden;
-   border: 3px solid #F2F2F2;
-}
-
-.slideshow ul {
-    /* 4 images donc 4 x 100% */
-   width: 400%;
-   height: 300px;
-   padding:0; margin:0;
-   list-style: none;
-}
-.slideshow li {
-   float: center;
-
-}
 header
 
 .add
@@ -95,18 +78,12 @@ header
   text-align: center;
 }
 
-#wrapper
-{
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-}
 .flexslider {
   background: silver;
   color: silver;
   border-color: #C23623;
 }
+
 #menu ul li
 {
   text-align: center;
