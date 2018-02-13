@@ -78,6 +78,7 @@ header
 .add
 {
   text-align: center;
+  padding: 75px;
 }
 
 .dede
@@ -131,3 +132,11 @@ h1
 {
   background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
 } */
+#contact_pad
+{
+  padding: 75px;
+}
+#pad
+{
+  padding: 75px;
+}

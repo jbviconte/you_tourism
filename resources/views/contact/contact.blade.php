@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+<div id="contact_pad">
   <div class="dede">
       <div class="panel-heading">Nous contacter</div>
     @if ($errors->any())
@@ -47,5 +48,5 @@
 
     {!! Form::close() !!}
   </div>
-
+</div>
 @endsection
