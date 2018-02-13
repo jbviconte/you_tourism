@@ -8,5 +8,5 @@ class Lieux extends Model
 {
   protected $table = 'lieux';
 
-  protected $fillable = ['title', 'content', 'status', 'user_id'];
+  protected $fillable = ['lieu', 'content', 'status', 'user_id'];
 }

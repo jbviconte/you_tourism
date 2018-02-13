@@ -15,12 +15,12 @@ class CreateLieuxTable extends Migration
     {
       Schema::create('lieux', function (Blueprint $table) {
           $table->increments('id');
-          $table->string('title', 150);
+          $table->string('lieu', 150);
           $table->text('content');
-          $table->enum('status', ['actif', 'inactif']);
-          $table->integer('user_id')->unsigned();
-          $table->foreign('user_id')->references('id')->on('users')
-                ->onDelete('restrict')->onUpdate('restrict');
+          // $table->enum('status', ['actif', 'inactif']);
+          // $table->integer('user_id')->unsigned();
+          // $table->foreign('user_id')->references('id')->on('users')
+          //       ->onDelete('restrict')->onUpdate('restrict');
           $table->timestamps();
       });
     }
