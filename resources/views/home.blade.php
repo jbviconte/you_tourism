@@ -4,9 +4,6 @@
   YouTourism-Accueil
 @endsection
 
-
-
-
 @section('content')
 
   <div class="flexslider flexslider_1">
