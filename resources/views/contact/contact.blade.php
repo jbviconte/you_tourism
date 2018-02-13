@@ -6,7 +6,7 @@
 
 @section('content')
   <div class="dede">
-
+      <div class="panel-heading">Nous contacter</div>
     @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
@@ -47,5 +47,5 @@
 
     {!! Form::close() !!}
   </div>
-  
+
 @endsection

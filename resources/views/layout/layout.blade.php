@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
-  <body>
 
     <header id="menu">
       <nav>
@@ -45,17 +44,24 @@
                   </li>
                 @endif
         </ul>
+</header>
 
+    <body>
+      
         <div class="connexion">
             @yield('connexion')
         </div>
       </nav>
 
-    </header>
+
+
+
 
     <div class="content">
       @yield('content')
     </div>
+
+
 
   </body>
 </html>
