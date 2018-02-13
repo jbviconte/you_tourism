@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="css/flexslider.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
   </head>
 
@@ -14,7 +14,7 @@
         <li><a href="{{ route('home') }}">Accueil</a></li>
         <li><a href="{{ route('lieux') }}">Lieux Touristique</a></li>
 
-        <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
+        @yield('liste')
 
         <li><a href="{{ route('contact-view') }}">Contact</a></li>
 
@@ -48,7 +48,7 @@
 </header>
 
     <body>
-      
+
         <div class="connexion">
             @yield('connexion')
         </div>
