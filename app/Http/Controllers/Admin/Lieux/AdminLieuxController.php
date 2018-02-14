@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Lieux;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Lieux;
 
 class AdminLieuxController extends Controller
 {
@@ -12,8 +13,8 @@ class AdminLieuxController extends Controller
     {
         // $articles = Article::all();
 
-        $articles = Article::orderBy('created_at', 'desc')->paginate(5);
-        return view('lieux', compact('lieux'));
+        $lieux = Lieux::orderBy('created_at', 'desc')->paginate(5);
+        return view('admin/lieux/adminlieux', compact('lieux'));
     }
 
 

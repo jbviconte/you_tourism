@@ -82,13 +82,14 @@
 
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
 
-          @foreach ($users as $user)
-            <table id="tab">
+            <table>
               <tr>
                 <th class="thback">Nom : </th>
                 <th class="thback">E-mail : </th>
-                <th id="creer" class="thback">Créé le : </th>
+                <th class="thback">Créé le : </th>
               </tr>
+
+          @foreach ($users as $user)
               <tr>
                 <td class="tdback">{{ $user['name'] }}</td>
                 <td class="tdback">{{ $user['email'] }}</td>
@@ -100,13 +101,13 @@
         <!-- /.box -->
         <div class="box box-primary">
           <h3 class="box-title">Derniers lieux ajoutés</h3>
+          <table>
+            <th>
+              <td>Nom: </td>
+              <td>Descrition: </td>
+              <td>Créé le: </td>
+            </th>
           @foreach ($lieux as $lieu)
-            <table>
-              <th>
-                <td>Nom: </td>
-                <td>Descrition: </td>
-                <td>Créé le: </td>
-              </th>
               <tr>
                 <td>{{ $lieu['lieu'] }}</td>
                 <td>{{ $lieu['content'] }}</td>
