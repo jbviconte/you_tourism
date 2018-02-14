@@ -5,15 +5,15 @@
 @endsection
 
 @section('content')
+  <table>
+    <th>
+      <td>Lieu: </td>
+      <td>Description: </td>
+    </th>
   @foreach ($lieux as $lieu)
-    <table>
-      <th>
-        <td>Lieu: </td>
-        <td>Description: </td>
-      </th>
       <tr>
-        <td>{{ $lieux['lieu'] }}</td><br />
-        <td>{{ $lieux['content'] }}</td>
+        <td>{{ $lieu['lieu'] }}</td><br />
+        <td>{{ $lieu['content'] }}</td>
         <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
       </tr>
     </table>

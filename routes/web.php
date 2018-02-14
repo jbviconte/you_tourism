@@ -58,10 +58,10 @@ Route::group(['namespace' => 'Admin'], function (){
 
   Route::group(['namespace' => 'Lieux'], function (){
 
-    Route::get('lieux', 'AdminLieuxController@lieux')->name('lieu');
-    Route::put('lieux', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
-    Route::post('lieux', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
-    Route::delete('lieux', 'AdminLieuxController@lieuxDelete')->name('lieu-delete-action');
+    Route::get('adminlieux', 'AdminLieuxController@listing')->name('adminlieux');
+    Route::put('adminlieux', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
+    Route::post('adminlieux', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
+    Route::delete('adminlieux', 'AdminLieuxController@lieuxDelete')->name('lieu-delete-action');
   });
 
   Route::group(['namespace' => 'User'], function (){
