@@ -80,7 +80,14 @@
 
         <div class="box box-primary">
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3aa0c40da025cde98c2853d26299c7909f625375
+>>>>>>> f2dfc643bb8db0d8f7538b0881f6a9651de933de
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
 
             <table>
@@ -89,9 +96,27 @@
                 <th>E-mail : </th>
                 <th>Créé le : </th>
               </tr>
+<<<<<<< HEAD
 
           @foreach ($users as $user)
 
+=======
+<<<<<<< HEAD
+
+          @foreach ($users as $user)
+=======
+=======
+          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
+            <table>
+              <th>
+                <td id="tdback">Nom: </td>
+                <td>E-mail: </td>
+                <td>Créé le: </td>
+              </th>
+          @foreach ($users as $user)
+>>>>>>> b90fcce7e2270f8c2d0910f1f3ffbb13a857e1b8
+>>>>>>> 3aa0c40da025cde98c2853d26299c7909f625375
+>>>>>>> f2dfc643bb8db0d8f7538b0881f6a9651de933de
               <tr>
                 <td>{{ $user['name'] }}</td>
                 <td>{{ $user['email'] }}</td>
