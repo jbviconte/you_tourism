@@ -4,6 +4,8 @@
   Dashboard
 @endsection
 
+
+
 @section('content')
   <!-- Content Header (Page header) -->
   <section class="content-header">
@@ -27,7 +29,7 @@
           <div class="inner">
             <h3>150</h3>
 
-            <p>Nouveau lieux</p>
+            <p>Nouveaux lieux</p>
           </div>
           <div class="icon">
             <i class="ion ion-bag"></i>
@@ -42,12 +44,12 @@
           <div class="inner">
             <h3>44</h3>
 
-            <p>Utilisateurs Enregistrer</p>
+            <p>Utilisateurs Enregistrés</p>
           </div>
           <div class="icon">
             <i class="ion ion-person-add"></i>
           </div>
-          <a href="#" class="small-box-footer">Plus info <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="#" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -57,7 +59,7 @@
           <div class="inner">
             <h3>65</h3>
 
-            <p>Visiteur</p>
+            <p>Visiteurs</p>
           </div>
           <div class="icon">
             <i class="ion ion-pie-graph"></i>
@@ -77,7 +79,11 @@
 
 
         <div class="box box-primary">
+<<<<<<< HEAD
+          <h3 class="box-title">Utilisateurs enregistrés</h2>
+=======
           <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
+>>>>>>> 419c3d97a2f46cdc58d6fcd6392c19f4b0900705
           @foreach ($users as $user)
             <table>
               <th>
