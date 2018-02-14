@@ -79,11 +79,13 @@
 
 
         <div class="box box-primary">
+
           <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
+
           @foreach ($users as $user)
             <table>
               <th>
-                <td>Nom: </td>
+                <td id="tdback">Nom: </td>
                 <td>E-mail: </td>
                 <td>Créé le: </td>
               </th>
@@ -97,7 +99,7 @@
         </div>
         <!-- /.box -->
         <div class="box box-primary">
-          <h3 class="box-title">Dernier lieux ajouter</h3>
+          <h3 class="box-title">Derniers lieux ajoutés</h3>
           @foreach ($lieux as $lieu)
             <table>
               <th>
