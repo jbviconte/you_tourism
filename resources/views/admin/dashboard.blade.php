@@ -156,10 +156,8 @@
                     <!-- /.box-body -->
                   </div>
                   <!-- /.box -->
-
-
-
-        </div>
+                </div>
+                <!-- /.row -->
 
         <!-- quick email widget -->
         <div class="box box-info">
