@@ -79,11 +79,11 @@
 
 
         <div class="box box-primary">
-          <h3 class="box-title">Utilisateurs enregistrés</h2>
+          <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
           @foreach ($users as $user)
             <table>
               <th>
-                <td>Nom: </td>
+                <td id="tdback">Nom: </td>
                 <td>E-mail: </td>
                 <td>Créé le: </td>
               </th>
@@ -96,6 +96,23 @@
           @endforeach
         </div>
         <!-- /.box -->
+        <div class="box box-primary">
+          <h3 class="box-title">Derniers lieux ajoutés</h3>
+          @foreach ($lieux as $lieu)
+            <table>
+              <th>
+                <td>Nom: </td>
+                <td>Descrition: </td>
+                <td>Créé le: </td>
+              </th>
+              <tr>
+                <td>{{ $lieu['lieu'] }}</td>
+                <td>{{ $lieu['content'] }}</td>
+                <td>{{ $lieu['created_at'] }}</td>
+              </tr>
+            </table>
+          @endforeach
+        </div>
 
         <!-- quick email widget -->
         <div class="box box-info">
