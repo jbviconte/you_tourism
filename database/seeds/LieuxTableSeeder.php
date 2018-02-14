@@ -18,6 +18,9 @@ class LieuxTableSeeder extends Seeder
           'lieu'       => 'ici mon premier titre',
           'content'     => 'ici le premier contenu',
           'created_at'  => $date->format('Y-m-d H:i:s'),
+          'name_image' => null,
+          'new_name_image' => null,
+          'path_image' => null,
           // 'status'      => 'actif',
           // 'user_id'     => 2,
         );

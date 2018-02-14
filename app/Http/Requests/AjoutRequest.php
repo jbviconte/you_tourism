@@ -34,7 +34,8 @@ class AjoutRequest extends FormRequest
     {
        return [
           'lieu.required'         => 'Veuillez indiquer le nom de votre lieu',
-          'content.required' => 'Une petite description, voyageur ?'
+          'content.required' => 'Une petite description, voyageur ?',
+          'image.required' => 'Une photo de votre lieu touristique doit être ajouter',
        ];
     }
 

@@ -14,6 +14,7 @@
   <div class="lieu">
     <h1>{{ $lieu['lieu']}}</h1>
     <p>{{ $lieu['content']}}</p>
+    <img src="{{ $lieu['path_image'] }} "/>
     <p><a href="{{ route('single', ['id' => $lieu->id])}}">voir plus</a></p>
 
   </div>
