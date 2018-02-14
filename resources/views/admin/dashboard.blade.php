@@ -80,7 +80,6 @@
 
         <div class="box box-primary">
 
-
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
 
             <table>
@@ -91,6 +90,7 @@
               </tr>
 
           @foreach ($users as $user)
+
 
               <tr>
                 <td>{{ $user['name'] }}</td>
@@ -122,7 +122,7 @@
             </table>
 
           @endforeach
-          
+
         </div>
 
         <!-- quick email widget -->
