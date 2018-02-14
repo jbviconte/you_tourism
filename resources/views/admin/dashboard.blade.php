@@ -76,89 +76,90 @@
       <section class="col-lg-7 connectedSortable">
 
 
+        <div class="box">
+                    <div class="box-header">
+                      <h3 class="box-title">Derniers utilisateurs enregistrés</h3>
+
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body table-responsive no-padding">
+                      <table class="table table-hover">
+                        <tr>
+                          <th>Nom : </th>
+                          <th>Email : </th>
+                          <th>Créé le : </th>
+                        </tr>
+
+                        @foreach ($users as $user)
+
+                            <tr>
+                              <td>{{ $user['name'] }}</td>
+                              <td>{{ $user['email'] }}</td>
+                              <td>{{ $user['created_at'] }}</td>
+                            </tr>
 
 
-        <div class="box box-primary">
+                        @endforeach
+                          </table>
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3aa0c40da025cde98c2853d26299c7909f625375
->>>>>>> f2dfc643bb8db0d8f7538b0881f6a9651de933de
->>>>>>> 7685fb993b7df9608ee33813991ef82090e02932
-          <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
-
-            <table>
-              <tr>
-                <th>Nom : </th>
-                <th>E-mail : </th>
-                <th>Créé le : </th>
-              </tr>
-<<<<<<< HEAD
-
-          @foreach ($users as $user)
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
 
 
-=======
-<<<<<<< HEAD
 
-          @foreach ($users as $user)
+        <div class="box">
+                    <div class="box-header">
+                      <h3 class="box-title">Derniers lieux ajoutés</h3>
 
-=======
-<<<<<<< HEAD
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
-          @foreach ($users as $user)
-=======
-=======
-          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
-            <table>
-              <th>
-                <td id="tdback">Nom: </td>
-                <td>E-mail: </td>
-                <td>Créé le: </td>
-              </th>
-          @foreach ($users as $user)
->>>>>>> b90fcce7e2270f8c2d0910f1f3ffbb13a857e1b8
->>>>>>> 3aa0c40da025cde98c2853d26299c7909f625375
->>>>>>> f2dfc643bb8db0d8f7538b0881f6a9651de933de
->>>>>>> 7685fb993b7df9608ee33813991ef82090e02932
-              <tr>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
-                <td>{{ $user['created_at'] }}</td>
-              </tr>
-            </table>
+                          <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body table-responsive no-padding">
+                      <table class="table table-hover">
+                        <tr>
+                          <th>Nom : </th>
+                          <th>Description : </th>
+                          <th>Créé le : </th>
+                        </tr>
 
-          @endforeach
+                        @foreach ($lieux as $lieu)
 
-        </div>
-        <!-- /.box -->
-        <div class="box box-primary">
-          <h3 class="box-title">Derniers lieux ajoutés</h3>
-          <table>
-            <th>
-              <td>Nom : </td>
-              <td>Descrition : </td>
-              <td>Créé le : </td>
-            </th>
+                        <tr>
+                          <td>{{ $lieu['lieu'] }}</td>
+                          <td>{{ $lieu['content'] }}</td>
+                          <td>{{ $lieu['created_at'] }}</td>
+                        </tr>
 
-          @foreach ($lieux as $lieu)
+                        @endforeach
 
-              <tr>
-                <td>{{ $lieu['lieu'] }}</td>
-                <td>{{ $lieu['content'] }}</td>
-                <td>{{ $lieu['created_at'] }}</td>
-              </tr>
-            </table>
+                      </table>
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
 
-          @endforeach
+                </div>
+                <!-- /.row -->
 
-        </div>
 
         <!-- quick email widget -->
         <div class="box box-info">
