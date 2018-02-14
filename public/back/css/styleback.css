@@ -1,4 +1,23 @@
-#tdback
+.thback
 {
-  position: relative;
+  text-align: left;
+  height:20px;
+  border-bottom: : thin solid #6495ed 2px;
+  width: 40%;
+}
+
+.tdback
+{
+  text-align: left;
+  height:20px;
+  border-bottom: : thin solid #6495ed 2px;
+  width: 40%;
+}
+
+#tab
+{
+  text-align: left;
+  height:20px;
+  border-bottom: : thin solid #6495ed 2px;
+  width: 40%;
 }

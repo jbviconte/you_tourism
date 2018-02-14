@@ -80,6 +80,17 @@
 
         <div class="box box-primary">
 
+<<<<<<< HEAD
+          <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
+
+          @foreach ($users as $user)
+            <table id="tab">
+              <tr>
+                <th class="thback">Nom : </th>
+                <th class="thback">E-mail : </th>
+                <th id="creer" class="thback">Créé le : </th>
+              </tr>
+=======
           <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
             <table>
               <th>
@@ -88,10 +99,11 @@
                 <td>Créé le: </td>
               </th>
           @foreach ($users as $user)
+>>>>>>> b90fcce7e2270f8c2d0910f1f3ffbb13a857e1b8
               <tr>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
-                <td>{{ $user['created_at'] }}</td>
+                <td class="tdback">{{ $user['name'] }}</td>
+                <td class="tdback">{{ $user['email'] }}</td>
+                <td class="tdback">{{ $user['created_at'] }}</td>
               </tr>
             </table>
           @endforeach
