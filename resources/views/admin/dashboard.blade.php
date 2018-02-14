@@ -77,7 +77,7 @@
 
 
         <div class="box box-primary">
-          <h3 class="box-title">Utilisateur enregistrer</h2>
+          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
           @foreach ($users as $user)
             <table>
               <th>
@@ -94,6 +94,23 @@
           @endforeach
         </div>
         <!-- /.box -->
+        <div class="box box-primary">
+          <h3 class="box-title">Dernier lieux ajouter</h3>
+          @foreach ($lieux as $lieu)
+            <table>
+              <th>
+                <td>Nom: </td>
+                <td>Descrition: </td>
+                <td>Créé le: </td>
+              </th>
+              <tr>
+                <td>{{ $lieu['lieu'] }}</td>
+                <td>{{ $lieu['content'] }}</td>
+                <td>{{ $lieu['created_at'] }}</td>
+              </tr>
+            </table>
+          @endforeach
+        </div>
 
         <!-- quick email widget -->
         <div class="box box-info">

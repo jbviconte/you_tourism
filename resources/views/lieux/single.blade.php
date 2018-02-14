@@ -10,8 +10,8 @@
   <div class="lieu">
 
     <h1>{{ $lieu['lieu']}}</h1>
-    <p>{{ $lieu['content']}}</p>
     <img src="{{ asset( $lieu['path_image'] . '/' . $lieu['new_name_image']) }}"/>
+    <p>{{ $lieu['content']}}</p>
 
 
   </div>

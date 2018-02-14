@@ -35,11 +35,11 @@
 
         <h3>Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
 
-          <p>Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ces grandes villes comme Le Havre, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p>
+          <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ces grandes villes comme Le Havre, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p>
 
-          <p>Divers sont les paysages et nombreuses sont les nouvelles découvertes.</p>
+          <p class="intro">Divers sont les paysages et nombreuses sont les nouvelles découvertes.</p>
 
-          <p>Aventurier, grand voyageur ou simplement de passage, voici la Normandie telle que personne ne l'a jamais vue (sauf les Normands bien sûr !).</p>
+          <p class="intro">Aventurier, grand voyageur ou simplement de passage, voici la Normandie telle que personne ne l'a jamais vue (sauf les Normands bien sûr !).</p>
     </div>
 
 
