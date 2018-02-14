@@ -8,30 +8,11 @@
 
   <div class="flexslider flexslider_1">
     <ul class="slides">
-<<<<<<< HEAD
-      <li>
-        <img src="images/ciel.jpg" />
-      </li>
-      <li>
-        <img src="images/bagnoles-de-l-orne.jpg" />
-      </li>
-      <li>
-        <img src="images/la-colline-aux-oiseaux.jpg" />
-      </li>
-      <li>
-        <img src="images/rozel.jpg" />
-      </li>
-      <li>
-        <img src="images/Pont-audemer.jpg" />
-      </li>
-      <li>
-        <img src="images/theatre-romain-lillebone.jpg" />
-      </li>
-=======
+
       @foreach ($lieux as $lieu)
             <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
       @endforeach
->>>>>>> 8ef904fe69d9953bbdf2089ade28f643e94afb91
+
     </ul>
   </div>
 
