@@ -11,12 +11,12 @@
     <header id="menu">
       <nav>
       <ul id="liens">
-        <li><a href="{{ route('home') }}">Accueil</a></li>
-        <li><a href="{{ route('lieux') }}">Lieux Touristiques</a></li>
+        <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
+        <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
         @yield('liste')
 
-        <li><a href="{{ route('contact-view') }}">Contact</a></li>
+        <li><a  class="liliens" href="{{ route('contact-view') }}">Contact</a></li>
 
               <!-- Authentication Links -->
               @if (Auth::guest())

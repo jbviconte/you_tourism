@@ -21,11 +21,10 @@ header
   opacity: 0.8;
 }
 
-/* .content
+.liliens
 {
-  width: 100%;
-  text-align: center;
-} */
+  color: #c8d9ea;
+}
 
 #liens li
 {
@@ -34,7 +33,6 @@ header
   padding : 0 0.5em;
   margin-left: 5px;
   opacity: 2;
-  color: #c8d9ea;
 }
 
 #liensco
@@ -43,6 +41,7 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1200px;
+  color: #c8d9ea;
 }
 
 #liensco2
@@ -50,6 +49,7 @@ header
   float: right;
   display: inline;
   padding : 0 0.5em;
+  color: #c8d9ea;
 }
 
 
@@ -60,6 +60,7 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1400px;
+  color: #c8d9ea;
 }
 
 #nameco
@@ -69,6 +70,7 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1400px;
+  color: #c8d9ea;
 }
 
 .connexion
@@ -144,6 +146,16 @@ h1
 }
 
 .intro
+{
+  font-size: large;
+}
+
+h4
+{
+  font-size: x-large;
+}
+
+#article1
 {
   font-size: large;
 }
