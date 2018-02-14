@@ -1,8 +1,9 @@
 @extends('layout/layout')
 
 @section('title')
-  You Tourism-Lieux Touristique
+  You Tourism-Lieux Touristiques
 @endsection
+
 @section('liste')
 <li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
 @endsection
