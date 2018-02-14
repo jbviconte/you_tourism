@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\AjoutRequest;
 use App\Lieux;
 use App\Service\PathUpload;
+use \Image;
 
 class AjoutController extends Controller
 {
@@ -30,6 +31,10 @@ class AjoutController extends Controller
             'new_name_image' => $path->imageName(),
             'path_image' => $path->path(),
           ]);
+          // Image::make($path->path() . '/' . $path->imageName(),array(
+	        //      'width' => 300,
+	        //      'height' => 300,
+          //    ))->save($path->path() . '/' . $path->imageName());
 
       } else {
         $inputs = $request->all();
