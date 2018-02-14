@@ -78,18 +78,20 @@
 
         <div class="box box-primary">
           <h3 class="box-title">Utilisateur enregistrer</h2>
-          {{-- @foreach ($users as $user)
+          @foreach ($users as $user)
             <table>
               <th>
                 <td>Nom: </td>
                 <td>E-mail: </td>
+                <td>Créé le: </td>
               </th>
               <tr>
-                <td>{{ $user['name'] }}</td><br />
+                <td>{{ $user['name'] }}</td>
                 <td>{{ $user['email'] }}</td>
+                <td>{{ $user['created_at'] }}</td>
               </tr>
             </table>
-          @endforeach --}}
+          @endforeach
         </div>
         <!-- /.box -->
 
