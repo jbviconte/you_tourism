@@ -8,9 +8,30 @@
 
   <div class="flexslider flexslider_1">
     <ul class="slides">
+<<<<<<< HEAD
+      <li>
+        <img src="images/ciel.jpg" />
+      </li>
+      <li>
+        <img src="images/bagnoles-de-l-orne.jpg" />
+      </li>
+      <li>
+        <img src="images/la-colline-aux-oiseaux.jpg" />
+      </li>
+      <li>
+        <img src="images/rozel.jpg" />
+      </li>
+      <li>
+        <img src="images/Pont-audemer.jpg" />
+      </li>
+      <li>
+        <img src="images/theatre-romain-lillebone.jpg" />
+      </li>
+=======
       @foreach ($lieux as $lieu)
             <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
       @endforeach
+>>>>>>> 8ef904fe69d9953bbdf2089ade28f643e94afb91
     </ul>
   </div>
 
@@ -33,9 +54,10 @@
 
   <div>
     <h4>Destination Normandie</h4>
-      <p id="article1">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum orci, et aliquet quam. Suspendisse tincidunt posuere dui eget ultrices. Vestibulum eu libero at orci maximus ullamcorper. Quisque convallis dictum sollicitudin. Aenean in odio quis orci suscipit pharetra. Nulla cursus mi mi, bibendum porttitor nisi faucibus nec. Nullam porta elementum enim, nec tempus sapien aliquet id. Curabitur ultrices magna id libero cursus, vel volutpat elit consectetur. Vestibulum dapibus euismod lorem, posuere imperdiet felis posuere sit amet. Nunc nec lobortis orci. Sed aliquet nibh et ornare accumsan. Morbi eu leo et lacus finibus luctus vel id odio. Vivamus dapibus dui in eros suscipit, a facilisis est lacinia. Donec iaculis ipsum metus, ut varius sem consequat non. Phasellus ac nunc nec sem pellentesque euismod id at purus. Fusce elementum quam in fermentum varius.
-      </p>
+
+      <p id="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
+      <p id="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
+
   </div>
 
 

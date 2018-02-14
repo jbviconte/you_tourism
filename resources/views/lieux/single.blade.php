@@ -10,7 +10,7 @@
   <div class="lieu">
 
     <h1>{{ $lieu['lieu']}}</h1>
-    <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/>
+    <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,500,500)}}"/>
     <p>{{ $lieu['content']}}</p>
 
 
