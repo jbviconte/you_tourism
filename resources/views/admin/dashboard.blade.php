@@ -76,52 +76,88 @@
       <section class="col-lg-7 connectedSortable">
 
 
+        <div class="box">
+                    <div class="box-header">
+                      <h3 class="box-title">Derniers utilisateurs enregistrés</h3>
+
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                          <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body table-responsive no-padding">
+                      <table class="table table-hover">
+                        <tr>
+                          <th>Nom : </th>
+                          <th>Email : </th>
+                          <th>Créé le : </th>
+                        </tr>
+
+                        @foreach ($users as $user)
+
+                            <tr>
+                              <td>{{ $user['name'] }}</td>
+                              <td>{{ $user['email'] }}</td>
+                              <td>{{ $user['created_at'] }}</td>
+                            </tr>
 
 
-        <div class="box box-primary">
+                        @endforeach
+                          </table>
 
-          <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
-
-            <table>
-              <tr>
-                <th>Nom : </th>
-                <th>E-mail : </th>
-                <th>Créé le : </th>
-              </tr>
-
-          @foreach ($users as $user)
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
 
 
-              <tr>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
-                <td>{{ $user['created_at'] }}</td>
-              </tr>
-            </table>
 
-          @endforeach
+        <div class="box">
+                    <div class="box-header">
+                      <h3 class="box-title">Derniers lieux ajoutés</h3>
 
-        </div>
-        <!-- /.box -->
-        <div class="box box-primary">
-          <h3 class="box-title">Derniers lieux ajoutés</h3>
-          <table>
-            <th>
-              <td>Nom : </td>
-              <td>Descrition : </td>
-              <td>Créé le : </td>
-            </th>
+                      <div class="box-tools">
+                        <div class="input-group input-group-sm" style="width: 150px;">
+                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
-          @foreach ($lieux as $lieu)
+                          <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body table-responsive no-padding">
+                      <table class="table table-hover">
+                        <tr>
+                          <th>Nom : </th>
+                          <th>Description : </th>
+                          <th>Créé le : </th>
+                        </tr>
 
-              <tr>
-                <td>{{ $lieu['lieu'] }}</td>
-                <td>{{ $lieu['content'] }}</td>
-                <td>{{ $lieu['created_at'] }}</td>
-              </tr>
-            </table>
+                        @foreach ($lieux as $lieu)
 
-          @endforeach
+                        <tr>
+                          <td>{{ $lieu['lieu'] }}</td>
+                          <td>{{ $lieu['content'] }}</td>
+                          <td>{{ $lieu['created_at'] }}</td>
+                        </tr>
+
+                        @endforeach
+
+                      </table>
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
+
+
 
         </div>
 
