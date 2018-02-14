@@ -1,4 +1,4 @@
-@extends('layout/layout_back')
+@extends('layout/layoutback')
 
 @section('title')
   Dashboard Utilisateurs

@@ -16,6 +16,7 @@ class AdminLieuxController extends Controller
         return view('lieux', compact('lieux'));
     }
 
+
   public function lieux()
   {
     return view('lieux');
