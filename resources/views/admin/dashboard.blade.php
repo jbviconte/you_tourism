@@ -80,41 +80,49 @@
 
         <div class="box box-primary">
 
+
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
 
             <table>
               <tr>
-                <th class="thback">Nom : </th>
-                <th class="thback">E-mail : </th>
-                <th class="thback">Créé le : </th>
+                <th>Nom : </th>
+                <th>E-mail : </th>
+                <th>Créé le : </th>
               </tr>
 
           @foreach ($users as $user)
+
               <tr>
-                <td class="tdback">{{ $user['name'] }}</td>
-                <td class="tdback">{{ $user['email'] }}</td>
-                <td class="tdback">{{ $user['created_at'] }}</td>
+                <td>{{ $user['name'] }}</td>
+                <td>{{ $user['email'] }}</td>
+                <td>{{ $user['created_at'] }}</td>
               </tr>
             </table>
+
           @endforeach
+
         </div>
         <!-- /.box -->
         <div class="box box-primary">
           <h3 class="box-title">Derniers lieux ajoutés</h3>
           <table>
             <th>
-              <td>Nom: </td>
-              <td>Descrition: </td>
-              <td>Créé le: </td>
+              <td>Nom : </td>
+              <td>Descrition : </td>
+              <td>Créé le : </td>
             </th>
+
           @foreach ($lieux as $lieu)
+
               <tr>
                 <td>{{ $lieu['lieu'] }}</td>
                 <td>{{ $lieu['content'] }}</td>
                 <td>{{ $lieu['created_at'] }}</td>
               </tr>
             </table>
+
           @endforeach
+          
         </div>
 
         <!-- quick email widget -->
