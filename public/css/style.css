@@ -62,7 +62,7 @@ header
   margin-left: 1400px;
 }
 
-#name
+#nameco
 {
   position: absolute;
   right: 0px;
@@ -126,27 +126,14 @@ h1
   border-color: #395066;
 }
 
-/* #bienvenu
-{
-  background-image: radial-gradient(circle at top left, #DCDCDC, #C0C0C0);
-}*/
 
-#bienvenu
-{
-
-}
-
-/*#degrade
-{
-  background-image: linear-gradient(to bottom right, #FFFF00, #FF0000);
-} */
 #contact_pad
 {
   padding: 75px;
 }
 
 
-/* #pad
+#pad
 {
   padding: 75px;
-} */
+}
