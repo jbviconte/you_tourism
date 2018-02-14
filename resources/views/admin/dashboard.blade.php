@@ -79,7 +79,15 @@
 
 
         <div class="box box-primary">
+<<<<<<< HEAD
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
+=======
+<<<<<<< HEAD
+          <h3 class="box-title">Utilisateurs enregistrés</h2>
+=======
+          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
+>>>>>>> 419c3d97a2f46cdc58d6fcd6392c19f4b0900705
+>>>>>>> 88ef849cb29d13ce76d916f83f41f75a6b7a01a6
           @foreach ($users as $user)
             <table>
               <th>
