@@ -49,7 +49,7 @@
           <div class="icon">
             <i class="ion ion-person-add"></i>
           </div>
-          <a href="#" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="{{ route('user') }}" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -79,15 +79,13 @@
 
 
         <div class="box box-primary">
-<<<<<<< HEAD
-          <h3 class="box-title">Utilisateurs enregistrés</h2>
-=======
+
           <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
->>>>>>> 419c3d97a2f46cdc58d6fcd6392c19f4b0900705
+
           @foreach ($users as $user)
             <table>
               <th>
-                <td>Nom: </td>
+                <td id="tdback">Nom: </td>
                 <td>E-mail: </td>
                 <td>Créé le: </td>
               </th>
@@ -101,7 +99,7 @@
         </div>
         <!-- /.box -->
         <div class="box box-primary">
-          <h3 class="box-title">Dernier lieux ajouter</h3>
+          <h3 class="box-title">Derniers lieux ajoutés</h3>
           @foreach ($lieux as $lieu)
             <table>
               <th>

@@ -13,7 +13,6 @@ class AdminUserController extends Controller
     // $users = User::all();
     $users = User::orderBy('created_at', 'desc')->get();
 
-    return view('admin.dashboard', compact('users'));
-    // return view('user');
+    return view('admin/user/user', compact('users'));
   }
 }
