@@ -49,7 +49,7 @@
           <div class="icon">
             <i class="ion ion-person-add"></i>
           </div>
-          <a href="#" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="{{ route('user') }}" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -79,26 +79,20 @@
 
 
         <div class="box box-primary">
-<<<<<<< HEAD
+
           <h3 class="box-title">Derniers utilisateurs enregistrés</h2>
-=======
-<<<<<<< HEAD
-          <h3 class="box-title">Utilisateurs enregistrés</h2>
-=======
-          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
->>>>>>> 419c3d97a2f46cdc58d6fcd6392c19f4b0900705
->>>>>>> 88ef849cb29d13ce76d916f83f41f75a6b7a01a6
+
           @foreach ($users as $user)
-            <table>
-              <th>
-                <td id="tdback">Nom: </td>
-                <td>E-mail: </td>
-                <td>Créé le: </td>
-              </th>
+            <table id="tab">
               <tr>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
-                <td>{{ $user['created_at'] }}</td>
+                <th class="thback">Nom : </th>
+                <th class="thback">E-mail : </th>
+                <th id="creer" class="thback">Créé le : </th>
+              </tr>
+              <tr>
+                <td class="tdback">{{ $user['name'] }}</td>
+                <td class="tdback">{{ $user['email'] }}</td>
+                <td class="tdback">{{ $user['created_at'] }}</td>
               </tr>
             </table>
           @endforeach
