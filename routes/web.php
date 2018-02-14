@@ -21,7 +21,7 @@ Route::group(['namespace' => 'Front'], function (){
   Route::get('/', 'HomeController@home')->name('home');
 
   Route::group(['namespace' => 'Ajout'], function (){
-    
+
     Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
     Route::post('ajout', 'AjoutController@action')->name('ajout-action');
   });
@@ -51,7 +51,7 @@ Auth::routes();
 //Route Admin////////////////////////////////////////////////////////////////////
 Route::group(['namespace' => 'Admin'], function (){
 
-  Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');
+  Route::get('dashboard', 'AdminController@user')->name('dashboard');
 
 
   Route::get('message', 'AdminController@messageView')->name('message');

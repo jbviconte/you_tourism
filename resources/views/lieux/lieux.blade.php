@@ -5,7 +5,7 @@
 @endsection
 
 @section('liste')
-<li><a href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
+<li><a class="liliens" href="{{ route('ajout-view') }}">Ajouter un lieu</a></li>
 @endsection
 
 @section('content')
