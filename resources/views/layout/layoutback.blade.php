@@ -51,7 +51,7 @@
                     <li><!-- start message -->
                       <a href="#">
                         <div class="pull-left">
-                          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          <img src="{{ asset('back/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Support Team
@@ -64,7 +64,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="{{ asset('back/img/user3-128x128.jpg') }}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           AdminLTE Design Team
@@ -76,7 +76,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="{{asset('back/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Developers
@@ -88,7 +88,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="{{ asset('back/img/user3-128x128.jpg')}}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Sales Department
@@ -100,7 +100,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="{{asset('back/img/user4-128x128.jpg')}}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Reviewers
@@ -243,7 +243,7 @@
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="{{asset('back/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
                   <p>
                     Alexander Pierce - Web Developer
@@ -350,9 +350,9 @@
       @yield('content')
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ asset('back/bower_components/jquery/dist/jquery.min.js')}}"></script>
     <!-- jQuery UI 1.11.4 -->
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="{{ asset('back/bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
       $.widget.bridge('uibutton', $.ui.button);
