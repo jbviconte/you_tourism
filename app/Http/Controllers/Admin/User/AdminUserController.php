@@ -8,6 +8,8 @@ use App\User;
 
 class AdminUserController extends Controller
 {
+
+  // vue des utilisateur
   public function userView()
   {
     // $users = User::all();
@@ -15,4 +17,13 @@ class AdminUserController extends Controller
 
     return view('admin/user/user', compact('users'));
   }
+
+  // suppression utilisateurs
+  public function deleteAction($id)
+    {
+      $users = User::findOrFail($id);
+      $users->delete();
+
+      return redirect()->route('user')->with('success', 'suppression éffectué');
+    }
 }

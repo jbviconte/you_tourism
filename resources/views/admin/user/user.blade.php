@@ -14,6 +14,9 @@
       <tr>
         <td>{{ $user['name'] }}</td><br />
         <td>{{ $user['email'] }}</td>
+          {{ Form::open(['route' => ['admin-user-delete-action', $user->id], 'method' => 'delete'])}}
+          {{ Form::submit('delete')}}
+          {{ Form::close()}}
       </tr>
     </table>
   @endforeach

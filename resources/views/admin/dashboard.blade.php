@@ -27,14 +27,14 @@
         <!-- small box -->
         <div class="small-box bg-aqua">
           <div class="inner">
-            <h3>150</h3>
+            <h3>{{ $lieuxcounts }}</h3>
 
-            <p>Nouveaux lieux</p>
+            <p>Lieux Enregistrer</p>
           </div>
           <div class="icon">
             <i class="ion ion-bag"></i>
           </div>
-          <a href="#" class="small-box-footer">Plus info <i class="fa fa-arrow-circle-right"></i></a>
+          <a href="{{ route('adminlieux') }}" class="small-box-footer">Plus info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -42,7 +42,7 @@
         <!-- small box -->
         <div class="small-box bg-yellow">
           <div class="inner">
-            <h3>44</h3>
+            <h3>{{ $userscounts }}</h3>
 
             <p>Utilisateurs Enregistrés</p>
           </div>
@@ -50,21 +50,6 @@
             <i class="ion ion-person-add"></i>
           </div>
           <a href="{{ route('user') }}" class="small-box-footer">Plus d'infos <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-      <!-- ./col -->
-      <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-red">
-          <div class="inner">
-            <h3>65</h3>
-
-            <p>Visiteurs</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-pie-graph"></i>
-          </div>
-          <a href="#" class="small-box-footer">Plus info <i class="fa fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <!-- ./col -->
@@ -89,9 +74,9 @@
               </th>
           @foreach ($users as $user)
               <tr>
-                <td>{{ $user['name'] }}</td>
-                <td>{{ $user['email'] }}</td>
-                <td>{{ $user['created_at'] }}</td>
+                <td class="tdback">{{ $user['name'] }}</td>
+                <td class="tdback">{{ $user['email'] }}</td>
+                <td class="tdback">{{ $user['created_at'] }}</td>
               </tr>
             </table>
           @endforeach
