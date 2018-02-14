@@ -5,22 +5,22 @@
 @endsection
 
 @section('content')
-
-            <div class="box" style="width:1250px">
+    <section class="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="box">
               <div class="box-header">
-                <h3 class="box-title">Derniers lieux ajoutés</h3>
+                <h3 class="box-title">Utilisateurs inscrit</h3>
 
                 <div class="box-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
-
-
+                    {{ $users->links() }}
                   </div>
                 </div>
               </div>
               <!-- /.box-header -->
               <div class="box-body table-responsive no-padding">
                 <table class="table table-hover">
-
                   <tr>
                     <th>Nom: </th>
                     <th>E-mail: </th>
@@ -36,12 +36,12 @@
                       </td>
                     </tr>
                 @endforeach
-              </table>
+                </table>
+              </div>
+              <!-- /.box-body -->
             </div>
-            <!-- /.box-body -->
+            <!-- /.box -->
           </div>
-          <!-- /.box -->
-
         </div>
-        <!-- /.row -->
+      </section>
 @endsection
