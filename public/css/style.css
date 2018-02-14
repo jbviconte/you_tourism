@@ -137,13 +137,28 @@ h1
 
 #pad
 {
-  padding: 75px;
+  margin-top: 75px;
 }
+#paf
+{
+  margin-top: 75px;
+  margin-right: 150px;
+  margin-left: 75px;
+  margin-bottom: 25px;
+  width: 700px;
+  float: left;
+  text-align: center;
+}
+#paf .lieu h1
+{
+  text-align: center;
+  width: 400px;
+  margin-left: 150px;
 
+}
 .lieu
 {
-  padding: 75px;
-  text-align: center;
+  float: left;
 }
 
 

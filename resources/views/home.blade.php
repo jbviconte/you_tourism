@@ -8,6 +8,7 @@
 
   <div class="flexslider flexslider_1">
     <ul class="slides">
+<<<<<<< HEAD
       <li>
         <img src="images/ciel.jpg" />
       </li>
@@ -26,6 +27,11 @@
       <li>
         <img src="images/theatre-romain-lillebone.jpg" />
       </li>
+=======
+      @foreach ($lieux as $lieu)
+            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
+      @endforeach
+>>>>>>> 8ef904fe69d9953bbdf2089ade28f643e94afb91
     </ul>
   </div>
 
@@ -53,6 +59,15 @@
       <p id="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
 
   </div>
+
+
+
+    @foreach ($lieux as $lieu)
+
+          <h1>{{ $lieu['lieu'] }}</h1>
+          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
+
+    @endforeach
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
