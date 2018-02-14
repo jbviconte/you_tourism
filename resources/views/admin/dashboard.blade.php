@@ -146,46 +146,6 @@
                 <!-- /.row -->
 
 
-<<<<<<< HEAD
-        <div class="box box-primary">
-
-          <h3 class="box-title">Dernier utilisateurs enregistrer</h2>
-            <table>
-              <th>
-                <td id="tdback">Nom: </td>
-                <td>E-mail: </td>
-                <td>Créé le: </td>
-              </th>
-          @foreach ($users as $user)
-              <tr>
-                <td class="tdback">{{ $user['name'] }}</td>
-                <td class="tdback">{{ $user['email'] }}</td>
-                <td class="tdback">{{ $user['created_at'] }}</td>
-              </tr>
-            </table>
-          @endforeach
-        </div>
-        <!-- /.box -->
-        <div class="box box-primary">
-          <h3 class="box-title">Derniers lieux ajoutés</h3>
-          <table>
-            <th>
-              <td>Nom: </td>
-              <td>Descrition: </td>
-              <td>Créé le: </td>
-            </th>
-          @foreach ($lieux as $lieu)
-              <tr>
-                <td>{{ $lieu['lieu'] }}</td>
-                <td>{{ $lieu['content'] }}</td>
-                <td>{{ $lieu['created_at'] }}</td>
-              </tr>
-            </table>
-          @endforeach
-        </div>
-
-=======
->>>>>>> c393b65ce1191d8f32660b7ec7d4ec39a9427f77
         <!-- quick email widget -->
         <div class="box box-info">
           <div class="box-header">
