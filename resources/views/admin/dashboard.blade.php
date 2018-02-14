@@ -61,17 +61,14 @@
       <section class="col-lg-7 connectedSortable">
 
 
-        <div class="box">
+        <div class="box" style="width:1250px">
                     <div class="box-header">
                       <h3 class="box-title">Derniers utilisateurs enregistrés</h3>
 
                       <div class="box-tools">
                         <div class="input-group input-group-sm" style="width: 150px;">
-                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
-                          <div class="input-group-btn">
-                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -103,17 +100,14 @@
 
 
 
-        <div class="box">
+        <div class="box" style="width:1250px">
                     <div class="box-header">
                       <h3 class="box-title">Derniers lieux ajoutés</h3>
 
                       <div class="box-tools">
                         <div class="input-group input-group-sm" style="width: 150px;">
-                          <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
 
-                          <div class="input-group-btn">
-                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -121,9 +115,9 @@
                     <div class="box-body table-responsive no-padding">
                       <table class="table table-hover">
                         <tr>
-                          <th>Nom : </th>
+                          <th style="width:100px">Nom : </th>
                           <th>Description : </th>
-                          <th>Créé le : </th>
+                          <th style="width:100px">Créé le : </th>
                         </tr>
 
                         @foreach ($lieux as $lieu)
