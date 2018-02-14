@@ -301,14 +301,13 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MENU NAVIGATION</li>
-          <li class="active treeview">
+          <li>
             <a href="{{ route('dashboard')}}">
-              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+              <i class="fa fa-th"></i> <span>Dashboard</span>
               <span class="pull-right-container">
-
+                <small class="label pull-right bg-green"></small>
               </span>
             </a>
-
           </li>
           <li>
             <a href="{{ route('user')}}">
