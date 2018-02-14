@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('back/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
     <link rel="stylesheet" href="{{ asset('back/bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
     <link rel="stylesheet" href="{{ asset('back/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styleback.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
@@ -311,10 +312,10 @@
 
           </li>
           <li>
-            <a href="pages/widgets.html">
-              <i class="fa fa-th"></i> <span>Widgets</span>
+            <a href="{{ route('user')}}">
+              <i class="fa fa-th"></i> <span>Utilisateurs inscrit</span>
               <span class="pull-right-container">
-                <small class="label pull-right bg-green">new</small>
+                <small class="label pull-right bg-green"></small>
               </span>
             </a>
           </li>
