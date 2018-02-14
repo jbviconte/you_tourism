@@ -5,12 +5,12 @@
 @endsection
 
 @section('content')
+  <table>
+    <th>
+      <td>Nom: </td>
+      <td>E-mail: </td>
+    </th>
   @foreach ($users as $user)
-    <table>
-      <th>
-        <td>Nom: </td>
-        <td>E-mail: </td>
-      </th>
       <tr>
         <td>{{ $user['name'] }}</td><br />
         <td>{{ $user['email'] }}</td>

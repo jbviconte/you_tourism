@@ -320,6 +320,14 @@
             </a>
           </li>
           <li>
+            <a href="{{ route('adminlieux')}}">
+              <i class="fa fa-th"></i> <span>Lieu touristiques</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green"></small>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="pages/mailbox/mailbox.html">
               <i class="fa fa-envelope"></i> <span>Boite Mail</span>
               <span class="pull-right-container">
