@@ -27,11 +27,10 @@
       <li>
         <img src="images/theatre-romain-lillebone.jpg" />
       </li>
-=======
+
       @foreach ($lieux as $lieu)
             <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
       @endforeach
->>>>>>> 8ef904fe69d9953bbdf2089ade28f643e94afb91
     </ul>
   </div>
 
@@ -65,7 +64,7 @@
     @foreach ($lieux as $lieu)
 
           <h1>{{ $lieu['lieu'] }}</h1>
-          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
+          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/>
 
     @endforeach
 
