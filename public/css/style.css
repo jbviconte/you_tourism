@@ -162,7 +162,15 @@ header
   text-align: center;
   width: 500px;
   margin-left: 20px;
+<<<<<<< HEAD
   position: absolute;
+=======
+<<<<<<< HEAD
+  position: absolute;
+=======
+  position: relative;
+>>>>>>> 26b2cd4e5fd3bc6900715017144a5f91de03c2eb
+>>>>>>> dfd7074540151fdc7e0889df35396cfbc9436138
   z-index: 3;
 }
 
