@@ -73,8 +73,10 @@ Route::group(['namespace' => 'Admin'], function (){
   Route::group(['namespace' => 'User'], function (){
 
     Route::get('user', 'AdminUserController@userView')->name('user');
+
     Route::get('user/update/{id}', 'AdminUserController@userUpdate')->name('user-Update');
     Route::put('user/update/{id}', 'AdminUserController@userUpdateAction')->name('user-update-action');
+
     Route::delete('user/delete/{id}', 'AdminUserController@deleteAction')->name('admin-user-delete-action');
   });
 

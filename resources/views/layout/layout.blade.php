@@ -40,7 +40,6 @@
                                     document.getElementById('logout-form').submit();">
                                     Se déconnecter
                         </a>
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
                         </form>
@@ -48,6 +47,7 @@
                   </li>
                 @endif
         </ul>
+
 </header>
 
 </head>
