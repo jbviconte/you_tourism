@@ -160,7 +160,24 @@ header
 {
   text-align: center;
   width: 500px;
+<<<<<<< HEAD
   position: absolute;
+=======
+  margin-left: 20px;
+<<<<<<< HEAD
+  position: absolute;
+=======
+<<<<<<< HEAD
+  position: absolute;
+=======
+<<<<<<< HEAD
+  position: absolute;
+=======
+  position: relative;
+>>>>>>> 26b2cd4e5fd3bc6900715017144a5f91de03c2eb
+>>>>>>> dfd7074540151fdc7e0889df35396cfbc9436138
+>>>>>>> 614cfd253b63899d93ce05d58b398b93ef575bb0
+>>>>>>> 4b019fd3e61ac3f7b5110a7234f77e158ecc2190
   z-index: 3;
   margin: 10px;
 }
