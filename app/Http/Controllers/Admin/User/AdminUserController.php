@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\UpdateUserRequest;
 use App\User;
 
 class AdminUserController extends Controller
@@ -14,8 +15,28 @@ class AdminUserController extends Controller
   {
     // $users = User::all();
     $users = User::orderBy('created_at', 'desc')->paginate(10);
-
     return view('admin/user/user', compact('users'));
+  }
+  // update des user
+  public function userUpdate($id)
+  {
+    $users = User::findorfail($id);
+    return view('admin/user/update', compact('users'));
+  }
+
+
+  public function userUpdateAction(UpdateUserRequest $request, $id)
+  {
+    $users = User::findOrFail($id);
+      $users->update($request->all());
+
+      // Lieux::where('id', '=', $id)->update([
+      //     'lieu'       => $post['lieu'],
+      //     'content'     => $post['content'],
+      //     'updated_at'  =>Carbon::now(),
+      // ]);
+
+      return redirect()->route('user')->with('success', 'modification éffectué');
   }
 
   // suppression utilisateurs
