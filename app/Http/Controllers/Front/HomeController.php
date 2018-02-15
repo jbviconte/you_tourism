@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Lieux;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -24,6 +25,10 @@ class HomeController extends Controller
      */
     public function home()
     {
-        return view('home');
+
+      $lieux = Lieux::orderBy('created_at', 'desc')
+                    ->take(5)
+                    ->get();
+        return view('home', compact('lieux'));
     }
 }

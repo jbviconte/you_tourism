@@ -3,105 +3,58 @@
 @section('title')
   YouTourism-Accueil
 @endsection
-  <link rel="stylesheet" href="js/flexslider.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
 @section('content')
+
+  <div class="flexslider flexslider_1">
+    <ul class="slides">
+
+      @foreach ($lieux as $lieu)
+            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
+      @endforeach
+
+    </ul>
+  </div>
+
+<div id="wrapper">
   <h1>Accueil</h1>
 
     <div id="bienvenu">
 
       <h2>Bienvenue sur YouTourism</h2>
 
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum orci, et aliquet quam. Suspendisse tincidunt posuere dui eget ultrices. Vestibulum eu libero at orci maximus ullamcorper. Quisque convallis dictum sollicitudin. Aenean in odio quis orci suscipit pharetra. Nulla cursus mi mi, bibendum porttitor nisi faucibus nec. Nullam porta elementum enim, nec tempus sapien aliquet id. Curabitur ultrices magna id libero cursus, vel volutpat elit consectetur. Vestibulum dapibus euismod lorem, posuere imperdiet felis posuere sit amet. Nunc nec lobortis orci. Sed aliquet nibh et ornare accumsan. Morbi eu leo et lacus finibus luctus vel id odio. Vivamus dapibus dui in eros suscipit, a facilisis est lacinia. Donec iaculis ipsum metus, ut varius sem consequat non. Phasellus ac nunc nec sem pellentesque euismod id at purus. Fusce elementum quam in fermentum varius.
-          </p>
+        <h3>Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
+
+          <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ces grandes villes comme Le Havre, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p>
+
+          <p class="intro">Divers sont les paysages et nombreuses sont les nouvelles découvertes.</p>
+
+          <p class="intro">Aventurier, grand voyageur ou simplement de passage, voici la Normandie telle que personne ne l'a jamais vue (sauf les Normands bien sûr !).</p>
     </div>
 
-{{-- <div><div class="slideshow slideshow_1">
-	<ul>
-		<li><img src="images/lapointedurozel.jpg"/></li>
-		<li><img src="images/lapointe.jpg"/></li>
-		<li><img src="images/lerozel.jpg"/></li>
-		<li><img src="images/rozel.jpg"/></li>
-	</ul>
-</div></div> --}}
-<div class="flexslider flexslider_1">
-  <ul class="slides">
-    <li>
-      <img src="images/lapointedurozel.jpg" />
-    </li>
-    <li>
-      <img src="images/lapointe.jpg" />
-    </li>
-    <li>
-      <img src="images/lerozel.jpg" />
-    </li>
-    <li>
-      <img src="images/rozel.jpg" />
-    </li>
-  </ul>
-</div>
 
-<div class="flexslider flexslider_2">
-  <ul class="slides">
-    <li data-thumb="images/lapointedurozel.jpg">
-      <img src="images/lapointedurozel.jpg" />
-    </li>
-    <li data-thumb="images/lapointe.jpg">
-      <img src="images/lapointe.jpg" />
-    </li>
-    <li data-thumb="images/lerozel.jpg">
-      <img src="images/lerozel.jpg" />
-    </li>
-    <li data-thumb="images/rozel.jpg">
-      <img src="images/rozel.jpg" />
-    </li>
-  </ul>
-</div>
+  <div>
+    <h4>Destination Normandie</h4>
 
-<div>Ici un slider image des lieux (lieux recent)</div>
+      <p id="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
+      <p id="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
+
+  </div>
 
 
 
-<div>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae rutrum orci, et aliquet quam. Suspendisse tincidunt posuere dui eget ultrices. Vestibulum eu libero at orci maximus ullamcorper. Quisque convallis dictum sollicitudin. Aenean in odio quis orci suscipit pharetra. Nulla cursus mi mi, bibendum porttitor nisi faucibus nec. Nullam porta elementum enim, nec tempus sapien aliquet id. Curabitur ultrices magna id libero cursus, vel volutpat elit consectetur. Vestibulum dapibus euismod lorem, posuere imperdiet felis posuere sit amet. Nunc nec lobortis orci. Sed aliquet nibh et ornare accumsan. Morbi eu leo et lacus finibus luctus vel id odio. Vivamus dapibus dui in eros suscipit, a facilisis est lacinia. Donec iaculis ipsum metus, ut varius sem consequat non. Phasellus ac nunc nec sem pellentesque euismod id at purus. Fusce elementum quam in fermentum varius.
-    </p>
-</div>
+    @foreach ($lieux as $lieu)
+
+          <h1>{{ $lieu['lieu'] }}</h1>
+          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
+
+    @endforeach
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
-<script src="js/slider.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-   // $(function(){
-   //    setInterval(function(){
-   //       $(".slideshow ul").animate({marginright:-350},500,function(){
-   //          $(this).css({marginright:0}).find("li:last").after($(this).find("li:first"));
-   //       })
-   //    }, 1500);
-   // });
-
-   $(".flexslider_1").ready(function() {
-     $('.flexslider_1').flexslider({
-       animation: "slide",
-       animationSpeed: 1,
-       slideshowSpeed: 10,
-       easing: "linear",
-       direction: "vertical",
-       pauseOnHover: "Boolean"
-     });
-   });
-
-   $(".flexslider_2").ready(function() {
-     $('.flexslider_2').flexslider({
-       animation: "slide",
-       controlNav: "thumbnails"
-     });
-   });
-</script>
+<script src="{{ asset('js/slider.js') }}"></script>
+{{-- <script type="text/javascript"> --}}
 
 @endsection

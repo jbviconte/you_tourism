@@ -1,7 +1,7 @@
 @extends('layout/layout')
 
 @section('title')
-  formulaire ajout de lieu
+  Formulaire ajout de lieu
 @endsection
 
 @section('content')
@@ -9,34 +9,23 @@
 
   <p>Ajouter un lieu</p>
 
-     @if ($errors->any())
-       <div class="alert alert-danger">
-         <ul>
-           @foreach ($errors->all() as $error)
-             <li>{{ $error }}</li>
-           @endforeach
-         </ul>
-       </div>
-     @endif
 
-    {!! Form::open(['route' => 'ajout-action', 'method' => 'post']) !!}
+    {!! Form::open(['route' => 'ajout-action', 'method' => 'post', 'files' => true]) !!}
 
-    {!! Form::label('nom', 'Nom du lieu') !!}
+    {!! Form::label('lieu', 'Nom du lieu') !!}
     <br>
-    {!! Form::text('nom', null, ['class' => 'frenchcaba', 'placeholder' => 'Nom du lieu']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
+    {!! Form::text('lieu', null, ['class' => 'frenchcaba', 'placeholder' => 'Nom du lieu']) !!}
+    {!! $errors->first('lieu', '<small class="help-block">:message</small>') !!}
     <br>
 
-    {!! Form::label('description', 'Description') !!}
+    {!! Form::label('content', 'Description') !!}
     <br>
-    {!! Form::textarea('description', null, ['class' => 'frenchcaba', 'placeholder' => 'description du lieu']) !!}
-    {!! $errors->first('description', '<small class="help-block">:message</small>') !!}
+    {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Description du lieu']) !!}
+    {!! $errors->first('content', '<small class="help-block">:message</small>') !!}
     <br>
 
-    {{-- {!! Form:label('nom', 'Nom du lieu') !!}
-    <br> --}}
-    {{-- {!! Form::text('image', null, ['class' => 'frenchcaba', 'placeholder' => 'image du lieu']) !!}
-    {!! $errors->first('image', '<small class="help-block">:message</small>') !!} --}}
+    {!! Form::file('image') !!}
+    {!! $errors->first('image','<small class="help-block">:message</small>') !!}
 
     {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
 
