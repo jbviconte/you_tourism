@@ -15,8 +15,7 @@ header
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   position: absolute;
-  z-index: 2;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .liliens
@@ -32,6 +31,7 @@ header
   margin-left: 5px;
   opacity: 2;
   color: #DEB887;
+  vertical-align:middle
 }
 
 #liensco
@@ -133,33 +133,39 @@ header
   padding: 75px;
 }
 
-
-#pad
+#imglieu
 {
-  margin-top: 75px;
+  padding-top: 100px;
+  padding-left: 3px;
+  padding-right: 3px;
+  position: relative;
+  z-index: 1;
 }
 
 #paf
 {
   margin-top: 100px;
-  margin-right: 150px;
-  margin-left: 75px;
   margin-bottom: 25px;
-  width: 700px;
+  width: 400px;
   float: left;
-  text-align: center;
-  border: solid 4px;
-  border-color: #395066;
+  padding-left: 30px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-#paf .lieu h1
+.imglieu
 {
-  text-align: center;
-  width: 500px;
-  margin-left: 100px;
-  background-color: #7fd3e6;
-
+  margin-right: 3px;
 }
+
+.h1
+{
+  background:transparent;
+  text-align: center;
+  /* padding-left: 3px;
+  padding-right: 3px; */
+}
+
 .lieu
 {
   float: left;
@@ -176,7 +182,7 @@ h4
   font-size: x-large;
 }
 
-#article1
+.article1
 {
   font-size: large;
 }
