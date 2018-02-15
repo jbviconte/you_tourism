@@ -48,6 +48,7 @@
                   </li>
                 @endif
         </ul>
+        
 </header>
 
 </head>

@@ -188,11 +188,13 @@ h4
 
 #access
 {
-  width: 33%;
-  height: 300px;
+  max-width: 100%;
+  height: auto;
   display: block;
   float: left;
   text-align: center;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 #access h1
