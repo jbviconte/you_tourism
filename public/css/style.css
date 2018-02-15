@@ -161,7 +161,6 @@ header
 
 .imglieu
 {
-<<<<<<< HEAD
   margin-right: 3px;
 }
 
@@ -171,12 +170,10 @@ header
   text-align: center;
   /* padding-left: 3px;
   padding-right: 3px; */
-=======
   text-align: center;
   width: 500px;
   margin-left: 100px;
   background-color: #7fd3e6;
->>>>>>> 6fcab8c433ed3e332e0e312f12898e444734d4bd
 }
 
 .lieu

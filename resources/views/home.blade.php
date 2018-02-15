@@ -71,17 +71,11 @@
 
 
     @foreach ($lieux as $lieu)
-<<<<<<< HEAD
 
-          <h1 id="h1">{{ $lieu['lieu'] }}</h1>
-          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
-
-=======
 <div id="access">
           <h1>{{ $lieu['lieu'] }}</h1>
           <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
 </div>
->>>>>>> 6fcab8c433ed3e332e0e312f12898e444734d4bd
     @endforeach
 
 
