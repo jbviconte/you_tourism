@@ -13,8 +13,8 @@
   @foreach ($lieux as $lieu)
 <div id="paf">
 
-    <div class="imglieu"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']), 500, 500)}}"/></div>
-    <div class="h1"><h1>{{ $lieu['lieu']}}</h1></div>
+    <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']), 500, 500)}}"/>
+    <h1>{{ $lieu['lieu']}}</h1>
 
     <!-- <p>{{ $lieu['content'] }}</p> -->
     <!-- <p><a href="{{ route('single', ['id' => $lieu->id])}}">Voir plus</a></p> -->
