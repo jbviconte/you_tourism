@@ -13,7 +13,7 @@ class AdminLieuxController extends Controller
     {
         // $articles = Article::all();
 
-        $lieux = Lieux::orderBy('created_at', 'desc')->get();
+        $lieux = Lieux::orderBy('created_at', 'desc')->paginate(5);
         return view('admin/lieux/adminlieux', compact('lieux'));
     }
 

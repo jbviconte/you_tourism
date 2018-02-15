@@ -13,7 +13,7 @@ class AdminUserController extends Controller
   public function userView()
   {
     // $users = User::all();
-    $users = User::orderBy('created_at', 'desc')->get();
+    $users = User::orderBy('created_at', 'desc')->paginate(10);
 
     return view('admin/user/user', compact('users'));
   }
