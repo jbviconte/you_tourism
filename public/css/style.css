@@ -150,21 +150,24 @@ header
 
 #paf
 {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 25px;
   width: 400px;
   float: left;
-  padding-left: 30px;
-  margin-left: 3px;
-  margin-right: 3px;
 }
 
-.imglieu
+#paf img
 {
   margin-right: 3px;
+  text-align: center;
+  width: 500px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 3;
+  margin: 10px;
 }
 
-.h1
+#paf h1
 {
   background:transparent;
   text-align: center;
@@ -174,6 +177,11 @@ header
   width: 500px;
   margin-left: 100px;
   background-color: #7fd3e6;
+  margin-left: 20px;
+  margin-top: 130px;
+  color: white;
+  position: relative;
+  z-index: 5;
 }
 
 .lieu
