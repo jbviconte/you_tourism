@@ -63,18 +63,25 @@
   <div>
     <h4>Destination Normandie</h4>
 
-      <p id="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
-      <p id="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
+      <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
+      <p class="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
 
   </div>
 
 
 
     @foreach ($lieux as $lieu)
+<<<<<<< HEAD
+
+          <h1 id="h1">{{ $lieu['lieu'] }}</h1>
+          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
+
+=======
 <div id="access">
           <h1>{{ $lieu['lieu'] }}</h1>
           <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
 </div>
+>>>>>>> 6fcab8c433ed3e332e0e312f12898e444734d4bd
     @endforeach
 
 
