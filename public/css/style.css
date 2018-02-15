@@ -150,7 +150,7 @@ header
 
 #paf
 {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 25px;
   width: 400px;
   float: left;
@@ -162,17 +162,16 @@ header
   text-align: center;
   width: 500px;
   margin-left: 20px;
-  float: left;
+  position: absolute;
   z-index: 3;
 }
 
 .h1
 {
-  text-align: center;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 130px;
   color: white;
-  position: absolute;
+  position: relative;
   z-index: 5;
 }
 
