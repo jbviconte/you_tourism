@@ -9,7 +9,7 @@ body
 header
 {
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding: 0;
   margin: 0;
   background-color: #7fd3e6;
@@ -30,7 +30,7 @@ header
 {
   float: left;
   display: inline;
-  padding : 0 0.5em;
+  padding : 0 0.10em;
   margin-left: 5px;
   opacity: 2;
 }
