@@ -148,25 +148,24 @@ header
   z-index: 1;
 }
 
-#access
+#paf
 {
   margin-top: 200px;
   margin-bottom: 25px;
   width: 400px;
   float: left;
-  padding-left: 30px;
 }
 
-.imglieu img
+#paf img
 {
   text-align: center;
   width: 500px;
-  margin-left: 20px;
   position: absolute;
   z-index: 3;
+  margin: 10px;
 }
 
-.h1
+#paf h1
 {
   margin-left: 20px;
   margin-top: 130px;
