@@ -54,8 +54,7 @@
 
                   </li>
                 @endif
-<<<<<<< HEAD
-                
+
         </ul>
       </nav>
     </header>

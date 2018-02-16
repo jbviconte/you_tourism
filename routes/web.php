@@ -75,14 +75,20 @@ Route::group(['namespace' => 'Admin'], function (){
 
     Route::get('user', 'AdminUserController@userView')->name('user');
 
-    Route::get('user/update/{id}', 'AdminUserController@userUpdate')->name('user-Update');
+    Route::get('user/update/{id}', 'AdminUserController@userUpdate')->name('user-update');
     Route::put('user/update/{id}', 'AdminUserController@userUpdateAction')->name('user-update-action');
 
     Route::delete('user/delete/{id}', 'AdminUserController@deleteAction')->name('admin-user-delete-action');
   });
 
-  Route::get('commentaire', 'Commentaire\AdminCommentaireController@commentaire')->name('commentaire');
-  Route::put('commentaire', 'Commentaire\AdminCommentaireController@commentaireUpdate')->name('commentaire-update-action');
-  Route::delete('commentaire', 'Commentaire\AdminCommentaireController@commentaireDelete')->name('commentaire-delete-action');
+  // Route Commentaire Admin
+  Route::group(['namespace' => 'Commentaire'], function (){
+
+    Route::get('commentaire', 'AdminCommentaireController@commentaire')->name('admin-commentaire');
+    Route::put('commentaire', 'AdminCommentaireController@commentaireUpdate')->name('admin-commentaire-update-action');
+    Route::delete('commentaire/delete/{id}', 'AdminCommentaireController@commentaireDelete')->name('admin-commentaire-delete-action');
+  });
+
+
 
 });
