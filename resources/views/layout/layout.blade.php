@@ -59,6 +59,7 @@
         </nav>
         </div>
 
+
 </header>
 
 
@@ -73,6 +74,7 @@
 
 
     <div class="content wrap">
+
       @if (session('success'))
         <div class="alert alert-success">
           {{ session('success') }}
