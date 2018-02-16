@@ -202,11 +202,25 @@ header
 
 #paf img
 {
+<<<<<<< HEAD
     width: 100%;height: auto;
+=======
+  text-align: center;
+  width: 500px;
+  position: absolute;
+  z-index: 3;
+>>>>>>> f7ceec40796dd3e964e5ac3bd09c9065aad37cac
 }
 
 #paf p
 {
+<<<<<<< HEAD
+=======
+  background:transparent;
+  width: 500px;
+  margin-left: 20px;
+  margin-top: 130px;
+>>>>>>> f7ceec40796dd3e964e5ac3bd09c9065aad37cac
   color: white;
   font-size: 1.4em;
   position: absolute;
