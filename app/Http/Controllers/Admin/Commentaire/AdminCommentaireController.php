@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class AdminCommentaireController extends Controller
 {
+
+  // public function __construct(User $request)
+  // {
+  //     $this->middleware('auth');
+  //     $this->middleware('admin');
+  // }
     public function commentaire() {
 
     }
@@ -16,6 +22,6 @@ class AdminCommentaireController extends Controller
     }
 
     public function commentaireDelete() {
-      
+
     }
 }

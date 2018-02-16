@@ -24,18 +24,18 @@ class AjoutRequest extends FormRequest
     public function rules()
     {
         return [
-            'lieu'           => 'required|min:5|max:50',
-            'content'   => 'required|min:5|max:1000',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'lieu'    => 'required|min:5|max:50',
+            'content' => 'required|min:5|max:1000',
+            'image'   => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
 
     public function messages()
     {
        return [
-          'lieu.required'         => 'Veuillez indiquer le nom de votre lieu',
-          'content.required' => 'Une petite description, voyageur ?',
-          'image.required' => 'Une photo de votre lieu touristique doit être ajouter',
+          'lieu.required'     => 'Veuillez indiquer le nom de votre lieu',
+          'content.required'  => 'Une petite description, voyageur ?',
+          'image.required'    => 'Une photo de votre lieu touristique doit être ajouter',
        ];
     }
 
