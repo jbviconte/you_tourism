@@ -203,7 +203,12 @@ header
   font-size: 1.7em;
   position: absolute;
   top:30%;
+<<<<<<< HEAD
   width: 100%;text-align: justify;
+=======
+  width: 100%;
+  text-align: justify;
+>>>>>>> 1c6ac853e25c910ba582f6ea9ad16547a892005d
   margin-top: 35%;
   z-index: 5;
 }
@@ -235,8 +240,8 @@ h4
   display: block;
   float: left;
   text-align: center;
-  margin-left: 100px;
-  margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 
 #access h1
@@ -244,7 +249,7 @@ h4
   width: auto;
   height: auto;
   display: block;
-  margin-left: 15%;
+  /* margin-left: 10%; */
   text-align: center;
 }
 
