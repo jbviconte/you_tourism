@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-
-
     <header id="menu">
       <nav>
       <ul id="liens">
@@ -23,9 +21,9 @@
                   <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
                   <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
-                  {{-- @if ( Auth::user()->role == 'admin') --}}
+                  @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
-                  {{-- @endif --}}
+                  @endif
                   <li class="dropdown">
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
@@ -49,6 +47,7 @@
                   </li>
                 @endif
         </ul>
+
 </header>
 
 </head>
@@ -60,9 +59,6 @@
             @yield('connexion')
         </div>
       </nav>
-
-
-
 
 
     <div class="content">

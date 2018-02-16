@@ -24,7 +24,7 @@
       <!-- Logo -->
       <a href="{{ route('home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
+        <span class="logo-mini"><b>Yu</b>Tou</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>You</b>Tourism</span>
       </a>
@@ -319,7 +319,7 @@
           </li>
           <li>
             <a href="{{ route('adminlieux')}}">
-              <i class="fa fa-th"></i> <span>Lieu touristiques</span>
+              <i class="fa fa-th"></i> <span>Lieux touristiques</span>
               <span class="pull-right-container">
                 <small class="label pull-right bg-green"></small>
               </span>
@@ -385,4 +385,12 @@
     <script src="{{ asset('back/js/pages/dashboard.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('back/js/demo.js')}}"></script>
+    <script>
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue'
+    })
+    </script>
+
 </html>

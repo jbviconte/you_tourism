@@ -24,14 +24,21 @@
                   <tr>
                     <th>Nom: </th>
                     <th>E-mail: </th>
+                    <th>Status: </th>
+                    <th>Edit: </th>
                     <th>Action: </th>
                   </tr>
                   @foreach ($users as $user)
                     <tr>
                       <td>{{ $user['name'] }}</td><br />
                       <td>{{ $user['email'] }}</td>
+                      <td>{{ $user['role'] }}</td>
+                      <td><a href="{{ route('user-Update', ['id' => $user->id]) }}"><button type="button" class="btn btn-default">Modifier</button></a></td>
+
+                      </td>
                       <td>{{ Form::open(['route' => ['admin-user-delete-action', $user->id], 'method' => 'delete'])}}
-                        {{ Form::submit('Supprimer')}}
+                        <button type="submit" class="btn btn-block btn-danger btn-lg">Supprimer</button>
+                        {!! csrf_field() !!}
                         {{ Form::close()}}
                       </td>
                     </tr>
