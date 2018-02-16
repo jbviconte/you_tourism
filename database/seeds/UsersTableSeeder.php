@@ -24,10 +24,10 @@ class UsersTableSeeder extends Seeder
         );
 
         $users[] = array(
-          'name' => 'azerty',
-          'email' => 'azerty@live.com',
-          'password' => bcrypt('azerty'),
-          'role' => 'abonne',
+          'name'       => 'azerty',
+          'email'      => 'azerty@live.com',
+          'password'   => bcrypt('azerty'),
+          'role'       => 'abonne',
           'created_at' => $date
         );
 

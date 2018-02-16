@@ -26,8 +26,6 @@ Route::group(['namespace' => 'Front'], function (){
     Route::post('ajout', 'AjoutController@action')->name('ajout-action');
   });
 
-
-
   Route::group(['namespace' => 'Lieux'], function (){
 
     Route::get('lieux/lieux', 'LieuxController@lieux')->name('lieux');
@@ -43,6 +41,9 @@ Route::group(['namespace' => 'Front'], function (){
     Route::post('commentaire', 'CommentaireController@commentaireNew')->name('commentaire-new-action');
     Route::delete('commentaire', 'CommentaireController@commentaireDelete')->name('commentaire-delete-action');
   });
+
+    Route::get('userpage', 'Userpage\UserPageController@userpage')->name('userpage');
+    Route::post('userpage', 'Userpage\UserPageController@userpageUpdate')->name('userpage-update');
 
 });
 Auth::routes();
