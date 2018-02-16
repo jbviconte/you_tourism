@@ -6,9 +6,16 @@
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+  </head>
+
+
+  <body>
 
 
     <header id="menu">
+      <div class="wrap" style="background_color:lime;">
+
+
       <nav>
       <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
@@ -23,9 +30,9 @@
                   <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
                   <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
-                  {{-- @if ( Auth::user()->role == 'admin') --}}
+                  @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
-                  {{-- @endif --}}
+                  @endif
                   <li class="dropdown">
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
@@ -48,30 +55,39 @@
                   </li>
                 @endif
         </ul>
+        </nav>
+        </div>
+
 </header>
 
-</head>
-
-    <body>
 
 
         <div class="connexion">
             @yield('connexion')
         </div>
-      </nav>
 
 
 
 
 
-    <div class="content">
+
+    <div class="content wrap">
       @if (session('success'))
         <div class="alert alert-success">
           {{ session('success') }}
         </div>
       @endif
       @yield('content')
+
+      <div class="clear"></div>
     </div>
+
+
+    <footer>
+      <div class="wrap">
+<p>footer</p>
+      </div>
+    </footer>
 
 
 

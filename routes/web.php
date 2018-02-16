@@ -59,8 +59,13 @@ Route::group(['namespace' => 'Admin'], function (){
   Route::group(['namespace' => 'Lieux'], function (){
 
     Route::get('adminlieux', 'AdminLieuxController@listing')->name('adminlieux');
-    Route::put('adminlieux', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
-    Route::post('adminlieux', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
+
+    Route::get('update/{id}', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-new');
+    Route::put('update/{id}', 'AdminLieuxController@lieuxUpdateAction')->name('lieu-update-action');
+
+    Route::get('newadminlieu', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
+    Route::post('newadminlieu', 'AdminLieuxController@lieuNewAction')->name('lieu-new-action-post');
+
     Route::delete('adminlieux/delete/{id}', 'AdminLieuxController@deleteAction')->name('admin-lieu-delete-action');
   });
 
@@ -68,6 +73,8 @@ Route::group(['namespace' => 'Admin'], function (){
   Route::group(['namespace' => 'User'], function (){
 
     Route::get('user', 'AdminUserController@userView')->name('user');
+    Route::get('user/update/{id}', 'AdminUserController@userUpdate')->name('user-Update');
+    Route::put('user/update/{id}', 'AdminUserController@userUpdateAction')->name('user-update-action');
     Route::delete('user/delete/{id}', 'AdminUserController@deleteAction')->name('admin-user-delete-action');
   });
 
