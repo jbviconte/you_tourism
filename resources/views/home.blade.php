@@ -48,9 +48,9 @@
 
     <div id="bienvenu">
 
-      <h2>Bienvenue sur YouTourism</h2>
+      <h2 class="bienvenue">Bienvenue sur YouTourism</h2>
 
-        <h3>Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
+        <h3 class="bienvenue">Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
 
           <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ces grandes villes comme Le Havre, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p>
 
@@ -60,7 +60,7 @@
     </div>
 
 
-  <div>
+  <div id="presentation">
     <h4>Destination Normandie</h4>
 
       <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
@@ -83,6 +83,6 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="{{ asset('js/slider.js') }}"></script>
-{{-- <script type="text/javascript"> --}}
+
 
 @endsection

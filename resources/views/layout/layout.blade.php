@@ -60,7 +60,6 @@
         </nav>
     </div>
 
-
 </header>
 
 
@@ -90,7 +89,6 @@
 
       </div>
     </footer>
-
 
 
   </body>
