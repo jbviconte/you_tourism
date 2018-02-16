@@ -157,6 +157,8 @@ header
 
 #paf h1
 {
+  background:transparent;
+  width: 500px;
   margin-left: 20px;
   margin-top: 130px;
   color: white;
@@ -186,11 +188,13 @@ h4
 
 #access
 {
-  width: 33%;
-  height: 300px;
+  max-width: 100%;
+  height: auto;
   display: block;
   float: left;
   text-align: center;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 #access h1
