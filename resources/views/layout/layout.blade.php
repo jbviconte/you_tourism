@@ -17,7 +17,7 @@
 
 
       <nav>
-      <ul id="liens">
+        <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
@@ -48,30 +48,17 @@
                                     document.getElementById('logout-form').submit();">
                                     Se déconnecter
                         </a>
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
                         </form>
 
                   </li>
                 @endif
+
         </ul>
-        </nav>
-        </div>
-
-
-</header>
-
-
-
-        <div class="connexion">
-            @yield('connexion')
-        </div>
-
-
-
-
-
+      </nav>
+    </header>
+  <body>
 
     <div class="content wrap">
 
@@ -81,6 +68,9 @@
         </div>
       @endif
       @yield('content')
+      <div class="connexion">
+          @yield('connexion')
+      </div>
 
       <div class="clear"></div>
     </div>
