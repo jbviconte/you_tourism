@@ -54,9 +54,7 @@ header
   width: 100%;
   height: 100px;
   padding: 0;
-  margin: 1px;
-  border-width: 5px;
-  border-style: solid;
+  /* margin: 1px; */
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -158,14 +156,12 @@ header
   height: auto;
   background: silver;
   color: silver;
-  border-color: #395066;
 }
 
 #menu
 {
   list-style-type: none;
   float: right;
-  border-color: #395066;
 }
 
 #wrapper h1
@@ -174,9 +170,6 @@ header
   width: 25%;
   text-align: center;
   margin-left: 40%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #395066;
 }
 
 
@@ -254,4 +247,23 @@ h4
   display: block;
   /* margin-left: 10%; */
   text-align: center;
+}
+
+footer
+{
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer p
+{
+  color: #DEB887;
+}
+
+footer ul li a
+{
+  color: #DEB887;
 }
