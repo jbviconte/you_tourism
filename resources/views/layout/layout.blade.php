@@ -13,7 +13,7 @@
 
 
     <header id="menu">
-      <div class="wrap" style="background_color:lime;">
+      <div class="wrap">
 
 
       <nav>
@@ -59,6 +59,7 @@
         </nav>
         </div>
 
+
 </header>
 
 
@@ -73,6 +74,7 @@
 
 
     <div class="content wrap">
+
       @if (session('success'))
         <div class="alert alert-success">
           {{ session('success') }}
@@ -86,7 +88,9 @@
 
     <footer>
       <div class="wrap">
-<p>footer</p>
+
+        <p>footer</p>
+        
       </div>
     </footer>
 
