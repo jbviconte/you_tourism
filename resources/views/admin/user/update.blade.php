@@ -1,7 +1,7 @@
 @extends('layout/layoutback')
 
 @section('title')
-
+  Dashboard-modification status profil
 @endsection
 
 @section('content')
@@ -21,20 +21,17 @@
             {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
           </div>
 
-            <div class="form-group">
-              <label>Status: </label>
-              {!! Form::select('role', ['inscrit' => 'Inscrit', 'admin' => 'Admin'], $users->role)!!}</li>
-            </div>
-
-
+          <div class="form-group">
+            <label>Status: </label>
+            {!! Form::select('role', ['inscrit' => 'Inscrit', 'admin' => 'Admin'], $users->role)!!}</li>
+          </div>
 
           {!! Form::submit('Modifier',['class' => 'btn btn-block btn-success btn-lg']) !!}
           {!! Form::close() !!}
-
       </div>
       <!-- /.box-body -->
     </div>
     <!-- /.box -->
-</section>
+  </section>
 
 @endsection

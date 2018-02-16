@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin\User;
 
+use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\UpdateUserRequest;
@@ -9,6 +10,12 @@ use App\User;
 
 class AdminUserController extends Controller
 {
+
+  // public function __construct(User $request)
+  // {
+  //     $this->middleware('auth');
+  //     $this->middleware('admin');
+  // }
 
   // vue des utilisateur
   public function userView()

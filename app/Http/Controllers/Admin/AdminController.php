@@ -10,11 +10,12 @@ use App\Lieux;
 class AdminController extends Controller
 {
 
-  public function __construct(User $request)
-  {
-      $this->middleware('auth');
-      $this->middleware('admin');
-  }
+    // public function __construct(User $request)
+    // {
+    //     $this->middleware('auth');
+    //     $this->middleware('admin');
+    // }
+
     public function dashboard()
     {
       // vue utilisateurs sur le dashbaord
