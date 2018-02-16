@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+  </head>
+
+
+  <body>
 
 
     <header id="menu">
+      <div class="wrap" style="background_color:lime;">
+
+
       <nav>
-      <ul id="liens">
+        <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
@@ -30,6 +37,7 @@
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
+                        <li><a class="liliens" href="{{ route('userpage') }}">Profil</a></li>
                   </li>
 
                       <br />
@@ -47,32 +55,37 @@
 
                   </li>
                 @endif
-        </ul>
+              </ul>
+
+        </nav>
+    </div>
+
 
 </header>
 
-</head>
-
-    <body>
 
 
-        <div class="connexion">
-            @yield('connexion')
-        </div>
-      </nav>
+    <div class="content wrap">
 
-
-
-
-
-    <div class="content">
       @if (session('success'))
         <div class="alert alert-success">
           {{ session('success') }}
         </div>
       @endif
       @yield('content')
+      <div class="connexion">
+          @yield('connexion')
+      </div>
+
+      <div class="clear"></div>
     </div>
+
+
+    <footer>
+      <div class="wrap">
+<p>footer</p>
+      </div>
+    </footer>
 
 
 
