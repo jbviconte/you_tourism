@@ -13,7 +13,7 @@
 
 
     <header id="menu">
-      <div class="wrap" style="background_color:lime;">
+      <div class="wrap">
 
 
       <nav>
@@ -83,7 +83,11 @@
 
     <footer>
       <div class="wrap">
-<p>footer</p>
+        <ul>
+          <li></li>
+        </ul>
+        <p>footer</p>
+
       </div>
     </footer>
 
