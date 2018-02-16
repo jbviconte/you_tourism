@@ -79,14 +79,26 @@
     <footer>
       <div class="wrap">
         <ul>
-          <li></li>
+          <li><a  href="{{ route('contact-view') }}">Contact</a></li>
+          <li><a href="http://twitter.com/share" class="twitter-share-button"
+                data-count="vertical" data-via="InfoWebMaster">Tweet</a>
+              <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+          <li><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65"
+              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" allowTransparency="true"></iframe></li>
+          <li><a name="fb_share" type="box_count" share_url="http://www.example.com/page.html"></a>
+              <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
+          <li><g:plusone size="tall"></g:plusone></li>
+          <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+              <script type="in/share" data-counter="right"></script></li>
         </ul>
         <p>footer</p>
 
       </div>
     </footer>
 
-
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+        {lang: 'fr'}
+        </script>
 
   </body>
 </html>

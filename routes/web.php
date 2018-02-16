@@ -43,7 +43,8 @@ Route::group(['namespace' => 'Front'], function (){
   });
 
     Route::get('userpage', 'Userpage\UserPageController@userpage')->name('userpage');
-    Route::post('userpage', 'Userpage\UserPageController@userpageUpdate')->name('userpage-update');
+    Route::get('userpage/update/{id}', 'Userpage\UserPageController@userpageupdate')->name('userpage-update');
+    Route::put('userpage/update/{id}', 'Userpage\UserPageController@userpageUpdate')->name('userpage-update-action');
 
 });
 Auth::routes();
