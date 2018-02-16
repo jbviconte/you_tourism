@@ -12,4 +12,12 @@ class UserPageController extends Controller
     return view('userpage/userpage');
   }
 
+  public function userpageUpdateAction(UpdateUserRequest $request, $id)
+  {
+    $user = User::findOrFail($id);
+     $user->update($request->all());
+
+     return redirect()->route('userpage')->with('success', 'profil mis a jour');
+  }
+
 }
