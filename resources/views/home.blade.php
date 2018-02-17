@@ -8,9 +8,36 @@
 
   <div class="flexslider flexslider_1">
     <ul class="slides">
+      <li>
+        <img src="images/la-hague.jpg" />
+      </li>
+      <li>
+        <img src="images/bagnoles-de-l-orne.jpg" />
+      </li>
+      <li>
+        <img src="images/la-colline-aux-oiseaux.jpg" />
+      </li>
+      <li>
+        <img src="images/rozel.jpg" />
+      </li>
+      <li>
+        <img src="images/Pont-Audemer.jpg" />
+      </li>
+      <li>
+        <img src="images/theatre-romain-lillebone.jpg" />
+      </li>
+      <li>
+        <img src="images/le-moulin-de-vernon.jpg" />
+      </li>
+      <li>
+        <img src="images/st-germain-de-la-coudre.jpg" />
+      </li>
+      <li>
+        <img src="images/Veules-les-roses.jpg" />
+      </li>
 
       @foreach ($lieux as $lieu)
-            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,300,300)}}"/></li>
+            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,600,200)}}"/></li>
       @endforeach
 
     </ul>
@@ -36,8 +63,8 @@
   <div>
     <h4>Destination Normandie</h4>
 
-      <p id="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
-      <p id="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
+      <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
+      <p class="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
 
   </div>
 
@@ -45,9 +72,10 @@
 
     @foreach ($lieux as $lieu)
 
+<div id="access">
           <h1>{{ $lieu['lieu'] }}</h1>
-          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/>
-
+          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
+</div>
     @endforeach
 
 

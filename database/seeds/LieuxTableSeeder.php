@@ -22,7 +22,7 @@ class LieuxTableSeeder extends Seeder
           'name_image' => "rozel.jpg",
           'new_name_image' => "rozel.jpg",
           'path_image' => 'images',
-          // 'status'      => 'actif',
+          'status'      => 'no publish',
           // 'user_id'     => 2,
         );
 
@@ -33,7 +33,7 @@ class LieuxTableSeeder extends Seeder
             'name_image' => "la-hague.jpg",
             'new_name_image' => "la-hague.jpg",
             'path_image' => 'images',
-            // 'status'      => 'actif',
+            'status'      => 'publish',
             // 'user_id'     => 2,
           );
 
@@ -44,7 +44,7 @@ class LieuxTableSeeder extends Seeder
               'name_image' => "La-pointe-du-hoc.jpg",
               'new_name_image' => "La-pointe-du-hoc.jpg",
               'path_image' => 'images',
-              // 'status'      => 'actif',
+              'status'      => 'no publish',
               // 'user_id'     => 2,
             );
 
@@ -55,7 +55,7 @@ class LieuxTableSeeder extends Seeder
                 'name_image' => "la-colline-aux-oiseaux.jpg",
                 'new_name_image' => "la-colline-aux-oiseaux.jpg",
                 'path_image' => 'images',
-                // 'status'      => 'actif',
+                'status'      => 'publish',
                 // 'user_id'     => 2,
               );
 
@@ -66,7 +66,7 @@ class LieuxTableSeeder extends Seeder
                   'name_image' => "bagnoles-de-l-orne.jpg",
                   'new_name_image' => "bagnoles-de-l-orne.jpg",
                   'path_image' => 'images',
-                  // 'status'      => 'actif',
+                  'status'      => 'no publish',
                   // 'user_id'     => 2,
                 );
 
@@ -77,7 +77,7 @@ class LieuxTableSeeder extends Seeder
                     'name_image' => "st-germain-de-la-coudre.jpg",
                     'new_name_image' => "st-germain-de-la-coudre.jpg",
                     'path_image' => 'images',
-                    // 'status'      => 'actif',
+                    'status'      => 'publish',
                     // 'user_id'     => 2,
                   );
 
@@ -88,7 +88,7 @@ class LieuxTableSeeder extends Seeder
                       'name_image' => "Pont-Audemer.jpg",
                       'new_name_image' => "Pont-Audemer.jpg",
                       'path_image' => 'images',
-                      // 'status'      => 'actif',
+                      'status'      => 'no publish',
                       // 'user_id'     => 2,
                     );
 
@@ -99,7 +99,7 @@ class LieuxTableSeeder extends Seeder
                         'name_image' => "le-moulin-de-vernon.jpg",
                         'new_name_image' => "le-moulin-de-vernon.jpg",
                         'path_image' => 'images',
-                        // 'status'      => 'actif',
+                        'status'      => 'publish',
                         // 'user_id'     => 2,
                       );
 
@@ -110,7 +110,7 @@ class LieuxTableSeeder extends Seeder
                           'name_image' => "Veules-les-roses.jpg",
                           'new_name_image' => "Veules-les-Roses.jpg",
                           'path_image' => 'images',
-                          // 'status'      => 'actif',
+                          'status'      => 'no publish',
                           // 'user_id'     => 2,
                         );
 
@@ -121,7 +121,7 @@ class LieuxTableSeeder extends Seeder
                             'name_image' => "theatre-romain-lillebone.jpg",
                             'new_name_image' => "theatre-romain-lillebone.jpg",
                             'path_image' => 'images',
-                            // 'status'      => 'actif',
+                            'status'      => 'publish',
                             // 'user_id'     => 2,
                           );
 

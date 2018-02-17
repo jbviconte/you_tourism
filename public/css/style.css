@@ -1,38 +1,80 @@
-body
-{
-  width: auto;
-  Max-height: 2000px;
-  padding: 0;
-  margin: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 header
 {
   width: 100%;
-  height: 60px;
+  height: 100px;
   padding: 0;
+  /* margin: 1px; */
   margin: 0;
-  background-color: #7fd3e6;
-  border-width: 5px;
-  border-style: solid;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  position: absolute;
-  z-index: 2;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .liliens
 {
-  color: #c8d9ea;
+  color: #DEB887;
 }
 
 #liens li
 {
   float: left;
   display: inline;
-  padding : 0 0.5em;
+  padding : 0 0.10em;
   margin-left: 5px;
   opacity: 2;
+  color: #DEB887;
+  vertical-align:middle
 }
 
 #liensco
@@ -41,7 +83,7 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1200px;
-  color: #c8d9ea;
+  color: #DEB887;
 }
 
 #liensco2
@@ -49,7 +91,7 @@ header
   float: right;
   display: inline;
   padding : 0 0.5em;
-  color: #c8d9ea;
+  color: #DEB887;
 }
 
 
@@ -60,7 +102,7 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1400px;
-  color: #c8d9ea;
+  color: #DEB887;
 }
 
 #nameco
@@ -70,14 +112,13 @@ header
   display: inline;
   padding : 0 0.5em;
   margin-left: 1400px;
-  color: #c8d9ea;
+  color: #DEB887;
 }
 
 .connexion
 {
   text-align: center;
 }
-
 
 .add
 {
@@ -98,34 +139,37 @@ header
 
 #wrapper
 {
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
   width: 100%;
-  text-align: center;
+  max-width: 1600px;
 }
 
-.flexslider {
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.flexslider
+ {
+  width: 100%;
+  height: auto;
   background: silver;
   color: silver;
-  border-color: #395066;
 }
 
 #menu
 {
   list-style-type: none;
   float: right;
-  border-color: #395066;
 }
 
-h1
+#wrapper h1
 {
   background-color: #7fd3e6;
-  width: 20%;
+  width: 25%;
   text-align: center;
   margin-left: 40%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #395066;
 }
 
 
@@ -135,32 +179,40 @@ h1
 }
 
 
-#pad
-{
-  margin-top: 75px;
+#bigpaf {
+    width: 100%;
+    margin-left: -2%;
 }
 #paf
 {
-  margin-top: 75px;
-  margin-right: 150px;
-  margin-left: 75px;
-  margin-bottom: 25px;
-  width: 700px;
+  margin-top: 10px;
+  width: 23%;
+  margin-left: 2%;
   float: left;
-  text-align: center;
+  position: relative;
 }
-#paf .lieu h1
-{
-  text-align: center;
-  width: 400px;
-  margin-left: 150px;
 
+#paf img
+{
+    width: 100%;height: auto;
 }
+
+#paf p
+{
+  color: white;
+  font-size: 1.7em;
+  position: absolute;
+  top:30%;
+  width: 100%;
+  text-align: justify;
+  margin-top: 35%;
+  z-index: 5;
+}
+
 .lieu
 {
   float: left;
 }
-
 
 .intro
 {
@@ -172,7 +224,46 @@ h4
   font-size: x-large;
 }
 
-#article1
+.article1
 {
   font-size: large;
+}
+
+#access
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+#access h1
+{
+  width: auto;
+  height: auto;
+  display: block;
+  /* margin-left: 10%; */
+  text-align: center;
+}
+
+footer
+{
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer p
+{
+  color: #DEB887;
+}
+
+footer ul li a
+{
+  color: #DEB887;
 }
