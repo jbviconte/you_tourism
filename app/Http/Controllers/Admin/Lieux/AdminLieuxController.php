@@ -4,21 +4,27 @@ namespace App\Http\Controllers\Admin\Lieux;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Lieux;
 
 class AdminLieuxController extends Controller
 {
-
+  // affichage des lieux dans l'admin
   public function listing()
     {
         // $articles = Article::all();
 
-        $articles = Article::orderBy('created_at', 'desc')->paginate(5);
-        return view('lieux', compact('lieux'));
+        $lieux = Lieux::orderBy('created_at', 'desc')->paginate(5);
+        return view('admin/lieux/adminlieux', compact('lieux'));
     }
 
-  public function lieux()
+  // suppression des lieux
+  public function deleteAction($id)
   {
-    return view('lieux');
+    $lieux = Lieux::findOrFail($id);
+    $lieux->delete();
+
+    return redirect()->route('adminlieux')->with('success', 'suppression éffectué');
   }
+
 
 }

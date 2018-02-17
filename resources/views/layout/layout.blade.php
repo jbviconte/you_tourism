@@ -11,12 +11,12 @@
     <header id="menu">
       <nav>
       <ul id="liens">
-        <li><a href="{{ route('home') }}">Accueil</a></li>
-        <li><a href="{{ route('lieux') }}">Lieux Touristiques</a></li>
+        <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
+        <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
         @yield('liste')
 
-        <li><a href="{{ route('contact-view') }}">Contact</a></li>
+        <li><a  class="liliens" href="{{ route('contact-view') }}">Contact</a></li>
 
               <!-- Authentication Links -->
               @if (Auth::guest())
@@ -24,10 +24,10 @@
                   <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
                   {{-- @if ( Auth::user()->role == 'admin') --}}
-                    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                    <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
                   {{-- @endif --}}
                   <li class="dropdown">
-                      <a href="#" id="name" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                   </li>

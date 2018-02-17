@@ -15,13 +15,13 @@
 //     return view('welcome');
 // });
 //
-// Route Front///////////////////////////////////////////////////////////////////
+// Route Front
 Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
 
   Route::group(['namespace' => 'Ajout'], function (){
-    
+
     Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
     Route::post('ajout', 'AjoutController@action')->name('ajout-action');
   });
@@ -48,21 +48,28 @@ Route::group(['namespace' => 'Front'], function (){
 Auth::routes();
 
 
-//Route Admin////////////////////////////////////////////////////////////////////
+//Route Admin
 Route::group(['namespace' => 'Admin'], function (){
 
   Route::get('dashboard', 'AdminController@dashboard')->name('dashboard');
 
-
   Route::get('message', 'AdminController@messageView')->name('message');
 
-  Route::get('lieux', 'Lieux\AdminLieuxController@lieux')->name('lieu');
-  Route::put('lieux', 'Lieux\AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
-  Route::post('lieux', 'Lieux\AdminLieuxController@lieuNew')->name('lieu-new-action');
-  Route::delete('lieux', 'Lieux\AdminLieuxController@lieuxDelete')->name('lieu-delete-action');
+  // Route Lieux Admin
+  Route::group(['namespace' => 'Lieux'], function (){
 
-  Route::get('user', 'User\AdminUserController@userView')->name('user');
-  Route::delete('user', 'User\AdminUserController@userDelete')->name('user-delete-action');
+    Route::get('adminlieux', 'AdminLieuxController@listing')->name('adminlieux');
+    Route::put('adminlieux', 'AdminLieuxController@lieuxUpdate')->name('lieu-update-action');
+    Route::post('adminlieux', 'AdminLieuxController@lieuNew')->name('lieu-new-action');
+    Route::delete('adminlieux/delete/{id}', 'AdminLieuxController@deleteAction')->name('admin-lieu-delete-action');
+  });
+
+  // Route User Admin
+  Route::group(['namespace' => 'User'], function (){
+
+    Route::get('user', 'AdminUserController@userView')->name('user');
+    Route::delete('user/delete/{id}', 'AdminUserController@deleteAction')->name('admin-user-delete-action');
+  });
 
   Route::get('commentaire', 'Commentaire\AdminCommentaireController@commentaire')->name('commentaire');
   Route::put('commentaire', 'Commentaire\AdminCommentaireController@commentaireUpdate')->name('commentaire-update-action');
