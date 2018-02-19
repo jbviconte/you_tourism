@@ -12,7 +12,7 @@
   <body>
 
 
-    <header id="menu">
+    <header id="menu" class="large">
       <div class="wrap">
 
 

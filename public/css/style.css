@@ -31,6 +31,7 @@ body
 {
 	line-height: 1;
 	background: #F6F1FF;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -79,7 +80,7 @@ header
   display: inline;
   padding : 0 0.10em;
   margin-left: 5px;
-	margin-top: 40px;
+	margin-top: 20px;
   opacity: 2;
 }
 
@@ -90,7 +91,6 @@ header
   list-style-type: none;
 	display: inline-block;
 }
-
 
 .flexslider
  {
@@ -104,11 +104,11 @@ header
 .liliens
 {
 	color: #DEB887;
+	text-decoration: none;
 }
+
 a:hover, a:focus, a:active
 {
-	width: 15px;
-	height: 15px;
 	background: #8fb3e6;
   color: #000;
 }
@@ -118,7 +118,7 @@ a:hover, a:focus, a:active
 {
   position: absolute;
   right: 0px;
-  display: inline;
+  display: inline-block;
   padding : 0 0.5em;
   float: right;
 	margin-right: 150px;
@@ -126,17 +126,16 @@ a:hover, a:focus, a:active
 	text-decoration: none;
 }
 
-
-
 #nameco
 {
-  position: absolute;
+  position: fixed;
   right: 0px;
   display: inline;
   padding : 0 0.5em;
   float: right;
 	margin-right: 150px;
   color: #DEB887;
+	text-decoration: none;
 }
 
 #liensco
@@ -192,7 +191,6 @@ a:hover, a:focus, a:active
   text-align: center;
   padding: 75px;
 }
-
 
 #wrapper
 {
@@ -265,16 +263,6 @@ a:hover, a:focus, a:active
 	font-family: cursive;
 }
 
-.intro
-{
-  font-size: large;
-}
-
-.article1
-{
-  font-size: large;
-}
-
 /* fin css wrapper */
 
 #contact_pad
@@ -325,7 +313,6 @@ a:hover, a:focus, a:active
   float: left;
 }
 
-<<<<<<< HEAD
 #bienvenu
 {
   text-align: center;
@@ -343,43 +330,18 @@ a:hover, a:focus, a:active
   margin-bottom: 25px;
 }
 
-h2 h3 h4
-=======
 h4
->>>>>>> ff6486b21ecfb9c5ad505173d066f426455db28a
 {
   font-size: x-large;
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .article1
 {
   font-size: large;
   margin-bottom: 25px;
 }
 
-#access
-{
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  float: center;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-
-}
-
-#access h1
-{
-  width: auto;
-  height: auto;
-  text-align: center;
-	float: center;
-}
-=======
 /* footer */
 
 footer
@@ -402,4 +364,51 @@ footer ul li a
 }
 
 /* fin footer */
->>>>>>> ff6486b21ecfb9c5ad505173d066f426455db28a
+
+/*Menu scroll rezise*/
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* header large */
+header.large {
+	height: 75px;
+}
+header.large img {
+  margin-top: 30px;
+}
+header.large li {
+	margin-top: 0px;
+}
+
+/* header small */
+
+header.small {
+	height: 52px;
+}
+header.small img {
+	margin-top: auto;
+}
+header.small li {
+	margin-top: auto;
+}
+
+/* Transitions */
+
+header,
+nav,
+a,
+img,
+li {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}
