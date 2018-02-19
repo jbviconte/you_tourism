@@ -20,21 +20,6 @@
       <li>
         <img src="images/rozel.jpg" />
       </li>
-      <li>
-        <img src="images/Pont-Audemer.jpg" />
-      </li>
-      <li>
-        <img src="images/theatre-romain-lillebone.jpg" />
-      </li>
-      <li>
-        <img src="images/le-moulin-de-vernon.jpg" />
-      </li>
-      <li>
-        <img src="images/st-germain-de-la-coudre.jpg" />
-      </li>
-      <li>
-        <img src="images/Veules-les-roses.jpg" />
-      </li>
 
       @foreach ($lieux as $lieu)
             <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,600,200)}}"/></li>
@@ -74,7 +59,7 @@
 
   <div id="access">
             <h1>{{ $lieu['lieu'] }}</h1>
-            <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
+            <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/></a>
   </div>
       @endforeach
 

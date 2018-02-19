@@ -28,16 +28,12 @@ class AdminCommentaireController extends Controller
 
     }
 
-    public function commentaireUpdate()
-    {
-
-    }
 
     public function commentaireDelete($id)
     {
       $commentaires = Commentaire::findOrFail($id);
-      $commentiares->delete();
+      $commentaires->delete();
 
-      return redirect()->route('admin/commentaire/commentaire')->with('success', 'suppression éffectué');
+      return redirect()->route('admin-commentaire')->with('success', 'suppression éffectué');
     }
 }

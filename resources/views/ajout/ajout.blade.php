@@ -11,6 +11,7 @@
 
 
     {!! Form::open(['route' => 'ajout-action', 'method' => 'post', 'files' => true]) !!}
+    {{ csrf_field() }}
 
     {!! Form::label('lieu', 'Nom du lieu') !!}
     <br>
