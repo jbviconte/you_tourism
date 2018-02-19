@@ -40,12 +40,12 @@
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="back/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                {{-- <span class="hidden-xs">{{ Auth::user()->name }}</span> --}}
+                <span class="hidden-xs">{{ Auth::user()->name }}</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="{{asset('back/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+                  <img src="{{ asset('back/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
 
                 </li>
                 <!-- Menu Footer-->
@@ -74,7 +74,7 @@
             <img src="back/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
-            {{-- <p>{{ Auth::user()->name }}</p> --}}
+            <p>{{ Auth::user()->name }}</p>
           </div>
         </div>
         <!-- sidebar menu: : style can be found in sidebar.less -->
@@ -99,6 +99,14 @@
           <li>
             <a href="{{ route('adminlieux')}}">
               <i class="fa fa-th"></i> <span>Lieux touristiques</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green"></small>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="{{ route('admin-commentaire')}}">
+              <i class="fa fa-th"></i> <span>Commentaires</span>
               <span class="pull-right-container">
                 <small class="label pull-right bg-green"></small>
               </span>
