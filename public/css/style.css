@@ -20,11 +20,14 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section
+{
 	display: block;
 }
-body {
+body
+{
 	line-height: 1;
+	background: #F6F1FF;
 }
 ol, ul {
 	list-style: none;
@@ -51,6 +54,7 @@ table {
 header
 {
   max-width: 100%;
+	height: 75px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -71,17 +75,25 @@ header
 
 .flexslider
  {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 50px;
-	display: inline-block;
 }
 
 .liliens
 {
   color: #DEB887;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active
+{
+	width: 15px;
+	height: 15px;
+	background: #8fb3e6;
+  color: #000;
 }
 
 #liens li
@@ -285,7 +297,7 @@ h2 h3 h4
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 
 }
 

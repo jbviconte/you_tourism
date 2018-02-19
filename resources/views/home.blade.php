@@ -8,7 +8,7 @@
 
   <div class="flexslider flexslider_1">
     <ul class="slides">
-      <li>
+      {{-- <li>
         <img src="images/la-hague.jpg" />
       </li>
       <li>
@@ -34,23 +34,22 @@
       </li>
       <li>
         <img src="images/Veules-les-roses.jpg" />
-      </li>
+      </li> --}}
 
       @foreach ($lieux as $lieu)
-            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,600,200)}}"/></li>
+            <li><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) )}}"/></li>
       @endforeach
 
     </ul>
   </div>
 
 <div id="wrapper">
-  <h1>Accueil</h1><br />
 
-    <div id="bienvenu">
+    <div id="bienvenu"><br />
 
-      <h2 class="bienvenue">Bienvenue sur YouTourism</h2>
+      <h2 class="mess_bienvenue">Bienvenue sur YouTourism</h2><br />
 
-        <h3 class="bienvenue">Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
+        <h3 class="mess_intro">Les trésors normands, souvent oubliés, se dévoilent à vous !</h3><br />
 
 
           <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ses grandes villes comme Rouen, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p><br />
@@ -88,9 +87,5 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="{{ asset('js/slider.js') }}"></script>
-<<<<<<< HEAD
 
-
-=======
->>>>>>> d72f2bf655a349a3c94a5d6af78c630dc7a9915e
 @endsection
