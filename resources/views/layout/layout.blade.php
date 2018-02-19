@@ -80,10 +80,8 @@
       <div class="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
-          <li><a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="InfoWebMaster">Tweet</a></li>
-          <li><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" allowTransparency="true"></iframe></li>
-          <li><a name="fb_share" type="box_count" share_url="http://www.example.com/page.html"></a></li>
-          <li><script type="in/share" data-counter="right"></script></li>
+
+
           <li><g:plusone size="tall"></g:plusone></li>
           <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script></li>
           <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js">
