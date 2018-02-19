@@ -29,7 +29,7 @@
     {!! $errors->first('image','<small class="help-block">:message</small>') !!}
 
     {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
-
+    
     {!! Form::close() !!}
   </div>
 

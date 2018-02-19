@@ -23,11 +23,15 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section
+{
 	display: block;
 }
-body {
+body
+{
 	line-height: 1;
+	background: #F6F1FF;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -58,7 +62,7 @@ table {
 header
 {
   max-width: 100%;
-  height: 100px;
+	height: 75px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -76,7 +80,7 @@ header
   display: inline;
   padding : 0 0.10em;
   margin-left: 5px;
-	margin-top: 40px;
+	margin-top: 20px;
   opacity: 2;
 }
 
@@ -88,9 +92,27 @@ header
 	display: inline-block;
 }
 
+/* css du slider */
+.flexslider
+ {
+  max-width: 100%;
+  height: auto;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 50px;
+}
+/* fin css slider */
+
 .liliens
 {
 	color: #DEB887;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active
+{
+	background: #8fb3e6;
+  color: #000;
 }
 
 
@@ -98,22 +120,24 @@ header
 {
   position: absolute;
   right: 0px;
-  display: inline;
+  display: inline-block;
   padding : 0 0.5em;
   float: right;
 	margin-right: 150px;
   color: #DEB887;
+	text-decoration: none;
 }
 
 #nameco
 {
-  position: absolute;
+  position: fixed;
   right: 0px;
   display: inline;
   padding : 0 0.5em;
   float: right;
 	margin-right: 150px;
   color: #DEB887;
+	text-decoration: none;
 }
 
 #liensco
@@ -138,22 +162,6 @@ header
 
 /* fin header */
 
-
-/* css du slider */
-
-.flexslider
- {
-  width: 100%;
-  height: auto;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 50px;
-	display: inline-block;
-	margin-top: 120px;
-}
-
-/* fin css slider */
-
 .connexion
 {
   text-align: center;
@@ -167,7 +175,15 @@ header
   padding: 110px;
 }
 
+.frenchcaba
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
 /* fin page ajout lieu */
+
+/* page login */
 
 .container
 {
@@ -175,11 +191,55 @@ header
   padding: 75px;
 }
 
-.wrap {
+#wrapper
+{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+	text-align: center;
+}
+
+.panel-panel-default
+{
+	padding-top: 50px;
+}
+
+#email
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+#password
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-btn-primary
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page login */
+
+.wrap
+{
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
 }
+
+/* page contact */
+
+.dodo
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page contact */
 
 /* wrapper titres et paragraphe */
 
@@ -198,7 +258,10 @@ header
 	background-color: #7fd3e6;
   width: 25%;
   text-align: center;
-  margin-left: 50%;
+  margin-left: 40%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #395066;
 	font-size: xx-large;
 	display: inline-block;
 }
@@ -234,16 +297,6 @@ header
 	font-family: cursive;
 }
 
-.intro
-{
-  font-size: large;
-}
-
-.article1
-{
-  font-size: large;
-}
-
 /* fin css wrapper */
 
 #contact_pad
@@ -268,11 +321,15 @@ header
   position: relative;
 	margin-top: 100px;
 	padding-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #paf img
 {
-    width: 100%;height: auto;
+    width: 100%;
+		height: auto;
+		margin-bottom: -20px;
 }
 
 #paf p
@@ -285,7 +342,7 @@ header
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
-	padding-left: 15px;
+	padding-left: 12px;
 }
 
 #titrelieu h1
@@ -294,6 +351,7 @@ header
 	margin-bottom: -70px;
 	text-align: center;
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .descript
@@ -315,6 +373,39 @@ header
 
 /* fin page single */
 
+/* page home */
+
+#bienvenu
+{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#presentation
+{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.intro
+{
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+/* h4
+{
+  font-size: x-large;
+  margin-bottom: 10px;
+} */
+
+.article1
+{
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+/* fin page home */
+
 
 /* page contact */
 
@@ -325,6 +416,7 @@ header
 }
 
 /* fin page contact */
+
 
 /* footer */
 
@@ -340,10 +432,12 @@ header
 footer
 {
   width: 100%;
+	max-width: 100%;
   height: 200px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 50px;
 }
 
 footer p
@@ -357,3 +451,51 @@ footer ul li a
 }
 
 /* fin footer */
+
+/*Menu scroll rezise*/
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* header large */
+header.large {
+	height: 75px;
+}
+header.large img {
+  margin-top: 30px;
+}
+header.large li {
+	margin-top: 0px;
+}
+
+/* header small */
+
+header.small {
+	height: 52px;
+}
+header.small img {
+	margin-top: auto;
+}
+header.small li {
+	margin-top: auto;
+}
+
+/* Transitions */
+
+header,
+nav,
+a,
+img,
+li {
+	transition: .7s all;
+	-moz-transition: .7s all;
+	-webkit-transition: .7s all;
+	-o-transition: .7s all;
+}

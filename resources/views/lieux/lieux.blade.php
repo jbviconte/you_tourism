@@ -14,7 +14,7 @@
 
 <div id="titrelieu">
 
-    <h1 class="titrel">Visitez nos sites touristiques</h1>
+    <h1>Visitez nos sites touristiques</h1>
 
 </div>
 
@@ -32,7 +32,7 @@
       <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image), 400, 250,['crop'])}}"/></a>
       <p>{{ $lieu->lieu}}</p>
 
-      <p>{{ $lieu->name }}</p>
+      <p id="name">{{ $lieu->name }}</p>
       {{-- <p><a href="{{ route('single', ['id' => $lieu->id])}}">Voir plus</a></p> --}}
 
   </div>

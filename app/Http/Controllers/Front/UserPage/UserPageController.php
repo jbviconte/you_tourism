@@ -18,9 +18,23 @@ class UserPageController extends Controller
   public function userpageUpdate($id)
   {
     $users = User::findOrFail($id);
+use App\User;
+
+class UserPageController extends Controller
+{
+  public function userpage($id)
+  {
+    $users = User::findOrFail($id);
+    return view('userpage/userpage', compact('users'));
   }
 
-  public function userpageUpdateAction(UpdateUserRequest $request, $id)
+  public function userPageUpdate($id)
+  {
+    $users = User::findOrFail($id);
+    return view('userpage/update', compact('users'));
+  }
+
+  public function userPageUpdateAction(UpdateUserRequest $request, $id)
   {
     $users = User::findOrFail($id);
      $users->update($request->all());
