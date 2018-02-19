@@ -373,6 +373,8 @@ a:hover, a:focus, a:active
 
 /* fin page single */
 
+/* page home */
+
 #bienvenu
 {
   text-align: center;
@@ -402,6 +404,7 @@ a:hover, a:focus, a:active
   margin-bottom: 25px;
 }
 
+/* fin page home */
 
 
 /* page contact */
