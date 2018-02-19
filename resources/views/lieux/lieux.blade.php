@@ -25,7 +25,8 @@
 
   </div>
   @endforeach
-  {{ $lieux->links() }}
-  </div>
+
+</div>
+
 
 @endsection
