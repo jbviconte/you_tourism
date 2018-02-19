@@ -23,7 +23,7 @@ class LieuxTableSeeder extends Seeder
           'new_name_image' => "rozel.jpg",
           'path_image' => 'images',
           'status'      => 'no publish',
-          // 'user_id'     => 2,
+          'user_id'     => 2,
         );
 
         $lieux[] = array(
@@ -34,7 +34,7 @@ class LieuxTableSeeder extends Seeder
             'new_name_image' => "la-hague.jpg",
             'path_image' => 'images',
             'status'      => 'publish',
-            // 'user_id'     => 2,
+            'user_id'     => 2,
           );
 
           $lieux[] = array(
@@ -45,7 +45,7 @@ class LieuxTableSeeder extends Seeder
               'new_name_image' => "la-pointe-du-hoc.jpg",
               'path_image' => 'images',
               'status'      => 'no publish',
-              // 'user_id'     => 2,
+              'user_id'     => 2,
             );
 
             $lieux[] = array(
@@ -56,7 +56,7 @@ class LieuxTableSeeder extends Seeder
                 'new_name_image' => "la-colline-aux-oiseaux.jpg",
                 'path_image' => 'images',
                 'status'      => 'publish',
-                // 'user_id'     => 2,
+                'user_id'     => 2,
               );
 
               $lieux[] = array(
@@ -67,7 +67,7 @@ class LieuxTableSeeder extends Seeder
                   'new_name_image' => "bagnoles-de-l-orne.jpg",
                   'path_image' => 'images',
                   'status'      => 'no publish',
-                  // 'user_id'     => 2,
+                  'user_id'     => 2,
                 );
 
                 $lieux[] = array(
@@ -78,7 +78,7 @@ class LieuxTableSeeder extends Seeder
                     'new_name_image' => "st-germain-de-la-coudre.jpg",
                     'path_image' => 'images',
                     'status'      => 'publish',
-                    // 'user_id'     => 2,
+                    'user_id'     => 2,
                   );
 
                   $lieux[] = array(
@@ -89,7 +89,7 @@ class LieuxTableSeeder extends Seeder
                       'new_name_image' => "Pont-Audemer.jpg",
                       'path_image' => 'images',
                       'status'      => 'no publish',
-                      // 'user_id'     => 2,
+                      'user_id'     => 2,
                     );
 
                     $lieux[] = array(
@@ -100,7 +100,7 @@ class LieuxTableSeeder extends Seeder
                         'new_name_image' => "le-moulin-de-vernon.jpg",
                         'path_image' => 'images',
                         'status'      => 'publish',
-                        // 'user_id'     => 2,
+                        'user_id'     => 2,
                       );
 
                       $lieux[] = array(
@@ -111,7 +111,7 @@ class LieuxTableSeeder extends Seeder
                           'new_name_image' => "Veules-les-roses.jpg",
                           'path_image' => 'images',
                           'status'      => 'no publish',
-                          // 'user_id'     => 2,
+                          'user_id'     => 2,
                         );
 
                         $lieux[] = array(
@@ -122,7 +122,7 @@ class LieuxTableSeeder extends Seeder
                             'new_name_image' => "theatre-romain-lillebone.jpg",
                             'path_image' => 'images',
                             'status'      => 'publish',
-                            // 'user_id'     => 2,
+                            'user_id'     => 2,
                           );
 
       DB::table('lieux')->insert($lieux);

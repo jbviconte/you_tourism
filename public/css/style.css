@@ -1,3 +1,6 @@
+
+/* reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,6 +54,10 @@ table {
     display: table;
 }
 
+/* fin du reset */
+
+/* header */
+
 header
 {
   max-width: 100%;
@@ -58,11 +65,22 @@ header
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
   opacity: 0.7;
-	position: absolute;
+	position: fixed;
 	display: block;
 	z-index: 1000;
+}
+
+/* liens header */
+
+#liens li
+{
+  float: left;
+  display: inline;
+  padding : 0 0.10em;
+  margin-left: 5px;
+	margin-top: 40px;
+  opacity: 2;
 }
 
 #menu
@@ -72,6 +90,7 @@ header
   list-style-type: none;
 	display: inline-block;
 }
+
 
 .flexslider
  {
@@ -84,45 +103,14 @@ header
 
 .liliens
 {
-  color: #DEB887;
-	text-decoration: none;
+	color: #DEB887;
 }
-
 a:hover, a:focus, a:active
 {
 	width: 15px;
 	height: 15px;
 	background: #8fb3e6;
   color: #000;
-}
-
-#liens li
-{
-  float: left;
-  display: inline;
-  padding : 0 0.10em;
-  margin-left: 5px;
-  opacity: 2;
-  color: #DEB887;
-  vertical-align: middle;
-}
-
-#liensco
-{
-  float: right;
-  display: inline;
-  padding : 0 0.5em;
-  margin-left: 1200px;
-  color: #DEB887;
-}
-
-#liensco2
-{
-	float: right;
-  display: inline;
-  padding : 0 0.5em;
-  margin-left: 1445px;
-  color: #DEB887;
 }
 
 
@@ -132,9 +120,13 @@ a:hover, a:focus, a:active
   right: 0px;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1400px;
+  float: right;
+	margin-right: 150px;
   color: #DEB887;
+	text-decoration: none;
 }
+
+
 
 #nameco
 {
@@ -142,20 +134,53 @@ a:hover, a:focus, a:active
   right: 0px;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1400px;
+  float: right;
+	margin-right: 150px;
   color: #DEB887;
 }
+
+#liensco
+{
+  float: right;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1500px;
+  color: #DEB887;
+}
+
+#liensco2
+{
+	float: right;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1500px;
+  color: #DEB887;
+}
+
+/* fin liens header */
+
+/* fin header */
+
+
+/* css du slider */
+
+
+/* fin css slider */
 
 .connexion
 {
   text-align: center;
 }
 
+/* page ajout de lieu */
+
 .add
 {
   text-align: center;
   padding: 75px;
 }
+
+/* fin page ajout lieu */
 
 .dede
 {
@@ -167,6 +192,7 @@ a:hover, a:focus, a:active
   text-align: center;
   padding: 75px;
 }
+
 
 #wrapper
 {
@@ -182,6 +208,8 @@ a:hover, a:focus, a:active
   width: 100%;
   max-width: 1600px;
 }
+
+/* wrapper titres et paragraphe */
 
 #wrapper h1
 {
@@ -206,6 +234,25 @@ a:hover, a:focus, a:active
 	display: inline-block;
 }
 
+#access
+{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  float: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#access h1
+{
+  width: auto;
+  height: auto;
+  text-align: center;
+	float: center;
+}
+
 .mess_bienvenue
 {
 	font-size: x-large;
@@ -218,16 +265,31 @@ a:hover, a:focus, a:active
 	font-family: cursive;
 }
 
+.intro
+{
+  font-size: large;
+}
+
+.article1
+{
+  font-size: large;
+}
+
+/* fin css wrapper */
+
 #contact_pad
 {
   padding: 75px;
 }
 
+/* page lieux */
 
-#bigpaf {
+#bigpaf
+{
     width: 100%;
-    margin-left: -2%;
+    margin-left: -2%;;
 }
+
 #paf
 {
   margin-top: 10px;
@@ -235,6 +297,7 @@ a:hover, a:focus, a:active
   margin-left: 2%;
   float: left;
   position: relative;
+	margin-top: 120px;
 }
 
 #paf img
@@ -252,13 +315,17 @@ a:hover, a:focus, a:active
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
+	padding-left: 7px;
 }
+
+/* fin page lieux */
 
 .lieu
 {
   float: left;
 }
 
+<<<<<<< HEAD
 #bienvenu
 {
   text-align: center;
@@ -277,11 +344,15 @@ a:hover, a:focus, a:active
 }
 
 h2 h3 h4
+=======
+h4
+>>>>>>> ff6486b21ecfb9c5ad505173d066f426455db28a
 {
   font-size: x-large;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .article1
 {
   font-size: large;
@@ -308,3 +379,27 @@ h2 h3 h4
   text-align: center;
 	float: center;
 }
+=======
+/* footer */
+
+footer
+{
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer p
+{
+  color: #DEB887;
+}
+
+footer ul li a
+{
+  color: #DEB887;
+}
+
+/* fin footer */
+>>>>>>> ff6486b21ecfb9c5ad505173d066f426455db28a

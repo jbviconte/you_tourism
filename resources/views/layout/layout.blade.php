@@ -76,7 +76,7 @@
       <div class="clear"></div>
     </div>
 
-
+    <!-- boutons réseaux sociaux footer -->
     <footer>
       <div class="wrap">
         <ul>
@@ -100,6 +100,6 @@
         <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
         {lang: 'fr'}
         </script>
-
+    <!-- fin footer -->
   </body>
 </html>

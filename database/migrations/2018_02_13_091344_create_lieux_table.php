@@ -18,9 +18,9 @@ class CreateLieuxTable extends Migration
           $table->string('lieu', 150);
           $table->text('content');
           $table->enum('status', ['publish', 'no publish'])->default('no publish');
-          // $table->integer('user_id')->unsigned();
-          // $table->foreign('user_id')->references('id')->on('users')
-          //       ->onDelete('restrict')->onUpdate('restrict');
+          $table->integer('user_id')->unsigned();
+          $table->foreign('user_id')->references('id')->on('users')
+                ->onDelete('restrict')->onUpdate('restrict');
           $table->string('name_image')->nullable();
           $table->string('new_name_image')->nullable();
           $table->string('path_image')->nullable();

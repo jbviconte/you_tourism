@@ -37,7 +37,6 @@ Route::group(['namespace' => 'Front'], function (){
 
   Route::group(['namespace' => 'Commentaire'], function (){
 
-    Route::get('commentaire', 'CommentaireController@commentaire')->name('commentaire');
     Route::post('commentaire', 'CommentaireController@commentaireNew')->name('commentaire-new-action');
     Route::delete('commentaire', 'CommentaireController@commentaireDelete')->name('commentaire-delete-action');
   });
