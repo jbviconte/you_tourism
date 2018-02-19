@@ -63,7 +63,7 @@ header
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0.7;
-	position: absolute;
+	position: fixed;
 	display: block;
 	z-index: 1000;
 }
@@ -167,7 +167,15 @@ header
   padding: 110px;
 }
 
+.frenchcaba
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
 /* fin page ajout lieu */
+
+/* page login */
 
 .container
 {
@@ -175,11 +183,46 @@ header
   padding: 75px;
 }
 
+.panel-panel-default
+{
+	padding-top: 50px;
+}
+
+#email
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+#password
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-btn-primary
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page login */
+
 .wrap {
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
 }
+
+/* page contact */
+
+.dodo
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page contact */
 
 /* wrapper titres et paragraphe */
 
@@ -268,6 +311,8 @@ header
   position: relative;
 	margin-top: 100px;
 	padding-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #paf img
@@ -286,6 +331,7 @@ header
   margin-top: 35%;
   z-index: 5;
 	padding-left: 15px;
+	margin-bottom: -10px;
 }
 
 #titrelieu h1
@@ -326,6 +372,7 @@ header
 
 /* fin page contact */
 
+
 /* footer */
 
 /* boutons réseaux sociaux */
@@ -340,6 +387,7 @@ header
 footer
 {
   width: 100%;
+	max-width: 100%;
   height: 200px;
   padding: 0;
   margin: 0;
