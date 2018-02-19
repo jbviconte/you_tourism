@@ -5,44 +5,48 @@
 @endsection
 
 @section('content')
+  <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Votre profil</h3>
 
-  <p>Profil (Modification)</p>
-    {{-- {!! csrf_field() !!} --}}
-    <br>
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                </div>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <br><br>
+                  <th>Nom : </th>
+                  <th>E-mail : </th>
+                  <th>Profil : </th>
+                </tr>
+                @foreach ($users as $user)
+                  <tr>
+                    <td>{{ $user['name'] }}</td><br />
+                    <td>{{ $user['email'] }}</td>
+                    <td><a href="{{ route('userpage-update-action') }}"><button type="button" class="btn btn-default">Modifier</button></a></td>
 
-    {!! Form::open(['route' => ['userpage-update-action', $user->id], 'method' => 'put']) !!}
-
-    {{-- {!! Form::label() !!} --}}
-    {!! Form::label('pseudo') !!}
-    <br>
-    {!! Form::text('pseudo', null, ['class' => 'dede', 'placeholder' => 'votre nom']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-    <br><br>
-    {!! Form::label('email') !!}
-    <br>
-    {!! Form::text('email', null, ['class' => 'dede', 'placeholder' => 'votre email']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-    <br><br>
-    {!! Form::label('mot de passe actuel') !!}
-    <br>
-    {!! Form::text('password', null, ['class' => 'dede', 'placeholder' => 'mot de passe actuel']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-    <br><br>
-    {!! Form::label('nouveau mot de passe') !!}
-    <br>
-    {!! Form::text('password', null, ['class' => 'dede', 'placeholder' => 'nouveau mot de passe']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-    <br><br>
-    {!! Form::label('confirmation') !!}
-    <br>
-    {!! Form::text('password', null, ['class' => 'dede', 'placeholder' => 'confirmation']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-    <br><br>
-    {{-- {!! Form::image('avatar', null, ['class' => 'dede', 'placeholder' => 'image de profil']) !!}
-    {!! $errors->first('nom', '<small class="help-block">:message</small>') !!} --}}
-    <br><br>
-    {!! Form::submit('Click me', ['class' => 'btn btn-success']) !!}
-
-    {!! Form::close() !!}
-
+                    </td>
+                    <td>{{ Form::open(['route' => ['userpage-delete-action'], 'method' => 'delete'])}}
+                      <button type="submit" class="btn btn-block btn-danger btn-lg">Supprimer</button>
+                      {!! csrf_field() !!}
+                      {{ Form::close()}}
+                    </td>
+                  </tr>
+              @endforeach
+              </table>
+              <br>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+      </div>
+    </section>
  @endsection
