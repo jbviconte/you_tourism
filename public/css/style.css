@@ -68,6 +68,8 @@ header
 	z-index: 1000;
 }
 
+/* liens header */
+
 #liens li
 {
   float: left;
@@ -79,39 +81,12 @@ header
   vertical-align: middle;
 }
 
-/* fin header */
-
-/* css du slider */
-
-.flexslider
- {
-  width: 100%;
-  height: auto;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 50px;
-	display: inline-block;
-}
-
-/* fin css slider */
-
-
-#liensco
+#menu
 {
-  float: right;
-  display: inline;
-  padding : 0 0.5em;
-  margin-left: 1200px;
-  color: #DEB887;
-}
-
-#liensco2
-{
+	width: 100%;
 	float: right;
-  display: inline;
-  padding : 0 0.5em;
-  margin-left: 1445px;
-  color: #DEB887;
+  list-style-type: none;
+	display: inline-block;
 }
 
 
@@ -135,16 +110,57 @@ header
   color: #DEB887;
 }
 
+#liensco
+{
+  float: right;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1200px;
+  color: #DEB887;
+}
+
+#liensco2
+{
+	float: right;
+  display: inline;
+  padding : 0 0.5em;
+  margin-left: 1445px;
+  color: #DEB887;
+}
+
+/* fin liens header */
+
+/* fin header */
+
+/* css du slider */
+
+.flexslider
+ {
+  width: 100%;
+  height: auto;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 50px;
+	display: inline-block;
+	margin-top: 120px;
+}
+
+/* fin css slider */
+
 .connexion
 {
   text-align: center;
 }
+
+/* page ajout de lieu */
 
 .add
 {
   text-align: center;
   padding: 75px;
 }
+
+/* fin page ajout lieu */
 
 .dede
 {
@@ -208,11 +224,14 @@ header
   padding: 75px;
 }
 
+/* page lieux */
 
-#bigpaf {
+#bigpaf
+{
     width: 100%;
-    margin-left: -2%;
+    margin-left: -2%;;
 }
+
 #paf
 {
   margin-top: 10px;
@@ -220,6 +239,7 @@ header
   margin-left: 2%;
   float: left;
   position: relative;
+	margin-top: 120px;
 }
 
 #paf img
@@ -238,6 +258,8 @@ header
   margin-top: 35%;
   z-index: 5;
 }
+
+/* fin page lieux */
 
 .lieu
 {
@@ -278,6 +300,8 @@ h4
 	float: center;
 }
 
+/* footer */
+
 footer
 {
   width: 100%;
@@ -296,3 +320,5 @@ footer ul li a
 {
   color: #DEB887;
 }
+
+/* fin footer */
