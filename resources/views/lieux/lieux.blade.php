@@ -25,7 +25,12 @@
 
   </div>
   @endforeach
+<<<<<<< HEAD
   {{ $lieux->links() }}
   </div>
+=======
+
+</div>
+>>>>>>> 7bcacda8d3918cd7c6d680faa8f897ad54fd58e3
 
 @endsection
