@@ -37,6 +37,7 @@
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
+                        <li><a class="liliens" href="{{ route('userpage-update') }}">Profil</a></li>
                         <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
                   </li>
 
@@ -85,9 +86,11 @@
 
           <li><g:plusone size="tall"></g:plusone></li>
           <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script></li>
-          <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-                  {lang: 'fr'}
-              </script></li>
+          <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js">/</script></li>
+          <li><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+          <li><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
+                  <!-- {lang: 'fr'} -->
+
         </ul>
 
 
@@ -98,8 +101,8 @@
 
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        @yield('scripts')
+        {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> --}}
+
 
   </body>
 </html>
