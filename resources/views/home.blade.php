@@ -44,7 +44,7 @@
   </div>
 
 <div id="wrapper">
-  <h1>Accueil</h1>
+  <h1>Accueil</h1><br />
 
     <div id="bienvenu">
 
@@ -52,37 +52,45 @@
 
         <h3 class="bienvenue">Les trésors normands, souvent oubliés, se dévoilent à vous !</h3>
 
-          <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ces grandes villes comme Le Havre, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p>
 
-          <p class="intro">Divers sont les paysages et nombreuses sont les nouvelles découvertes.</p>
+          <p class="intro">Trés souvent la Normandie est associée aux grands lieux touristique, tels que le Mont Saint-Michel ou ses grandes villes comme Rouen, à tel point que nous en oublions ces merveilleux lieux bien cachés qui donnent à la Normandie grâce et beauté.</p><br />
 
-          <p class="intro">Aventurier, grand voyageur ou simplement de passage, voici la Normandie telle que personne ne l'a jamais vue (sauf les Normands bien sûr !).</p>
+          <p class="intro">Divers sont les paysages et nombreuses sont les nouvelles découvertes.</p><br />
+
+          <p class="intro">Aventurier, grand voyageur ou simplement de passage, voici la Normandie telle que personne ne l'a jamais vue (sauf les Normands bien sûr !).</p><br />
     </div>
 
 
-  <div id="presentation">
-    <h4>Destination Normandie</h4>
 
-      <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p>
-      <p class="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p>
+  <div id="presentation">
+
+  <div>
+    <h3 class="mess_intro">Destination Normandie</h3><br />
+
+
+      <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p><br />
+      <p class="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p><br />
 
   </div>
 
 
 
-    @foreach ($lieux as $lieu)
+      @foreach ($lieux as $lieu)
 
-<div id="access">
-          <h1>{{ $lieu['lieu'] }}</h1>
-          <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
-</div>
-    @endforeach
+  <div id="access">
+            <h1>{{ $lieu['lieu'] }}</h1>
+            <img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/>
+  </div>
+      @endforeach
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="{{ asset('js/slider.js') }}"></script>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d72f2bf655a349a3c94a5d6af78c630dc7a9915e
 @endsection

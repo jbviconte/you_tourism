@@ -11,14 +11,16 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Lieux Touristiques</h3>
+
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <a href="{{ route('lieu-new-action') }}"><button type="button" class="btn btn-block btn-default btn-lg">Ajouter un lieu</button></a>
-                  {{ $lieux->links() }}
+
                 </div>
               </div>
-            </div>
+
             <div class="box-body table-responsive no-padding">
+              {{ $lieux->links() }}
               <table class="table table-hover">
                 <tr>
                   <th>Lieu: </th>

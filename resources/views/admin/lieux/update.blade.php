@@ -32,8 +32,8 @@
             </div>
 
             <div class="form-group">
-              {!! Form::file('name_image', ['id' => "exampleInputFile"]) !!}
-              {!! $errors->first('name_image','<small class="help-block">:message</small>') !!}
+              {!! Form::file('image', ['id' => "exampleInputFile"]) !!}
+              {!! $errors->first('image','<small class="help-block">:message</small>') !!}
             </div>
 
           {!! Form::submit('Modifier',['class' => 'btn btn-block btn-success btn-lg']) !!}

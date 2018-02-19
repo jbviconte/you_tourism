@@ -17,8 +17,8 @@
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-            {!! Form::text('lieu', $users->name,['class' => "form-control", 'placeholder' => 'pseudo']) !!}
-            {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
+            {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'pseudo']) !!}
+            {!! $errors->first('name','<small class="help-block">:message</small>') !!}
           </div>
 
           <div class="form-group">
