@@ -13,18 +13,18 @@ use Auth;
 class CommentaireController extends Controller
 {
 
-    public function commentaireNew(CommentaireRequest $request, $id) {
-
-      $inputs = array_merge($request->all(), [
-              'user_id' => Auth::id(),
-              'lieu_id' => $id,
-            ]);
-
-      Commentaire::create($inputs);
-
-      return redirect()->route('lieux/single')->with('success', 'commentaire posté');
-
-    }
+    // public function commentaireNew(CommentaireRequest $request, $id) {
+    //
+    //   $inputs = array_merge($request->all(), [
+    //           'user_id' => Auth::id(),
+    //           'lieu_id' => $id,
+    //         ]);
+    //
+    //   Commentaire::create($inputs);
+    //
+    //   return redirect()->route('lieux/single')->with('success', 'commentaire posté');
+    //
+    // }
 
     public function commentaireDelete() {
 

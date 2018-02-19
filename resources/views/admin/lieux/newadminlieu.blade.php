@@ -13,6 +13,7 @@
       <!-- /.box-header -->
       <div class="box-body">
         {!! Form::open(['route' => 'lieu-new-action-post', 'method' => 'post', 'files' => true]) !!}
+        {{ csrf_field() }}
 
 
         <div class="form-group">

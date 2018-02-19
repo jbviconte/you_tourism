@@ -30,16 +30,12 @@ Route::group(['namespace' => 'Front'], function (){
 
     Route::get('lieux/lieux', 'LieuxController@lieux')->name('lieux');
     Route::get('lieux/single/{id}', 'LieuxController@single')->name('single');
+    Route::post('lieux/single/{id}', 'LieuxController@commentaireNew')->name('lieux-commentaire-new-action');
   });
 
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
-  Route::group(['namespace' => 'Commentaire'], function (){
-
-    Route::post('commentaire', 'CommentaireController@commentaireNew')->name('commentaire-new-action');
-    Route::delete('commentaire', 'CommentaireController@commentaireDelete')->name('commentaire-delete-action');
-  });
 
     Route::get('userpage', 'Userpage\UserPageController@userpage')->name('userpage');
     Route::get('userpage/update/{id}', 'Userpage\UserPageController@userpageupdate')->name('userpage-update');
