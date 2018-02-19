@@ -10,6 +10,18 @@
 
 @section('content')
 
+<div id="titrelieu">
+
+    <h1 class="titrel">Visitez nos sites touristiques</h1>
+
+</div>
+
+<p class="descript">Voici notre sélection de lieux à ne surtout pas manquer dans notre belle région.</p>
+
+<br />
+
+<p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
+
 <div id="bigpaf">
 
   @foreach ($lieux as $lieu)
