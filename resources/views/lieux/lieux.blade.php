@@ -14,7 +14,7 @@
 
 <div id="titrelieu">
 
-    <h1 class="titrel">Visitez nos sites touristiques</h1>
+    <h1>Visitez nos sites touristiques</h1>
 
 </div>
 

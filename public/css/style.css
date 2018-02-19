@@ -328,6 +328,7 @@ header
 {
     width: 100%;
 		height: auto;
+		margin-bottom: -20px;
 }
 
 #paf p
@@ -340,8 +341,7 @@ header
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
-	padding-left: 15px;
-	margin-bottom: -10px;
+	padding-left: 12px;
 }
 
 #titrelieu h1
@@ -350,6 +350,7 @@ header
 	margin-bottom: -70px;
 	text-align: center;
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .descript
@@ -368,6 +369,10 @@ header
 {
   float: left;
 }
+
+/* fin page single */
+
+/* page home */
 
 #bienvenu
 {
@@ -397,7 +402,8 @@ header
   font-size: large;
   margin-bottom: 25px;
 }
-/* fin page single */
+
+/* fin page home */
 
 
 /* page contact */
@@ -430,6 +436,7 @@ footer
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 50px;
 }
 
 footer p
