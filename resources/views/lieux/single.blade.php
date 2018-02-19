@@ -42,7 +42,7 @@
 
         {!! Form::label('content', 'Description') !!}
         <br>
-        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commnetaire sur le lieu'], ['id' => 'content']) !!}
+        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
         {!! $errors->first('content', '<small class="help-block">:message</small>') !!}
         <br>
 
@@ -57,6 +57,9 @@
 
 <script type="text/javascript">
 
+
+// astuces-webmaster.ch systeme ajax
+
 $(document).ready(function(){
 
 
@@ -64,19 +67,41 @@ $(document).ready(function(){
     e.preventDefault();
     console.log('dede');
 
-    // var form = $('#comment').val();
-    var commentaire = $('#titlecomment').val();
-    var content = $('#content').val();
+    $('#comment').val('Chargement en cours..')
+    $('span.error').remove();
 
-    $.ajax({
-      type: "POST",
-      url: '{{ route('lieux-commentaire-new-action', $lieu->id) }}',
-      data: {commentaire: commentaire, content: content },
-      datatype: 'json',
-      success: function(response){
-        console.log(response);
-        // $('#titlecomment').val('');
-        // $('#content').val('');
+    // envoi des données au submit.php
+       $.post('ajax/submit.php', $(this).serialize(), function(msg){
+
+         working = false;
+         $('#submit').val('Submit');
+
+         if(msg.status) {
+
+           $(msg.html).hide().insertBefore('#addCommentContainer').slideDown();
+           $('#comment').val();
+         } else {
+           $.each(msg.errors, function(sujet, comm){
+             $('label[for='+sujet+']').append('<span class="error">'+comm+'</span>');
+           });
+         }
+       },'json');
+     });
+   });
+
+    // var form = $('#comment').val();
+    // var commentaire = $('#titlecomment').val();
+    // var content = $('#content').val();
+    //
+    // $.ajax({
+    //   type: "POST",
+    //   url: '{{ route('lieux-commentaire-new-action', $lieu->id) }}',
+    //   data: {commentaire: commentaire, content: content },
+    //   datatype: 'json',
+    //   success: function(response){
+    //     console.log(response);
+    //     // $('#titlecomment').val('');
+    //     // $('#content').val('');
 
       }
     });
