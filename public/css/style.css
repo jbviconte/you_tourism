@@ -76,9 +76,8 @@ header
   display: inline;
   padding : 0 0.10em;
   margin-left: 5px;
+	margin-top: 40px;
   opacity: 2;
-  color: #DEB887;
-  vertical-align: middle;
 }
 
 #menu
@@ -89,6 +88,11 @@ header
 	display: inline-block;
 }
 
+.liliens
+{
+	color: #DEB887;
+}
+
 
 #deco
 {
@@ -96,7 +100,8 @@ header
   right: 0px;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1400px;
+  float: right;
+	margin-right: 150px;
   color: #DEB887;
 }
 
@@ -106,7 +111,8 @@ header
   right: 0px;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1400px;
+  float: right;
+	margin-right: 150px;
   color: #DEB887;
 }
 
@@ -115,7 +121,7 @@ header
   float: right;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1200px;
+  margin-left: 1500px;
   color: #DEB887;
 }
 
@@ -124,13 +130,14 @@ header
 	float: right;
   display: inline;
   padding : 0 0.5em;
-  margin-left: 1445px;
+  margin-left: 1500px;
   color: #DEB887;
 }
 
 /* fin liens header */
 
 /* fin header */
+
 
 /* css du slider */
 
@@ -173,19 +180,13 @@ header
   padding: 75px;
 }
 
-#wrapper
-{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1600px;
-	text-align: center;
-}
-
 .wrap {
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
 }
+
+/* wrapper titres et paragraphe */
 
 #wrapper h1
 {
@@ -207,6 +208,25 @@ header
 	display: inline-block;
 }
 
+#access
+{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  float: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#access h1
+{
+  width: auto;
+  height: auto;
+  text-align: center;
+	float: center;
+}
+
 .mess_bienvenue
 {
 	font-size: x-large;
@@ -218,6 +238,18 @@ header
 	font-size: x-large;
 	font-family: cursive;
 }
+
+.intro
+{
+  font-size: large;
+}
+
+.article1
+{
+  font-size: large;
+}
+
+/* fin css wrapper */
 
 #contact_pad
 {
@@ -257,6 +289,7 @@ header
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
+	padding-left: 7px;
 }
 
 /* fin page lieux */
@@ -266,38 +299,9 @@ header
   float: left;
 }
 
-.intro
-{
-  font-size: large;
-}
-
 h4
 {
   font-size: x-large;
-}
-
-.article1
-{
-  font-size: large;
-}
-
-#access
-{
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  float: center;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#access h1
-{
-  width: auto;
-  height: auto;
-  text-align: center;
-	float: center;
 }
 
 /* footer */
