@@ -46,9 +46,11 @@ class AdminLieuxController extends Controller
 
   public function lieuxUpdateAction(AjoutRequest $request, $id)
   {
-
+      $lieu = Lieux::findOrFail($id);
 
       if(!empty($request->image)) {
+
+
 
           $path = new PathUpload($request->image, 'lieu');
           $request->image->move(public_path($path->path()), $path->imageName());
@@ -67,7 +69,7 @@ class AdminLieuxController extends Controller
           $inputs = $request->all();
         }
 
-      Lieux::findOrFail($id)->update($inputs);
+      $lieu->update($inputs);
       return redirect()->route('adminlieux')->with('success', 'modification éffectué');
   }
 

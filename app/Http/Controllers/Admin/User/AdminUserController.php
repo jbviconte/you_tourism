@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin\User;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests\UpdateUserRequest;
 use App\User;
+use App\Http\Requests\UpdateUserRequest;
 
 class AdminUserController extends Controller
 {
@@ -34,6 +34,7 @@ class AdminUserController extends Controller
 
   public function userUpdateAction(UpdateUserRequest $request, $id)
   {
+
     $users = User::findOrFail($id);
       $users->update($request->all());
 
