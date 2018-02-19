@@ -12,7 +12,7 @@
   <body>
 
 
-    <header id="menu">
+    <header id="menu" class="large">
       <div class="wrap">
 
 
@@ -37,7 +37,7 @@
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
-                        <li><a class="liliens" href="{{ route('userpage') }}">Profil</a></li>
+                        <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
                   </li>
 
                       <br />
@@ -54,11 +54,12 @@
 
                   </li>
                 @endif
+              </ul>
+        </nav>
+    </div>
 
-        </ul>
-      </nav>
-    </header>
-  <body>
+</header>
+
 
     <div class="content wrap">
 
