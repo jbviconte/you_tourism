@@ -22,33 +22,67 @@
   <div>
     @foreach ($commentaires as $commentaire)
       <div>
-        <h1>{{ $commentaire->name }}</h1>
-        <p>{{ $commentaire->commantaire }}</p>
+        <h1>Posté par: {{ $commentaire->name }}</h1>
+        <p>Commentaire: {{ $commentaire->commentaire }}</p>
+        <p>Posté le: {{ $commentaire->created_at }}</p>
       </div>
     @endforeach
 
   </div>
   <div>
   @if ( Auth::user())
-      {!! Form::open(['route' => 'commentaire-new-action', 'method' => 'post']) !!}
-
-      {{ Form::hidden(array('id' => $id)) }}
+      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
+      {{ csrf_field() }}
 
         {!! Form::label('commentaire', 'Sujet du commentaire') !!}
         <br>
-        {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire']) !!}
+        {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
         {!! $errors->first('commentaire', '<small class="help-block">:message</small>') !!}
         <br>
 
         {!! Form::label('content', 'Description') !!}
         <br>
-        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commnetaire sur le lieu']) !!}
+        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commnetaire sur le lieu'], ['id' => 'content']) !!}
         {!! $errors->first('content', '<small class="help-block">:message</small>') !!}
         <br>
 
-        {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+        {!! Form::submit('Envoyer', ['class' => 'btn btn-success',]) !!}
 
       {!! Form::close() !!}
   @endif
 </div>
+@endsection
+
+@section('scripts')
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+  $('#comment').on('submit',function(e){
+    e.preventDefault();
+    console.log('dede');
+
+    // var form = $('#comment').val();
+    var commentaire = $('#titlecomment').val();
+    var content = $('#content').val();
+
+    $.ajax({
+      type: "POST",
+      url: '{{ route('lieux-commentaire-new-action', $lieu->id) }}',
+      data: {commentaire: commentaire, content: content },
+      datatype: 'json',
+      success: function(response){
+        console.log(response);
+        // $('#titlecomment').val('');
+        // $('#content').val('');
+
+      }
+    });
+  });
+});
+
+</script>
+
 @endsection

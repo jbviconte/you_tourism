@@ -44,6 +44,7 @@
                       <ul class="dropdown-menu" role="menu">
                         <li class="divider"></li>
                         {{ Form::open(['route' => ['admin-lieu-delete-action', $lieu->id], 'method' => 'delete'])}}
+                        {{ csrf_field() }}
                         <li><button type="form" class="btn btn-block btn-danger btn-xs">Supprimer</button></li>
                         {{ Form::close()}}
                       </ul>

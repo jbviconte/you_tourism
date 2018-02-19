@@ -92,6 +92,7 @@ header
 	display: inline-block;
 }
 
+/* css du slider */
 .flexslider
  {
   max-width: 100%;
@@ -100,6 +101,7 @@ header
 	margin: 0;
 	margin-bottom: 50px;
 }
+/* fin css slider */
 
 .liliens
 {
@@ -160,12 +162,6 @@ a:hover, a:focus, a:active
 
 /* fin header */
 
-
-/* css du slider */
-
-
-/* fin css slider */
-
 .connexion
 {
   text-align: center;
@@ -176,15 +172,18 @@ a:hover, a:focus, a:active
 .add
 {
   text-align: center;
-  padding: 75px;
+  padding: 110px;
+}
+
+.frenchcaba
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page ajout lieu */
 
-.dede
-{
-  text-align: center;
-}
+/* page login */
 
 .container
 {
@@ -200,12 +199,47 @@ a:hover, a:focus, a:active
 	text-align: center;
 }
 
+.panel-panel-default
+{
+	padding-top: 50px;
+}
+
+#email
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+#password
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-btn-primary
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page login */
+
 .wrap
 {
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
 }
+
+/* page contact */
+
+.dodo
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page contact */
 
 /* wrapper titres et paragraphe */
 
@@ -275,17 +309,20 @@ a:hover, a:focus, a:active
 #bigpaf
 {
     width: 100%;
-    margin-left: -2%;;
+    margin-left: -2%;
 }
 
 #paf
 {
-  margin-top: 10px;
   width: 23%;
   margin-left: 2%;
+	padding-bottom: 25px;
   float: left;
   position: relative;
-	margin-top: 120px;
+	margin-top: 100px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #paf img
@@ -303,10 +340,29 @@ a:hover, a:focus, a:active
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
-	padding-left: 7px;
+	padding-left: 15px;
+	margin-bottom: -10px;
+}
+
+#titrelieu h1
+{
+	padding-top: 110px;
+	margin-bottom: -70px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.descript
+{
+	padding-top: 100px;
+	margin-bottom: -70px;
+	text-align: center;
+	font-size: 20px;
 }
 
 /* fin page lieux */
+
+/* page single */
 
 .lieu
 {
@@ -330,23 +386,46 @@ a:hover, a:focus, a:active
   margin-bottom: 25px;
 }
 
-h4
+/* h4
 {
   font-size: x-large;
   margin-bottom: 10px;
-}
+} */
 
 .article1
 {
   font-size: large;
   margin-bottom: 25px;
 }
+/* fin page single */
+
+
+/* page contact */
+
+.dede
+{
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* fin page contact */
+
 
 /* footer */
+
+/* boutons réseaux sociaux */
+
+.wrap li
+{
+	display: inline;
+}
+
+/* fin boutons réseaux sociaux */
 
 footer
 {
   width: 100%;
+	max-width: 100%;
   height: 200px;
   padding: 0;
   margin: 0;
