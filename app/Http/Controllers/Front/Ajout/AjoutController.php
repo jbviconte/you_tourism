@@ -40,7 +40,7 @@ class AjoutController extends Controller
         $inputs = $request->all();
       }
 
-      Lieux::create($inputs);
+      Lieux::create($inputs)->join('users', 'users.id');
       return redirect()->route('lieux')->with('success', 'lieu ajouté !');
     }
 

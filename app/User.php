@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function lieux()
     {
-      return $this->belongsTo('\App\Commentaires');
+      return $this->belongsToMany('\App\Commentaires');
     }
 }

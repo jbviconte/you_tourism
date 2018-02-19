@@ -13,6 +13,7 @@ class Lieux extends Model
 
   public function user()
   {
-    return $this->belongsTo('\App\Commentaires');
+    return $this->belongsToMany('\App\Admin\Commentaires');
+    return $this->belongsToMany('\App\Front\Ajout');
   }
 }
