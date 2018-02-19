@@ -10,10 +10,12 @@ use App\Lieux;
 class AdminController extends Controller
 {
 
-  public function __construct()
-  {
+    // public function __construct(User $request)
+    // {
+    //     $this->middleware('auth');
+    //     $this->middleware('admin');
+    // }
 
-  }
     public function dashboard()
     {
       // vue utilisateurs sur le dashbaord
@@ -21,13 +23,10 @@ class AdminController extends Controller
                     ->take(5)
                     ->get();
 
-
-
       // vue lieux sur le dashboard
       $lieux = Lieux::orderBy('created_at', 'desc')
                     ->take(5)
                     ->get();
-
 
       // compte le nombre utilisateur inscrit
       $userscounts = User::count('id');
