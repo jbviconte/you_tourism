@@ -14,6 +14,7 @@
       <!-- /.box-header -->
       <div class="box-body">
           {!! Form::open(['route' => ['user-update-action', $users->id],'method' => 'put']) !!}
+          {{ csrf_field() }}
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>

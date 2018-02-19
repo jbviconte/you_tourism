@@ -4,12 +4,16 @@ namespace App\Http\Controllers\Front\Lieux;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\CommentaireRequest;
 use App\Commentaire;
 use App\User;
 use App\Lieux;
+use Auth;
 
 class LieuxController extends Controller
 {
+
+  // obtenir tous les lieux publier
   public function lieux()
   {
 
@@ -19,6 +23,7 @@ class LieuxController extends Controller
       return view('lieux/lieux', compact('lieux'));
   }
 
+  //obtenir un seul lieu et tous les commentaire de ce lieu
   public function single($id)
   {
     // $lieux = Lieux::all()->where('id', $id);
@@ -30,16 +35,24 @@ class LieuxController extends Controller
     $commentaires = \DB::table('commentaire')->where('lieu_id', $id)
                         ->join('users', 'commentaire.user_id', '=', 'users.id')
                         ->select('commentaire.*', 'users.name')
-                        ->get();
+                        ->paginate(10);
 
       return view('lieux/single', compact('lieux', 'commentaires'));
   }
 
-  public function commentaire($id) {
 
+  //poster un commentaire
+  public function commentaireNew(CommentaireRequest $request, $id)
+  {
 
+    $inputs = array_merge($request->all(), [
+            'user_id' => Auth::id(),
+            'lieu_id' => $id,
+          ]);
 
-    return view('lieux/single', compact('commentaires'));
+    Commentaire::create($inputs);
+
+    // return redirect()->route('lieux')->with('success', 'commentaire posté');
 
   }
 }

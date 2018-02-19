@@ -10,7 +10,7 @@ class Commentaire extends Model
 
   protected $table = 'commentaire';
 
-  protected $fillable = ['commentaire', 'content', 'user_id','lieu_id'];
+  protected $fillable = ['id', 'commentaire', 'content', 'user_id','lieu_id'];
 
   public function lieu()
   {
