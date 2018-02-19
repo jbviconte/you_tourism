@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Front\UserPage;
 
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\User;
 use App\Http\Requests\UpdateUserRequest;
+
 
 class UserPageController extends Controller
 {
@@ -24,8 +25,17 @@ class UserPageController extends Controller
 
   public function userPageUpdateAction(UpdateUserRequest $request, $id)
   {
-    $user = User::findOrFail($id);
-     $user->update($request->all());
+    $users = User::findOrFail($id);
+     $users->update($request->all());
+
+     return redirect()->route('userpage-update')->with('success', 'profil mis a jour');
+  }
+
+  public function userpageDeleteAction($id)
+  {
+    $users = User::findOrFail($id);
+     $users->delete();
+
 
      return redirect()->route('userpage', array('id' => $id))->with('success', 'profil mis a jour');
   }

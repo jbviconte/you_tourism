@@ -94,11 +94,11 @@ header
 
 /* css du slider */
 .flexslider
- {
+{
   max-width: 100%;
   height: auto;
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	margin-bottom: 50px;
 }
 /* fin css slider */
@@ -109,18 +109,17 @@ header
 	text-decoration: none;
 }
 
-a:hover, a:focus, a:active
+#menu a:hover, a:focus, a:active
 {
 	background: #8fb3e6;
   color: #000;
 }
 
-
 #deco
 {
   position: absolute;
   right: 0px;
-  display: inline-block;
+  display: inline;
   padding : 0 0.5em;
   float: right;
 	margin-right: 150px;
@@ -130,7 +129,7 @@ a:hover, a:focus, a:active
 
 #nameco
 {
-  position: fixed;
+  position: absolute;
   right: 0px;
   display: inline;
   padding : 0 0.5em;
@@ -327,7 +326,9 @@ a:hover, a:focus, a:active
 
 #paf img
 {
-    width: 100%;height: auto;
+    width: 100%;
+		height: auto;
+		margin-bottom: -20px;
 }
 
 #paf p
@@ -340,8 +341,7 @@ a:hover, a:focus, a:active
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
-	padding-left: 15px;
-	margin-bottom: -10px;
+	padding-left: 12px;
 }
 
 #titrelieu h1
@@ -350,6 +350,7 @@ a:hover, a:focus, a:active
 	margin-bottom: -70px;
 	text-align: center;
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .descript
@@ -368,6 +369,10 @@ a:hover, a:focus, a:active
 {
   float: left;
 }
+
+/* fin page single */
+
+/* page home */
 
 #bienvenu
 {
@@ -397,7 +402,8 @@ a:hover, a:focus, a:active
   font-size: large;
   margin-bottom: 25px;
 }
-/* fin page single */
+
+/* fin page home */
 
 
 /* page contact */
@@ -430,6 +436,7 @@ footer
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 50px;
 }
 
 footer p

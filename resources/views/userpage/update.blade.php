@@ -8,21 +8,28 @@
   <section class="content">
     <div class="box box-warning">
       <div class="box-header with-border">
-        <h3 class="box-title">Votre profil {{ $users->name }}</h3>
+        <h3 class="box-title">Votre profil</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
+        <br><br><br><br><br><br>
           {!! Form::open(['route' => ['userpage-update-action', $users->id],'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
+
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
           </div>
+          <br>
           <div class="form-group">
             <label>Email</label>
-            {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+
+            {!! Form::email('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email','<small class="help-block">:message</small>') !!}
+            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
+
           </div>
 
           <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
@@ -51,9 +58,12 @@
             {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
           </div>
-
-          {!! Form::submit('Modifier',['class' => 'btn btn-block btn-success btn-lg']) !!}
+          <br>
+          {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
           {!! Form::close() !!}
+          <br>
+
+          {{-- {{ dd($users) }} --}}
 
       </div>
       <!-- /.box-body -->
