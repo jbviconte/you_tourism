@@ -1,4 +1,4 @@
-@extends('layout/layoutback')
+@extends('layout/layout')
 
 @section('title')
   Profil-Update
@@ -12,16 +12,43 @@
       </div>
       <!-- /.box-header -->
       <div class="box-body">
-          {!! Form::open(['route' => ['userpage-update-action', $userpage->id],'method' => 'put']) !!}
+          {!! Form::open(['route' => ['userpage-update-action', $users->id],'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-            {!! Form::text('pseudo', $user->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
+            {!! Form::text('pseudo', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
           </div>
           <div class="form-group">
             <label>Email</label>
-            {!! Form::text('content', $user->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
+          </div>
+
+          <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+              <label for="password" class="col-md-4 control-label">Mot de passe</label>
+
+              <div class="col-md-6">
+                  <input id="password" type="password" class="form-control" name="password" value="$users->passworld" required>
+
+                  @if ($errors->has('password'))
+                      <span class="help-block">
+                          <strong>{{ $errors->first('password') }}</strong>
+                      </span>
+                  @endif
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label for="password-confirm" class="col-md-4 control-label">Confirmer le nouveau mot de passe</label>
+
+              <div class="col-md-6">
+                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+              </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
           </div>
 
