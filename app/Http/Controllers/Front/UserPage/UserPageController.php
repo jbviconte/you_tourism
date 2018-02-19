@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Front\UserPage;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Http\Requests\UpdateUserRequest;
 
 class UserPageController extends Controller
 {
@@ -25,7 +27,7 @@ class UserPageController extends Controller
     $user = User::findOrFail($id);
      $user->update($request->all());
 
-     return redirect()->route('userpage')->with('success', 'profil mis a jour');
+     return redirect()->route('userpage', array('id' => $id))->with('success', 'profil mis a jour');
   }
 
 }

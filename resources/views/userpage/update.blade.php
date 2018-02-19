@@ -16,13 +16,13 @@
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-            {!! Form::text('pseudo', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
-            {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
+            {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
+            {!! $errors->first('name','<small class="help-block">:message</small>') !!}
           </div>
           <div class="form-group">
             <label>Email</label>
-            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
+            {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+            {!! $errors->first('email','<small class="help-block">:message</small>') !!}
           </div>
 
           <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">

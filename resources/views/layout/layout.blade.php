@@ -12,7 +12,7 @@
   <body>
 
 
-    <header id="menu">
+    <header id="menu" class="large">
       <div class="wrap">
 
 
@@ -54,11 +54,12 @@
 
                   </li>
                 @endif
+              </ul>
+        </nav>
+    </div>
 
-        </ul>
-      </nav>
-    </header>
-  <body>
+</header>
+
 
     <div class="content wrap">
 
