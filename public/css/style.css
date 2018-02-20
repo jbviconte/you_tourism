@@ -141,7 +141,7 @@ header
 	text-decoration: none;
 }
 
-#liensco
+.liensco
 {
 	width: 100px;
 	height: auto;
@@ -151,17 +151,21 @@ header
   margin-left: 1500px;
   color: #DEB887;
 	text-decoration: none;
-
 }
 
-/* #liensco2
+#liensco2
 {
   display: inline-block;
 	text-align: right;
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
-} */
+}
+
+#connect
+{
+	float: right;
+}
 
 /* fin liens header */
 
@@ -182,7 +186,7 @@ header
 
 .frenchcaba
 {
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -369,6 +373,64 @@ header
 
 /* fin page lieux */
 
+/* page profil */
+
+#box
+{
+	padding-top: 80px;
+	font-size: 20px;
+}
+
+#box h1
+{
+	font-weight: bold;
+}
+
+#box a
+{
+	text-decoration: none;
+}
+
+/* fin page profil */
+
+/* page modif profil */
+
+.content h3
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.box-title
+{
+	padding-top: 80px;
+	margin-bottom: -80px;
+}
+
+.content
+{
+	text-align: center;
+}
+
+.form-group
+{
+	margin-top: 10px;
+}
+
+.form-control
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn_btn-block_btn-success_btn-lg
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page modif profil */
+
 /* page single */
 
 .lieu
@@ -396,12 +458,6 @@ header
   font-size: large;
   margin-bottom: 25px;
 }
-
-/* h4
-{
-  font-size: x-large;
-  margin-bottom: 10px;
-} */
 
 .article1
 {
@@ -445,19 +501,16 @@ footer
 	margin-top: 50px;
 }
 
-footer p
-{
-  color: #DEB887;
-}
 
 footer ul li a
 {
   color: #DEB887;
+	text-decoration: none;
 }
 
 /* fin footer */
 
-/*Menu scroll rezise*/
+/*Menu scroll resize*/
 
 *,
 *:before,

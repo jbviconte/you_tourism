@@ -22,9 +22,9 @@
   <div>
     @foreach ($commentaires as $commentaire)
       <div>
-        <h1>Posté par: {{ $commentaire->name }}</h1>
-        <p>Commentaire: {{ $commentaire->commentaire }}</p>
-        <p>Posté le: {{ $commentaire->created_at }}</p>
+        <h1>Posté par : {{ $commentaire->name }}</h1>
+        <p>Commentaire : {{ $commentaire->commentaire }}</p>
+        <p>Posté le : {{ $commentaire->created_at }}</p>
       </div>
     @endforeach
 

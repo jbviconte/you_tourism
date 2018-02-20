@@ -6,20 +6,24 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\AjoutRequest;
 use App\Lieux;
+use App\User;
 use App\Service\PathUpload;
 use \Image;
+use App\Http\Auth;
 
 class AjoutController extends Controller
 {
+
+  protected $user = Auth::user()->id;
+
     public function ajoutForm()
     {
 
       return view('ajout/ajout');
     }
 
-    public function action(AjoutRequest $request)
+    public function action(AjoutRequest $request, $user)
     {
-
 
       if(!empty($request->image)) {
 
@@ -27,20 +31,20 @@ class AjoutController extends Controller
           $request->image->move(public_path($path->path()), $path->imageName());
 
           $inputs = array_merge($request->all(),[
+
+            'user_id' => $user,
             'name_image'  => $path->originalName(),
             'new_name_image' => $path->imageName(),
             'path_image' => $path->path(),
           ]);
-          // Image::make($path->path() . '/' . $path->imageName(),array(
-	        //      'width' => 300,
-	        //      'height' => 300,
-          //    ))->save($path->path() . '/' . $path->imageName());
 
       } else {
-        $inputs = $request->all();
+        $inputs = array_merge($request->all(),[
+          'user_id' => $user
+        ]);
       }
 
-      Lieux::create($inputs)->join('users', 'users.id');
+      Lieux::create($inputs);
       return redirect()->route('lieux')->with('success', 'lieu ajouté !');
     }
 
