@@ -13,32 +13,27 @@
       <!-- /.box-header -->
       <div class="box-body">
         <br><br><br><br><br><br>
-          {!! Form::open(['route' => ['userpage-update-action'],'method' => 'put']) !!}
           {!! Form::open(['route' => ['userpage-update-action', $users->id],'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-<<<<<<< HEAD
+
+
+
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
-=======
-            {!! Form::text('pseudo', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
-            {!! $errors->first('pseudo','<small class="help-block">:message</small>') !!}
-            {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
->>>>>>> c3b71c5d06fb59380863088ff079330fa994eeac
+
+
           </div>
           <br>
           <div class="form-group">
             <label>Email</label>
-<<<<<<< HEAD
-            {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('email','<small class="help-block">:message</small>') !!}
-=======
+
             {!! Form::email('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email','<small class="help-block">:message</small>') !!}
             {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
->>>>>>> c3b71c5d06fb59380863088ff079330fa994eeac
+
           </div>
 
           <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
