@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section
 }
 body
 {
+	width: 100%;
 	line-height: 1;
 	background: #F6F1FF;
 	position: relative;
@@ -74,7 +75,7 @@ header
 
 /* liens header */
 
-#liens li
+#liens li a
 {
   float: left;
   display: inline;
@@ -107,6 +108,7 @@ header
 {
 	color: #DEB887;
 	text-decoration: none;
+	float: right;
 }
 
 #menu a:hover, a:focus, a:active
@@ -141,8 +143,23 @@ header
 
 .liensco
 {
-	color: #DEB887;
+	width: 100px;
+	height: auto;
+  display: block;
+	float: right;
+  padding : 0 0.5em;
+  margin-left: 1500px;
+  color: #DEB887;
 	text-decoration: none;
+}
+
+#liensco2
+{
+  display: inline-block;
+	text-align: right;
+  padding : 0 0.5em;
+  margin-left: 1500px;
+  color: #DEB887;
 }
 
 #connect
@@ -369,6 +386,11 @@ header
 	font-weight: bold;
 }
 
+#box a
+{
+	text-decoration: none;
+}
+
 /* fin page profil */
 
 /* page modif profil */
@@ -399,6 +421,23 @@ header
 {
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn_btn-block_btn-success_btn-lg
+{
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* fin page modif profil */
+
+/* succès MàJ profil et ajout lieu */
+
+.alert-alert-success
+{
+	padding-top: 80px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /* page single */

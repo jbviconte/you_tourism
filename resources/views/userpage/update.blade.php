@@ -35,7 +35,7 @@
             {!! Form::password('password',['class' => 'form-control']) !!}
           </div>
           <br>
-          {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
+          {!! Form::submit('Modifier', ['class' => 'btn_btn-block_btn-success_btn-lg']) !!}
           {!! Form::close() !!}
           <br>
 
