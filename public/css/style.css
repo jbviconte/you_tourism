@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section
 }
 body
 {
+	width: 100%;
 	line-height: 1;
 	background: #F6F1FF;
 	position: relative;
@@ -74,7 +75,7 @@ header
 
 /* liens header */
 
-#liens li
+#liens li a
 {
   float: left;
   display: inline;
@@ -107,6 +108,7 @@ header
 {
 	color: #DEB887;
 	text-decoration: none;
+	float: right;
 }
 
 #menu a:hover, a:focus, a:active
@@ -141,21 +143,25 @@ header
 
 #liensco
 {
-  float: right;
-  display: inline;
+	width: 100px;
+	height: auto;
+  display: block;
+	float: right;
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
+	text-decoration: none;
+
 }
 
-#liensco2
+/* #liensco2
 {
-	float: right;
-  display: inline;
+  display: inline-block;
+	text-align: right;
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
-}
+} */
 
 /* fin liens header */
 

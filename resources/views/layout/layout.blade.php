@@ -27,8 +27,8 @@
 
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
-                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a id="liensco" class="liliens" href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a id="liensco" class="liliens" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
                   @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -101,7 +101,6 @@
 
         <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
-        {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> --}}
 
 
   </body>

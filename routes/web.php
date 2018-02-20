@@ -47,9 +47,9 @@ Route::group(['namespace' => 'Front'], function (){
 
   });
 
-    Route::get('userpage/{id}', 'Userpage\UserPageController@userpage')->name('userpage');
-    Route::get('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdate')->name('userpage-update');
-    Route::put('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdateAction')->name('userpage-update-action');
+    // Route::get('userpage/{id}', 'Userpage\UserPageController@userpage')->name('userpage');
+    // Route::get('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdate')->name('userpage-update');
+    // Route::put('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdateAction')->name('userpage-update-action');
 
 
 });
