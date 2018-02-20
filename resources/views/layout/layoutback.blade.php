@@ -24,7 +24,7 @@
       <!-- Logo -->
       <a href="{{ route('home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>Yu</b>Tou</span>
+        <span class="logo-mini"><b>Yu</b>You</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>You</b>Tourism</span>
       </a>
@@ -51,7 +51,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    <a href="#" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
                     <a href="#" class="btn btn-default btn-flat">Se déconnecter</a>
@@ -90,7 +90,7 @@
           </li>
           <li>
             <a href="{{ route('user')}}">
-              <i class="fa fa-th"></i> <span>Utilisateurs inscrit</span>
+              <i class="fa fa-th"></i> <span>Utilisateurs inscrits</span>
               <span class="pull-right-container">
                 <small class="label pull-right bg-green"></small>
               </span>
@@ -112,20 +112,6 @@
               </span>
             </a>
           </li>
-          <li>
-            <a href="pages/mailbox/mailbox.html">
-              <i class="fa fa-envelope"></i> <span>Boite Mail</span>
-              <span class="pull-right-container">
-                <small class="label pull-right bg-yellow">12</small>
-                <small class="label pull-right bg-green">16</small>
-                <small class="label pull-right bg-red">5</small>
-              </span>
-            </a>
-          </li>
-          <li class="header">LABELS</li>
-          <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-          <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Urgent</span></a></li>
-          <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->

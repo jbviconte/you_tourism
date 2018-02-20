@@ -36,21 +36,16 @@ Route::group(['namespace' => 'Front'], function (){
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
-  Route::group(['namespace' => 'Userpage'], function(){
 
-    Route::get('userpage', 'UserPageController@userpageView')->name('userpage');
+  Route::group(['namespace' => 'UserPage'], function(){
 
-    Route::get('userpage/update/{id}', 'UserPageController@userpageUpdate')->name('userpage-update');
-    Route::put('userpage/update/{id}', 'UserPageController@userpageUpdateAction')->name('userpage-update-action');
+    Route::get('userpage/{id}', 'UserPageController@userPage')->name('userpage');
 
-    Route::delete('userpage/delete', 'UserPageController@userpageDeleteAction')->name('userpage-delete-action');
+    Route::get('userpage/update/{id}', 'UserPageController@userPageUpdate')->name('userpage-update');
+    Route::put('userpage/update/{id}', 'UserPageController@userPageUpdateAction')->name('user-page-update-action');
 
+    Route::delete('userpage/delete/{id}', 'UserPageController@userPageDeleteAction')->name('user-page-delete-action');
   });
-
-    Route::get('userpage/{id}', 'Userpage\UserPageController@userpage')->name('userpage');
-    Route::get('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdate')->name('userpage-update');
-    Route::put('userpage/update/{id}', 'Userpage\UserPageController@userPageUpdateAction')->name('userpage-update-action');
-
 
 });
 Auth::routes();

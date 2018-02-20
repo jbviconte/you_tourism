@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\AjoutRequest;
+use App\User;
 use App\Lieux;
 use App\Service\PathUpload;
 
@@ -13,11 +14,11 @@ use App\Service\PathUpload;
 class AdminLieuxController extends Controller
 {
 
-  // public function __construct(User $request)
-  // {
-  //     $this->middleware('auth');
-  //     $this->middleware('admin');
-  // }
+  public function __construct(User $request)
+  {
+      $this->middleware('auth');
+      $this->middleware('admin');
+  }
 
   // affichage des lieux dans l'admin
   public function listing()

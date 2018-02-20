@@ -11,11 +11,11 @@ use App\Lieux;
 class AdminCommentaireController extends Controller
 {
 
-  // public function __construct(User $request)
-  // {
-  //     $this->middleware('auth');
-  //     $this->middleware('admin');
-  // }
+  public function __construct(User $request)
+  {
+      $this->middleware('auth');
+      $this->middleware('admin');
+  }
     public function commentaire() {
 
       $commentaires = \DB::table('commentaire')
