@@ -13,44 +13,27 @@
       <!-- /.box-header -->
       <div class="box-body">
         <br><br><br><br><br><br>
-          {!! Form::open(['route' => ['userpage-update-action', $users->id],'method' => 'put']) !!}
+          {!! Form::open(['route' => ['user-page-update-action', $users->id],'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
-            <label>Pseudo</label>
+            <label for="name">Pseudo</label>
+            <br />
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
-            {!! $errors->first('name','<small class="help-block">:message</small>') !!}
+            {!! $errors->first('name', '<small class="help-block">:message</small>') !!}
             <br />
           </div>
           <div class="form-group">
-            <label>Email</label>
-
-            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
+            <label for="email">Email</label>
+            <br />
+            {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
+            {!! $errors->first('email','<small class="help-block">:message</small>') !!}
 
           </div>
-
-          <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-              <label for="password" class="col-md-4 control-label">Mot de passe</label>
-
-              <div class="col-md-6">
-                  <input id="password" type="password" class="form-control" name="password" value="$users->passworld" required>
-
-                  @if ($errors->has('password'))
-                      <span class="help-block">
-                          <strong>{{ $errors->first('password') }}</strong>
-                      </span>
-                  @endif
-              </div>
-          </div>
-
           <div class="form-group">
-              <label for="password-confirm" class="col-md-4 control-label">Confirmer le nouveau mot de passe</label>
-
-              <div class="col-md-6">
-                  <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-              </div>
+            <label for="password">Nouveau mot de passe</label>
+            <br />
+            {!! Form::password('password',['class' => 'form-control']) !!}
           </div>
-
           <br>
           {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
           {!! Form::close() !!}

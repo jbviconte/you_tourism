@@ -25,8 +25,13 @@ class UserPageController extends Controller
 
   public function userPageUpdateAction(UpdateUserRequest $request, $id)
   {
-    $users = User::findOrFail($id);
-     $users->update($request->all());
+    $post = $request->all();
+    User::where('id', '=', $id)->update([
+                    'name' => $post['name'],
+                    'email' => $post['email'],
+                    'password' => bcrypt($post('password')),
+                    'updated_at' => Carbon::now()
+                  ]);
 
      return redirect()->route('userpage-update')->with('success', 'profil mis a jour');
   }

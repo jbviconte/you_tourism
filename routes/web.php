@@ -42,7 +42,7 @@ Route::group(['namespace' => 'Front'], function (){
     Route::get('userpage/{id}', 'UserPageController@userPage')->name('userpage');
 
     Route::get('userpage/update/{id}', 'UserPageController@userPageUpdate')->name('userpage-update');
-    Route::put('userpage/update/{id}', 'UserPageController@userPageUpdateAction')->name('userpage-update-action');
+    Route::put('userpage/update/{id}', 'UserPageController@userPageUpdateAction')->name('user-page-update-action');
 
     Route::delete('userpage/delete', 'UserPageController@userPageDeleteAction')->name('userpage-delete-action');
   });
