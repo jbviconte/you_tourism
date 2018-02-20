@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 
   </head>
 
@@ -37,7 +37,7 @@
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
-                        <li><a class="liliens" href="{{ route('userpage-update') }}">Profil</a></li>
+
                         <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
                   </li>
 
