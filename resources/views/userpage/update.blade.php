@@ -24,6 +24,8 @@
           <div class="form-group">
             <label>Email</label>
 
+            <br />
+
             {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
 
