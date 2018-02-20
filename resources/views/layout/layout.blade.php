@@ -29,7 +29,7 @@
               @if (Auth::guest())
 
                 <div id=connect>
-                  <li><a class="liensco" href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a class="liensco" href="{{ route('login') }}">Se Connecter</a></li>
                   <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
 

@@ -71,6 +71,7 @@ header
 	position: fixed;
 	display: block;
 	z-index: 1000;
+	line-height: 1;
 }
 
 /* liens header */
@@ -100,7 +101,7 @@ header
   height: auto;
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 /* fin css slider */
 
@@ -109,41 +110,47 @@ header
 	color: #DEB887;
 	text-decoration: none;
 	float: right;
+	font-family: cursive;
 }
 
 #menu a:hover, a:focus, a:active
 {
 	background: #8fb3e6;
   color: #000;
+	text-decoration: none;
 }
 
 #deco
 {
-  position: absolute;
   right: 0px;
   display: inline;
   padding : 0 0.5em;
   float: right;
-	margin-right: 150px;
+	margin-bottom: 20px;
+	margin-right: 20px;
   color: #DEB887;
 	text-decoration: none;
+	position: fixed;
+	font-family: cursive;
 }
 
 #nameco
 {
-  position: absolute;
   right: 0px;
   display: inline;
   padding : 0 0.5em;
   float: right;
-	margin-right: 150px;
+	margin-right: 20px;
+	margin-bottom: 20px;
   color: #DEB887;
 	text-decoration: none;
+	position: fixed;
+	font-family: cursive;
 }
 
 .liensco
 {
-	width: 100px;
+	width: auto;
 	height: auto;
   display: block;
 	float: right;
@@ -153,13 +160,16 @@ header
 	text-decoration: none;
 }
 
-#liensco2
+.liensco2
 {
-  display: inline-block;
-	text-align: right;
+	width: auto;
+	height: auto;
+  display: block;
+	float: right;
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
+	text-decoration: none;
 }
 
 #connect
@@ -409,6 +419,8 @@ header
 
 .content
 {
+	width: 100%;
+	height: auto;
 	text-align: center;
 }
 
@@ -521,7 +533,6 @@ footer ul li a
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-
 /* header large */
 header.large {
 	height: 75px;
@@ -532,9 +543,7 @@ header.large img {
 header.large li {
 	margin-top: 0px;
 }
-
 /* header small */
-
 header.small {
 	height: 52px;
 }
@@ -544,9 +553,7 @@ header.small img {
 header.small li {
 	margin-top: auto;
 }
-
 /* Transitions */
-
 header,
 nav,
 a,
