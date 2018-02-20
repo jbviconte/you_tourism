@@ -20,14 +20,24 @@
 
 
 
+
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
 
+
+
+
+
+            {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
+            {!! $errors->first('name','<small class="help-block">:message</small>') !!}
 
           </div>
           <br>
           <div class="form-group">
             <label>Email</label>
+
+
+
 
             {!! Form::email('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email','<small class="help-block">:message</small>') !!}
