@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front\UserPage;
 use Carbon\Carbon;
 
 
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
@@ -37,6 +38,8 @@ class UserPageController extends Controller
   {
     $users = User::findOrFail($id);
      $users->delete();
+
+
 
 
      return redirect()->route('userpage', array('id' => $id))->with('success', 'profil mis a jour');

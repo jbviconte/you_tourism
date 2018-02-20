@@ -8,7 +8,7 @@
   <section class="content">
     <div class="box box-warning">
       <div class="box-header with-border">
-        <h3 class="box-title">Votre profil</h3>
+        <h3 class="box-title">Modifier votre profil</h3>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
@@ -17,20 +17,15 @@
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-
-
-
+            <br />
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
 
-
           </div>
-          <br>
+
           <div class="form-group">
             <label>Email</label>
-
-            {!! Form::email('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('email','<small class="help-block">:message</small>') !!}
+            <br />
             {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
 
@@ -57,11 +52,7 @@
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
               </div>
           </div>
-          <div class="form-group">
-            <label>Email</label>
-            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
-          </div>
+
           <br>
           {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
           {!! Form::close() !!}
