@@ -440,6 +440,15 @@ header
 	font-weight: bold;
 }
 
+/* fin message succès */
+
+/* page lieu avec commentaire */
+
+.row
+{
+	padding-top: 80px;
+}
+
 /* page single */
 
 .lieu
