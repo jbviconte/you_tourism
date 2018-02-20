@@ -25,7 +25,9 @@
 
           <div class="form-group">
             <label>Email</label>
+
             <br />
+
             {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('content','<small class="help-block">:message</small>') !!}
 
@@ -54,7 +56,7 @@
           </div>
 
           <br>
-          {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
+          {!! Form::submit('Modifier', ['class' => 'btn_btn-block_btn-success_btn-lg']) !!}
           {!! Form::close() !!}
           <br>
 
