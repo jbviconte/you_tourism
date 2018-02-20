@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function home()
     {
 
-      $lieux = Lieux::orderBy('created_at', 'desc')
+      $lieux = Lieux::where('status', '=', 'publish')->orderBy('created_at', 'desc')
                     ->take(5)
                     ->get();
         return view('home', compact('lieux'));

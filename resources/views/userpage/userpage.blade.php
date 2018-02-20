@@ -16,6 +16,11 @@
             <br />
             <a href="{{ route('userpage-update', $users['id']) }}">Modifier profil</a>
 
+            {{ Form::open(['route' => ['user-page-delete-action', $users->id], 'method' => 'delete'])}}
+              <button type="submit" class="btn btn-block btn-danger btn-lg">Supprimer</button>
+              {!! csrf_field() !!}
+              {{ Form::close()}}
+
           </div>
           <!-- /.box -->
         </div>
