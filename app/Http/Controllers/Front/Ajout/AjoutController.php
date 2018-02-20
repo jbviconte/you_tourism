@@ -6,21 +6,24 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\AjoutRequest;
 use App\Lieux;
+use App\User;
 use App\Service\PathUpload;
 use \Image;
-use App\Auth;
+use App\Http\Auth;
 
 class AjoutController extends Controller
 {
+
+  protected $user = Auth::user()->id;
+
     public function ajoutForm()
     {
 
       return view('ajout/ajout');
     }
 
-    public function action(AjoutRequest $request, Auth()->user()->id)
+    public function action(AjoutRequest $request, $user)
     {
-
 
       if(!empty($request->image)) {
 
@@ -29,7 +32,7 @@ class AjoutController extends Controller
 
           $inputs = array_merge($request->all(),[
 
-            'user_id' => Auth::user()->id,
+            'user_id' => $user,
             'name_image'  => $path->originalName(),
             'new_name_image' => $path->imageName(),
             'path_image' => $path->path(),
@@ -37,7 +40,8 @@ class AjoutController extends Controller
 
       } else {
         $inputs = array_merge($request->all(),[
-          'user_id' => Auth::user()->id]);
+          'user_id' => $user
+        ]);
       }
 
       Lieux::create($inputs);

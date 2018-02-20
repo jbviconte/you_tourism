@@ -139,7 +139,7 @@ header
 	text-decoration: none;
 }
 
-#liensco
+.liensco
 {
   float: right;
   display: inline;
@@ -148,14 +148,14 @@ header
   color: #DEB887;
 }
 
-#liensco2
+/* #liensco2
 {
 	float: right;
   display: inline;
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
-}
+} */
 
 /* fin liens header */
 
@@ -176,7 +176,7 @@ header
 
 .frenchcaba
 {
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 

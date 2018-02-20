@@ -18,6 +18,7 @@
           <div class="form-group">
             <label>Pseudo</label>
 
+
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
 
@@ -52,11 +53,6 @@
               <div class="col-md-6">
                   <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
               </div>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            {!! Form::text('content', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
-            {!! $errors->first('content','<small class="help-block">:message</small>') !!}
           </div>
           <br>
           {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}

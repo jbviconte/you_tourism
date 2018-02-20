@@ -27,8 +27,8 @@
 
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
-                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a class="liensco" href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a class="liensco" href="{{ route('register') }}">S'enregistrer</a></li>
                 @else
                   @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>

@@ -35,7 +35,6 @@ class UserPageController extends Controller
   {
     $users = User::findOrFail($id);
      $users->delete();
-
      return redirect()->route('userpage', array('id' => $id))->with('success', 'profil mis a jour');
   }
 
