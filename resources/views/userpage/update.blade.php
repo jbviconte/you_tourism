@@ -17,12 +17,10 @@
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-
-            <br />
             {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'Votre pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
+            <br />
           </div>
-
           <div class="form-group">
             <label>Email</label>
 
