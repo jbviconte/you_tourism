@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Front\UserPage;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\User;
 use App\Http\Requests\UpdateUserRequest;
+use App\User;
 
 
 class UserPageController extends Controller
@@ -25,17 +25,22 @@ class UserPageController extends Controller
 
   public function userPageUpdateAction(UpdateUserRequest $request, $id)
   {
-    $users = User::findOrFail($id);
-     $users->update($request->all());
+    $post = $request->all();
+    User::where('id', '=', $id)->update([
+                    'name' => $post['name'],
+                    'email' => $post['email'],
+                    'password' => bcrypt($post['password']),
+                    'updated_at' => Carbon::now()
+                  ]);
 
-     return redirect()->route('userpage-update')->with('success', 'profil mis a jour');
+     return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');
   }
 
-  public function userpageDeleteAction($id)
+  public function userPageDeleteAction($id)
   {
     $users = User::findOrFail($id);
      $users->delete();
-     return redirect()->route('userpage', array('id' => $id))->with('success', 'profil mis a jour');
+     return redirect()->route('home')->with('success', 'profil supprimer');
   }
 
 

@@ -9,12 +9,12 @@ use App\Lieux;
 use App\User;
 use App\Service\PathUpload;
 use \Image;
-use App\Http\Auth;
+use Auth;
 
 class AjoutController extends Controller
 {
 
-  protected $user = Auth::user()->id;
+
 
     public function ajoutForm()
     {
@@ -22,7 +22,7 @@ class AjoutController extends Controller
       return view('ajout/ajout');
     }
 
-    public function action(AjoutRequest $request, $user)
+    public function action(AjoutRequest $request)
     {
 
       if(!empty($request->image)) {
@@ -32,7 +32,7 @@ class AjoutController extends Controller
 
           $inputs = array_merge($request->all(),[
 
-            'user_id' => $user,
+            'user_id' => Auth::user()->id,
             'name_image'  => $path->originalName(),
             'new_name_image' => $path->imageName(),
             'path_image' => $path->path(),
@@ -40,7 +40,7 @@ class AjoutController extends Controller
 
       } else {
         $inputs = array_merge($request->all(),[
-          'user_id' => $user
+          'user_id' => Auth::user()->id,
         ]);
       }
 
