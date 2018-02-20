@@ -36,6 +36,7 @@ Route::group(['namespace' => 'Front'], function (){
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
+
   Route::group(['namespace' => 'UserPage'], function(){
 
     Route::get('userpage/{id}', 'UserPageController@userPage')->name('userpage');
@@ -45,7 +46,6 @@ Route::group(['namespace' => 'Front'], function (){
 
     Route::delete('userpage/delete', 'UserPageController@userPageDeleteAction')->name('userpage-delete-action');
   });
-
 
 });
 Auth::routes();
