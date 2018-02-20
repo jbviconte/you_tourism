@@ -88,12 +88,6 @@
           <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
           <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton facebook" /></a>
           <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
-          <!-- <li><g:plusone size="tall"></g:plusone></li>
-          <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script></li>
-          <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js">/</script></li>
-          <li><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
-          <li><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li> -->
-                  <!-- {lang: 'fr'} -->
 
         </ul>
 

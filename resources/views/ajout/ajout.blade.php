@@ -11,7 +11,7 @@
 
 
     {!! Form::open(['route' => 'ajout-action', 'method' => 'post', 'files' => true]) !!}
-    {{ csrf_field() }}
+
 
     {!! Form::label('lieu', 'Nom du lieu') !!}
     <br>
@@ -29,7 +29,7 @@
     {!! $errors->first('image','<small class="help-block">:message</small>') !!}
 
     {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
-    
+    {{ csrf_field() }}
     {!! Form::close() !!}
   </div>
 
