@@ -27,10 +27,12 @@
 
               <!-- Authentication Links -->
               @if (Auth::guest())
+
                 <div id=connect>
                   <li><a class="liensco" href="{{ route('login') }}">Se connecter</a></li>
-                  <li><a class="liensco" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
+
                 @else
                   @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -85,13 +87,9 @@
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
-          <a href="https://fr-fr.facebook.com/"><img src="{{ asset('public/images/resoc/facebook.jpg') }}" alt="bouton facebook" /></a>
-          <!-- <li><g:plusone size="tall"></g:plusone></li>
-          <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script></li>
-          <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js">/</script></li>
-          <li><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
-          <li><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li> -->
-                  <!-- {lang: 'fr'} -->
+          <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
+          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton facebook" /></a>
+          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
 
         </ul>
 
@@ -99,8 +97,6 @@
 
       </div>
     </footer>
-
-        {{-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> --}}
 
 
   </body>
