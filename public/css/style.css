@@ -442,18 +442,38 @@ header
 
 /* fin message succès */
 
-/* page lieu avec commentaire */
-
-.row
-{
-	padding-top: 80px;
-}
-
 /* page single */
 
 .lieu
 {
   float: left;
+	padding-top: 80px;
+}
+
+.lieu h1
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.lieu h2
+{
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#lieusugg
+{
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#sujcom
+{
+	padding-top: 50px;
 }
 
 /* fin page single */
