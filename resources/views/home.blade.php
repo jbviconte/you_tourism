@@ -77,8 +77,9 @@
       @foreach ($lieux as $lieu)
 
   <div id="access">
-            <h1>{{ $lieu['lieu'] }}</h1>
+
             <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/></a>
+            <h1>{{ $lieu['lieu'] }}</h1>
   </div>
       @endforeach
 

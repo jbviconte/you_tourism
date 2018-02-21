@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
   </head>
 
@@ -13,11 +17,12 @@
 
 
     <header id="menu" class="large">
-      <img src="images/logo.jpg" alt="Logo_page" title="Accueil" id="logo"/>
+      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
+        YouTourism
+      </div>
         <div class="wrap">
+        <nav>
 
-
-      <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -30,8 +35,8 @@
               @if (Auth::guest())
 
                 <div id=connect>
-                  <li><a class="liensco" href="{{ route('login') }}">Se Connecter</a></li>
-                  <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a id="liensco" href="{{ route('login') }}">Se Connecter</a></li>
+                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
 
                 @else
@@ -63,7 +68,7 @@
               </ul>
         </nav>
     </div>
-<header class="line_height"></header>
+  <div class="line_height"></div>
 </header>
 
 
@@ -84,7 +89,7 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div class="wrap">
+      <div id="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
@@ -94,10 +99,10 @@
 
         </ul>
 
-
-
       </div>
     </footer>
+
+    @yield('scripts')
 
 
   </body>

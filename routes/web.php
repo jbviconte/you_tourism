@@ -32,6 +32,8 @@ Route::group(['namespace' => 'Front'], function (){
 
     Route::get('lieux/lieux', 'LieuxController@lieux')->name('lieux');
     Route::get('lieux/single/{id}', 'LieuxController@single')->name('single');
+
+    
     Route::post('lieux/single/{id}', 'LieuxController@commentaireNew')->name('lieux-commentaire-new-action');
   });
 
