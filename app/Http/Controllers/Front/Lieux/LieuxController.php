@@ -42,17 +42,16 @@ class LieuxController extends Controller
 
 
   //poster un commentaire
-  public function commentaireNew(CommentaireRequest $request, $id)
+  //public function commentaireNew(CommentaireRequest $request, $id)
+  public function commentaireNew(Request $request, $id)
   {
+    // Validator (en cours)
 
-    $inputs = array_merge($request->all(), [
-            'user_id' => Auth::id(),
-            'lieu_id' => $id,
-          ]);
 
-    Commentaire::create($inputs);
-
-    // return redirect()->route('lieux')->with('success', 'commentaire posté');
+    return response()->json([
+        'commentaire' => 'Ajouté',
+        'content' => 'GG!'
+    ]);
 
   }
 }

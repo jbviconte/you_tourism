@@ -5,6 +5,7 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
   </head>
 
@@ -97,6 +98,8 @@
 
       </div>
     </footer>
+
+    @yield('scripts')
 
 
   </body>
