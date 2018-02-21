@@ -160,6 +160,7 @@ header
   padding : 0 0.5em;
   margin-left: 1500px;
   color: #DEB887;
+	text-decoration: none;
 }
 
 #connect
@@ -197,6 +198,7 @@ header
 {
 	border-radius: 10px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
 }
 
 /* fin page ajout lieu */
@@ -255,6 +257,7 @@ header
 {
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
 }
 
 .panel-heading
@@ -310,6 +313,7 @@ header
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+	/* position: relative; */
 }
 
 #access h1
@@ -320,6 +324,8 @@ header
 	float: center;
 	color: white;
 	font-family: cursive;
+	font-size: x-large;
+	/* position: absolute; */
 }
 
 .mess_bienvenue
@@ -479,10 +485,10 @@ header
 
 .lieu h1
 {
-	font-size: 25px;
-	font-weight: bold;
+	font-size: x-large;
 	font-family: fantasy;
-
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .lieu h2
