@@ -24,7 +24,7 @@
       <!-- Logo -->
       <a href="{{ route('home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>Yu</b>You</span>
+        <span class="logo-mini"><b>Yu</b>Tou</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg"><b>You</b>Tourism</span>
       </a>
@@ -40,7 +40,9 @@
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="back/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                @if (!Auth::guest())
                 <span class="hidden-xs">{{ Auth::user()->name }}</span>
+              @endif
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
@@ -51,7 +53,9 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">Profil</a>
+                    @if (!Auth::guest())
+                    <a href="{{ route('userpage', Auth::user()->id) }}" class="btn btn-default btn-flat">Profil</a>
+                  @endif
                   </div>
                   <div class="pull-right">
                     <a href="#" class="btn btn-default btn-flat">Se déconnecter</a>
@@ -73,9 +77,11 @@
           <div class="pull-left image">
             <img src="back/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </div>
+          @if (!Auth::guest())
           <div class="pull-left info">
             <p>{{ Auth::user()->name }}</p>
           </div>
+        @endif
         </div>
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">

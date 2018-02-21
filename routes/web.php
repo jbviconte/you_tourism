@@ -20,6 +20,8 @@ Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
 
+  Route::post('passwordreset', 'HomeController@sendMail')->name('send-mail');
+
   Route::group(['namespace' => 'Ajout'], function (){
 
     Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');

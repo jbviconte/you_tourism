@@ -3,8 +3,9 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
-class Admin
+class UserId
 {
     /**
      * Handle an incoming request.
@@ -15,10 +16,12 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-      if ($request->user()->role == 'admin') {
-        return $next($request);
-      } else {
-        return redirect('/');
-      }
+      $userId = $request->id;
+
+      if($userId == Auth::id()){
+          return $next($request);
+        } else {
+          return redirect('/'); //redirect anyware.
+        }
     }
 }
