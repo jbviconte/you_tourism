@@ -13,7 +13,8 @@
 
 
     <header id="menu" class="large">
-      <div class="wrap">
+      <img src="images/logo.jpg" alt="Logo_page" title="Accueil" id="logo"/>
+        <div class="wrap">
 
 
       <nav>
@@ -62,7 +63,7 @@
               </ul>
         </nav>
     </div>
-
+<header class="line_height"></header>
 </header>
 
 
