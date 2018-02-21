@@ -34,8 +34,8 @@
               @if (Auth::guest())
 
                 <div id=connect>
-                  <li><a class="liensco" href="{{ route('login') }}">Se Connecter</a></li>
-                  <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a id="liensco" href="{{ route('login') }}">Se Connecter</a></li>
+                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
 
                 @else
@@ -88,7 +88,7 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div class="wrap">
+      <div id="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 

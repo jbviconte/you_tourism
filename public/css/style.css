@@ -165,7 +165,7 @@ header
 	font-family: cursive;
 }
 
-.liensco
+#liensco
 {
 	width: auto;
 	height: auto;
@@ -192,6 +192,7 @@ header
 #connect
 {
 	float: right;
+	color: #DEB887;
 }
 
 /* fin liens header */
@@ -211,10 +212,19 @@ header
   padding: 110px;
 }
 
+.add p
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+	padding-bottom: 20px;
+}
+
 .frenchcaba
 {
 	border-radius: 10px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
 }
 
 /* fin page ajout lieu */
@@ -273,6 +283,24 @@ header
 {
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
+}
+
+.panel-heading
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
+#contact_pad
+{
+  padding: 75px;
+}
+
+.panel-heading
+{
+	padding-bottom: 25px;
 }
 
 /* fin page contact */
@@ -311,6 +339,7 @@ header
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+	/* position: relative; */
 }
 
 #access h1
@@ -319,6 +348,10 @@ header
   height: auto;
   text-align: center;
 	float: center;
+	color: white;
+	font-family: cursive;
+	font-size: x-large;
+	/* position: absolute; */
 }
 
 .mess_bienvenue
@@ -334,11 +367,6 @@ header
 }
 
 /* fin css wrapper */
-
-#contact_pad
-{
-  padding: 75px;
-}
 
 /* page lieux */
 
@@ -359,6 +387,7 @@ header
 	padding-bottom: 15px;
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	font-family: cursive;
 }
 
 #paf img
@@ -388,6 +417,7 @@ header
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
+	font-family: cursive;
 }
 
 .descript
@@ -426,6 +456,8 @@ header
 {
 	font-weight: bold;
 	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
 }
 
 .box-title
@@ -481,16 +513,19 @@ header
 
 .lieu h1
 {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: x-large;
+	font-family: fantasy;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .lieu h2
 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	font-family: cursive;
 }
 
 #lieusugg
@@ -550,9 +585,14 @@ header
 
 /* boutons réseaux sociaux */
 
-.wrap li
+#wrap li
 {
 	display: inline;
+}
+
+#wrap
+{
+	float: left;
 }
 
 /* fin boutons réseaux sociaux */
