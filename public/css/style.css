@@ -287,11 +287,8 @@ header
   width: 30%;
 	height: auto;
   text-align: center;
-  margin-left: 40%;
+  /* margin-left: 40%; */
 	font-size: x-large;
-	position: absolute;
-	padding-top: 80px;
-
 }
 
 #bienvenu h2 h3
@@ -317,18 +314,21 @@ header
   margin-left: 50px;
   margin-right: 50px;
 	position: relative;
+	padding-bottom: 30px;
 }
 
 #access h1
 {
   width: auto;
   height: auto;
-  text-align: center;
+  text-align: left;
 	float: center;
 	color: white;
 	font-family: cursive;
 	font-size: x-large;
-	/* position: absolute; */
+	position: absolute;
+	padding-top: 100px;
+	padding-left: 10px;
 }
 
 .mess_bienvenue
