@@ -283,24 +283,27 @@ header
 
 #wrapper h1
 {
-  background-color: #7fd3e6;
+  /* background-color: #7fd3e6; */
   width: 30%;
 	height: auto;
   text-align: center;
   margin-left: 40%;
-	font-size: xx-large;
+	font-size: x-large;
+	position: absolute;
+	padding-top: 80px;
+
 }
 
 #bienvenu h2 h3
 {
-	background-color: #7fd3e6;
+	/* background-color: #7fd3e6; */
   width: 25%;
   text-align: center;
   margin-left: 40%;
   border-width: 5px;
   border-style: solid;
   border-color: #395066;
-	font-size: xx-large;
+	font-size: x-large;
 	display: inline-block;
 }
 
@@ -313,7 +316,7 @@ header
   text-align: center;
   margin-left: 50px;
   margin-right: 50px;
-	/* position: relative; */
+	position: relative;
 }
 
 #access h1
