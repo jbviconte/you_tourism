@@ -190,6 +190,7 @@ header
 	font-size: 20px;
 	font-weight: bold;
 	font-family: cursive;
+	padding-bottom: 20px;
 }
 
 .frenchcaba
@@ -263,6 +264,16 @@ header
 	font-family: cursive;
 }
 
+#contact_pad
+{
+  padding: 75px;
+}
+
+.panel-heading
+{
+	padding-bottom: 25px;
+}
+
 /* fin page contact */
 
 /* wrapper titres et paragraphe */
@@ -324,11 +335,6 @@ header
 }
 
 /* fin css wrapper */
-
-#contact_pad
-{
-  padding: 75px;
-}
 
 /* page lieux */
 
@@ -418,6 +424,8 @@ header
 {
 	font-weight: bold;
 	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
 }
 
 .box-title
@@ -543,9 +551,14 @@ header
 
 /* boutons réseaux sociaux */
 
-.wrap li
+#wrap li
 {
 	display: inline;
+}
+
+#wrap
+{
+	float: left;
 }
 
 /* fin boutons réseaux sociaux */

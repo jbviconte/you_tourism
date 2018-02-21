@@ -84,7 +84,7 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div class="wrap">
+      <div id="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
