@@ -11,11 +11,11 @@ use App\Http\Requests\UpdateUserRequest;
 class AdminUserController extends Controller
 {
 
-  // public function __construct(User $request)
-  // {
-  //     $this->middleware('auth');
-  //     $this->middleware('admin');
-  // }
+  public function __construct(User $request)
+  {
+      $this->middleware('auth');
+      $this->middleware('admin');
+  }
 
   // vue des utilisateur
   public function userView()

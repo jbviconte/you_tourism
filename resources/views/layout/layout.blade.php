@@ -13,7 +13,8 @@
 
 
     <header id="menu" class="large">
-      <div class="wrap">
+      <img src="images/logo.jpg" alt="Logo_page" title="Accueil" id="logo"/>
+        <div class="wrap">
 
 
       <nav>
@@ -29,7 +30,7 @@
               @if (Auth::guest())
 
                 <div id=connect>
-                  <li><a class="liensco" href="{{ route('login') }}">Se connecter</a></li>
+                  <li><a class="liensco" href="{{ route('login') }}">Se Connecter</a></li>
                   <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
 
@@ -62,7 +63,7 @@
               </ul>
         </nav>
     </div>
-
+<header class="line_height"></header>
 </header>
 
 

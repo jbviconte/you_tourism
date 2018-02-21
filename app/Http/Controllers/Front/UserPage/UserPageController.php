@@ -7,10 +7,21 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\UpdateUserRequest;
 use App\User;
+use Auth;
 
 
 class UserPageController extends Controller
 {
+
+  public function __construct(User $request)
+  {
+    if ($request->user()->id == Auth::user()->id) {
+      
+      return view('userpage/userpage', compact('users'));
+    }
+    return edirect()->route('home')->with('danger', 'Vous n\'êtes pas autoriser à accéder à cette page');
+
+  }
   public function userPage($id)
   {
     $users = User::findOrFail($id);
