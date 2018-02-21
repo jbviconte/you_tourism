@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -14,10 +17,12 @@
 
 
     <header id="menu" class="large">
-      <div class="wrap">
+      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
+        YouTourism
+      </div>
+        <div class="wrap">
+        <nav>
 
-
-      <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -30,8 +35,8 @@
               @if (Auth::guest())
 
                 <div id=connect>
-                  <li><a class="liensco" href="{{ route('login') }}">Se Connecter</a></li>
-                  <li><a class="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                  <li><a id="liensco" href="{{ route('login') }}">Se Connecter</a></li>
+                  <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
                 </div>
 
                 @else
@@ -63,7 +68,7 @@
               </ul>
         </nav>
     </div>
-
+  <div class="line_height"></div>
 </header>
 
 
@@ -84,7 +89,7 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div class="wrap">
+      <div id="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
@@ -93,8 +98,6 @@
           <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
 
         </ul>
-
-
 
       </div>
     </footer>
