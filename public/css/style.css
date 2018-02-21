@@ -185,6 +185,13 @@ header
   padding: 110px;
 }
 
+.add p
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
 .frenchcaba
 {
 	border-radius: 10px;
@@ -249,6 +256,13 @@ header
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
+.panel-heading
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
 /* fin page contact */
 
 /* wrapper titres et paragraphe */
@@ -294,6 +308,7 @@ header
   text-align: center;
 	float: center;
 	color: white;
+	font-family: cursive;
 }
 
 .mess_bienvenue
