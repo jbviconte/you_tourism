@@ -19,12 +19,17 @@
   </div>
   @endforeach
 
-  <div>
+  <div id="comment">
     @foreach ($commentaires as $commentaire)
       <div>
-        <h1>Posté par : {{ $commentaire->name }}</h1>
-        <p>Commentaire : {{ $commentaire->commentaire }}</p>
-        <p>Posté le : {{ $commentaire->created_at }}</p>
+        <h1>Posté par: {{ $commentaire->name }}</h1>
+        <br>
+        <p>Sujet: {{ $commentaire->commentaire }}</p>
+        <br>
+        <p>Commentaire: {{ $commentaire->content }}</p>
+        <br>
+        <p>Posté le: {{ $commentaire->created_at }}</p>
+        <br>
       </div>
     @endforeach
 
@@ -55,7 +60,8 @@
 
 @section('scripts')
 
-<script type="text/javascript">
+<script type="text/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
 
 
 // astuces-webmaster.ch systeme ajax
@@ -81,8 +87,8 @@ $(document).ready(function(){
            $(msg.html).hide().insertBefore('#addCommentContainer').slideDown();
            $('#comment').val();
          } else {
-           $.each(msg.errors, function(sujet, comm){
-             $('label[for='+sujet+']').append('<span class="error">'+comm+'</span>');
+           $.each(msg.errors, function(fail, error){
+             $('label[for='+fail+']').append('<span class="error">'+error+'</span>');
            });
          }
        },'json');
