@@ -279,17 +279,7 @@ header
 
 /* fin page contact */
 
-/* wrapper titres et paragraphe */
-
-#wrapper h1
-{
-  /* background-color: #7fd3e6; */
-  width: 30%;
-	height: auto;
-  text-align: center;
-  /* margin-left: 40%; */
-	font-size: x-large;
-}
+/* wrapper titres et paragraphe home */
 
 #bienvenu h2 h3
 {
@@ -327,7 +317,6 @@ header
 	font-size: x-large;
 	position: absolute;
 	padding-left: 10px;
-	padding-bottom: 50px;
 }
 
 .mess_bienvenue
