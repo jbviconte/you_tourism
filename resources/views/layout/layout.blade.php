@@ -19,7 +19,6 @@
         YouTourism
       </div>
         <div class="wrap">
-          
         <nav>
 
         <ul id="liens">
@@ -97,8 +96,6 @@
           <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
 
         </ul>
-
-
 
       </div>
     </footer>
