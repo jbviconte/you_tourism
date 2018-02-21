@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>@yield('title')</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 
@@ -13,11 +15,13 @@
 
 
     <header id="menu" class="large">
-      <img src="images/logo.jpg" alt="Logo_page" title="Accueil" id="logo"/>
+      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
+        YouTourism
+      </div>
         <div class="wrap">
+          
+        <nav>
 
-
-      <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -63,7 +67,7 @@
               </ul>
         </nav>
     </div>
-<header class="line_height"></header>
+  <div class="line_height"></div>
 </header>
 
 

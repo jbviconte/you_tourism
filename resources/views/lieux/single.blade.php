@@ -11,7 +11,7 @@
 
     <h1>{{ $lieu->lieu }}</h1>
     <img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,700,650) }}"/>
-    <h2>Description du lieu touristique:</h2>
+    <h2>Description du lieu touristique :</h2>
     <p>{{ $lieu->content }}</p>
     <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
 
