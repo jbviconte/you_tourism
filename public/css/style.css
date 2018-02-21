@@ -141,7 +141,7 @@ header
 	text-decoration: none;
 }
 
-.liensco
+#liensco
 {
 	width: 100px;
 	height: auto;
@@ -165,6 +165,7 @@ header
 #connect
 {
 	float: right;
+	color: #DEB887;
 }
 
 /* fin liens header */
@@ -292,6 +293,7 @@ header
   height: auto;
   text-align: center;
 	float: center;
+	color: white;
 }
 
 .mess_bienvenue
@@ -332,6 +334,7 @@ header
 	padding-bottom: 15px;
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+	font-family: cursive;
 }
 
 #paf img
@@ -361,6 +364,7 @@ header
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
+	font-family: cursive;
 }
 
 .descript
@@ -452,16 +456,19 @@ header
 
 .lieu h1
 {
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
+	font-family: fantasy;
+
 }
 
 .lieu h2
 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	font-family: cursive;
 }
 
 #lieusugg
