@@ -321,14 +321,13 @@ header
 {
   width: auto;
   height: auto;
-  text-align: left;
-	float: center;
+  float: left;
 	color: white;
 	font-family: cursive;
 	font-size: x-large;
 	position: absolute;
-	padding-top: 100px;
 	padding-left: 10px;
+	padding-bottom: 50px;
 }
 
 .mess_bienvenue
