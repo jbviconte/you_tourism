@@ -28,16 +28,18 @@
                   <th>Lieu: </th>
                   <th>Description: </th>
                   <th>Image du lieu: </th>
+                  <th>Poster par: </th>
                   <th>Status: </th>
                   <th>Action: </th>
                 </tr>
 
                 @foreach ($lieux as $lieu)
                   <tr>
-                    <td style="width:100px">{{ $lieu['lieu'] }}</td><br />
-                    <td>{{ $lieu['content'] }}</td>
-                    <td style="width:100px"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,50,50)}}"/></td>
-                    <td style="width:100px">{{ $lieu['status'] }}</td>
+                    <td style="width:100px">{{ $lieu->lieu }}</td><br />
+                    <td>{{ $lieu->content }}</td>
+                    <td style="width:100px"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,50,50)}}"/></td>
+                    <td style="width:100px">{{ $lieu->name }}</td>
+                    <td style="width:100px">{{ $lieu->status }}</td>
                     <td style="width:150px"><div class="btn-group">
                       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
