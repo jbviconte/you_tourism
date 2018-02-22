@@ -89,13 +89,14 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div id="foot">
+
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
+      <div id="foot">
           <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
-          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton facebook" /></a>
-          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
+          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
+          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
 
         </ul>
       </div>

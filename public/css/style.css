@@ -194,6 +194,7 @@ header
 	float: right;
   padding : 0 0.5em;
   color: #DEB887;
+  margin-left: 1500px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -205,6 +206,7 @@ header
   display: block;
 	float: right;
   color: #DEB887;
+  margin-left: 1500px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -223,13 +225,14 @@ header
 .add
 {
   text-align: center;
+	margin-top: 75px;
   padding: 110px;
+	display: inline-block;
 }
 
 .frenchcaba
 {
 	border-radius: 10px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page ajout lieu */
@@ -240,37 +243,39 @@ header
 {
   text-align: center;
   padding: 75px;
+	min-height: 600px;
+
 }
 
 #wrapper
 {
   margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1500px;
 	width: 100%;
 	text-align: center;
+	border-right: 2px solid #F6F1FF;
+	border-left: 2px solid #F6F1FF;
+
 }
 
 .panel-panel-default
 {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 #email
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #password
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn-btn-primary
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page login */
@@ -280,7 +285,7 @@ header
 
 #wrapper h1
 {
-  background-color: #7fd3e6;
+  /* background-color: #7fd3e6; */
   width: 30%;
 	height: auto;
   text-align: center;
@@ -290,7 +295,7 @@ header
 
 #bienvenu h2 h3
 {
-	background-color: #7fd3e6;
+	/* background-color: #7fd3e6; */
   width: 25%;
   text-align: center;
   margin-left: 40%;
@@ -304,27 +309,43 @@ header
 #access
 {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   display: inline-block;
   float: center;
-  text-align: center;
+  /* text-align: center; */
   margin-left: 50px;
   margin-right: 50px;
 }
 
-#access h1
+#superp p
 {
   width: auto;
   height: auto;
-  text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: cursive;
+	float: left;
+	position: absolute;
+	padding-left: 10px;
+}
+
+#superp
+{
+	padding-bottom: 30px;
+}
+
+#access img
+{
+	padding-top: 30px;
 	float: center;
+	position: relative;
+	margin-bottom: -30px;
 }
 
 #access a:hover, a:focus, a:active
 {
-	z-index: 100;
-	font-size: 5em;
-	font-size-adjust: 5;
+	background: #fff;
+	opacity: 0.5;
 }
 
 .mess_bienvenue
@@ -345,9 +366,10 @@ header
 
 #bigpaf
 {
-    width: 70%;
+    width: 75%;
     margin: auto;
-		display: block;
+		margin-top: 75px;
+		display: inline-block;
 }
 
 #paf
@@ -356,10 +378,8 @@ header
   margin-left: 2%;
   float: left;
   position: relative;
-	margin-top: 7%;
+	margin-top: 25px;
 	padding-bottom: 15px;
-	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -381,6 +401,7 @@ header
   margin-top: 35%;
   z-index: 5;
 	padding-left: 12px;
+	margin-bottom: -20%;
 }
 
 #paf a:hover
@@ -396,12 +417,12 @@ header
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
+	padding-bottom: 80px;
 }
 
 .descript
 {
-	padding-top: 100px;
-	margin-bottom: -70px;
+	margin-bottom: 50px;
 	text-align: center;
 	font-size: 20px;
 }
@@ -412,6 +433,8 @@ header
 
 #box
 {
+	display: inline-block;
+	margin-top: 75px;
 	padding-top: 80px;
 	font-size: 20px;
 }
@@ -424,6 +447,12 @@ header
 #box a
 {
 	text-decoration: none;
+	color: #DEB887;
+}
+
+button
+{
+	border-radius: 5px;
 }
 
 /* fin page profil */
@@ -445,15 +474,16 @@ header
 
 .box-title
 {
+	display: inline-block;
+	margin-top: 75px;
 	padding-top: 80px;
 }
 
 .content
 {
 	width: 100%;
-	min-height: 600px;
+	min-height: 800px;
 	text-align: center;
-	/* padding-top: 60px; */
 }
 
 .form-group
@@ -465,13 +495,11 @@ header
 .form-control
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn_btn-block_btn-success_btn-lg
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page modif profil */
@@ -525,6 +553,14 @@ header
 
 /* page home */
 
+#wrapper
+{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+	text-align: center;
+}
+
 #bienvenu
 {
   text-align: center;
@@ -536,6 +572,7 @@ header
   text-align: center;
   margin-bottom: 50px;
 }
+
 .intro
 {
   font-size: large;
@@ -547,6 +584,11 @@ header
   font-size: large;
   margin-bottom: 25px;
 }
+
+
+
+/* layout */
+
 .wrap
 {
 	width: 100%;
@@ -568,7 +610,6 @@ header
 {
 	margin-top: 10px;
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #contact_pad
@@ -589,6 +630,11 @@ header
 .parag
 {
 	font-size: 18px;
+}
+
+.btn-btn-success
+{
+	border-radius: 5px;
 }
 
 /* fin page contact */
@@ -617,9 +663,11 @@ footer
 
 footer ul li a
 {
-  color: #DEB887;
+  color: #fff;
 	text-decoration: none;
 	width: 100%;
+	font-family: cursive;
+	font-size: 20px;
 }
 
 /* fin footer */
