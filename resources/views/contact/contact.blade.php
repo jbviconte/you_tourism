@@ -48,7 +48,7 @@
     {!! $errors->first('message','<small class="help-block">:message</small>') !!}
     <br />
 
-    {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+    {!! Form::submit('Envoyer', ['class' => 'btn-btn-success']) !!}
 
     {!! Form::close() !!}
   </div>

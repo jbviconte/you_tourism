@@ -222,7 +222,6 @@ header
 .frenchcaba
 {
 	border-radius: 10px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page ajout lieu */
@@ -233,37 +232,27 @@ header
 {
   text-align: center;
   padding: 75px;
-}
-
-#wrapper
-{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1600px;
-	text-align: center;
+	min-height: 600px;
 }
 
 .panel-panel-default
 {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 #email
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #password
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn-btn-primary
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page login */
@@ -410,6 +399,12 @@ header
 #box a
 {
 	text-decoration: none;
+	color: #DEB887;
+}
+
+button
+{
+	border-radius: 5px;
 }
 
 /* fin page profil */
@@ -451,13 +446,11 @@ header
 .form-control
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn_btn-block_btn-success_btn-lg
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page modif profil */
@@ -511,6 +504,14 @@ header
 
 /* page home */
 
+#wrapper
+{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+	text-align: center;
+}
+
 #bienvenu
 {
   text-align: center;
@@ -549,7 +550,6 @@ header
 {
 	margin-top: 10px;
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #contact_pad
@@ -570,6 +570,11 @@ header
 .parag
 {
 	font-size: 18px;
+}
+
+.btn-btn-success
+{
+	border-radius: 5px;
 }
 
 /* fin page contact */
