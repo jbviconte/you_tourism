@@ -13,6 +13,7 @@
       <!-- /.box-header -->
       <div class="box-body">
           {!! Form::open(['route' => ['lieu-update-action', $lieux->id],'method' => 'put', 'files' => true]) !!}
+          {{ csrf_field() }}
           <!-- text input -->
             <div class="form-group">
               <label>Nom du lieu</label>
@@ -28,7 +29,7 @@
 
             <div class="form-group">
               <label>Status: </label>
-              {!! Form::select('status', ['publish' => 'Publier', 'no publish' => 'Non publier'], $lieux->status)!!}</li>
+              {!! Form::select('status', ['publish' => 'Publier', 'no publish' => 'Non publier'], $lieux->status) !!}
             </div>
 
             <div class="form-group">

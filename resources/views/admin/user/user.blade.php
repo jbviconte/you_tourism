@@ -15,8 +15,14 @@
                 <div class="box-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
                     {{ $users->links() }}
+                    @if (session('success'))
+                      <div class="alert-alert-success">
+                        {{ session('success') }}
+                      </div>
+                    @endif
                   </div>
                 </div>
+
               </div>
               <!-- /.box-header -->
               <div class="box-body table-responsive no-padding">

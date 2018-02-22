@@ -2,22 +2,54 @@
 
 namespace App\Http\Controllers\Front\UserPage;
 
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Http\Requests\UpdateUserRequest;
+use App\User;
+use Auth;
+
 
 class UserPageController extends Controller
 {
-  public function userpage()
+
+  public function __construct(User $request)
   {
-    return view('userpage/userpage');
+    $this->middleware('auth');
+    $this->middleware('userid');
   }
 
-  public function userpageUpdateAction(UpdateUserRequest $request, $id)
+  public function userPage($id)
   {
-    $user = User::findOrFail($id);
-     $user->update($request->all());
-
-     return redirect()->route('userpage')->with('success', 'profil mis a jour');
+    $users = User::findOrFail($id);
+    return view('userpage/userpage', compact('users'));
   }
+
+  public function userPageUpdate($id)
+  {
+    $users = User::findOrFail($id);
+    return view('userpage/update', compact('users'));
+  }
+
+  public function userPageUpdateAction(UpdateUserRequest $request, $id)
+  {
+    $post = $request->all();
+    User::where('id', '=', $id)->update([
+                    'name' => $post['name'],
+                    'email' => $post['email'],
+                    'password' => bcrypt($post['password']),
+                    'updated_at' => Carbon::now()
+                  ]);
+
+     return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');
+  }
+
+  public function userPageDeleteAction($id)
+  {
+    $users = User::findOrFail($id);
+     $users->delete();
+     return redirect()->route('home')->with('success', 'profil supprimer');
+  }
+
 
 }

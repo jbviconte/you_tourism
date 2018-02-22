@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Front;
 
+use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Lieux;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -26,9 +28,14 @@ class HomeController extends Controller
     public function home()
     {
 
-      $lieux = Lieux::orderBy('created_at', 'desc')
+      $lieux = Lieux::where('status', '=', 'publish')->orderBy('created_at', 'desc')
                     ->take(5)
                     ->get();
         return view('home', compact('lieux'));
+    }
+
+    public function sendMail($token)
+    {
+      $this->notify(new ResetPasswordController($token));
     }
 }

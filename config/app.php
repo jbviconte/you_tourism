@@ -231,7 +231,8 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'Image' => Folklore\Image\Facades\Image::class
+        'Image' => Folklore\Image\Facades\Image::class,
+
 
     ],
 

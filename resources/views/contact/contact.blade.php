@@ -8,6 +8,10 @@
 <div id="contact_pad">
   <div class="dede">
       <div class="panel-heading">Nous contacter</div>
+      <p class="parag">Une idée ? Une suggestion ? Une remarque ?</p>
+      <p class="parag">Ou tout simplement besoin d'aide ?</p>
+      <p class="parag">Prenez le temps de remplir le formulaire qui suit, notre équipe vous répondra dans les meilleurs délais.</p>
+      <br />
     @if ($errors->any())
       <div class="alert alert-danger">
         <ul>
