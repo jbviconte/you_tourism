@@ -119,11 +119,12 @@ header
 
 .liliens
 {
-	color: #DEB887;
+	color: #D6B561;
 	display: block;
 	text-decoration: none;
 	float: right;
 	font-family: cursive;
+	font-size: 15px;
 	margin-left: 50px;
 	margin-top: 50px;
 	z-index: 10;
@@ -131,10 +132,13 @@ header
 
 #menu a:hover, a:focus, a:active
 {
-	background: #8fb3e6;
-  color: #000;
+	background: #000;
+  color: #fff;
 	text-decoration: none;
 	z-index: 10;
+	transition: all 1s;
+	transform: rotate(1100deg);
+	font-size-adjust: 25px;
 }
 
 #deco
