@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS','romainrichard7627@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'R.Richard'),
+        'address' => env('MAIL_FROM_ADDRESS','viconte.jeanbaptiste@gmail.com'),
+        'name' => env('MAIL_FROM_NAME', 'You Tourism'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'romainrichard7627@gmail.com'),
+    'username' => env('MAIL_USERNAME', 'jbviconte@live.fr'),
 
-    'password' => env('MAIL_PASSWORD', 'elpadre76_'),
+    'password' => env('MAIL_PASSWORD', '7Cccd21d'),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,6 +101,16 @@ return [
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
+    'pretend' => false,
+
+    'stream' => [
+      'ssl' => [
+          'allow_self_signed' => true,
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+      ]
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings
@@ -112,12 +122,13 @@ return [
     |
     */
 
-    'markdown' => [
-        'theme' => 'default',
+    // 'markdown' => [
+    //     'theme' => 'default',
+    //
+    //     'paths' => [
+    //         resource_path('views/vendor/mail'),
+    //     ],
+    // ],
 
-        'paths' => [
-            resource_path('views/vendor/mail'),
-        ],
-    ],
 
 ];

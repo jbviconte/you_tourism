@@ -58,11 +58,12 @@ table {
 
 /* fin du reset */
 
+
 /* header */
 
 header
 {
-  max-width: 100%;
+  width: 100%;
 	height: 75px;
   padding: 0;
   margin: 0;
@@ -72,6 +73,7 @@ header
 	display: block;
 	z-index: 1000;
 	line-height: 1.5rem;
+	object-fit: cover;
 }
 
 .line_height
@@ -109,11 +111,12 @@ header
 /* css du slider */
 .flexslider
 {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
+	object-fit: cover;
 }
 /* fin css slider */
 
@@ -129,12 +132,22 @@ header
 	z-index: 10;
 }
 
-#menu a:hover, a:focus, a:active
+#menu li a:hover, li a:focus, li a:active
 {
-	background: #8fb3e6;
-  color: #000;
+  color: #fff;
 	text-decoration: none;
-	z-index: 10;
+	font-size: 1.2em;
+}
+
+.logo a
+{
+	font-size: 3em;
+	color: #fff;
+	padding-top: 50px;
+	padding-left: 30px;
+	float: left;
+	text-decoration: none;
+	font-family: 'Eagle Lake', cursive;
 }
 
 #deco
@@ -147,7 +160,7 @@ header
 	margin-top: 15px;
   color: #DEB887;
 	text-decoration: none;
-	position: fixed;
+	position: absolute;
 	font-family: cursive;
 }
 
@@ -165,33 +178,37 @@ header
 	font-family: cursive;
 }
 
-.liensco
-{
-	width: auto;
-	height: auto;
-  display: block;
-	float: right;
-  padding : 0 0.5em;
-  margin-left: 1500px;
-  color: #DEB887;
-	text-decoration: none;
-}
-
-.liensco2
-{
-	width: auto;
-	height: auto;
-  display: block;
-	float: right;
-  padding : 0 0.5em;
-  margin-left: 1500px;
-  color: #DEB887;
-	text-decoration: none;
-}
-
 #connect
 {
 	float: right;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+#liensco
+{
+	width: auto;
+	height: auto;
+  display: block;
+	float: right;
+  padding : 0 0.5em;
+  color: #DEB887;
+  margin-left: 1500px;
+	text-decoration: none;
+	font-family: cursive;
+}
+
+#liensco2
+{
+	width: auto;
+	height: auto;
+  display: block;
+	float: right;
+  color: #DEB887;
+  margin-left: 1500px;
+	text-decoration: none;
+	font-family: cursive;
 }
 
 /* fin liens header */
@@ -208,13 +225,14 @@ header
 .add
 {
   text-align: center;
+	margin-top: 75px;
   padding: 110px;
+	display: inline-block;
 }
 
 .frenchcaba
 {
 	border-radius: 10px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page ajout lieu */
@@ -225,63 +243,49 @@ header
 {
   text-align: center;
   padding: 75px;
+	min-height: 600px;
+
 }
 
 #wrapper
 {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1600px;
+	max-width: 1500px;
+	width: 100%;
 	text-align: center;
+	border-right: 2px solid #F6F1FF;
+	border-left: 2px solid #F6F1FF;
+
 }
 
 .panel-panel-default
 {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
 #email
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 #password
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn-btn-primary
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page login */
 
-.wrap
-{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1600px;
-}
-
-/* page contact */
-
-.dodo
-{
-	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-}
-
-/* fin page contact */
 
 /* wrapper titres et paragraphe */
 
 #wrapper h1
 {
-  background-color: #7fd3e6;
+  /* background-color: #7fd3e6; */
   width: 30%;
 	height: auto;
   text-align: center;
@@ -291,7 +295,7 @@ header
 
 #bienvenu h2 h3
 {
-	background-color: #7fd3e6;
+	/* background-color: #7fd3e6; */
   width: 25%;
   text-align: center;
   margin-left: 40%;
@@ -305,20 +309,43 @@ header
 #access
 {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   display: inline-block;
   float: center;
-  text-align: center;
+  /* text-align: center; */
   margin-left: 50px;
   margin-right: 50px;
 }
 
-#access h1
+#superp p
 {
   width: auto;
   height: auto;
-  text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: cursive;
+	float: left;
+	position: absolute;
+	padding-left: 10px;
+}
+
+#superp
+{
+	padding-bottom: 30px;
+}
+
+#access img
+{
+	padding-top: 30px;
 	float: center;
+	position: relative;
+	margin-bottom: -30px;
+}
+
+#access a:hover, a:focus, a:active
+{
+	background: #fff;
+	opacity: 0.5;
 }
 
 .mess_bienvenue
@@ -335,37 +362,33 @@ header
 
 /* fin css wrapper */
 
-#contact_pad
-{
-  padding: 75px;
-}
-
 /* page lieux */
 
 #bigpaf
 {
-    width: 100%;
-    margin-left: -2%;
+    width: 75%;
+    margin: auto;
+		margin-top: 75px;
+		display: inline-block;
 }
 
 #paf
 {
   width: 23%;
   margin-left: 2%;
-	padding-bottom: 25px;
   float: left;
   position: relative;
-	margin-top: 100px;
+	margin-top: 25px;
 	padding-bottom: 15px;
-	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
+
 
 #paf img
 {
     width: 100%;
 		height: auto;
 		margin-bottom: -20px;
+		padding-left: 30px;
 }
 
 #paf p
@@ -378,7 +401,14 @@ header
   text-align: justify;
   margin-top: 35%;
   z-index: 5;
-	padding-left: 12px;
+	padding-left: 42px;
+	margin-bottom: -20%;
+}
+
+#paf a:hover
+{
+	background: #fff;
+	opacity: 0.7;
 }
 
 #titrelieu h1
@@ -388,12 +418,12 @@ header
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
+	padding-bottom: 80px;
 }
 
 .descript
 {
-	padding-top: 100px;
-	margin-bottom: -70px;
+	margin-bottom: 50px;
 	text-align: center;
 	font-size: 20px;
 }
@@ -404,6 +434,8 @@ header
 
 #box
 {
+	display: inline-block;
+	margin-top: 75px;
 	padding-top: 80px;
 	font-size: 20px;
 }
@@ -416,6 +448,12 @@ header
 #box a
 {
 	text-decoration: none;
+	color: #DEB887;
+}
+
+button
+{
+	border-radius: 5px;
 }
 
 /* fin page profil */
@@ -426,36 +464,43 @@ header
 {
 	font-weight: bold;
 	font-size: 20px;
+	font-family: cursive;
+	padding-bottom: 15px;
+}
+
+.parag2
+{
+	font-size: 18px;
 }
 
 .box-title
 {
+	display: inline-block;
+	margin-top: 75px;
 	padding-top: 80px;
-	margin-bottom: -80px;
 }
 
 .content
 {
 	width: 100%;
-	height: auto;
+	min-height: 800px;
 	text-align: center;
 }
 
 .form-group
 {
 	margin-top: 10px;
+	padding-top: -75px;
 }
 
 .form-control
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 .btn_btn-block_btn-success_btn-lg
 {
 	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /* fin page modif profil */
@@ -509,6 +554,14 @@ header
 
 /* page home */
 
+#wrapper
+{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+	text-align: center;
+}
+
 #bienvenu
 {
   text-align: center;
@@ -520,6 +573,7 @@ header
   text-align: center;
   margin-bottom: 50px;
 }
+
 .intro
 {
   font-size: large;
@@ -532,6 +586,16 @@ header
   margin-bottom: 25px;
 }
 
+
+
+/* layout */
+
+.wrap
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* fin page home */
 
 
@@ -540,7 +604,38 @@ header
 .dede
 {
 	text-align: center;
-	margin-top: 30px;
+	padding-top: 10px;
+}
+
+.dodo
+{
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#contact_pad
+{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-height: 600px;
+}
+
+.panel-heading
+{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: cursive;
+	padding-bottom: 10px;
+}
+
+.parag
+{
+	font-size: 18px;
+}
+
+.btn-btn-success
+{
+	border-radius: 5px;
 }
 
 /* fin page contact */
@@ -550,7 +645,7 @@ header
 
 /* boutons réseaux sociaux */
 
-.wrap li
+#foot li
 {
 	display: inline;
 }
@@ -559,70 +654,26 @@ header
 
 footer
 {
-  width: 100%;
 	max-width: 100%;
   height: 150px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
 	margin-top: 50px;
-	z-index: 1;
 }
-
 
 footer ul li a
 {
-  color: #DEB887;
+  color: #fff;
 	text-decoration: none;
+	width: 100%;
+	font-family: cursive;
+	font-size: 20px;
 }
 
 /* fin footer */
 
-
-/*Menu scroll resize*/
-
-/* *,
-*:before,
-*:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-} */
-/* header large */
-/* header.large {
-	height: 75px;
-}
-header.large {
-  height: 75px;
-}
-header.large li {
-	margin-top: 0px;
-} */
-/* header small */
-/* header.small {
-	height: 50px;
-}
-header.small img {
-	height: 50px;
-}
-header.small li {
-	margin-top: auto;
-} */
-/* Transitions */
-/* header,
-nav,
-a,
-img,
-li {
-	transition: .5s all;
-	-moz-transition: .5s all;
-	-webkit-transition: .5s all;
-	-o-transition: .5s all;
-} */
-
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1048px)
 {
 		header
 		{

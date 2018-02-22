@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Front\UserPage;
 use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests\UpdateUserRequest;
+use App\Http\Requests\UserRequest;
 use App\User;
 use Auth;
 
@@ -15,13 +15,10 @@ class UserPageController extends Controller
 
   public function __construct(User $request)
   {
-    if ($request->user()->id == Auth::user()->id) {
-      
-      return view('userpage/userpage', compact('users'));
-    }
-    return edirect()->route('home')->with('danger', 'Vous n\'êtes pas autoriser à accéder à cette page');
-
+    $this->middleware('auth');
+    $this->middleware('userid');
   }
+
   public function userPage($id)
   {
     $users = User::findOrFail($id);
@@ -34,17 +31,26 @@ class UserPageController extends Controller
     return view('userpage/update', compact('users'));
   }
 
-  public function userPageUpdateAction(UpdateUserRequest $request, $id)
+  public function userPageUpdateAction(UserRequest $request, $id)
   {
-    $post = $request->all();
-    User::where('id', '=', $id)->update([
-                    'name' => $post['name'],
-                    'email' => $post['email'],
-                    'password' => bcrypt($post['password']),
-                    'updated_at' => Carbon::now()
-                  ]);
 
-     return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');
+    $user = User::findOrFail($id);
+    if (!empty($request->password)) {
+
+
+        $inputs = array($request->all(),[
+                  'password' => bcrypt($post['password']),
+                ]);
+
+    } else {
+
+        $inputs = $request->all();
+
+    }
+
+    $user->update($inputs);
+
+    return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');
   }
 
   public function userPageDeleteAction($id)

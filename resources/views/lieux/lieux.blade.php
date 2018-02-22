@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-
+<div id="bigpaf">
 <div id="titrelieu">
 
     <h1>Visitez nos sites touristiques</h1>
@@ -24,16 +24,16 @@
 
 <p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
 
-<div id="bigpaf">
+
   {{ $lieux->links() }}
   @foreach ($lieux as $lieu)
   <div id="paf">
 
-      <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image), 400, 250,['crop'])}}"/></a>
+      <a class="img-hover" href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image), 400, 250,['crop'])}}"/></a>
       <p>{{ $lieu->lieu}}</p>
 
       <p id="name">{{ $lieu->name }}</p>
-      {{-- <p><a href="{{ route('single', ['id' => $lieu->id])}}">Voir plus</a></p> --}}
+
 
   </div>
   @endforeach

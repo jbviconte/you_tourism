@@ -29,7 +29,7 @@
 
             <div class="form-group">
               <label>Status: </label>
-              {!! Form::select('status', ['publish' => 'Publier', 'no publish' => 'Non publier'], $lieux->status)!!}</li>
+              {!! Form::select('status', ['publish' => 'Publier', 'no publish' => 'Non publier'], $lieux->status) !!}
             </div>
 
             <div class="form-group">
