@@ -89,7 +89,7 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div id="wrap">
+      <div id="foot">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
@@ -98,8 +98,8 @@
           <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
 
         </ul>
-
       </div>
+
     </footer>
 
     @yield('scripts')

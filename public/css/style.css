@@ -58,6 +58,7 @@ table {
 
 /* fin du reset */
 
+
 /* header */
 
 header
@@ -278,16 +279,6 @@ header
 /* fin page login */
 
 
-/* page contact */
-
-.dodo
-{
-	border-radius: 5px;
-	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-}
-
-/* fin page contact */
-
 /* wrapper titres et paragraphe */
 
 #wrapper h1
@@ -345,11 +336,6 @@ header
 }
 
 /* fin css wrapper */
-
-#contact_pad
-{
-  padding: 75px;
-}
 
 /* page lieux */
 
@@ -438,24 +424,32 @@ header
 {
 	font-weight: bold;
 	font-size: 20px;
+	font-family: cursive;
+	padding-bottom: 15px;
+}
+
+.parag2
+{
+	font-size: 18px;
 }
 
 .box-title
 {
 	padding-top: 80px;
-	margin-bottom: -80px;
 }
 
 .content
 {
 	width: 100%;
-	height: auto;
+	min-height: 600px;
 	text-align: center;
+	padding-top: 60px;
 }
 
 .form-group
 {
 	margin-top: 10px;
+	padding-top: -75px;
 }
 
 .form-control
@@ -557,7 +551,34 @@ header
 .dede
 {
 	text-align: center;
-	margin-top: 30px;
+	padding-top: 10px;
+}
+
+.dodo
+{
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+#contact_pad
+{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-height: 600px;
+}
+
+.panel-heading
+{
+	font-weight: bold;
+	font-size: 22px;
+	font-family: cursive;
+	padding-bottom: 10px;
+}
+
+.parag
+{
+	font-size: 18px;
 }
 
 /* fin page contact */
@@ -567,7 +588,7 @@ header
 
 /* boutons réseaux sociaux */
 
-.wrap li
+#foot li
 {
 	display: inline;
 }
@@ -576,16 +597,13 @@ header
 
 footer
 {
-	Max-width: 100%;
 	width: 100%;
   height: 150px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
 	margin-top: 50px;
-	z-index: 1;
 }
-
 
 footer ul li a
 {
