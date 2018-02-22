@@ -169,33 +169,36 @@ header
 	font-family: cursive;
 }
 
-.liensco
-{
-	width: auto;
-	height: auto;
-  display: block;
-	float: right;
-  padding : 0 0.5em;
-  margin-left: 1500px;
-  color: #DEB887;
-	text-decoration: none;
-}
-
-.liensco2
-{
-	width: auto;
-	height: auto;
-  display: block;
-	float: right;
-  padding : 0 0.5em;
-  margin-left: 1500px;
-  color: #DEB887;
-	text-decoration: none;
-}
-
 #connect
 {
 	float: right;
+	position: absolute;
+}
+
+#liensco
+{
+	width: auto;
+	height: auto;
+  display: block;
+	float: right;
+  padding : 0 0.5em;
+  margin-left: 1500px;
+  color: #DEB887;
+	text-decoration: none;
+	font-family: cursive;
+}
+
+#liensco2
+{
+	width: auto;
+	height: auto;
+  display: block;
+	float: right;
+  /* padding-right: 10px; */
+  margin-left: 1500px;
+  color: #DEB887;
+	text-decoration: none;
+	font-family: cursive;
 }
 
 /* fin liens header */
