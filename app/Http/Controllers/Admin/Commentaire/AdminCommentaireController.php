@@ -7,15 +7,20 @@ use Illuminate\Http\Request;
 use App\Commentaire;
 use App\User;
 use App\Lieux;
+use Auth;
 
 class AdminCommentaireController extends Controller
 {
 
   public function __construct(User $request)
   {
+
       $this->middleware('auth');
       $this->middleware('admin');
+
+
   }
+
     public function commentaire() {
 
       $commentaires = \DB::table('commentaire')
