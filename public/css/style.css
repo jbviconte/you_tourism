@@ -63,7 +63,7 @@ table {
 
 header
 {
-  max-width: 100%;
+  width: 100%;
 	height: 75px;
   padding: 0;
   margin: 0;
@@ -73,6 +73,7 @@ header
 	display: block;
 	z-index: 1000;
 	line-height: 1.5rem;
+	object-fit: cover;
 }
 
 .line_height
@@ -121,7 +122,7 @@ header
 
 .liliens
 {
-	color: #fff;
+	color: #DEB887;
 	display: block;
 	text-decoration: none;
 	float: right;
@@ -131,14 +132,11 @@ header
 	z-index: 10;
 }
 
-#menu li:hover, li:focus, li:active
+#menu li a:hover, li a:focus, li a:active
 {
-	background: #000;
   color: #fff;
 	text-decoration: none;
-	z-index: 10;
-	font-size: 1.4em;
-	font-size-adjust: 0.5;
+	font-size: 1.2em;
 }
 
 .logo a
@@ -162,7 +160,7 @@ header
 	margin-top: 15px;
   color: #DEB887;
 	text-decoration: none;
-	position: fixed;
+	position: absolute;
 	font-family: cursive;
 }
 
@@ -183,7 +181,9 @@ header
 #connect
 {
 	float: right;
-	position: absolute;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 15px;
 }
 
 #liensco
@@ -193,7 +193,6 @@ header
   display: block;
 	float: right;
   padding : 0 0.5em;
-  margin-left: 1500px;
   color: #DEB887;
 	text-decoration: none;
 	font-family: cursive;
@@ -205,8 +204,6 @@ header
 	height: auto;
   display: block;
 	float: right;
-  /* padding-right: 10px; */
-  margin-left: 1500px;
   color: #DEB887;
 	text-decoration: none;
 	font-family: cursive;
@@ -323,6 +320,13 @@ header
 	float: center;
 }
 
+#access a:hover, a:focus, a:active
+{
+	z-index: 100;
+	font-size: 5em;
+	font-size-adjust: 5;
+}
+
 .mess_bienvenue
 {
 	font-size: x-large;
@@ -341,18 +345,18 @@ header
 
 #bigpaf
 {
-    width: 100%;
-    margin-left: -2%;
+    width: 70%;
+    margin: auto;
+		display: block;
 }
 
 #paf
 {
   width: 23%;
   margin-left: 2%;
-	padding-bottom: 25px;
   float: left;
   position: relative;
-	margin-top: 100px;
+	margin-top: 7%;
 	padding-bottom: 15px;
 	border-radius: 5px;
 	box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.7);
@@ -377,6 +381,12 @@ header
   margin-top: 35%;
   z-index: 5;
 	padding-left: 12px;
+}
+
+#paf a:hover
+{
+	background: #fff;
+	opacity: 0.7;
 }
 
 #titrelieu h1
@@ -443,7 +453,7 @@ header
 	width: 100%;
 	min-height: 600px;
 	text-align: center;
-	padding-top: 60px;
+	/* padding-top: 60px; */
 }
 
 .form-group
@@ -597,7 +607,7 @@ header
 
 footer
 {
-	width: 100%;
+	max-width: 100%;
   height: 150px;
   padding: 0;
   margin: 0;

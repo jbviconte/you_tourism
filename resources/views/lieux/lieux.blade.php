@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-
+<div id="bigpaf">
 <div id="titrelieu">
 
     <h1>Visitez nos sites touristiques</h1>
@@ -24,7 +24,7 @@
 
 <p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
 
-<div id="bigpaf">
+
   {{ $lieux->links() }}
   @foreach ($lieux as $lieu)
   <div id="paf">
