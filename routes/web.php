@@ -20,6 +20,8 @@ Route::group(['namespace' => 'Front'], function (){
 
   Route::get('/', 'HomeController@home')->name('home');
 
+  Route::post('passwordreset', 'HomeController@sendMail')->name('send-mail');
+
   Route::group(['namespace' => 'Ajout'], function (){
 
     Route::get('ajout', 'AjoutController@ajoutForm')->name('ajout-view');
@@ -30,21 +32,24 @@ Route::group(['namespace' => 'Front'], function (){
 
     Route::get('lieux/lieux', 'LieuxController@lieux')->name('lieux');
     Route::get('lieux/single/{id}', 'LieuxController@single')->name('single');
+
+    
+    Route::post('lieux/single/{id}', 'LieuxController@commentaireNew')->name('lieux-commentaire-new-action');
   });
 
   Route::get('contact', 'ContactController@contactForm')->name('contact-view');
   Route::post('contact', 'ContactController@action')->name('contact-action');
 
-  Route::group(['namespace' => 'Commentaire'], function (){
 
-    Route::get('commentaire', 'CommentaireController@commentaire')->name('commentaire');
-    Route::post('commentaire', 'CommentaireController@commentaireNew')->name('commentaire-new-action');
-    Route::delete('commentaire', 'CommentaireController@commentaireDelete')->name('commentaire-delete-action');
+  Route::group(['namespace' => 'UserPage'], function(){
+
+    Route::get('userpage/{id}', 'UserPageController@userPage')->name('userpage');
+
+    Route::get('userpage/update/{id}', 'UserPageController@userPageUpdate')->name('userpage-update');
+    Route::put('userpage/update/{id}', 'UserPageController@userPageUpdateAction')->name('user-page-update-action');
+
+    Route::delete('userpage/delete/{id}', 'UserPageController@userPageDeleteAction')->name('user-page-delete-action');
   });
-
-    Route::get('userpage', 'Userpage\UserPageController@userpage')->name('userpage');
-    Route::get('userpage/update/{id}', 'Userpage\UserPageController@userpageupdate')->name('userpage-update');
-    Route::put('userpage/update/{id}', 'Userpage\UserPageController@userpageUpdate')->name('userpage-update-action');
 
 });
 Auth::routes();

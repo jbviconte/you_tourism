@@ -13,20 +13,23 @@
       </div>
       <!-- /.box-header -->
       <div class="box-body">
-          {!! Form::open(['route' => ['user-update-action', $users->id],'method' => 'put']) !!}
+
+          {!! Form::open(['route' => ['user-update-action', $users->id], 'method' => 'put']) !!}
+
+          {{ csrf_field() }}
           <!-- text input -->
           <div class="form-group">
             <label>Pseudo</label>
-            {!! Form::text('name', $users->name,['class' => "form-control", 'placeholder' => 'pseudo']) !!}
+            {!! Form::text('name', $users->name, ['class' => "form-control", 'placeholder' => 'pseudo']) !!}
             {!! $errors->first('name','<small class="help-block">:message</small>') !!}
           </div>
 
           <div class="form-group">
-            <label>Status: </label>
-            {!! Form::select('role', ['inscrit' => 'Inscrit', 'admin' => 'Admin'], $users->role)!!}</li>
+            <label>Role: </label>
+            {!! Form::select('role', ['inscrit' => 'Inscrit', 'admin' => 'Admin'], $users->role) !!}
           </div>
 
-          {!! Form::submit('Modifier',['class' => 'btn btn-block btn-success btn-lg']) !!}
+          {!! Form::submit('Modifier', ['class' => 'btn btn-block btn-success btn-lg']) !!}
           {!! Form::close() !!}
       </div>
       <!-- /.box-body -->

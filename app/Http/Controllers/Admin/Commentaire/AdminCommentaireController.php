@@ -7,15 +7,20 @@ use Illuminate\Http\Request;
 use App\Commentaire;
 use App\User;
 use App\Lieux;
+use Auth;
 
 class AdminCommentaireController extends Controller
 {
 
-  // public function __construct(User $request)
-  // {
-  //     $this->middleware('auth');
-  //     $this->middleware('admin');
-  // }
+  public function __construct(User $request)
+  {
+
+      $this->middleware('auth');
+      $this->middleware('admin');
+
+
+  }
+
     public function commentaire() {
 
       $commentaires = \DB::table('commentaire')
@@ -28,16 +33,12 @@ class AdminCommentaireController extends Controller
 
     }
 
-    public function commentaireUpdate()
-    {
-
-    }
 
     public function commentaireDelete($id)
     {
       $commentaires = Commentaire::findOrFail($id);
-      $commentiares->delete();
+      $commentaires->delete();
 
-      return redirect()->route('admin/commentaire/commentaire')->with('success', 'suppression éffectué');
+      return redirect()->route('admin-commentaire')->with('success', 'suppression éffectué');
     }
 }

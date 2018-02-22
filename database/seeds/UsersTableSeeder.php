@@ -39,6 +39,14 @@ class UsersTableSeeder extends Seeder
           'created_at' => $date
         );
 
+        $users[] = array(
+          'name' => 'Quentin',
+          'email' => 'lorentzquentin@hotmail.fr',
+          'password' => bcrypt('123456'),
+          'role' => 'admin',
+          'created_at' => $date
+        );
+
         DB::table('users')->insert($users);
     }
 }

@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
   </head>
 
@@ -12,11 +16,13 @@
   <body>
 
 
-    <header id="menu">
-      <div class="wrap">
+    <header id="menu" class="large">
+      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
+        YouTourism
+      </div>
+        <div class="wrap">
+        <nav>
 
-
-      <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -27,8 +33,12 @@
 
               <!-- Authentication Links -->
               @if (Auth::guest())
-                  <li><a id="liensco" href="{{ route('login') }}">Se connecter</a></li>
+
+                <div id=connect>
+                  <li><a id="liensco" href="{{ route('login') }}">Se Connecter</a></li>
                   <li><a id="liensco2" href="{{ route('register') }}">S'enregistrer</a></li>
+                </div>
+
                 @else
                   @if ( Auth::user()->role == 'admin')
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -37,7 +47,8 @@
                       <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
-                        <li><a class="liliens" href="{{ route('userpage') }}">Profil</a></li>
+
+                        <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
                   </li>
 
                       <br />
@@ -54,16 +65,17 @@
 
                   </li>
                 @endif
+              </ul>
+        </nav>
+    </div>
+  <div class="line_height"></div>
+</header>
 
-        </ul>
-      </nav>
-    </header>
-  <body>
 
     <div class="content wrap">
 
       @if (session('success'))
-        <div class="alert alert-success">
+        <div class="alert-alert-success">
           {{ session('success') }}
         </div>
       @endif
@@ -75,30 +87,23 @@
       <div class="clear"></div>
     </div>
 
-
+    <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div class="wrap">
+      <div id="wrap">
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
-          <li><a href="http://twitter.com/share" class="twitter-share-button"
-                data-count="vertical" data-via="InfoWebMaster">Tweet</a>
-              <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
-          <li><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65"
-              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;" allowTransparency="true"></iframe></li>
-          <li><a name="fb_share" type="box_count" share_url="http://www.example.com/page.html"></a>
-              <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
-          <li><g:plusone size="tall"></g:plusone></li>
-          <li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-              <script type="in/share" data-counter="right"></script></li>
+
+          <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
+          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton facebook" /></a>
+          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
+
         </ul>
-        <p>footer</p>
 
       </div>
     </footer>
 
-        <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-        {lang: 'fr'}
-        </script>
+    @yield('scripts')
+
 
   </body>
 </html>

@@ -11,11 +11,11 @@ use App\Http\Requests\UpdateUserRequest;
 class AdminUserController extends Controller
 {
 
-  // public function __construct(User $request)
-  // {
-  //     $this->middleware('auth');
-  //     $this->middleware('admin');
-  // }
+  public function __construct(User $request)
+  {
+      $this->middleware('auth');
+      $this->middleware('admin');
+  }
 
   // vue des utilisateur
   public function userView()
@@ -34,14 +34,16 @@ class AdminUserController extends Controller
 
   public function userUpdateAction(UpdateUserRequest $request, $id)
   {
+    // dd($request);
+    // $post = $request->all();
 
-    $users = User::findOrFail($id);
-      $users->update($request->all());
+    $user = User::findOrFail($id);
+    $user->update($request->all());
 
-      // Lieux::where('id', '=', $id)->update([
-      //     'lieu'       => $post['lieu'],
-      //     'content'     => $post['content'],
-      //     'updated_at'  =>Carbon::now(),
+      // User::where('id', '=', $id)->update([
+      //     'name'       => $post['name'],
+      //     'role'     => $post['role'],
+      //     'updated_at'  => Carbon::now(),
       // ]);
 
       return redirect()->route('user')->with('success', 'modification éffectué');

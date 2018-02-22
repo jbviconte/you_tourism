@@ -11,16 +11,18 @@
           <div class="box">
             <div class="box-header">
               <h3 class="box-title">Lieux Touristiques</h3>
-
               <div class="box-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
                   <a href="{{ route('lieu-new-action') }}"><button type="button" class="btn btn-block btn-default btn-lg">Ajouter un lieu</button></a>
-
                 </div>
               </div>
-
             <div class="box-body table-responsive no-padding">
               {{ $lieux->links() }}
+              @if (session('success'))
+                <div class="alert-alert-success">
+                  {{ session('success') }}
+                </div>
+              @endif
               <table class="table table-hover">
                 <tr>
                   <th>Lieu: </th>
@@ -44,6 +46,7 @@
                       <ul class="dropdown-menu" role="menu">
                         <li class="divider"></li>
                         {{ Form::open(['route' => ['admin-lieu-delete-action', $lieu->id], 'method' => 'delete'])}}
+                        {{ csrf_field() }}
                         <li><button type="form" class="btn btn-block btn-danger btn-xs">Supprimer</button></li>
                         {{ Form::close()}}
                       </ul>
