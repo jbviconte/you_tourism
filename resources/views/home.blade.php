@@ -77,12 +77,14 @@
       @foreach ($lieux as $lieu)
 
   <div id="access">
-
+        <div id="superp">
             <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/></a>
-            <h1>{{ $lieu['lieu'] }}</h1>
+            <p>{{ $lieu['lieu'] }}</p>
+        </div>
   </div>
       @endforeach
-
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
