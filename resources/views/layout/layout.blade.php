@@ -17,12 +17,12 @@
 
 
     <header id="menu" class="large">
-      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
-        YouTourism
+      <div class="logo">
+        <a href="{{ route('home') }}">YouTourism</a>
       </div>
         <div class="wrap">
-        <nav>
 
+  <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -44,7 +44,7 @@
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
                   @endif
                   <li class="dropdown">
-                      <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <a href="{{ route('userpage', Auth::user()->id) }}" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
@@ -84,17 +84,18 @@
 
     <!-- boutons réseaux sociaux footer -->
     <footer>
-      <div id="wrap">
+
         <ul>
           <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
+      <div id="foot">
           <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
-          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton facebook" /></a>
-          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton facebook" /></a>
+          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
+          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
 
         </ul>
-
       </div>
+
     </footer>
 
     @yield('scripts')

@@ -18,7 +18,11 @@
     {!! Form::text('lieu', null, ['class' => 'frenchcaba', 'placeholder' => 'Nom du lieu']) !!}
     {!! $errors->first('lieu', '<small class="help-block">:message</small>') !!}
     <br>
-
+    {!! Form::label('adresse', 'Adresse du lieu') !!}
+    <br>
+    {!! Form::text('adresse', null, ['class' => 'frenchcaba', 'placeholder' => 'Adresse du lieu']) !!}
+    {!! $errors->first('adresse', '<small class="help-block">:message</small>') !!}
+    <br>
     {!! Form::label('content', 'Description') !!}
     <br>
     {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Description du lieu']) !!}

@@ -25,6 +25,7 @@ class AjoutRequest extends FormRequest
     {
         return [
             'lieu'    => 'required|min:5|max:50',
+            'adresse' => 'required|min:5|max:150',
             'content' => 'required|min:5|max:1000',
             'image'   => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
@@ -34,6 +35,7 @@ class AjoutRequest extends FormRequest
     {
        return [
           'lieu.required'     => 'Veuillez indiquer le nom de votre lieu',
+          'adresse.required'  => 'Veuillez indiquer l\'adresse du lieu',
           'content.required'  => 'Une petite description, voyageur ?',
           'image.required'    => 'Une photo de votre lieu touristique doit être ajouter',
        ];

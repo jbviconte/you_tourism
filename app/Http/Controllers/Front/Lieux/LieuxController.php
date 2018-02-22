@@ -17,7 +17,7 @@ class LieuxController extends Controller
   public function lieux()
   {
 
-    $lieux = Lieux::where('status','=','publish')->paginate(6);
+    $lieux = Lieux::where('status','=','publish')->paginate(5);
 
 
       return view('lieux/lieux', compact('lieux'));

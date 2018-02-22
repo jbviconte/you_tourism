@@ -7,16 +7,17 @@
 @section('content')
 <div id="contact_pad">
   <div class="dede">
-      <div class="panel-heading">Nous contacter</div>
-    @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-          @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-          @endforeach
-        </ul>
-      </div>
-    @endif
+    <h1 class="panel-heading">Nous contacter</h1>
+      <p class="parag">Une idée ? Une suggestion ? Une remarque ?</p>
+      <p class="parag">Ou tout simplement besoin d'aide ?</p>
+      <p class="parag">Prenez le temps de remplir le formulaire qui suit, notre équipe vous répondra dans les meilleurs délais.</p>
+      <br />
+
+      @if (session('success'))
+        <div class="alert-alert-success">
+          {{ session('success') }}
+        </div>
+      @endif
 
     {!! Form::open(['route' => 'contact-action', 'method' => 'post']) !!}
 
@@ -44,7 +45,7 @@
     {!! $errors->first('message','<small class="help-block">:message</small>') !!}
     <br />
 
-    {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+    {!! Form::submit('Envoyer', ['class' => 'btn-btn-success']) !!}
 
     {!! Form::close() !!}
   </div>

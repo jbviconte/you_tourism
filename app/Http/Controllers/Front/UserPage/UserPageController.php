@@ -35,19 +35,15 @@ class UserPageController extends Controller
   {
 
     $user = User::findOrFail($id);
+
     if (!empty($request->password)) {
 
-
-        $inputs = array($request->all(),[
-                  'password' => bcrypt($post['password']),
+      $inputs = array_merge($request->all(),[
+                  'password' => bcrypt($user['password'])
                 ]);
-
     } else {
-
-        $inputs = $request->all();
-
+      $inputs = $request->all();
     }
-
     $user->update($inputs);
 
     return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');

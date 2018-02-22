@@ -27,6 +27,7 @@
                 <tr>
                   <th>Lieu: </th>
                   <th>Description: </th>
+                  <th>Adresse</th>
                   <th>Image du lieu: </th>
                   <th>Poster par: </th>
                   <th>Status: </th>
@@ -37,6 +38,7 @@
                   <tr>
                     <td style="width:100px">{{ $lieu->lieu }}</td><br />
                     <td>{{ $lieu->content }}</td>
+                    <td>{{ $lieu->adresse }}</td>
                     <td style="width:100px"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,50,50)}}"/></td>
                     <td style="width:100px">{{ $lieu->name }}</td>
                     <td style="width:100px">{{ $lieu->status }}</td>

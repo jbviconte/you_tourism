@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Front;
 
+use Carbon\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
+use App\Contact;
 
 class ContactController extends Controller
 {
@@ -15,14 +17,16 @@ class ContactController extends Controller
 
     public function action(ContactRequest $request)
     {
-        // $this->validate($request, [
-        //     'nom' => 'required|min:5|max:100'
-        // ]);
-        //
-        // $post = $request->all();
-        // dd($post);
-        //
-        return redirect()->route('home')->with('success', 'Votre message a été envoyer!');
+
+      $post = $request->all();
+      \DB::table('contact')->insert([
+          'nom'      => $post['nom'],
+          'email'    => $post['email'],
+          'sujet'    => $post['sujet'],
+          'message'  => $post['message'],
+          'created_at' => Carbon::now(),
+        ]);
+        return redirect()->route('contact-view')->with('success', 'Votre message a été envoyer!');
 
     }
 }
