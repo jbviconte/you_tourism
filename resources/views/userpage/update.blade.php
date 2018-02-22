@@ -9,10 +9,12 @@
     <div class="box box-warning">
       <div class="box-header with-border">
         <h3 class="box-title">Modifier votre profil</h3>
+        <p class="parag2">Pour modifier votre e-mail, votre pseudo ou votre mot de passe,</p>
+        <p class="parag2">remplissez simplement le formulaire qui suit avec vos nouveaux paramètres.</p>
       </div>
       <!-- /.box-header -->
       <div class="box-body">
-        <br><br><br><br><br><br>
+        <br><br>
           {!! Form::open(['route' => ['user-page-update-action', $users->id],'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">

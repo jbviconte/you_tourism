@@ -72,7 +72,7 @@
 
 
       <p class="article1">Les destinations sont nombreuses mais chacune de nos regions nous offre des merveilles bien particuliere a leur environnement et leur climat.</p><br />
-      <p class="article1">Pour ceux qui hesite encore, sachez une chose importante : Oui il pleut souvent on l'admet ! mais c'est souvent cette pluie qui créer les plus belles vue et marque l'esprit bien plus qu'avec le soleil.</p><br />
+      <p class="article1">Pour ceux qui hésitent encore, sachez une chose importante : oui, il pleut souvent, on l'admet ! Mais c'est souvent cette pluie qui crée les plus belles vues et marque plus l'esprit que le soleil.</p><br />
 
   </div>
 
@@ -81,12 +81,14 @@
       @foreach ($lieux as $lieu)
 
   <div id="access">
-
+        <div id="superp">
             <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/></a>
-            <h1>{{ $lieu['lieu'] }}</h1>
+            <p>{{ $lieu['lieu'] }}</p>
+        </div>
   </div>
       @endforeach
-
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
