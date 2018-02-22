@@ -110,36 +110,46 @@ header
 /* css du slider */
 .flexslider
 {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
+	object-fit: cover;
 }
 /* fin css slider */
 
 .liliens
 {
-	color: #D6B561;
+	color: #fff;
 	display: block;
 	text-decoration: none;
 	float: right;
 	font-family: cursive;
-	font-size: 15px;
 	margin-left: 50px;
 	margin-top: 50px;
 	z-index: 10;
 }
 
-#menu a:hover, a:focus, a:active
+#menu li:hover, li:focus, li:active
 {
 	background: #000;
   color: #fff;
 	text-decoration: none;
 	z-index: 10;
-	transition: all 1s;
-	transform: rotate(1100deg);
-	font-size-adjust: 25px;
+	font-size: 1.4em;
+	font-size-adjust: 0.5;
+}
+
+.logo a
+{
+	font-size: 3em;
+	color: #fff;
+	padding-top: 50px;
+	padding-left: 30px;
+	float: left;
+	text-decoration: none;
+	font-family: 'Eagle Lake', cursive;
 }
 
 #deco
@@ -233,6 +243,16 @@ header
   text-align: center;
   padding: 75px;
 	min-height: 600px;
+
+}
+
+#wrapper
+{
+  margin: 0 auto;
+	max-width: 1600px;
+	width: 100%;
+	text-align: center;
+
 }
 
 .panel-panel-default
@@ -257,12 +277,6 @@ header
 
 /* fin page login */
 
-.wrap
-{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1600px;
-}
 
 /* wrapper titres et paragraphe */
 
@@ -534,6 +548,11 @@ button
   font-size: large;
   margin-bottom: 25px;
 }
+.wrap
+{
+	width: 100%;
+	margin: 0 auto;
+}
 
 /* fin page home */
 
@@ -593,8 +612,8 @@ button
 
 footer
 {
+	width: 100%;
   height: 150px;
-	max-width: 1900px;
   padding: 0;
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
@@ -605,55 +624,12 @@ footer ul li a
 {
   color: #DEB887;
 	text-decoration: none;
+	width: 100%;
 }
 
 /* fin footer */
 
-
-/*Menu scroll resize*/
-
-/* *,
-*:before,
-*:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-} */
-/* header large */
-/* header.large {
-	height: 75px;
-}
-header.large {
-  height: 75px;
-}
-header.large li {
-	margin-top: 0px;
-} */
-/* header small */
-/* header.small {
-	height: 50px;
-}
-header.small img {
-	height: 50px;
-}
-header.small li {
-	margin-top: auto;
-} */
-/* Transitions */
-/* header,
-nav,
-a,
-img,
-li {
-	transition: .5s all;
-	-moz-transition: .5s all;
-	-webkit-transition: .5s all;
-	-o-transition: .5s all;
-} */
-
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1048px)
 {
 		header
 		{
