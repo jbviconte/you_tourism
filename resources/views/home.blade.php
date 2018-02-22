@@ -82,7 +82,8 @@
             <h1>{{ $lieu['lieu'] }}</h1>
   </div>
       @endforeach
-
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

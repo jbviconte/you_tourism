@@ -17,12 +17,12 @@
 
 
     <header id="menu" class="large">
-      <div class="logo" style="font-family: 'Eagle Lake', cursive;font-size:3em;color:#fff;padding-top:50px;padding-left:30px;float:left;">
-        YouTourism
+      <div class="logo">
+        <a href="{{ route('home') }}">YouTourism</a>
       </div>
         <div class="wrap">
-        <nav>
 
+  <nav>
         <ul id="liens">
         <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
         <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -44,7 +44,7 @@
                     <li><a class="liliens" href="{{ route('dashboard') }}">Dashboard</a></li>
                   @endif
                   <li class="dropdown">
-                      <a href="#" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <a href="{{ route('userpage', Auth::user()->id) }}" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
