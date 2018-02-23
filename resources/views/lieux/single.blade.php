@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-
+<div id="single_lieu">
   @foreach ($lieux as $lieu)
   <div class="lieu">
 
@@ -57,6 +57,7 @@
       {!! Form::close() !!}
   @endif
 </div>
+</div>
 @endsection
 
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}
@@ -95,7 +96,7 @@ $(document).ready(function(){
                       } else {
                         $('#errorcommentaire').html(response.errors.commentaire);
 
-                        // faire afficher autre error ++++ 
+                        // faire afficher autre error ++++
                       }
 
                  }

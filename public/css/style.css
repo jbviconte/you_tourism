@@ -149,6 +149,16 @@ header
 	text-decoration: none;
 	font-family: 'Eagle Lake', cursive;
 }
+.logo_footer a
+{
+	font-size: 2em;
+	color: #fff;
+	padding-top: 55px;
+	padding-left: 25px;
+	float: left;
+	text-decoration: none;
+	font-family: 'Eagle Lake', cursive;
+}
 
 #deco
 {
@@ -342,7 +352,7 @@ header
 	margin-bottom: -30px;
 }
 
-#access a:hover, a:focus, a:active
+#access a:hover
 {
 	background: #fff;
 	opacity: 0.5;
@@ -521,7 +531,7 @@ button
 .lieu
 {
   float: left;
-	padding-top: 80px;
+	padding-top: 150px;
 }
 
 .lieu h1
@@ -536,6 +546,12 @@ button
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+#single_lieu
+{
+	width: 75%;
+	margin-left: 250px;
 }
 
 #lieusugg
@@ -643,15 +659,6 @@ button
 
 /* footer */
 
-/* boutons réseaux sociaux */
-
-#foot li
-{
-	display: inline;
-}
-
-/* fin boutons réseaux sociaux */
-
 footer
 {
 	max-width: 100%;
@@ -671,6 +678,37 @@ footer ul li a
 	font-size: 20px;
 }
 
+#foot_place
+{
+	width: 50%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.logo_footer
+{
+	display: block;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-size: 1em;
+}
+/* boutons réseaux sociaux */
+
+#foot
+{
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+
+/* fin boutons réseaux sociaux */
+.footer_content
+{
+	display: block;
+	margin-top: 30px;
+	margin-left: 150px;
+	color: #fff;
+}
 /* fin footer */
 
 @media screen and (max-width: 1048px)
@@ -697,5 +735,32 @@ footer ul li a
 		#liens
 		{
 			display: none;
+		}
+
+		#foot_place
+		{
+			width: 100%;
+			display: inline-block;
+		}
+		.logo_footer
+		{
+			width: 100%;
+			display: block;
+			font-size: 0.5em;
+			float: left;
+		}
+		#foot
+		{
+			width: 100%;
+			display: inline-block;
+			float:left;
+			margin-left: -35%;
+			margin-top: -10%;
+		}
+		.footer_content
+		{
+			display: inline-block;
+			color: #fff;
+			margin-left: -35%;
 		}
 }
