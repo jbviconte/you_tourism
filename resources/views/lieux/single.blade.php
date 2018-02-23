@@ -8,6 +8,9 @@
 @section('content')
 <div id="single_lieu">
   @foreach ($lieux as $lieu)
+
+  <div id="full">
+
   <div class="lieu">
 
     <h1>{{ $lieu->lieu }}</h1>
