@@ -149,6 +149,16 @@ header
 	text-decoration: none;
 	font-family: 'Eagle Lake', cursive;
 }
+.logo_footer a
+{
+	font-size: 2em;
+	color: #fff;
+	padding-top: 55px;
+	padding-left: 25px;
+	float: left;
+	text-decoration: none;
+	font-family: 'Eagle Lake', cursive;
+}
 
 #deco
 {
@@ -181,20 +191,20 @@ header
 #connect
 {
 	float: right;
-	position: relative;
-	margin-right: 10px;
-	margin-top: 15px;
+	position: absolute;
+	/* margin-right: 10px; */
+	margin-top: 10px;
 }
 
 #liensco
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   padding : 0 0.5em;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -203,10 +213,10 @@ header
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -230,9 +240,18 @@ header
 	display: inline-block;
 }
 
+.add p
+{
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
 .frenchcaba
 {
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 /* fin page ajout lieu */
@@ -342,7 +361,7 @@ header
 	margin-bottom: -30px;
 }
 
-#access a:hover, a:focus, a:active
+#access a:hover
 {
 	background: #fff;
 	opacity: 0.5;
@@ -496,6 +515,7 @@ button
 .form-control
 {
 	border-radius: 5px;
+	margin-top: 10px;
 }
 
 .btn_btn-block_btn-success_btn-lg
@@ -521,13 +541,14 @@ button
 .lieu
 {
   float: left;
-	padding-top: 80px;
+	padding-top: 150px;
 }
 
 .lieu h1
 {
 	font-size: 20px;
 	font-weight: bold;
+	padding-bottom: 25px;
 }
 
 .lieu h2
@@ -536,6 +557,12 @@ button
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 20px;
+}
+
+#single_lieu
+{
+	width: 75%;
+	margin-left: 250px;
 }
 
 #lieusugg
@@ -586,8 +613,6 @@ button
   margin-bottom: 25px;
 }
 
-
-
 /* layout */
 
 .wrap
@@ -597,7 +622,6 @@ button
 }
 
 /* fin page home */
-
 
 /* page contact */
 
@@ -638,19 +662,20 @@ button
 	border-radius: 5px;
 }
 
+#pagination li
+{
+	width: 50px;
+	height: auto;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	margin-top: 50px;
+	text-align: center;
+}
+
 /* fin page contact */
 
 
 /* footer */
-
-/* boutons réseaux sociaux */
-
-#foot li
-{
-	display: inline;
-}
-
-/* fin boutons réseaux sociaux */
 
 footer
 {
@@ -671,6 +696,37 @@ footer ul li a
 	font-size: 20px;
 }
 
+#foot_place
+{
+	width: 50%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.logo_footer
+{
+	display: block;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-size: 1em;
+}
+/* boutons réseaux sociaux */
+
+#foot
+{
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+
+/* fin boutons réseaux sociaux */
+.footer_content
+{
+	display: block;
+	margin-top: 30px;
+	margin-left: 150px;
+	color: #fff;
+}
 /* fin footer */
 
 @media screen and (max-width: 1048px)
@@ -697,5 +753,32 @@ footer ul li a
 		#liens
 		{
 			display: none;
+		}
+
+		#foot_place
+		{
+			width: 100%;
+			display: inline-block;
+		}
+		.logo_footer
+		{
+			width: 100%;
+			display: block;
+			font-size: 0.5em;
+			float: left;
+		}
+		#foot
+		{
+			width: 100%;
+			display: inline-block;
+			float:left;
+			margin-left: -35%;
+			margin-top: -10%;
+		}
+		.footer_content
+		{
+			display: inline-block;
+			color: #fff;
+			margin-left: -35%;
 		}
 }

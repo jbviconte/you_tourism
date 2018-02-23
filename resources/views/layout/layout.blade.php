@@ -72,31 +72,40 @@
 </header>
 
 
-    <div class="content wrap">
-      @yield('content')
-      
-      <div class="connexion">
-          @yield('connexion')
-      </div>
+<div class="content wrap">
+    @yield('content')
 
-      <div class="clear"></div>
+    <div class="connexion">
+        @yield('connexion')
     </div>
 
+    <div class="clear"></div>
+</div>
+
     <!-- boutons réseaux sociaux footer -->
-    <footer>
+ <footer>
+    <div id="foot_place">
+    <div class="logo_footer">
+      <a href="{{ route('home') }}">YouTourism</a>
+    </div>
 
-        <ul>
-          <li><a  href="{{ route('contact-view') }}">Contact</a></li>
+        <div id="foot">
+            <ul>
+              <li><a  href="{{ route('contact-view') }}">Contact</a></li>
 
-      <div id="foot">
-          <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
-          <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
-          <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
+              <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
+              <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
+              <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
 
-        </ul>
+            </ul>
+          </div>
+
+      <div class="footer_content">
+        <p>© admin groupe soutenance formation webforce3</p>
       </div>
 
-    </footer>
+    </div>
+  </footer>
 
     @yield('scripts')
 

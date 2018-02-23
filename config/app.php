@@ -177,8 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        App\Providers\ValidatorServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Folklore\Image\ImageServiceProvider::class,
+
 
     ],
 
