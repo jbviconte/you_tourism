@@ -14,11 +14,11 @@ use App\Service\PathUpload;
 class AdminLieuxController extends Controller
 {
 
-  public function __construct(User $request)
-  {
-      $this->middleware('auth');
-      $this->middleware('admin');
-  }
+  // public function __construct(User $request)
+  // {
+  //     $this->middleware('auth');
+  //     $this->middleware('admin');
+  // }
 
   // affichage des lieux dans l'admin
   public function listing()
@@ -29,7 +29,7 @@ class AdminLieuxController extends Controller
           ->join('users', 'lieux.user_id', '=', 'users.id')
           ->select('lieux.*', 'users.name')
           ->paginate(5);
-          
+
     return view('admin/lieux/adminlieux', compact('lieux'));
   }
 

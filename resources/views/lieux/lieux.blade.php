@@ -25,8 +25,9 @@
     <p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
 
   </div>
-  
-  <div>{{ $lieux->links() }}</div>
+
+
+
   @foreach ($lieux as $lieu)
   <div id="paf">
 
@@ -39,7 +40,9 @@
   </div>
   @endforeach
 
-  <div>{{ $lieux->links() }}</div>
+
+  <div id="pagination">{{ $lieux->links() }}</div>
+
 
 </div>
 

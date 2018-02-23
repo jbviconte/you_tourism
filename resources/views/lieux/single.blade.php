@@ -2,11 +2,15 @@
 
 @section('title')
   You Tourism-Description du lieu
+  <link rel="stylesheet" type ="text/css" href="assets/js/bootstrap.js">
 @endsection
 
 @section('content')
-
+<div id="single_lieu">
   @foreach ($lieux as $lieu)
+
+  <div id="full">
+
   <div class="lieu">
 
     <h1>{{ $lieu->lieu }}</h1>
@@ -42,19 +46,20 @@
         {!! Form::label('commentaire', 'Sujet du commentaire') !!}
         <br>
         {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
-        {!! $errors->first('commentaire', '<small class="help-block">:message</small>') !!}
+          <span id="errorcommentaire"></span>
         <br>
 
         {!! Form::label('content', 'Description') !!}
         <br>
         {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
-        {!! $errors->first('content', '<small class="help-block">:message</small>') !!}
+
         <br>
 
         {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
 
       {!! Form::close() !!}
   @endif
+</div>
 </div>
 @endsection
 
@@ -77,13 +82,26 @@ $(document).ready(function(){
 
       $('#comment').on('submit', function(e) {
         e.preventDefault();
+        var form = $('#comment');
+
 
         $.ajax({
                  url : "{{ route('lieux-commentaire-new-action', $lieu->id) }}",
                  type : 'POST',
-                 dataType : 'json',
+                data: form.serialize(),
+                 //dataType : 'application/json',
                  success: function(response){ // code_html contient le HTML renvoyé
-                        console.log(response.content);
+                        console.log(response.errors);
+
+                      if (response.errors === undefined || response.errors.length == 0) {
+                          // if success ,
+                          // on enleve le formumlaire , et on met à la place un message de success
+                      } else {
+                        $('#errorcommentaire').html(response.errors.commentaire);
+
+                        // faire afficher autre error ++++
+                      }
+
                  }
         });
 

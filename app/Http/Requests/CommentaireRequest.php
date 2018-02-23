@@ -13,7 +13,10 @@ class CommentaireRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+      // $comment = $comment::findOrFail($this->route('lieux-commentaire-new-action'));
+      // return $comment->user_id = 1;
+
+      return true;
     }
 
     /**
@@ -24,7 +27,7 @@ class CommentaireRequest extends FormRequest
     public function rules()
     {
         return [
-            'commentaire' => 'required|min:5|max:50',
+            'commentaire' => 'required|min:5|max:50|commentvalid:tadaaa',
             'content'     => 'required|min:5|max:150',
         ];
     }
