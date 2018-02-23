@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CommentaireRequest extends FormRequest
+class UserUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,10 +13,7 @@ class CommentaireRequest extends FormRequest
      */
     public function authorize()
     {
-      // $comment = $comment::findOrFail($this->route('lieux-commentaire-new-action'));
-      // return $comment->user_id = 1;
-
-      return true;
+        return true;
     }
 
     /**
@@ -26,9 +23,11 @@ class CommentaireRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            'commentaire' => 'required|min:5|max:50|commentvalid:tadaaa',
-            'content'     => 'required|min:5|max:150',
-        ];
+
+          return [
+            'name'     => 'required|min:5|max:50'
+
+          ];
+
     }
 }

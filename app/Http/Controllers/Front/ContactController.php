@@ -22,7 +22,7 @@ class ContactController extends Controller
         // $post = $request->all();
         // dd($post);
         //
-        return redirect()->route('home')->with('success', 'ok good');
+        return redirect()->route('home')->with('success', 'Votre message a été envoyer!');
 
     }
 }

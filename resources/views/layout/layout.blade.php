@@ -73,13 +73,8 @@
 
 
     <div class="content wrap">
-
-      @if (session('success'))
-        <div class="alert-alert-success">
-          {{ session('success') }}
-        </div>
-      @endif
       @yield('content')
+      
       <div class="connexion">
           @yield('connexion')
       </div>

@@ -44,7 +44,11 @@
   </div>
 
 <div id="wrapper">
-
+  @if (session('success'))
+    <div class="alert-alert-success">
+      {{ session('success') }}
+    </div>
+  @endif
     <div id="bienvenu"><br />
 
       <h2 class="mess_bienvenue">Bienvenue sur YouTourism</h2><br />
