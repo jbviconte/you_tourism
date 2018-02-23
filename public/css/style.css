@@ -181,20 +181,20 @@ header
 #connect
 {
 	float: right;
-	position: relative;
-	margin-right: 10px;
-	margin-top: 15px;
+	position: absolute;
+	/* margin-right: 10px; */
+	margin-top: 10px;
 }
 
 #liensco
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   padding : 0 0.5em;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -203,10 +203,10 @@ header
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
