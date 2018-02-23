@@ -230,9 +230,18 @@ header
 	display: inline-block;
 }
 
+.add p
+{
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
 .frenchcaba
 {
 	border-radius: 10px;
+	margin-top: 10px;
 }
 
 /* fin page ajout lieu */
@@ -496,6 +505,7 @@ button
 .form-control
 {
 	border-radius: 5px;
+	margin-top: 10px;
 }
 
 .btn_btn-block_btn-success_btn-lg
@@ -521,13 +531,14 @@ button
 .lieu
 {
   float: left;
-	padding-top: 80px;
+	padding-top: 150px;
 }
 
 .lieu h1
 {
 	font-size: 20px;
 	font-weight: bold;
+	padding-bottom: 25px;
 }
 
 .lieu h2
@@ -586,8 +597,6 @@ button
   margin-bottom: 25px;
 }
 
-
-
 /* layout */
 
 .wrap
@@ -597,7 +606,6 @@ button
 }
 
 /* fin page home */
-
 
 /* page contact */
 
