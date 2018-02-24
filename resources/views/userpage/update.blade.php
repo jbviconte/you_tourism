@@ -31,14 +31,6 @@
             {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email','<small class="help-block">:message</small>') !!}
           </div>
-
-          <div class="form-group">
-            <label for="password">Nouveau mot de passe</label>
-            <br />
-            {!! Form::password('password',['class' => 'form-control']) !!}
-            {!! $errors->first('password','<small class="help-block">:message</small>') !!}
-          </div>
-
           <br>
           {!! Form::submit('Modifier', ['class' => 'btn_btn-block_btn-success_btn-lg']) !!}
           {!! Form::close() !!}

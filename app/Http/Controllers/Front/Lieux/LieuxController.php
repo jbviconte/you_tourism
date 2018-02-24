@@ -26,7 +26,7 @@ class LieuxController extends Controller
   {
 
 
-    $lieux = Lieux::where('status','=','publish')->paginate(5);
+    $lieux = Lieux::where('status','=','publish')->paginate(4);
 
 
 

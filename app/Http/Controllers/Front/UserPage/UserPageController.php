@@ -35,15 +35,7 @@ class UserPageController extends Controller
   {
 
     $user = User::findOrFail($id);
-
-    if (!empty($request->password)) {
-
-      $inputs = array_merge($request->all(),[
-                  'password' => bcrypt($user['password'])
-                ]);
-    } else {
-      $inputs = $request->all();
-    }
+    $inputs = $request->all();
     $user->update($inputs);
 
     return redirect()->route('userpage', ['id' => $id])->with('success', 'profil mis a jour');
@@ -52,7 +44,13 @@ class UserPageController extends Controller
   public function userPageDeleteAction($id)
   {
     $users = User::findOrFail($id);
-     $users->delete();
+
+    $inputs = \DB::table('users')->where('users.id', '=', $id)
+                    ->join('commentaire', 'commentaire.user_id', '=', 'users.id')
+                    ->join('lieux', 'lieux.user_id', '=', 'users.id')
+                    ->select('users.*', 'commentaire.*', 'lieux.*');
+
+     $users->delete($inputs);
      return redirect()->route('home')->with('success', 'profil supprimer');
   }
 

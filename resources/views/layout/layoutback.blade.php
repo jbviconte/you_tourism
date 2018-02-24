@@ -118,6 +118,14 @@
               </span>
             </a>
           </li>
+          <li>
+            <a href="{{ route('admin-contact-view')}}">
+              <i class="fa fa-th"></i> <span>Contacts</span>
+              <span class="pull-right-container">
+                <small class="label pull-right bg-green"></small>
+              </span>
+            </a>
+          </li>
         </ul>
       </section>
       <!-- /.sidebar -->

@@ -95,6 +95,13 @@ Route::group(['namespace' => 'Admin'], function (){
     Route::delete('commentaire/delete/{id}', 'AdminCommentaireController@commentaireDelete')->name('admin-commentaire-delete-action');
   });
 
+  //Route Conact Admin
+  Route::group(['namespace' => 'Contact'], function(){
+
+    Route::get('contactadmin', 'ContactAdminController@contactAdminView')->name('admin-contact-view');
+    Route::delete('contact/delete/{id}', 'ContactAdminController@contactAdminDelete')->name('admin-contact-delete');
+  });
+
 
 
 });
