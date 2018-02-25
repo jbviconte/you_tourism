@@ -9,57 +9,59 @@
 <div id="single_lieu">
   @foreach ($lieux as $lieu)
 
-  <div id="full">
-
-  <div class="lieu">
-
-    <h1>{{ $lieu->lieu }}</h1>
-    <img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,700,650) }}"/>
-    <h2>Description du lieu touristique :</h2>
-    <p>{{ $lieu->content }}</p>
-    <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
 
 
-  </div>
-  @endforeach
+    <div class="lieu">
 
-  <div>
-    @foreach ($commentaires as $commentaire)
-      <div>
-        <h1>Posté par: {{ $commentaire->name }}</h1>
-        <br>
-        <p>Sujet: {{ $commentaire->commentaire }}</p>
-        <br>
-        <p>Commentaire: {{ $commentaire->content }}</p>
-        <br>
-        <p>Posté le: {{ $commentaire->created_at }}</p>
-        <br>
-      </div>
+      <h1>{{ $lieu->lieu }}</h1>
+      <img class="image_single" src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image)) }}"/>
+      <h2>Description du lieu touristique :</h2>
+      <p>{{ $lieu->content }}</p>
+      <h3>Adresse du lieu:</h3>
+      <p>{{ $lieu->adresse }}</p>
+      <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
+    </div>
     @endforeach
 
-  </div>
-  <div>
-  @if ( Auth::user())
-      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
-      {{ csrf_field() }}
+    <div>
+      @foreach ($commentaires as $commentaire)
+        <div>
+          <h1>Posté par: {{ $commentaire->name }}</h1>
+          <br>
+          <p>Sujet: {{ $commentaire->commentaire }}</p>
+          <br>
+          <p>Commentaire: {{ $commentaire->content }}</p>
+          <br>
+          <p>Adresse: {{ $commentaire->adresse }}</p>
+          <br>
+          <p>Posté le: {{ $commentaire->created_at }}</p>
+          <br>
+        </div>
+      @endforeach
+    </div>
+    <div>
+      @if ( Auth::user())
+        {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
+        {{ csrf_field() }}
 
-        {!! Form::label('commentaire', 'Sujet du commentaire') !!}
-        <br>
-        {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
+          {!! Form::label('commentaire', 'Sujet du commentaire') !!}
+          <br>
+          {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
           <span id="errorcommentaire"></span>
-        <br>
+          <br>
 
-        {!! Form::label('content', 'Description') !!}
-        <br>
-        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
+          {!! Form::label('content', 'Description') !!}
+          <br>
+          {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
 
-        <br>
+          <br>
 
-        {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+          {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
 
-      {!! Form::close() !!}
-  @endif
-</div>
+          {!! Form::close() !!}
+      @endif
+    </div>
+
 </div>
 @endsection
 
