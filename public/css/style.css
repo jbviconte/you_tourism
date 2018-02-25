@@ -232,6 +232,15 @@ header
 
 /* page ajout de lieu */
 
+.formopen
+{
+	max-width: 450px;
+	padding: 30px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 6px solid rgba(0, 0, 0, 0.7);
+}
+
 .add
 {
   text-align: center;
@@ -250,8 +259,27 @@ header
 
 .frenchcaba
 {
-	border-radius: 10px;
-	margin-top: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+
+.btn
+{
+	background-color: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
 }
 
 /* fin page ajout lieu */
@@ -263,7 +291,15 @@ header
   text-align: center;
   padding: 75px;
 	min-height: 600px;
+}
 
+.form-horizontal
+{
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
 }
 
 #wrapper
@@ -282,20 +318,6 @@ header
 	padding-top: 100px;
 }
 
-#email
-{
-	border-radius: 5px;
-}
-
-#password
-{
-	border-radius: 5px;
-}
-
-.btn-btn-primary
-{
-	border-radius: 5px;
-}
 
 /* fin page login */
 
@@ -506,21 +528,40 @@ button
 	text-align: center;
 }
 
-.form-group
+
+.form2
 {
-	margin-top: 10px;
-	padding-top: -75px;
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
 }
 
 .form-control
 {
-	border-radius: 5px;
-	margin-top: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 }
 
 .btn_btn-block_btn-success_btn-lg
 {
-	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
 }
 
 /* fin page modif profil */
@@ -572,10 +613,15 @@ button
 	padding-bottom: 20px;
 }
 
-#sujcom
+/* .form
 {
-	padding-top: 50px;
-}
+	max-
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
+} */
 
 /* fin page single */
 
@@ -631,10 +677,28 @@ button
 	padding-top: 10px;
 }
 
+.form
+{
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
+}
+
 .dodo
 {
-	margin-top: 10px;
-	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 }
 
 #contact_pad
@@ -659,7 +723,13 @@ button
 
 .btn-btn-success
 {
-	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
 }
 
 #pagination li

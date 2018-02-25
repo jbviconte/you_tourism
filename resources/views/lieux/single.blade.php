@@ -38,9 +38,9 @@
     @endforeach
 
   </div>
-  <div>
+  <div class="form">
   @if ( Auth::user())
-      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
+      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id], 'id' => 'comment', 'method' => 'post']) !!}
       {{ csrf_field() }}
 
         {!! Form::label('commentaire', 'Sujet du commentaire') !!}
@@ -59,6 +59,7 @@
 
       {!! Form::close() !!}
   @endif
+</div>
 </div>
 </div>
 @endsection
