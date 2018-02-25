@@ -31,7 +31,14 @@ class HomeController extends Controller
       $lieux = Lieux::where('status', '=', 'publish')->orderBy('created_at', 'desc')
                     ->take(5)
                     ->get();
-        return view('home', compact('lieux'));
+
+      $lieuxrand = Lieux::where('status', '=', 'publish')->orderByRaw('RAND()')
+                    ->take(5)
+                    ->get();
+
+        return view('home', compact('lieux', 'lieuxrand'));
+
+
     }
 
     public function sendMail($token)
