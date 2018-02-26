@@ -71,7 +71,7 @@ header
   margin: 0;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0.7;
-	/* position: fixed; */
+	position: fixed;
 	display: block;
 	z-index: 1000;
 	line-height: 1.5rem;
@@ -124,6 +124,7 @@ header
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
+	margin-top: -100px;
 	object-fit: cover;
 }
 /* fin css slider */
@@ -200,7 +201,7 @@ header
 {
 	float: right;
 	position: absolute;
-	/* margin-right: 10px; */
+	 margin-right: 10px;
 	margin-top: 10px;
 }
 
@@ -371,8 +372,8 @@ header
   /* height: auto; */
   display: inline-block;
   float: center;
-  /* text-align: center; */
-  /* margin-left: 50px; */
+  /* text-align: center;
+  margin-left: 50px; */
   margin-right: 50px;
 }
 
@@ -397,7 +398,7 @@ header
 {
 	padding-top: 30px;
 	float: center;
-	position: relative;
+	position:relative;
 	margin-bottom: -30px;
 }
 
@@ -428,41 +429,58 @@ header
     width: 75%;
     margin: auto;
 		margin-top: 75px;
-		display: inline-block;
+		/* display: inline-block; */
+}
+
+.greatpaf
+{
+	width: 100%;
+	height: 200px;
 }
 
 #paf
 {
-  width: 23%;
-  margin-left: 2%;
+  width: 25%;
+	height: auto;
+  /* margin-left: 1%; */
   float: left;
-  position: relative;
+	position: relative;
 	margin-top: 25px;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
+	/* margin-bottom: 25px; */
+	/* margin: 0.5%; */
+	/* display: inline-block; */
 }
-
 
 #paf img
 {
-    width: 100%;
+    width: 85%;
 		height: auto;
-		margin-bottom: -20px;
-		padding-left: 30px;
+		position: relative;
+		/* margin-bottom: -20px; */
+		/* padding-left: 30px; */
 }
 
 #paf p
 {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.5em;
   position: absolute;
-  top:30%;
+  /* top:30%; */
   width: 100%;
   text-align: justify;
-  margin-top: 35%;
+  margin-top: -12%;
   z-index: 5;
-	padding-left: 42px;
-	margin-bottom: -20%;
+	padding-left: 35px;
+	margin-bottom: -25%;
+	word-spacing: 50%;
 }
+
+/* #paf a
+{
+	width: 150px;
+	height: 150px;
+} */
 
 #paf a:hover
 {
@@ -671,7 +689,8 @@ button
 
 #lieu
 {
-	width: 70%;
+	width: 90%;
+	height: auto;
 	margin: auto;
 }
 
@@ -826,12 +845,13 @@ button
 
 #pagination li
 {
-	width: 50px;
+	width: 5%;
 	height: auto;
 	display: inline-block;
 	border: 1px solid lightgrey;
 	margin-top: 50px;
 	text-align: center;
+	text-decoration: none;
 }
 
 /* fin page contact */
@@ -843,6 +863,7 @@ footer
 {
 	/* clear: both; */
 	max-width: 100%;
+	width: 100%;
   height: 150px;
   padding: 1%;
   margin-top: 1000px;
@@ -892,7 +913,7 @@ footer ul li a
 	font-family: cursive;
 	z-index: 10;
 }
-#foot a:hover, a:focus, a:active
+#foot a:hover
 {
   color: #fff;
 	text-decoration: none;
@@ -916,9 +937,22 @@ footer ul li a
 			background: none;
 			position: absolute;
 		}
+		header #menu
+		{
+			color: #000;
+			background: #000;
+		}
 		.line_height
 		{
 			display: none;
+		}
+		#wrapper
+		{
+			margin: auto;
+		}
+		.content
+		{
+			margin: auto;
 		}
 		#access
 		{
@@ -932,6 +966,63 @@ footer ul li a
 		#liens
 		{
 			display: none;
+		}
+
+		#bigpaf
+		{
+			height: auto;
+
+		}
+
+		.greatpaf
+		{
+			height: auto;
+			/* position: absolute; */
+		}
+
+		#paf
+		{
+			width: 75%;
+			height: 1000px;
+			margin: 2%;
+			padding: 0;
+			float: left;
+			position: relative;
+		}
+
+		#paf img
+		{
+		    width: 700px;
+				/* height: auto; */
+				position: relative;
+				/* margin-bottom: -20px; */
+				/* padding-left: 30px; */
+		}
+
+		#paf p
+		{
+		  color: white;
+		  font-size: 1.5em;
+		  position: absolute;
+		  /* top:30%; */
+		  width: 100%;
+		  text-align: justify;
+		  margin-top: -12%;
+		  z-index: 5;
+			/* padding-left: 35px; */
+			margin-bottom: -25%;
+		}
+
+		/* #paf a
+		{
+			width: 150px;
+			height: 150px;
+		} */
+
+		#paf a:hover
+		{
+			background: #fff;
+			opacity: 0.7;
 		}
 
 		#single_lieu
@@ -953,7 +1044,7 @@ footer ul li a
 		{
 			width: 100%;
 			display: block;
-			font-size: 0.5em;
+			font-size: 0.6em;
 			float: left;
 		}
 		#foot
@@ -973,7 +1064,8 @@ footer ul li a
 		{
 			display: inline-block;
 			color: #fff;
-			margin-left: -35%;
+			margin-left: -30%;
+			margin-top: -20%;
 		}
 }
 
@@ -1001,6 +1093,63 @@ footer ul li a
 	#liens
 	{
 		display: none;
+	}
+
+	#bigpaf
+	{
+		height: auto;
+
+	}
+
+	.greatpaf
+	{
+		height: auto;
+		/* position: absolute; */
+	}
+
+	#paf
+	{
+		width: 75%;
+		height: 1000px;
+		margin: 2%;
+		padding: 0;
+		float: left;
+		position: relative;
+	}
+
+	#paf img
+	{
+			width: 700px;
+			/* height: auto; */
+			position: relative;
+			/* margin-bottom: -20px; */
+			/* padding-left: 30px; */
+	}
+
+	#paf p
+	{
+		color: white;
+		font-size: 1.5em;
+		position: absolute;
+		/* top:30%; */
+		width: 100%;
+		text-align: justify;
+		margin-top: -12%;
+		z-index: 5;
+		/* padding-left: 35px; */
+		margin-bottom: -25%;
+	}
+
+	/* #paf a
+	{
+		width: 150px;
+		height: 150px;
+	} */
+
+	#paf a:hover
+	{
+		background: #fff;
+		opacity: 0.7;
 	}
 
 	#single_lieu
