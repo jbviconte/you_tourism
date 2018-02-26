@@ -289,7 +289,7 @@ header
 .container
 {
   text-align: center;
-  padding: 75px;
+  padding: 150px;
 	min-height: 600px;
 }
 
@@ -615,6 +615,8 @@ button
 
 .form
 {
+	display:table;
+  margin:auto;
 	max-width: 450px;
 	padding: 10px;
 	margin: 50px auto;
