@@ -2,7 +2,6 @@
 
 @section('title')
   You Tourism-Description du lieu
-  <link rel="stylesheet" type ="text/css" href="assets/js/bootstrap.js">
 @endsection
 
 @section('content')
@@ -25,8 +24,9 @@
   @endforeach
 
   <div id="addcomment">
-    Ajouter un commentaire
+    <button type="btn btn-danger" name="button">Ajouter un commentaire</button>
   </div>
+
   <br>
   <div>
     @foreach ($commentaires as $commentaire)
@@ -115,8 +115,6 @@ $(document).ready(function(){
                       } else {
                         $('#errorcommentaire').html(response.errors.commentaire);
                         $('#errorcontent').html(response.errors.content);
-
-                        // faire afficher autre error ++++
                       }
 
                  }
