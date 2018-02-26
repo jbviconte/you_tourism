@@ -19,9 +19,10 @@
             <div class="box-body table-responsive no-padding">
               {{ $lieux->links() }}
               @if (session('success'))
-                <div class="alert-alert-success">
-                  {{ session('success') }}
-                </div>
+              <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> {{ session('success') }}</h4>
+              </div>
               @endif
               <table class="table table-hover">
                 <tr>

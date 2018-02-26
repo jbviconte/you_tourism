@@ -7,9 +7,8 @@
 
 @section('content')
 <div id="single_lieu">
+
   @foreach ($lieux as $lieu)
-
-
 
     <div class="lieu">
 
@@ -39,7 +38,7 @@
         </div>
       @endforeach
     </div>
-    <div>
+    <div class="form">
       @if ( Auth::user())
         {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
         {{ csrf_field() }}
@@ -63,7 +62,7 @@
     </div>
 
 </div>
-</div>
+
 @endsection
 
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}
