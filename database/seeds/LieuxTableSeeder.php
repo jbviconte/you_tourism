@@ -16,7 +16,7 @@ class LieuxTableSeeder extends Seeder
       $date = New DateTime();
 
       $lieux[] = array(
-          'lieu'           => 'La Pointe de la Rozel',
+          'lieu'           => 'La Pointe du Rozel',
           'adresse'        => '50340, Le Rozel',
           'content'        => 'Le Rozel doit son nom aux roseaux qui poussent en abondance sur le territoire de la commune.
                                Du haut du relief qui descend vers le village du Rozel, la vue est splendide.
@@ -34,7 +34,7 @@ class LieuxTableSeeder extends Seeder
           'adresse'        => '50440, La Hague',
           'content'        => 'Dans les baies de Quervière ou d\'Ecalgrain, face à la mer et au phare de Goury, en haut des falaises granitiques de Jobourg, 128 mètres au-dessus du niveau de la mer, dans les dunes de Biville, entre bruyères et ajoncs,
                                en longeant les murets de pierre typiques de cette « Petite Irlande », on nage en plein bonheur !
-                               Séjourner dans la Hague dans le Cotentin, c\’est aussi profiter de trésors cachés jusque dans les charmants hameaux où se blottissent les maisons jamais bien hautes, pour mieux se protéger des tempêtes',
+                               Séjourner dans la Hague dans le Cotentin, c\'est aussi profiter de trésors cachés jusque dans les charmants hameaux où se blottissent les maisons jamais bien hautes, pour mieux se protéger des tempêtes',
           'created_at'     => $date->format('Y-m-d H:i:s'),
           'name_image'     => "la-hague.jpg",
           'new_name_image' => "la-hague.jpg",

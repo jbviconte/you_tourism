@@ -428,41 +428,58 @@ header
     width: 75%;
     margin: auto;
 		margin-top: 75px;
-		display: inline-block;
+		/* display: inline-block; */
+}
+
+.greatpaf
+{
+	width: 100%;
+	height: 200px;
 }
 
 #paf
 {
-  width: 23%;
-  margin-left: 2%;
+  width: 25%;
+	height: auto;
+  /* margin-left: 1%; */
   float: left;
-  position: relative;
+	position: relative;
 	margin-top: 25px;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
+	/* margin-bottom: 25px; */
+	/* margin: 0.5%; */
+	/* display: inline-block; */
 }
-
 
 #paf img
 {
-    width: 100%;
+    width: 85%;
 		height: auto;
-		margin-bottom: -20px;
-		padding-left: 30px;
+		position: relative;
+		/* margin-bottom: -20px; */
+		/* padding-left: 30px; */
 }
 
 #paf p
 {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.5em;
   position: absolute;
-  top:30%;
+  /* top:30%; */
   width: 100%;
   text-align: justify;
-  margin-top: 35%;
+  margin-top: -12%;
   z-index: 5;
-	padding-left: 42px;
-	margin-bottom: -20%;
+	padding-left: 35px;
+	margin-bottom: -25%;
+	word-spacing: 50%;
 }
+
+/* #paf a
+{
+	width: 150px;
+	height: 150px;
+} */
 
 #paf a:hover
 {
@@ -627,7 +644,8 @@ button
 
 #lieu
 {
-	width: 70%;
+	width: 90%;
+	height: auto;
 	margin: auto;
 }
 
@@ -782,12 +800,13 @@ button
 
 #pagination li
 {
-	width: 50px;
+	width: 5%;
 	height: auto;
 	display: inline-block;
 	border: 1px solid lightgrey;
 	margin-top: 50px;
 	text-align: center;
+	text-decoration: none;
 }
 
 /* fin page contact */
@@ -799,6 +818,7 @@ footer
 {
 	/* clear: both; */
 	max-width: 100%;
+	width: 100%;
   height: 150px;
   padding: 1%;
   margin-top: 1000px;
@@ -876,6 +896,14 @@ footer ul li a
 		{
 			display: none;
 		}
+		#wrapper
+		{
+			margin: auto;
+		}
+		.content
+		{
+			margin: auto;
+		}
 		#access
 		{
 			width: 75%;
@@ -888,6 +916,63 @@ footer ul li a
 		#liens
 		{
 			display: none;
+		}
+
+		#bigpaf
+		{
+			height: auto;
+
+		}
+
+		.greatpaf
+		{
+			height: auto;
+			/* position: absolute; */
+		}
+
+		#paf
+		{
+			width: 75%;
+			height: 1000px;
+			margin: 2%;
+			padding: 0;
+			float: left;
+			position: relative;
+		}
+
+		#paf img
+		{
+		    width: 700px;
+				/* height: auto; */
+				position: relative;
+				/* margin-bottom: -20px; */
+				/* padding-left: 30px; */
+		}
+
+		#paf p
+		{
+		  color: white;
+		  font-size: 1.5em;
+		  position: absolute;
+		  /* top:30%; */
+		  width: 100%;
+		  text-align: justify;
+		  margin-top: -12%;
+		  z-index: 5;
+			/* padding-left: 35px; */
+			margin-bottom: -25%;
+		}
+
+		/* #paf a
+		{
+			width: 150px;
+			height: 150px;
+		} */
+
+		#paf a:hover
+		{
+			background: #fff;
+			opacity: 0.7;
 		}
 
 		#single_lieu
@@ -957,6 +1042,63 @@ footer ul li a
 	#liens
 	{
 		display: none;
+	}
+
+	#bigpaf
+	{
+		height: auto;
+
+	}
+
+	.greatpaf
+	{
+		height: auto;
+		/* position: absolute; */
+	}
+
+	#paf
+	{
+		width: 75%;
+		height: 1000px;
+		margin: 2%;
+		padding: 0;
+		float: left;
+		position: relative;
+	}
+
+	#paf img
+	{
+			width: 700px;
+			/* height: auto; */
+			position: relative;
+			/* margin-bottom: -20px; */
+			/* padding-left: 30px; */
+	}
+
+	#paf p
+	{
+		color: white;
+		font-size: 1.5em;
+		position: absolute;
+		/* top:30%; */
+		width: 100%;
+		text-align: justify;
+		margin-top: -12%;
+		z-index: 5;
+		/* padding-left: 35px; */
+		margin-bottom: -25%;
+	}
+
+	/* #paf a
+	{
+		width: 150px;
+		height: 150px;
+	} */
+
+	#paf a:hover
+	{
+		background: #fff;
+		opacity: 0.7;
 	}
 
 	#single_lieu
