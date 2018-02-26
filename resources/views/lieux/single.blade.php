@@ -11,52 +11,7 @@
   </style>
 
 <div id="single_lieu">
-  @foreach ($lieux as $lieu)
-  <div id="full">
-
-  <div class="lieu">
-
-    <h1>{{ $lieu->lieu }}</h1>
-    <img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,700,650) }}"/>
-    <h2>Description du lieu touristique :</h2>
-    <p>{{ $lieu->content }}</p>
-    <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
-
-
-  </div>
-  @endforeach
-
-  <div id="addcomment">
-    <button type="btn btn-danger" name="button">Ajouter un commentaire</button>
-  </div>
-
-  <br>
-  <div>
-    @foreach ($commentaires as $commentaire)
-      <div>
-        <h1>Posté par: {{ $commentaire->name }}</h1>
-        <br>
-        <p>Sujet: {{ $commentaire->commentaire }}</p>
-        <br>
-        <p>Commentaire: {{ $commentaire->content }}</p>
-        <br>
-        <p>Posté le: {{ $commentaire->created_at }}</p>
-        <br>
-      </div>
-    @endforeach
-
-  {{-- affichage des commentaires ajaxisés --}}
-  <div id="showcommentaire"></div>
-  <br>
-  <div id="showcommentaire2"></div>
-
-  </div>
-
-  <div id="commentform">
-  <div class="form">
-  @if ( Auth::user())
-      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id], 'id' => 'comment', 'method' => 'post']) !!}
-      {{ csrf_field() }}
+@foreach ($lieux as $lieu)
 
     <div class="lieu">
 
@@ -86,7 +41,7 @@
         </div>
       @endforeach
     </div>
-    <div>
+    <div class="form">
       @if ( Auth::user())
         {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
         {{ csrf_field() }}
@@ -115,7 +70,7 @@
     </div>
 
 </div>
-</div>
+
 @endsection
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}
 @section('scripts')
