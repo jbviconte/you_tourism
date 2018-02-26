@@ -17,8 +17,14 @@
           <!-- text input -->
             <div class="form-group">
               <label>Nom du lieu</label>
-              {!! Form::text('lieu', $lieux->lieu,['class' => "form-control", 'placeholder' => 'lieu']) !!}
+              {!! Form::text('lieu', $lieux->lieu,['class' => "form-control", 'placeholder' => 'Nom du lieu']) !!}
               {!! $errors->first('lieu','<small class="help-block">:message</small>') !!}
+            </div>
+
+            <div class="form-group">
+              <label>Adresse du lieu</label>
+              {!! Form::text('adresse', $lieux->adresse,['class' => "form-control", 'placeholder' => 'Adresse du lieu']) !!}
+              {!! $errors->first('adresse','<small class="help-block">:message</small>') !!}
             </div>
 
             <div class="form-group">
