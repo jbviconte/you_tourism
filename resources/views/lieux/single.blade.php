@@ -10,6 +10,14 @@
   @foreach ($lieux as $lieu)
 
 
+<<<<<<< HEAD
+=======
+  </div>
+  <div class="form">
+  @if ( Auth::user())
+      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id], 'id' => 'comment', 'method' => 'post']) !!}
+      {{ csrf_field() }}
+>>>>>>> 304c5c82fad60b0e00a4d6df178e784816d31355
 
     <div class="lieu">
 
@@ -62,6 +70,7 @@
       @endif
     </div>
 
+</div>
 </div>
 @endsection
 
