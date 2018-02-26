@@ -15,7 +15,7 @@
       <!-- /.box-header -->
       <div class="box-body">
         <br><br>
-          {!! Form::open(['route' => ['user-page-update-action', $users->id],'method' => 'put']) !!}
+          {!! Form::open(['route' => ['user-page-update-action', $users->id], 'class' => 'form2', 'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
             <label for="name">Pseudo</label>

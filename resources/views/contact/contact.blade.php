@@ -19,17 +19,17 @@
         </div>
       @endif
 
-    {!! Form::open(['route' => 'contact-action', 'method' => 'post']) !!}
+    {!! Form::open(['class' => 'form', 'route' => 'contact-action', 'method' => 'post']) !!}
 
     {!! Form::label('nom', 'Nom') !!}
     <br />
-    {!! Form::text('nom',null,['class' => 'dodo', 'placeholder' => 'Votre nom']) !!}
+    {!! Form::text('nom',null,['class' => 'dodo field-style field-split align-left', 'placeholder' => 'Votre nom']) !!}
     {!! $errors->first('nom','<small class="help-block">:message</small>') !!}
     <br />
 
     {!! Form::label('email', 'Email') !!}
     <br />
-    {!! Form::email('email', null, ['class' => 'dodo', 'placeholder' => 'Votre email']); !!}
+    {!! Form::email('email', null, ['class' => 'dodo field-style field-split align-right', 'placeholder' => 'Votre email']); !!}
     {!! $errors->first('email','<small class="help-block">:message</small>') !!}
     <br />
 
