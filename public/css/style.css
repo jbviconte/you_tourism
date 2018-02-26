@@ -614,7 +614,7 @@ button
 }
 .frenchcaba
 {
-	width: 40%;
+	/* width: 40%; */
 }
 
 #lieusugg
@@ -780,9 +780,11 @@ footer ul li a
 
 #foot_place
 {
-	width: 50%;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin: auto;
+  width: 100%;
+  max-width: 1600px;
+	height: 150px;
+	text-align: center;
 }
 
 .logo_footer
@@ -791,6 +793,7 @@ footer ul li a
 	margin-right: 25px;
 	margin-left: 25px;
 	font-size: 1em;
+	float: left;
 }
 /* boutons réseaux sociaux */
 
@@ -886,7 +889,7 @@ footer ul li a
 		}
 		#foot .contact_widget
 		{
-			width: 10%;
+			width: 5%;
 			height: auto;
 		}
 		.footer_content p
@@ -895,6 +898,13 @@ footer ul li a
 			color: #fff;
 			margin-left: -30%;
 			margin-top: -20%;
+		}
+		#bigpaf
+		{
+				width: 100%;
+				height: auto;
+				/* margin-top: 75px; */
+				display: block;
 		}
 }
 
@@ -956,7 +966,7 @@ footer ul li a
 	}
 	#foot .contact_widget
 	{
-		width: 10%;
+		width: 7%;
 		height: auto;
 	}
 	.footer_content

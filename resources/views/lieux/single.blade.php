@@ -7,21 +7,21 @@
 
 @section('content')
 <div id="single_lieu">
+
+
   @foreach ($lieux as $lieu)
 
-  <div id="full">
+    <div class="lieu">
 
-  <div class="lieu">
-
-    <h1>{{ $lieu->lieu }}</h1>
-    <img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image) ,700,650) }}"/>
-    <h2>Description du lieu touristique :</h2>
-    <p>{{ $lieu->content }}</p>
-    <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
-
-
-  </div>
-  @endforeach
+      <h1>{{ $lieu->lieu }}</h1>
+      <img class="image_single" src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image)) }}"/>
+      <h2>Description du lieu touristique :</h2>
+      <p>{{ $lieu->content }}</p>
+      <h3>Adresse du lieu:</h3>
+      <p>{{ $lieu->adresse }}</p>
+      <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
+    </div>
+    @endforeach
 
 
     <div>
@@ -60,7 +60,7 @@
   @endif
 </div>
 </div>
-</div>
+
 @endsection
 
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}

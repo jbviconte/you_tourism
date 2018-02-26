@@ -85,10 +85,10 @@
     <!-- boutons réseaux sociaux footer -->
  <footer>
     <div id="foot_place">
-    <div class="logo_footer">
-      <a href="{{ route('home') }}">YouTourism</a>
-    </div>
-    <div id="foot">
+      <div class="logo_footer">
+        <a href="{{ route('home') }}">YouTourism</a>
+      </div>
+      <div id="foot">
 
         <a href="{{ route('contact-view') }}">Contact</a>
         <a href="https://fr-fr.facebook.com/"><img class="contact_widget" src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="footer_content">
-      <p>© YouTourim, 2018</p>
+      <p>© YouTourism, 2018</p>
     </div>
 
     </div>

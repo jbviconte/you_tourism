@@ -21,6 +21,7 @@ class AdminCommentaireController extends Controller
 
   }
 
+  // affichage commentaire
     public function commentaire() {
 
       $commentaires = \DB::table('commentaire')
