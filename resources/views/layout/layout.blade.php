@@ -88,21 +88,18 @@
     <div class="logo_footer">
       <a href="{{ route('home') }}">YouTourism</a>
     </div>
+    <div id="foot">
 
-        <div id="foot">
-            <ul>
-              <li><a  href="{{ route('contact-view') }}">Contact</a></li>
+        <a href="{{ route('contact-view') }}">Contact</a>
+        <a href="https://fr-fr.facebook.com/"><img class="contact_widget" src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a></li>
+        <a href="https://plus.google.com/discover?hl=fr"><img class="contact_widget" src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a></li>
+        <a href="https://twitter.com/?lang=fr"><img class="contact_widget" src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a></li>
 
-              <a href="https://fr-fr.facebook.com/"><img src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
-              <a href="https://plus.google.com/discover?hl=fr"><img src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
-              <a href="https://twitter.com/?lang=fr"><img src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
+    </div>
 
-            </ul>
-          </div>
-
-      <div class="footer_content">
-        <p>© admin groupe soutenance formation webforce3</p>
-      </div>
+    <div class="footer_content">
+      <p>© admin groupe soutenance formation webforce3</p>
+    </div>
 
     </div>
   </footer>
