@@ -116,7 +116,7 @@ header
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 30px;
-	object-fit: cover;
+	object-fit: fill;
 }
 /* fin css slider */
 

@@ -82,7 +82,7 @@
 
   <div id="access">
         <div id="superp">
-            <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,400,400)}}"/></a>
+            <a href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu['path_image'] . '/' . $lieu['new_name_image']) ,350,350)}}"/></a>
             <p>{{ $lieu['lieu'] }}</p>
         </div>
   </div>
