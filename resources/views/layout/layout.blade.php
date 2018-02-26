@@ -21,6 +21,13 @@
       <div class="logo">
         <a href="{{ route('home') }}">YouTourism</a>
       </div>
+
+      <div id="hamburger">
+  <a href="javascript:hamburger_click();">
+    <img id="hamburger-img" src="http://www.web-design-codex.fr/wp-content/uploads/2015/10/hamburger.png">
+  </a>
+</div>
+
         <div class="wrap">
 
           <nav>

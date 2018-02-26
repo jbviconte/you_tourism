@@ -814,7 +814,7 @@ button
 
 #contact_pad
 {
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-bottom: 200px;
 	min-height: 600px;
 }
@@ -1250,4 +1250,51 @@ footer ul li a
 		color: #fff;
 		/* margin-left: -35%; */
 	}
+}
+/* ===================================== */
+							/* Menu Burger */
+/* ===================================== */
+
+#hamburger
+{
+  display:none;
+  width:100%;
+  height:50px;
+  text-align:center;
+}
+
+@media screen and (max-width: 750px)
+{
+body
+{
+	width: 100%;
+}
+#liens
+{
+  display:none;
+}
+.liliens
+{
+	background: #000;
+	color: #fff;
+}
+#liensco
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#liensco2
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#hamburger
+{
+  display:block;
+}
+
 }
