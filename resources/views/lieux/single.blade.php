@@ -63,6 +63,7 @@
     </div>
 
 </div>
+</div>
 @endsection
 
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}

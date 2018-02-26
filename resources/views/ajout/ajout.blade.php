@@ -10,7 +10,7 @@
   <p>Ajouter un lieu</p>
 
 
-    {!! Form::open(['route' => 'ajout-action', 'method' => 'post', 'files' => true]) !!}
+    {!! Form::open(['route' => 'ajout-action', 'class' => 'formopen', 'method' => 'post', 'files' => true]) !!}
 
 
     {!! Form::label('lieu', 'Nom du lieu') !!}
@@ -30,7 +30,7 @@
     <br>
 
     {!! Form::file('image') !!}
-    {!! $errors->first('image','<small class="help-block">:message</small>') !!}
+    {!! $errors->first('image', ['class' => 'btnimg'], '<small class="help-block">:message</small>') !!}
 
     {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
     {{ csrf_field() }}
