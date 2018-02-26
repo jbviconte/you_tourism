@@ -6,6 +6,11 @@
 @endsection
 
 @section('content')
+
+<style media="screen">
+  #comform, .sujetcom, .comcom {display:none};
+</style>
+
 <div id="single_lieu">
   @foreach ($lieux as $lieu)
 
@@ -23,6 +28,9 @@
   </div>
   @endforeach
 
+  <div id="btncom">
+    <button type="btn btn-warning" name="startform">Ajouter un commentaire</button>
+  </div>
 
     <div>
       @foreach ($commentaires as $commentaire)
@@ -33,16 +41,23 @@
           <br>
           <p>Commentaire: {{ $commentaire->content }}</p>
           <br>
-          <p>Adresse: {{ $commentaire->adresse }}</p>
-          <br>
           <p>Posté le: {{ $commentaire->created_at }}</p>
           <br>
         </div>
       @endforeach
+
+      <div class="sujetcom"><p><u>Sujet :</u></p></div>
+      <br>
+      <div id="showcom"></div>
+      <br>
+      <div class="comcom"><p>Commentaire :</p></div>
+      <br>
+      <div id="showcom1"></div>
+
     </div>
-    <div class="form">
+    <div id="comform">
       @if ( Auth::user())
-        
+
         {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
         {{ csrf_field() }}
 
@@ -54,6 +69,7 @@
           {!! Form::label('content', 'Description') !!}
           <br>
           {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
+          <span id="errorcontent"></span>
           <br>
 
           {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
@@ -70,6 +86,7 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script>
 
@@ -82,8 +99,14 @@ $.ajaxSetup({
 
 $(document).ready(function(){
 
+      $('#btncom').on('click', function() {
+          $('#comform').fadeIn(200);
+
+      })
+
       $('#comment').on('submit', function(e) {
         e.preventDefault();
+
         var form = $('#comment');
 
 
@@ -93,15 +116,22 @@ $(document).ready(function(){
                 data: form.serialize(),
                  //dataType : 'application/json',
                  success: function(response){ // code_html contient le HTML renvoyé
-                        console.log(response.errors);
 
+                      //si il n'y a pas d'erreurs
                       if (response.errors === undefined || response.errors.length == 0) {
-                          // if success ,
-                          // on enleve le formumlaire , et on met à la place un message de success
+
+                        $('#comform').fadeOut(300);
+                        $('#btncom').fadeOut(300);
+
+                        $('#showcom').html(response.commentaire);
+                        $('#showcom1').html(response.content);
+
+                        $('.sujetcom').fadeIn(200);
+                        $('.comcom').fadeIn(200);
+
                       } else {
                         $('#errorcommentaire').html(response.errors.commentaire);
-
-                        // faire afficher autre error ++++
+                        $('#errorcommentaire').html(response.errors.content);
                       }
 
                  }

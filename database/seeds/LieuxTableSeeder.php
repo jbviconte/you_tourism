@@ -17,7 +17,7 @@ class LieuxTableSeeder extends Seeder
 
       $lieux[] = array(
           'lieu'           => 'La Pointe de la Rozel',
-          'adresse'        => '50340, Le Rozel',
+          'adresse'        => '50340 Le Rozel',
           'content'        => 'Le Rozel doit son nom aux roseaux qui poussent en abondance sur le territoire de la commune.
                                Du haut du relief qui descend vers le village du Rozel, la vue est splendide.
                                Elle englobe le bourg qui s\'étend du chateau à l\'église, le bord de mer et la falaise du Pou.',
@@ -31,7 +31,7 @@ class LieuxTableSeeder extends Seeder
 
       $lieux[] = array(
           'lieu'           => 'La Hague',
-          'adresse'        => '50440, La Hague',
+          'adresse'        => '50440 La Hague',
           'content'        => 'Dans les baies de Quervière ou d\'Ecalgrain, face à la mer et au phare de Goury, en haut des falaises granitiques de Jobourg, 128 mètres au-dessus du niveau de la mer, dans les dunes de Biville, entre bruyères et ajoncs,
                                en longeant les murets de pierre typiques de cette « Petite Irlande », on nage en plein bonheur !
                                Séjourner dans la Hague dans le Cotentin, c\’est aussi profiter de trésors cachés jusque dans les charmants hameaux où se blottissent les maisons jamais bien hautes, pour mieux se protéger des tempêtes',
@@ -45,7 +45,7 @@ class LieuxTableSeeder extends Seeder
 
       $lieux[] = array(
           'lieu'           => 'La Pointe du Hoc',
-          'adresse'        => '14450, Criqueville-en-Bessin',
+          'adresse'        => '14450 Criqueville-en-Bessin',
           'content'        => 'Prise d’assaut le matin du 6 juin par les Rangers du Colonel Rudder, c’est l\'un des points forts des fortifications allemandes sur la côte.
                                Aujourd\'hui, ce lieu évoque ce qu’était une batterie d’artillerie avec son poste de direction de tir, ses casemates, ses abris…',
           'created_at'     => $date->format('Y-m-d H:i:s'),
@@ -58,7 +58,7 @@ class LieuxTableSeeder extends Seeder
 
       $lieux[] = array(
           'lieu'           => 'La colline aux Oiseaux',
-          'adresse'        => '14000, Caen',
+          'adresse'        => '14000 Caen',
           'content'        => 'Le parc de la colline aux oiseaux, à Caen, a été créé à l\'occasion du 50ème anniversaire du débarquement.
                                Situé sur une ancienne décharge, c\'est un bel exemple de réhabilitation.
                                De nombreux jardins à thème le composent (labyrinthe en buis et ifs, vivaces, jardins d\'essais floraux...). ',
@@ -72,7 +72,7 @@ class LieuxTableSeeder extends Seeder
 
       $lieux[] = array(
           'lieu'           => 'Bagnoles-de-l\'Orne',
-          'adresse'        => '61140, Bagnoles-de-l\'orne',
+          'adresse'        => '61140 Bagnoles-de-l\'orne',
           'content'        => 'Bagnoles de l’Orne est une station verte de vacances située au sud-est de la Normandie, dans le département de l’Orne fait de bocage et de forêt, de haras et de châteaux.
                                Niché au cœur de 7000 ha de forêt et du Parc Naturel régional Normandie-Maine, c\’est une station thermale.',
           'created_at'     => $date->format('Y-m-d H:i:s'),
