@@ -8,7 +8,7 @@
 @section('content')
 
 <style media="screen">
-  #comform, .sujetcom, .comcom {display:none};
+  #comform, #ajaxcom, .sujetcom, .comcom {display:none};
 </style>
 
 <div id="single_lieu">
@@ -29,12 +29,21 @@
   @endforeach
 
   <div id="btncom">
-    <button type="btn btn-warning" name="startform">Ajouter un commentaire</button>
+    <p>Ajouter un commentaire</p>
   </div>
 
+    <div id="ajaxcom">
+      <div class="sujetcom"><p>Sujet :</p></div>
+      <br>
+      <div id="showcom"></div>
+      <br>
+      <div class="comcom"><p>Commentaire :</p></div>
+      <br>
+      <div id="showcom1"></div>
+    </div>
     <div>
       @foreach ($commentaires as $commentaire)
-        <div>
+        <div id="printcom">
           <h1>Posté par: {{ $commentaire->name }}</h1>
           <br>
           <p>Sujet: {{ $commentaire->commentaire }}</p>
@@ -45,17 +54,8 @@
           <br>
         </div>
       @endforeach
-
-      <div class="sujetcom"><p><u>Sujet :</u></p></div>
-      <br>
-      <div id="showcom"></div>
-      <br>
-      <div class="comcom"><p>Commentaire :</p></div>
-      <br>
-      <div id="showcom1"></div>
-
     </div>
-    
+
     <div id="comform">
       @if ( Auth::user())
 
@@ -130,6 +130,7 @@ $(document).ready(function(){
 
                         $('.sujetcom').fadeIn(200);
                         $('.comcom').fadeIn(200);
+                        $('#ajaxcom').fadeIn(1200);
 
                       } else {
                         $('#errorcommentaire').html(response.errors.commentaire);

@@ -6,6 +6,7 @@
     <title>@yield('title')</title>
 
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
