@@ -23,39 +23,40 @@
   </div>
   @endforeach
 
-  <div>
-    @foreach ($commentaires as $commentaire)
-      <div>
-        <h1>Posté par : {{ $commentaire->name }}</h1>
-        <br>
-        <p>Sujet : {{ $commentaire->commentaire }}</p>
-        <br>
-        <p>Commentaire : {{ $commentaire->content }}</p>
-        <br>
-        <p>Posté le : {{ $commentaire->created_at }}</p>
-        <br>
-      </div>
-    @endforeach
 
-  </div>
-  <div class="form">
-  @if ( Auth::user())
-      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id], 'id' => 'comment', 'method' => 'post']) !!}
-      {{ csrf_field() }}
+    <div>
+      @foreach ($commentaires as $commentaire)
+        <div>
+          <h1>Posté par: {{ $commentaire->name }}</h1>
+          <br>
+          <p>Sujet: {{ $commentaire->commentaire }}</p>
+          <br>
+          <p>Commentaire: {{ $commentaire->content }}</p>
+          <br>
+          <p>Adresse: {{ $commentaire->adresse }}</p>
+          <br>
+          <p>Posté le: {{ $commentaire->created_at }}</p>
+          <br>
+        </div>
+      @endforeach
+    </div>
+    <div class="form">
+      @if ( Auth::user())
+        
+        {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
+        {{ csrf_field() }}
 
-        {!! Form::label('commentaire', 'Sujet du commentaire') !!}
-        <br>
-        {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
+          {!! Form::label('commentaire', 'Sujet du commentaire') !!}
+          <br>
+          {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
           <span id="errorcommentaire"></span>
-        <br>
+          <br>
+          {!! Form::label('content', 'Description') !!}
+          <br>
+          {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
+          <br>
 
-        {!! Form::label('content', 'Description') !!}
-        <br>
-        {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
-
-        <br>
-
-        {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+          {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
 
       {!! Form::close() !!}
   @endif
