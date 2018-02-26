@@ -22,14 +22,14 @@
       </div>
         <div class="wrap">
 
-  <nav>
-        <ul id="liens">
-        <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
-        <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
+          <nav>
+            <ul id="liens">
+              <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
+              <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
 
-        @yield('liste')
+              @yield('liste')
 
-        <li><a  class="liliens" href="{{ route('contact-view') }}">Contact</a></li>
+              <li><a  class="liliens" href="{{ route('contact-view') }}">Contact</a></li>
 
               <!-- Authentication Links -->
               @if (Auth::guest())
@@ -46,23 +46,19 @@
                   <li class="dropdown">
                       <a href="{{ route('userpage', Auth::user()->id) }}" id="nameco" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                           {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
-
-                        <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
+                      </a>
+                  <li><a class="liliens" href="{{ route('userpage', Auth::user()->id) }}">Profil</a></li>
                   </li>
-
                       <br />
-
                   <li>
-                        <a href="{{ route('logout') }}" id="deco"
+                    <a href="{{ route('logout') }}" id="deco"
                             onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                                    Se déconnecter
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            document.getElementById('logout-form').submit();">
+                            Se déconnecter
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             {{ csrf_field() }}
-                        </form>
-
+                    </form>
                   </li>
                 @endif
               </ul>
@@ -72,7 +68,7 @@
 </header>
 
 
-<div class="content wrap">
+<div class="content wrapp">
     @yield('content')
 
     <div class="connexion">

@@ -25,8 +25,8 @@ class LieuxController extends Controller
   public function lieux()
   {
 
-
     $lieux = Lieux::where('status','=','publish')->paginate(12);
+
 
 
 
