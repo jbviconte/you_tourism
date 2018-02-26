@@ -201,7 +201,7 @@ header
 {
 	float: right;
 	position: absolute;
-	 margin-right: 10px;
+	margin-right: 10px;
 	margin-top: 10px;
 }
 
@@ -254,7 +254,6 @@ header
 {
   text-align: center;
 	margin-top: 75px;
-  padding: 110px;
 	display: inline-block;
 }
 
@@ -429,13 +428,15 @@ header
     width: 75%;
     margin: auto;
 		margin-top: 75px;
+		height: auto;
 		/* display: inline-block; */
 }
 
 .greatpaf
 {
 	/* width: 100%; */
-	height: 200px;
+	height: auto;
+	clear: both;
 }
 
 #paf
@@ -445,9 +446,9 @@ header
   /* margin-left: 1%; */
   float: left;
 	position: relative;
-	margin-top: 25px;
+	/* margin-top: 25px; */
 	/* padding-bottom: 15px; */
-	/* margin-bottom: 25px; */
+	margin-bottom: 25px;
 	/* margin: 0.5%; */
 	/* display: inline-block; */
 }
@@ -461,19 +462,19 @@ header
 		/* padding-left: 30px; */
 }
 
-#paf p
+#paf .parag p
 {
   color: white;
-  font-size: 1em;
+  font-size: 1.1em;
   position: absolute;
   /* top:30%; */
   /* width: 100%; */
   /* text-align: justify; */
-  margin-top: -12%;
+  /* margin-top: -12%;
   z-index: 5;
 	padding-left: 35px;
 	margin-bottom: -25%;
-	word-spacing: 50%;
+	word-spacing: 50%; */
 }
 
 /* #paf a
@@ -486,6 +487,24 @@ header
 {
 	background: #fff;
 	opacity: 0.7;
+}
+
+#paf .parag
+{
+	position: absolute;
+	/* top:30%; */
+	width: 100%;
+	height: 15px;
+	padding-left: 30px;
+	/* text-align: justify; */
+	/* margin-left: 2%;*/
+	margin-top: -10%;
+	 z-index: 5;
+}
+
+#titrelieu
+{
+	margin: auto;
 }
 
 #titrelieu h1
@@ -604,6 +623,8 @@ button
 .content
 {
 	width: 100%;
+	margin: auto;
+	height: auto;
 	min-height: 800px;
 	text-align: center;
 }
@@ -659,9 +680,9 @@ button
 
 /* page single */
 
-.lieu
+.lieu img
 {
-  /* float:right; */
+  width: 75%;
 }
 
 .lieu h1
@@ -689,7 +710,7 @@ button
 
 #lieu
 {
-	width: 90%;
+	/* width: 90%; */
 	height: auto;
 	margin: auto;
 }
@@ -782,6 +803,14 @@ button
 
 /* page contact */
 
+#contact_pad
+{
+	padding-top: 200px;
+	padding-bottom: 200px;
+	min-height: 600px;
+	margin: auto;
+}
+
 .dede
 {
 	text-align: center;
@@ -812,12 +841,7 @@ button
 	-o-transition: all 0.30s ease-in-out;
 }
 
-#contact_pad
-{
-	padding-top: 200px;
-	padding-bottom: 200px;
-	min-height: 600px;
-}
+
 
 .panel-heading
 {
@@ -847,11 +871,18 @@ button
 {
 	width: 5%;
 	height: auto;
+	clear: both;
 	display: inline-block;
 	border: 1px solid lightgrey;
 	margin-top: 50px;
+	margin-bottom: 20px;
 	text-align: center;
 	text-decoration: none;
+}
+
+.pagination .active
+{
+	background-color: rgb(129, 202, 238);
 }
 
 /* fin page contact */
@@ -866,9 +897,7 @@ footer
 	width: 100%;
   height: 150px;
   padding: 1%;
-  margin-top: 1000px;
   background-color: rgba(0, 0, 0, 0.7);
-	margin-top: 100px;
 	/* position: absolute; */
 }
 
@@ -929,11 +958,17 @@ footer ul li a
 }
 /* fin footer */
 
-@media screen and (min-width: 840px) and (max-width: 1048px)
+#error
+{
+	padding: 100px;
+}
+
+@media all and (min-width: 840px) and (max-width: 1248px)
 {
 	.content
 	{
 		width: 100%;
+		margin: auto;
 	}
 		header
 		{
@@ -977,7 +1012,8 @@ footer ul li a
 		{
 		    width: 75%;
 		    margin: auto;
-				margin-top: 75px;
+				/* margin-top: 75px; */
+				height: auto;
 				/* display: inline-block; */
 		}
 
@@ -987,7 +1023,7 @@ footer ul li a
 			width: 100%;
 
 			margin: auto;
-			height: 200px;
+			height: auto;
 		}
 
 		#paf
@@ -996,10 +1032,10 @@ footer ul li a
 			height: auto;
 		  /* margin-left: 1%; */
 		  float: left;
-			position: relative;
-			margin-top: 25px;
+			/* position: relative; */
+			/* margin-top: 25px; */
 			/* padding-bottom: 15px; */
-			/* margin-bottom: 25px; */
+			margin-bottom: 25px;
 			/* margin: 0.5%; */
 			/* display: inline-block; */
 		}
@@ -1016,16 +1052,31 @@ footer ul li a
 		#paf p
 		{
 		  color: white;
-		  font-size: 1em;
+		  font-size: 75%;
 		  /* position: absolute;
 		  /* top:30%; */
 		  /* width: 100%;
 		  text-align: justify; */
-		  margin-top: -20%;
+		  /* margin-top: -20%;
 		  z-index: 5;
 			padding-left: 15px;
 			margin-bottom: -25%;
-			word-spacing: 50%;
+			word-spacing: 50%; */
+		}
+
+		#paf .parag
+		{
+			position: absolute;
+			/* top:30%; */
+			width: 100px;
+			height: 34px;
+			padding-left: 30px;
+			/* text-align: justify; */
+			/* margin-left: 2%;*/
+			margin-top: -17%;
+			 z-index: 5;
+			/* padding-left: 35px; */
+			/* margin-bottom: -25%;! */
 		}
 
 		/* #paf a
@@ -1042,6 +1093,7 @@ footer ul li a
 
 		#pagination li
 		{
+			clear: both;
 			width: 5%;
 			height: auto;
 			display: inline-block;
@@ -1049,6 +1101,11 @@ footer ul li a
 			margin-top: 50px;
 			text-align: center;
 			text-decoration: none;
+		}
+
+		.pagination .active
+		{
+			background-color: rgb(129, 202, 238);
 		}
 		#single_lieu
 		{
@@ -1094,7 +1151,7 @@ footer ul li a
 		}
 }
 
-@media screen and (max-width: 839px)
+@media all and (max-width: 839px)
 {
 	.content
 	{
@@ -1126,15 +1183,19 @@ footer ul li a
 
 	#bigpaf
 	{
-
-		height: 1550px;
-
+			width: 75%;
+			margin: auto;
+			/* margin-top: 75px; */
+			height: auto;
+			/* display: inline-block; */
 	}
 
 	.greatpaf
 	{
+		width: 100%;
 		text-align: center;
 		margin: auto;
+		height: auto;
 		height: auto;
 		/* position: absolute; */
 		/* padding: 20px; */
@@ -1142,11 +1203,12 @@ footer ul li a
 
 	#paf
 	{
-		width: 55%;
+		width: 296px;
 		/* height: 1000px; */
-		margin: 2%;
+		margin: auto;
 		padding: 0;
-		float: left;
+		float: none;
+		margin-bottom: 10px;
 		/* position: relative; */
 	}
 
@@ -1155,7 +1217,7 @@ footer ul li a
 			width: 250px;
 			/* height: auto; */
 			position: relative;
-			padding-left: 30px;
+			/* padding-left: 30px; */
 	}
 
 	#paf .parag p
@@ -1176,12 +1238,13 @@ footer ul li a
 	{
 		position: absolute;
 		/* top:30%; */
-		width: 100%;
-		height: auto;
+		width: 100px;
+		height: 15px;
+		padding-left: 30px;
 		/* text-align: justify; */
-		/* margin-left: 2%;
-		margin-top: -20%; */
-		z-index: 5;
+		/* margin-left: 2%;*/
+		margin-top: -15%;
+		 z-index: 5;
 		/* padding-left: 35px; */
 		/* margin-bottom: -25%;! */
 	}
@@ -1197,16 +1260,21 @@ footer ul li a
 		background: #fff;
 		opacity: 0.7;
 	}
-	#pagination li
+	.pagination li
 	{
 		width: 5%;
 		height: auto;
-		display: inline-block;
+		/* display: inline-block; */
 		border: 1px solid lightgrey;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		text-align: center;
 		text-decoration: none;
+		clear: both;
+	}
+	.pagination .active
+	{
+		background-color: rgb(129, 202, 238);
 	}
 
 	#single_lieu
@@ -1250,4 +1318,51 @@ footer ul li a
 		color: #fff;
 		/* margin-left: -35%; */
 	}
+}
+/* ===================================== */
+							/* Menu Burger */
+/* ===================================== */
+
+#hamburger
+{
+  display:none;
+  width:100%;
+  height:50px;
+  text-align:center;
+}
+
+@media screen and (max-width: 750px)
+{
+body
+{
+	width: 100%;
+}
+#liens
+{
+  display:none;
+}
+.liliens
+{
+	background: #000;
+	color: #fff;
+}
+#liensco
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#liensco2
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#hamburger
+{
+  display:block;
+}
+
 }
