@@ -29,7 +29,7 @@ class AdminLieuxController extends Controller
           ->join('users', 'lieux.user_id', '=', 'users.id')
           ->select('lieux.*', 'users.name')
           ->paginate(5);
-          
+
     return view('admin/lieux/adminlieux', compact('lieux'));
   }
 

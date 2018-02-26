@@ -16,6 +16,7 @@ class CreateLieuxTable extends Migration
       Schema::create('lieux', function (Blueprint $table) {
           $table->increments('id');
           $table->string('lieu', 150);
+          $table->text('adresse', 150);
           $table->text('content');
           $table->enum('status', ['publish', 'no publish'])->default('no publish');
           $table->integer('user_id')->unsigned();

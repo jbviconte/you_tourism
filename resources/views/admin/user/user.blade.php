@@ -15,14 +15,14 @@
                 <div class="box-tools">
                   <div class="input-group input-group-sm" style="width: 150px;">
                     {{ $users->links() }}
-                    @if (session('success'))
-                      <div class="alert-alert-success">
-                        {{ session('success') }}
-                      </div>
-                    @endif
                   </div>
                 </div>
-
+                @if (session('success'))
+                <div class="alert alert-success alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <h4><i class="icon fa fa-check"></i> {{ session('success') }}</h4>
+                </div>
+                @endif
               </div>
               <!-- /.box-header -->
               <div class="box-body table-responsive no-padding">
@@ -42,7 +42,7 @@
                       <td><a href="{{ route('user-update', ['id' => $user->id]) }}"><button type="button" class="btn btn-default">Modifier</button></a></td>
 
                       </td>
-                      <td>{{ Form::open(['route' => ['admin-user-delete-action', $user->id], 'method' => 'delete'])}}
+                      <td style="width:100px">{{ Form::open(['route' => ['admin-user-delete-action', $user->id], 'method' => 'delete'])}}
                         <button type="submit" class="btn btn-block btn-danger btn-lg">Supprimer</button>
                         {!! csrf_field() !!}
                         {{ Form::close()}}

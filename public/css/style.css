@@ -149,6 +149,16 @@ header
 	text-decoration: none;
 	font-family: 'Eagle Lake', cursive;
 }
+.logo_footer a
+{
+	font-size: 2em;
+	color: #fff;
+	padding-top: 55px;
+	padding-left: 25px;
+	float: left;
+	text-decoration: none;
+	font-family: 'Eagle Lake', cursive;
+}
 
 #deco
 {
@@ -181,20 +191,20 @@ header
 #connect
 {
 	float: right;
-	position: relative;
-	margin-right: 10px;
-	margin-top: 15px;
+	position: absolute;
+	/* margin-right: 10px; */
+	margin-top: 10px;
 }
 
 #liensco
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   padding : 0 0.5em;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -203,10 +213,10 @@ header
 {
 	width: auto;
 	height: auto;
-  display: block;
+  display: inline-block;
 	float: right;
   color: #DEB887;
-  margin-left: 1500px;
+  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -222,6 +232,15 @@ header
 
 /* page ajout de lieu */
 
+.formopen
+{
+	max-width: 450px;
+	padding: 30px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 6px solid rgba(0, 0, 0, 0.7);
+}
+
 .add
 {
   text-align: center;
@@ -230,9 +249,37 @@ header
 	display: inline-block;
 }
 
+.add p
+{
+	padding-bottom: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+
 .frenchcaba
 {
-	border-radius: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+
+.btn
+{
+	background-color: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
 }
 
 /* fin page ajout lieu */
@@ -244,7 +291,15 @@ header
   text-align: center;
   padding: 75px;
 	min-height: 600px;
+}
 
+.form-horizontal
+{
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
 }
 
 #wrapper
@@ -263,20 +318,6 @@ header
 	padding-top: 100px;
 }
 
-#email
-{
-	border-radius: 5px;
-}
-
-#password
-{
-	border-radius: 5px;
-}
-
-.btn-btn-primary
-{
-	border-radius: 5px;
-}
 
 /* fin page login */
 
@@ -342,7 +383,7 @@ header
 	margin-bottom: -30px;
 }
 
-#access a:hover, a:focus, a:active
+#access a:hover
 {
 	background: #fff;
 	opacity: 0.5;
@@ -487,20 +528,40 @@ button
 	text-align: center;
 }
 
-.form-group
+
+.form2
 {
-	margin-top: 10px;
-	padding-top: -75px;
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
 }
 
 .form-control
 {
-	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 }
 
 .btn_btn-block_btn-success_btn-lg
 {
-	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
 }
 
 /* fin page modif profil */
@@ -521,13 +582,14 @@ button
 .lieu
 {
   float: left;
-	padding-top: 80px;
+	padding-top: 150px;
 }
 
 .lieu h1
 {
 	font-size: 20px;
 	font-weight: bold;
+	padding-bottom: 25px;
 }
 
 .lieu h2
@@ -538,6 +600,12 @@ button
 	padding-bottom: 20px;
 }
 
+#single_lieu
+{
+	width: 75%;
+	margin-left: 250px;
+}
+
 #lieusugg
 {
 	font-weight: bold;
@@ -545,9 +613,13 @@ button
 	padding-bottom: 20px;
 }
 
-#sujcom
+.form
 {
-	padding-top: 50px;
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
 }
 
 /* fin page single */
@@ -586,8 +658,6 @@ button
   margin-bottom: 25px;
 }
 
-
-
 /* layout */
 
 .wrap
@@ -598,7 +668,6 @@ button
 
 /* fin page home */
 
-
 /* page contact */
 
 .dede
@@ -607,10 +676,28 @@ button
 	padding-top: 10px;
 }
 
+.form
+{
+	max-width: 450px;
+	padding: 10px;
+	margin: 50px auto;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.7);
+}
+
 .dodo
 {
-	margin-top: 10px;
-	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 8px;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 }
 
 #contact_pad
@@ -635,22 +722,29 @@ button
 
 .btn-btn-success
 {
-	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+}
+
+#pagination li
+{
+	width: 50px;
+	height: auto;
+	display: inline-block;
+	border: 1px solid lightgrey;
+	margin-top: 50px;
+	text-align: center;
 }
 
 /* fin page contact */
 
 
 /* footer */
-
-/* boutons réseaux sociaux */
-
-#foot li
-{
-	display: inline;
-}
-
-/* fin boutons réseaux sociaux */
 
 footer
 {
@@ -671,6 +765,37 @@ footer ul li a
 	font-size: 20px;
 }
 
+#foot_place
+{
+	width: 50%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+.logo_footer
+{
+	display: block;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-size: 1em;
+}
+/* boutons réseaux sociaux */
+
+#foot
+{
+	display: inline-block;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+
+/* fin boutons réseaux sociaux */
+.footer_content
+{
+	display: block;
+	margin-top: 30px;
+	margin-left: 150px;
+	color: #fff;
+}
 /* fin footer */
 
 @media screen and (max-width: 1048px)
@@ -697,5 +822,32 @@ footer ul li a
 		#liens
 		{
 			display: none;
+		}
+
+		#foot_place
+		{
+			width: 100%;
+			display: inline-block;
+		}
+		.logo_footer
+		{
+			width: 100%;
+			display: block;
+			font-size: 0.5em;
+			float: left;
+		}
+		#foot
+		{
+			width: 100%;
+			display: inline-block;
+			float:left;
+			margin-left: -35%;
+			margin-top: -10%;
+		}
+		.footer_content
+		{
+			display: inline-block;
+			color: #fff;
+			margin-left: -35%;
 		}
 }

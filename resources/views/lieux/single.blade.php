@@ -10,7 +10,11 @@
     #commentform {display:none;}
   </style>
 
+<div id="single_lieu">
   @foreach ($lieux as $lieu)
+
+  <div id="full">
+
   <div class="lieu">
 
     <h1>{{ $lieu->lieu }}</h1>
@@ -50,8 +54,9 @@
   </div>
 
   <div id="commentform">
+  <div class="form">
   @if ( Auth::user())
-      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
+      {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id], 'id' => 'comment', 'method' => 'post']) !!}
       {{ csrf_field() }}
 
         {!! Form::label('commentaire', 'Sujet du commentaire') !!}
@@ -70,6 +75,8 @@
 
       {!! Form::close() !!}
   @endif
+</div>
+</div>
 </div>
 @endsection
 {{-- pour utiliser une section avec un nom specifique, il faut un @yield() qui correspond sur le layout --}}
@@ -115,6 +122,7 @@ $(document).ready(function(){
                       } else {
                         $('#errorcommentaire').html(response.errors.commentaire);
                         $('#errorcontent').html(response.errors.content);
+                        // faire afficher autre error ++++
                       }
 
                  }

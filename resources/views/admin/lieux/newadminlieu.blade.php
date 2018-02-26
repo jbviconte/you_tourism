@@ -24,6 +24,12 @@
           <br>
         </div>
         <div class="form-group">
+          {!! Form::label('adresse', 'Nom du lieu') !!}
+          <br>
+          {!! Form::text('adresse', null, ['class' => "form-control", 'placeholder' => 'Adresse du lieu']) !!}
+          {!! $errors->first('adresse', '<small class="help-block">:message</small>') !!}
+        </div>
+        <div class="form-group">
           {!! Form::label('content', 'Description') !!}
           <br>
           {!! Form::textarea('content', null, ['class' => "form-control", 'placeholder' => 'Description du lieu']) !!}

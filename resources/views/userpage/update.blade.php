@@ -15,7 +15,7 @@
       <!-- /.box-header -->
       <div class="box-body">
         <br><br>
-          {!! Form::open(['route' => ['user-page-update-action', $users->id],'method' => 'put']) !!}
+          {!! Form::open(['route' => ['user-page-update-action', $users->id], 'class' => 'form2', 'method' => 'put']) !!}
           <!-- text input -->
           <div class="form-group">
             <label for="name">Pseudo</label>
@@ -24,17 +24,12 @@
             {!! $errors->first('name', '<small class="help-block">:message</small>') !!}
             <br />
           </div>
+
           <div class="form-group">
             <label for="email">Email</label>
             <br />
             {!! Form::text('email', $users->email, ['class' => "form-control",'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email','<small class="help-block">:message</small>') !!}
-
-          </div>
-          <div class="form-group">
-            <label for="password">Nouveau mot de passe</label>
-            <br />
-            {!! Form::password('password',['class' => 'form-control']) !!}
           </div>
           <br>
           {!! Form::submit('Modifier', ['class' => 'btn_btn-block_btn-success_btn-lg']) !!}

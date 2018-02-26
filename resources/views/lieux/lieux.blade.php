@@ -12,20 +12,22 @@
 
 @section('content')
 <div id="bigpaf">
-<div id="titrelieu">
+  <div id="titrelieu">
 
     <h1>Visitez nos sites touristiques</h1>
 
-</div>
+  </div>
+  <div>
+    <p class="descript">Voici notre sélection de lieux à ne surtout pas manquer dans notre belle région.</p>
 
-<p class="descript">Voici notre sélection de lieux à ne surtout pas manquer dans notre belle région.</p>
+    <br />
 
-<br />
+    <p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
 
-<p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
+  </div>
 
 
-  {{ $lieux->links() }}
+
   @foreach ($lieux as $lieu)
   <div id="paf">
 
@@ -38,7 +40,9 @@
   </div>
   @endforeach
 
-  {{ $lieux->links() }}
+
+  <div id="pagination">{{ $lieux->links() }}</div>
+
 
 </div>
 
