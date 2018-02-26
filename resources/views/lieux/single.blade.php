@@ -33,8 +33,6 @@
           <br>
           <p>Commentaire: {{ $commentaire->content }}</p>
           <br>
-          <p>Adresse: {{ $commentaire->adresse }}</p>
-          <br>
           <p>Posté le: {{ $commentaire->created_at }}</p>
           <br>
         </div>
@@ -42,7 +40,7 @@
     </div>
     <div class="form">
       @if ( Auth::user())
-        
+
         {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
         {{ csrf_field() }}
 

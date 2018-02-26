@@ -807,7 +807,7 @@ footer ul li a
 	font-family: cursive;
 	z-index: 10;
 }
-#foot a:hover, a:focus, a:active
+#foot a:hover
 {
   color: #fff;
 	text-decoration: none;
