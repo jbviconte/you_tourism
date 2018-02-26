@@ -34,7 +34,7 @@
           <br>
           <p>Commentaire: {{ $commentaire->content }}</p>
           <br>
-          <p>Adresse: {{ $commentaire->adresse }}</p>
+          {{-- <p>Adresse: {{ $commentaire->adresse }}</p> --}}
           <br>
           <p>Posté le: {{ $commentaire->created_at }}</p>
           <br>
