@@ -88,7 +88,7 @@ class LieuxController extends Controller
 
     return response()->json([
         'success'     => true,
-        'commentaire'    => $comment['commentaire'],
+        'commentaire' => $comment['commentaire'],
         'content'     => $comment['content'],
         'created_at'  => Carbon::now(),
     ]);
