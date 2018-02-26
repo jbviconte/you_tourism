@@ -62,15 +62,18 @@ class LieuxController extends Controller
     $rules = ['commentaire' => 'required|min:5', 'content' => 'required|min:10|max:255'];
     $validate = \Validator::make($request->all(), $rules);
 
-     if ($validate->fails()) {
+    // valider
+
+    // erreurs
+    if ($validate->fails()) {
        return response()->json([
            'errors' => $validate->errors()
        ]);
-     }
+    }
 
 
      ////////////////////////////////////////////////////////
-     // Faire plutot un insert +++ d'un nouveau comment
+     // Faire plutot un insert d'un nouveau comment
      ////////////////////////////////////////////////////////
 
      $comment = $request->all();
@@ -84,7 +87,10 @@ class LieuxController extends Controller
      ]);
 
     return response()->json([
-        'success' => true,
+        'success'     => true,
+        'commentaire'    => $comment['commentaire'],
+        'content'     => $comment['content'],
+        'created_at'  => Carbon::now(),
     ]);
 
   }
