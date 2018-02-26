@@ -26,13 +26,13 @@
   <div>
     @foreach ($commentaires as $commentaire)
       <div>
-        <h1>Posté par: {{ $commentaire->name }}</h1>
+        <h1>Posté par : {{ $commentaire->name }}</h1>
         <br>
-        <p>Sujet: {{ $commentaire->commentaire }}</p>
+        <p>Sujet : {{ $commentaire->commentaire }}</p>
         <br>
-        <p>Commentaire: {{ $commentaire->content }}</p>
+        <p>Commentaire : {{ $commentaire->content }}</p>
         <br>
-        <p>Posté le: {{ $commentaire->created_at }}</p>
+        <p>Posté le : {{ $commentaire->created_at }}</p>
         <br>
       </div>
     @endforeach
