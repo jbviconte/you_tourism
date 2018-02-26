@@ -8,6 +8,7 @@
 @section('content')
 <div id="single_lieu">
 
+
   @foreach ($lieux as $lieu)
 
     <div class="lieu">
@@ -21,6 +22,7 @@
       <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
     </div>
     @endforeach
+
 
     <div>
       @foreach ($commentaires as $commentaire)
@@ -40,6 +42,7 @@
     </div>
     <div class="form">
       @if ( Auth::user())
+
         {!! Form::open(['route' => ['lieux-commentaire-new-action', $lieu->id],  'id' => 'comment', 'method' => 'post']) !!}
         {{ csrf_field() }}
 
@@ -48,19 +51,16 @@
           {!! Form::text('commentaire', null, ['class' => 'frenchcaba', 'placeholder' => 'Sujet du commentaire'], ['id' => 'titlecomment']) !!}
           <span id="errorcommentaire"></span>
           <br>
-
           {!! Form::label('content', 'Description') !!}
           <br>
           {!! Form::textarea('content', null, ['class' => 'frenchcaba', 'placeholder' => 'Commentaire sur le lieu'], ['id' => 'content']) !!}
-
           <br>
 
           {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
 
-          {!! Form::close() !!}
-      @endif
-    </div>
-
+      {!! Form::close() !!}
+  @endif
+</div>
 </div>
 
 @endsection
