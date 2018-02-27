@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/stylefooter.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
   </head>
@@ -22,15 +25,10 @@
         <a href="{{ route('home') }}">YouTourism</a>
       </div>
 
-      <div id="hamburger">
-  <a href="javascript:hamburger_click();">
-    <img id="hamburger-img" src="http://www.web-design-codex.fr/wp-content/uploads/2015/10/hamburger.png">
-  </a>
-</div>
-
         <div class="wrap">
 
           <nav>
+            <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
             <ul id="liens">
               <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
               <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -70,8 +68,10 @@
                   </li>
                 @endif
               </ul>
+              <label for="css-toggle-menu" id="css-toggle-menu"></label>
         </nav>
     </div>
+
   <div class="line_height"></div>
 </header>
 
@@ -87,17 +87,78 @@
 </div>
 
     <!-- boutons réseaux sociaux footer -->
- <footer>
-    <div id="foot_place">
+ <footer id="footer">
+   {{-- <div class="container"> --}}
+     <div class="row-fluid">
+
+       <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 column-footer">
+          <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
+          <h3 class="titrefooter">Menu</h3>
+          <div class="contentfooter">
+            <p><a href='{{ route('lieux') }}'>Lieux touristiques</a></p>
+            <p><a href='{{ route('contact-view') }}'>Contact</a></p>
+          </div>
+       </div>
+
+       <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 column-footer">
+         <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
+         <h3 class="titrefooter">Informations</h3>
+          <div class="contentfooter">
+            <p><a href='/politique/confidentialite'>Politique de confidentialité</a></p>
+            <p><a href='/mentions/legales'>Mentions légales</a></p>
+            <p><a href='/cgvu'>Conditions Generales</a></p>
+            <p><i class="far fa-copyright" aria-hidden="true"></i> YouTourism, 2018</p>
+          </div>
+       </div>
+
+       <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 column-footer">
+         <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
+         <h3 class="titrefooter">Suivez-nous</h3>
+
+          <div class="contentfooter">
+           <div class="col-xs-3 col-md-6 col-sm-3">
+           <p>Sur facebook</p>
+           <img src="{{ asset('icones/facebook.png') }}" alt="facebook" class="icon">
+           <p>Sur twitter</p>
+           <img src="{{ asset('icones/twitter.png') }}" alt="twitter" class="icon">
+           </div>
+           <div class="col-xs-3 col-md-6 col-sm-3">
+           <p>Sur instagram</p>
+           <img src="{{ asset('icones/instagram.png') }}" alt="instagram" class="icon">
+           <div class="logo_footer">
+             <a class="logo_footer" href="{{ route('home') }}">YouTourism</a>
+           </div>
+          </div>
+         </div>
+
+       </div>
+
+       <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 column-footer-right">
+         <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
+         <h3 class="titrefooter">Contact</h3>
+          <div class="contentfooter">
+
+            <div class="contact1">
+            <p>YouTourism<br>
+            Route de Pont-Audemer<br>
+            27260 Epaignes</p>
+            </div>
+
+           <div class="contact2">
+           <p>Espace de coworking d'Epaignes</p>
+          </div>
+        </div>
+       </div>
+
+       </div>
+     {{-- </div> --}}
+   </footer>
+    {{-- ancien footer --}}
+    {{-- <div id="foot_place">
       <div class="logo_footer">
         <a href="{{ route('home') }}">YouTourism</a>
       </div>
       <div id="foot">
-
-        <a href="{{ route('contact-view') }}">Contact</a>
-        <a href="https://fr-fr.facebook.com/"><img class="contact_widget" src="{{ asset('images/resoc/facebook.png') }}" alt="bouton facebook" /></a>
-        <a href="https://plus.google.com/discover?hl=fr"><img class="contact_widget" src="{{ asset('images/resoc/google.png') }}" alt="bouton google+" /></a>
-        <a href="https://twitter.com/?lang=fr"><img class="contact_widget" src="{{ asset('images/resoc/twitter.png') }}" alt="bouton twitter" /></a>
 
     </div>
 
@@ -105,7 +166,7 @@
       <p>© YouTourism, 2018</p>
     </div>
 
-    </div>
+    </div> --}}
   </footer>
 
     @yield('scripts')
