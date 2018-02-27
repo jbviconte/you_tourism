@@ -15,9 +15,9 @@ class CommentaireTableSeeder extends Seeder
       $commentaires = [];
       $date = New DateTime();
 
-      $commentaires[] = array(
-          
-        );
+      // $commentaires[] = array(
+      //
+      //   );
         DB::table('commentaire')->insert($commentaires);
     }
 }

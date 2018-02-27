@@ -1,4 +1,5 @@
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 /* reset */
 
 html, body, div, span, applet, object, iframe,
@@ -59,8 +60,33 @@ table {
 }
 
 /* fin du reset */
+/* Burger */
 
-
+nav input,
+nav label {
+	display: none;
+	width: 36px;
+	height: 36px;
+	background: #555;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 2px;
+}
+nav label {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   transition: .4s;
+}
+nav label:hover {cursor:pointer;}
+nav label:before {
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;
+}
 /* header */
 
 header
@@ -77,6 +103,7 @@ header
 	line-height: 1.5rem;
 	object-fit: cover;
 }
+
 
 .line_height
 {
@@ -432,7 +459,7 @@ header
 
 .greatpaf
 {
-	width: 100%;
+	/* width: 100%; */
 	height: 200px;
 }
 
@@ -462,11 +489,11 @@ header
 #paf p
 {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   position: absolute;
   /* top:30%; */
-  width: 100%;
-  text-align: justify;
+  /* width: 100%; */
+  /* text-align: justify; */
   margin-top: -12%;
   z-index: 5;
 	padding-left: 35px;
@@ -812,7 +839,7 @@ button
 
 #contact_pad
 {
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-bottom: 200px;
 	min-height: 600px;
 }
@@ -825,10 +852,10 @@ button
 	padding-bottom: 10px;
 }
 
-.parag
+/* .parag
 {
 	font-size: 18px;
-}
+} */
 
 .btn-btn-success
 {
@@ -866,8 +893,8 @@ footer
   padding: 1%;
   margin-top: 1000px;
   background-color: rgba(0, 0, 0, 0.7);
-	margin-top: 50px;
-	position: absolute;
+	margin-top: 100px;
+	/* position: absolute; */
 }
 
 footer ul li a
@@ -930,8 +957,13 @@ footer ul li a
 
 @media screen and (min-width: 840px) and (max-width: 1048px)
 {
+	.content
+	{
+		width: 100%;
+	}
 		header
 		{
+			width: 100%;
 			display: none;
 			background: none;
 			position: absolute;
@@ -969,30 +1001,39 @@ footer ul li a
 
 		#bigpaf
 		{
-			height: auto;
-
+		    width: 75%;
+		    margin: auto;
+				margin-top: 75px;
+				/* display: inline-block; */
 		}
 
 		.greatpaf
 		{
-			height: auto;
-			/* position: absolute; */
+
+			width: 100%;
+
+			margin: auto;
+			height: 200px;
 		}
 
 		#paf
 		{
-			width: 75%;
-			height: 1000px;
-			margin: 2%;
-			padding: 0;
-			float: left;
+		  width: 25%;
+			height: auto;
+		  /* margin-left: 1%; */
+		  float: left;
 			position: relative;
+			margin-top: 25px;
+			/* padding-bottom: 15px; */
+			/* margin-bottom: 25px; */
+			/* margin: 0.5%; */
+			/* display: inline-block; */
 		}
 
 		#paf img
 		{
-		    width: 700px;
-				/* height: auto; */
+		    width: 85%;
+				height: auto;
 				position: relative;
 				/* margin-bottom: -20px; */
 				/* padding-left: 30px; */
@@ -1001,15 +1042,16 @@ footer ul li a
 		#paf p
 		{
 		  color: white;
-		  font-size: 1.5em;
-		  position: absolute;
+		  font-size: 1em;
+		  /* position: absolute;
 		  /* top:30%; */
-		  width: 100%;
-		  text-align: justify;
-		  margin-top: -12%;
+		  /* width: 100%;
+		  text-align: justify; */
+		  margin-top: -20%;
 		  z-index: 5;
-			/* padding-left: 35px; */
+			padding-left: 15px;
 			margin-bottom: -25%;
+			word-spacing: 50%;
 		}
 
 		/* #paf a
@@ -1024,6 +1066,16 @@ footer ul li a
 			opacity: 0.7;
 		}
 
+		#pagination li
+		{
+			width: 5%;
+			height: auto;
+			display: inline-block;
+			border: 1px solid lightgrey;
+			margin-top: 50px;
+			text-align: center;
+			text-decoration: none;
+		}
 		#single_lieu
 		{
 			width: 75%;
@@ -1070,6 +1122,10 @@ footer ul li a
 
 @media screen and (max-width: 839px)
 {
+	.content
+	{
+		height: auto;
+	}
 	header
 	{
 		display: none;
@@ -1089,54 +1145,71 @@ footer ul li a
 		float: left;
 		position: relative;
 	}
-	#liens
+	/* #liens
 	{
 		display: none;
-	}
+	} */
 
 	#bigpaf
 	{
-		height: auto;
+
+		height: 1550px;
 
 	}
 
 	.greatpaf
 	{
+		text-align: center;
+		margin: auto;
 		height: auto;
 		/* position: absolute; */
+		/* padding: 20px; */
 	}
 
 	#paf
 	{
-		width: 75%;
-		height: 1000px;
+		width: 55%;
+		/* height: 1000px; */
 		margin: 2%;
 		padding: 0;
 		float: left;
-		position: relative;
+		/* position: relative; */
 	}
 
 	#paf img
 	{
-			width: 700px;
+			width: 250px;
 			/* height: auto; */
 			position: relative;
-			/* margin-bottom: -20px; */
-			/* padding-left: 30px; */
+			padding-left: 30px;
 	}
 
-	#paf p
+	#paf .parag p
 	{
 		color: white;
-		font-size: 1.5em;
+		font-size: 15px;
+		/* position: absolute; */
+		/* top:30%; */
+		/* width: 100%; */
+		/* text-align: justify;
+		margin-left: 2%;
+		margin-top: -20%;
+		z-index: 5; */
+		/* padding-left: 35px; */
+		/* margin-bottom: -25%; */
+	}
+	#paf .parag
+	{
 		position: absolute;
 		/* top:30%; */
 		width: 100%;
-		text-align: justify;
-		margin-top: -12%;
+		height: auto;
+		/* text-align: justify; */
+		/* margin-left: 2%;
+		margin-top: -20%; */
 		z-index: 5;
 		/* padding-left: 35px; */
-		margin-bottom: -25%;
+		/* margin-bottom: -25%;! */
 	}
 
 	/* #paf a
@@ -1149,6 +1222,17 @@ footer ul li a
 	{
 		background: #fff;
 		opacity: 0.7;
+	}
+	#pagination li
+	{
+		width: 5%;
+		height: auto;
+		display: inline-block;
+		border: 1px solid lightgrey;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		text-decoration: none;
 	}
 
 	#single_lieu
@@ -1191,5 +1275,87 @@ footer ul li a
 		display: inline-block;
 		color: #fff;
 		/* margin-left: -35%; */
+	}
+}
+/* ===================================== */
+							/* Menu Burger */
+/* ===================================== */
+
+/* #hamburger
+{
+  display:none;
+  width:100%;
+  height:50px;
+  text-align:center;
+}
+
+@media screen and (max-width: 750px)
+{
+body
+{
+	width: 100%;
+}
+#liens
+{
+  display:none;
+}
+.liliens
+{
+	background: #000;
+	color: #fff;
+}
+#liensco
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#liensco2
+{
+	margin: auto;
+	position: absolute;
+	background: #000;
+	color: #fff;
+}
+#hamburger
+{
+  display:block;
+}
+
+} */
+/************* MEDIA QUERIES **************/
+
+@media only screen and (max-width: 1100px){
+   nav {
+      position: relative;
+   }
+	nav ul {
+		transform: translateY(0);
+		box-shadow: 0 0 5px rgba(0,0,0,7);
+      transition: all .5s;
+      position: absolute;
+      width: 100%;
+			background: #000;
+			float: left;
+	}
+	nav li {
+		flex: none;
+		width: 100%;
+		border-bottom: solid 1px #777;
+
+	}
+	nav input[type="checkbox"]:checked + ul  {
+		transform: translateY(-100%);
+		width: 100%;
+		background: #999;
+    transition: all .5s;
+	}
+	nav label{
+      display: block;
+   }
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #777;
+		color: #fff;
 	}
 }

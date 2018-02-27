@@ -29,7 +29,9 @@
     @foreach ($lieux as $lieu)
       <div id="paf">
         <a class="img-hover" href="{{ route('single', ['id' => $lieu->id])}}"><img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image),700,300,['crop'])}}"/></a>
-        <p>{{ $lieu->lieu}}</p>
+        <div class="parag">
+          <p>{{ $lieu->lieu}}</p>
+        </div>
         {{-- <p id="name">{{ $lieu->name }}</p> --}}
       </div>
     @endforeach

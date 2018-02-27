@@ -16,3 +16,12 @@ $(document).on("scroll", function() {
 	}
 
 });
+
+// function hamburger_click()
+// {
+//   var hamburgerElement = document.getElementById("hamburger");
+//   var menuElement = document.getElementById("liens");
+//
+//   hamburgerElement.style.display = "none";
+//   menuElement.style.display = "block";
+// }

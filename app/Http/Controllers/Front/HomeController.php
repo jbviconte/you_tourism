@@ -32,11 +32,7 @@ class HomeController extends Controller
                     ->take(5)
                     ->get();
 
-      $lieuxrand = Lieux::where('status', '=', 'publish')->orderByRaw('RAND()')
-                    ->take(5)
-                    ->get();
-
-        return view('home', compact('lieux', 'lieuxrand'));
+        return view('home', compact('lieux'));
 
 
     }

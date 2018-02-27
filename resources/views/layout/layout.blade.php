@@ -24,9 +24,17 @@
       <div class="logo">
         <a href="{{ route('home') }}">YouTourism</a>
       </div>
+
+      <div id="hamburger">
+  <a href="javascript:hamburger_click();">
+    <img id="hamburger-img" src="http://www.web-design-codex.fr/wp-content/uploads/2015/10/hamburger.png">
+  </a>
+</div>
+
         <div class="wrap">
 
           <nav>
+            <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
             <ul id="liens">
               <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
               <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -66,8 +74,10 @@
                   </li>
                 @endif
               </ul>
+              <label for="css-toggle-menu" id="css-toggle-menu"></label>
         </nav>
     </div>
+
   <div class="line_height"></div>
 </header>
 
