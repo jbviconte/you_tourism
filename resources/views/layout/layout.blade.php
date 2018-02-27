@@ -31,6 +31,7 @@
         <div class="wrap">
 
           <nav>
+            <input type="checkbox" id="css-toggle-menu" name="css-toggle-menu">
             <ul id="liens">
               <li><a  class="liliens" href="{{ route('home') }}">Accueil</a></li>
               <li><a  class="liliens" href="{{ route('lieux') }}">Lieux Touristiques</a></li>
@@ -70,8 +71,10 @@
                   </li>
                 @endif
               </ul>
+              <label for="css-toggle-menu" id="css-toggle-menu"></label>
         </nav>
     </div>
+
   <div class="line_height"></div>
 </header>
 

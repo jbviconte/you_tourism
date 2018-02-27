@@ -1,4 +1,5 @@
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 /* reset */
 
 html, body, div, span, applet, object, iframe,
@@ -59,8 +60,33 @@ table {
 }
 
 /* fin du reset */
+/* Burger */
 
-
+nav input,
+nav label {
+	display: none;
+	width: 36px;
+	height: 36px;
+	background: #555;
+	color: #fff;
+	text-align: center;
+	line-height: 36px;
+	font-size: 1.6rem;
+	border-radius: 2px;
+}
+nav label {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   transition: .4s;
+}
+nav label:hover {cursor:pointer;}
+nav label:before {
+	font-family: FontAwesome;
+	font-size: 24px;
+	content: "\f0c9";
+	text-align: center;
+}
 /* header */
 
 header
@@ -77,6 +103,7 @@ header
 	line-height: 1.5rem;
 	object-fit: cover;
 }
+
 
 .line_height
 {
@@ -1119,10 +1146,10 @@ footer ul li a
 		float: left;
 		position: relative;
 	}
-	#liens
+	/* #liens
 	{
 		display: none;
-	}
+	} */
 
 	#bigpaf
 	{
@@ -1255,7 +1282,7 @@ footer ul li a
 							/* Menu Burger */
 /* ===================================== */
 
-#hamburger
+/* #hamburger
 {
   display:none;
   width:100%;
@@ -1297,4 +1324,39 @@ body
   display:block;
 }
 
+} */
+/************* MEDIA QUERIES **************/
+
+@media only screen and (max-width: 1100px){
+   nav {
+      position: relative;
+   }
+	nav ul {
+		transform: translateY(0);
+		box-shadow: 0 0 5px rgba(0,0,0,7);
+      transition: all .5s;
+      position: absolute;
+      width: 100%;
+			background: #000;
+			float: left;
+	}
+	nav li {
+		flex: none;
+		width: 100%;
+		border-bottom: solid 1px #777;
+
+	}
+	nav input[type="checkbox"]:checked + ul  {
+		transform: translateY(-100%);
+		width: 100%;
+		background: #999;
+    transition: all .5s;
+	}
+	nav label{
+      display: block;
+   }
+	nav input[type="checkbox"]:checked + ul li:nth-child(1){
+		background: #777;
+		color: #fff;
+	}
 }
