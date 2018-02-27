@@ -98,6 +98,7 @@
           <h3 class="titrefooter">Menu</h3>
           <div class="contentfooter">
             <p><a href='{{ route('lieux') }}'>Lieux touristiques</a></p>
+            <br>
             <p><a href='{{ route('contact-view') }}'>Contact</a></p>
           </div>
        </div>
@@ -107,8 +108,11 @@
          <h3 class="titrefooter">Informations</h3>
           <div class="contentfooter">
             <p><a href='fail/404'>Politique de confidentialité</a></p>
+            <br>
             <p><a href='fail/404'>Mentions légales</a></p>
+            <br>
             <p><a href='fail/404'>Conditions Generales</a></p>
+            <br>
             <p><i class="far fa-copyright" aria-hidden="true"></i> YouTourism, 2018</p>
           </div>
        </div>
