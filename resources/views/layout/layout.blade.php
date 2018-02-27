@@ -7,6 +7,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -110,9 +112,9 @@
          <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
          <h3 class="titrefooter">Informations</h3>
           <div class="contentfooter">
-            <p><a href='/politique/confidentialite'>Politique de confidentialité</a></p>
-            <p><a href='/mentions/legales'>Mentions légales</a></p>
-            <p><a href='/cgvu'>Conditions Generales</a></p>
+            <p><a href='fail/404'>Politique de confidentialité</a></p>
+            <p><a href='fail/404'>Mentions légales</a></p>
+            <p><a href='fail/404'>Conditions Generales</a></p>
             <p><i class="far fa-copyright" aria-hidden="true"></i> YouTourism, 2018</p>
           </div>
        </div>
