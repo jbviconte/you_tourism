@@ -913,7 +913,7 @@ footer ul li a
 	font-family: cursive;
 	z-index: 10;
 }
-#foot a:hover
+#foot li a:hover
 {
   color: #fff;
 	text-decoration: none;
@@ -1095,7 +1095,7 @@ footer ul li a
 		.add
 		{
 		  text-align: center;
-			margin: auto;
+			margin: 25px;
 			padding: 0;
 			display: block;
 		}
@@ -1311,7 +1311,7 @@ nav label:before {
 	}
 	nav li {
 		flex: none;
-		width: 60%;
+		width: 55%;
 		margin: auto;
 	}
 	nav input[type="checkbox"]:checked + ul  {

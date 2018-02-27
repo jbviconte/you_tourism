@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/stylefooter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
