@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-  <div>
+  <div id="error">
     <p>Page 404</p>
     <p>Il s'est paumer le mec.</p>
     <p>Pour la peine je me fout de toi, hahaha.</p>

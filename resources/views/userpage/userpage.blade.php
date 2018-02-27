@@ -8,6 +8,11 @@
   <section class="content">
       <div class="row">
         <div class="col-xs-12">
+          @if (session('success'))
+            <div class="alert-alert-success">
+              {{ session('success') }}
+            </div>
+          @endif
           <div id="box">
 
             <h1>{{ $users['name'] }}</h1>

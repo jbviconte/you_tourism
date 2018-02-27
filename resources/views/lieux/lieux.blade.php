@@ -14,13 +14,16 @@
 <div id="bigpaf">
 
   <div id="titrelieu">
+    @if (session('success'))
+      <div class="alert-alert-success">
+        {{ session('success') }}
+      </div>
+    @endif
     <h1>Visitez nos sites touristiques</h1>
-  </div>
-
-  <div>
     <p class="descript">Voici notre sélection de lieux à ne surtout pas manquer dans notre belle région.</p>
     <br />
     <p class="descript">Si vous en connaissez d'autres, n'hésitez pas à vous inscrire et ajouter vos lieux favoris !</p>
+
   </div>
 
   <div id="pagination">{{ $lieux->links() }}</div>
@@ -32,7 +35,6 @@
         <div class="parag">
           <p>{{ $lieu->lieu}}</p>
         </div>
-        {{-- <p id="name">{{ $lieu->name }}</p> --}}
       </div>
     @endforeach
   </div>

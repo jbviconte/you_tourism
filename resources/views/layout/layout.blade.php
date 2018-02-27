@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/stylefooter.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -26,12 +26,6 @@
       <div class="logo">
         <a href="{{ route('home') }}">YouTourism</a>
       </div>
-
-      <div id="hamburger">
-  <a href="javascript:hamburger_click();">
-    <img id="hamburger-img" src="http://www.web-design-codex.fr/wp-content/uploads/2015/10/hamburger.png">
-  </a>
-</div>
 
         <div class="wrap">
 

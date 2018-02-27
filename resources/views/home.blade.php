@@ -76,7 +76,8 @@
 
     </div>
 
-{{-- affihage des 5 dernier lieux ajouter --}}
+
+    {{-- affihage des 5 dernier lieux ajouter --}}
     @foreach ($lieux as $lieu)
 
       <div id="access">
@@ -86,6 +87,7 @@
         </div>
       </div>
     @endforeach
+
   </div>
 </div>
 
