@@ -91,10 +91,10 @@
   </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/jquery.flexslider.js"></script>
-<script src="{{ asset('js/slider.js') }}"></script>
+<script src="{{ asset('js/slider.js') }}"></script> --}}
 
 
 @endsection
