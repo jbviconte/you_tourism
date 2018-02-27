@@ -21,7 +21,7 @@
     <h1>{{ $lieu->lieu }}</h1>
     <img src="{{ Image::url(asset($lieu->path_image . '/' . $lieu->new_name_image)) }}"/>
     <h2>Description du lieu touristique :</h2>
-    <p>{{ $lieu->content }}</p>
+    <p class="txtlieu">{{ $lieu->content }}</p>
     <p id="lieusugg">Lieu suggéré par : {{ $lieu->name }}</p>
 
 
@@ -41,20 +41,8 @@
       <br>
       <div id="showcom1"></div>
     </div>
-    <div>
-      @foreach ($commentaires as $commentaire)
-        <div id="printcom">
-          <h1>Posté par: {{ $commentaire->name }}</h1>
-          <br>
-          <p>Sujet: {{ $commentaire->commentaire }}</p>
-          <br>
-          <p>Commentaire: {{ $commentaire->content }}</p>
-          <br>
-          <p>Posté le: {{ $commentaire->created_at }}</p>
-          <br>
-        </div>
-      @endforeach
-    </div>
+
+
 
     <div id="comform">
       @if ( Auth::user())
@@ -73,11 +61,27 @@
           <span id="errorcontent"></span>
           <br>
 
-          {!! Form::submit('Envoyer', ['class' => 'btn btn-success']) !!}
+          {!! Form::submit('Envoyer', ['class' => 'btncom']) !!}
 
       {!! Form::close() !!}
   @endif
 </div>
+
+<div>
+  @foreach ($commentaires as $commentaire)
+    <div id="printcom">
+      <h3>Posté par: {{ $commentaire->name }}</h3>
+      <br>
+      <p class="printcom1">Sujet :</p><p> {{ $commentaire->commentaire }}</p>
+      <br>
+      <p class="printcom1">Commentaire :</p><p> {{ $commentaire->content }}</p>
+      <br>
+      <p class="printcom1">Posté le :</p><p> {{ $commentaire->created_at }}</p>
+      <br>
+    </div>
+  @endforeach
+</div>
+
 </div>
 </div>
 
