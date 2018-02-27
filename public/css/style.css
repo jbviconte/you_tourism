@@ -161,11 +161,9 @@ header
 }
 .logo_footer a
 {
-	font-size: 2em;
+	font-size: 1.2em;
 	color: #fff;
-	padding-top: 55px;
-	padding-left: 25px;
-	float: left;
+	padding-top: 45px;
 	text-decoration: none;
 	font-family: 'Eagle Lake', cursive;
 }
@@ -815,7 +813,7 @@ button
 
 #contact_pad
 {
-	padding-top: 200px;
+	padding-top: 100px;
 	padding-bottom: 200px;
 	min-height: 600px;
 }
@@ -894,8 +892,9 @@ footer ul li a
 .logo_footer
 {
 	display: block;
-	margin-right: 25px;
-	margin-left: 25px;
+  margin-right: 25px;
+	padding-right: 20px;
+/*	margin-left: 25px; */
 	font-size: 1em;
 	float: left;
 }
