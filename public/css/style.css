@@ -198,8 +198,8 @@ header
 
 #connect
 {
-	float: left;
-	position: absolute;
+	float: right;
+	/* position: absolute; */
 	margin-right: 10px;
 	margin-top: 10px;
 }
