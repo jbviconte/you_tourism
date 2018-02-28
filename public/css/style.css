@@ -199,7 +199,7 @@ header
 #connect
 {
 	float: right;
-	position: absolute;
+	/* position: absolute; */
 	margin-right: 10px;
 	margin-top: 10px;
 }
@@ -209,10 +209,8 @@ header
 	width: auto;
 	height: auto;
   display: inline-block;
-	float: right;
   padding : 0 0.5em;
   color: #DEB887;
-  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -222,9 +220,7 @@ header
 	width: auto;
 	height: auto;
   display: inline-block;
-	float: right;
   color: #DEB887;
-  margin-left: 1770px;
 	text-decoration: none;
 	font-family: cursive;
 }
@@ -374,6 +370,15 @@ header
   margin-left: 50px; */
   margin-right: 50px;
 }
+/* #superp
+{
+	width: 75%;
+	height: auto;
+	margin: 2%;
+	padding: 0;
+	float: left;
+} */
+
 
 #superp p
 {
@@ -821,6 +826,7 @@ button
   width: 100%;
   max-width: 1600px;
 	text-align: center;
+	height: auto;
 }
 
 #bienvenu
@@ -833,6 +839,8 @@ button
 {
   text-align: center;
   margin-bottom: 50px;
+	margin: auto;
+	width: 100%;
 }
 
 .construct
@@ -904,16 +912,7 @@ button
 	-o-transition: all 0.30s ease-in-out;
 }
 
-<<<<<<< HEAD
 
-=======
-#contact_pad
-{
-	padding-top: 100px;
-	padding-bottom: 200px;
-	min-height: 600px;
-}
->>>>>>> 82fc2cf24949aa8670bdc725d95605cb1c097159
 
 .panel-heading
 {
@@ -1088,16 +1087,12 @@ footer ul li a
 		}
 		#access
 		{
-			width: 75%;
+			width: 100%;
 			height: auto;
 			margin: 2%;
 			padding: 0;
 			float: left;
 			position: relative;
-		}
-		#liens
-		{
-			display: none;
 		}
 
 		#bigpaf
@@ -1171,11 +1166,6 @@ footer ul li a
 			/* margin-bottom: -25%;! */
 		}
 
-		/* #paf a
-		{
-			width: 150px;
-			height: 150px;
-		} */
 
 		#paf a:hover
 		{
@@ -1275,10 +1265,6 @@ footer ul li a
 		float: left;
 		position: relative;
 	}
-	/* #liens
-	{
-		display: none;
-	} */
 
 	#bigpaf
 	{
@@ -1488,50 +1474,4 @@ nav label:before {
 		color: #fff;
 	}
 }
-/* ===================================== */
-							/* Menu Burger */
-/* ===================================== */
-
-#hamburger
-{
-  display:none;
-  width:100%;
-  height:50px;
-  text-align:center;
-}
-
-@media screen and (max-width: 750px)
-{
-body
-{
-	width: 100%;
-}
-#liens
-{
-  display:none;
-}
-.liliens
-{
-	background: #000;
-	color: #fff;
-}
-#liensco
-{
-	margin: auto;
-	position: absolute;
-	background: #000;
-	color: #fff;
-}
-#liensco2
-{
-	margin: auto;
-	position: absolute;
-	background: #000;
-	color: #fff;
-}
-#hamburger
-{
-  display:block;
-}
-
 }
