@@ -107,11 +107,11 @@
          <i class="fa fa-angle-down fa-icon-acordeon" aria-hidden="true"></i>
          <h3 class="titrefooter">Informations</h3>
           <div class="contentfooter">
-            <p><a href='fail/404'>Politique de confidentialité</a></p>
+            <p><a href='{{ route('confidentialite')}}'>Politique de confidentialité</a></p>
             <br>
-            <p><a href='fail/404'>Mentions légales</a></p>
+            <p><a href='{{ route('mentions') }}'>Mentions légales</a></p>
             <br>
-            <p><a href='fail/404'>Conditions Generales</a></p>
+            <p><a href='{{ route('conditions') }}'>Conditions Generales</a></p>
             <br>
             <p><i class="far fa-copyright" aria-hidden="true"></i> YouTourism, 2018</p>
           </div>
@@ -123,13 +123,13 @@
 
           <div class="contentfooter">
            <div class="col-xs-3 col-md-6 col-sm-3">
-           <p>Sur facebook</p>
+           <br>
            <img src="{{ asset('icones/facebook.png') }}" alt="facebook" class="icon">
-           <p>Sur twitter</p>
+           <br><br>
            <img src="{{ asset('icones/twitter.png') }}" alt="twitter" class="icon">
            </div>
            <div class="col-xs-3 col-md-6 col-sm-3">
-           <p>Sur instagram</p>
+           <br>
            <img src="{{ asset('icones/instagram.png') }}" alt="instagram" class="icon">
            <div class="logo_footer">
              <a class="logo_footer" href="{{ route('home') }}">YouTourism</a>
@@ -145,8 +145,10 @@
           <div class="contentfooter">
 
             <div class="contact1">
-            <p>YouTourism<br>
-            Route de Pont-Audemer<br>
+            <p>YouTourism
+            <br><br>
+            Route de Pont-Audemer
+            <br><br>
             27260 Epaignes</p>
             </div>
 

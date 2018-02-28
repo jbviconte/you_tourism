@@ -49,6 +49,13 @@ Route::group(['namespace' => 'Front'], function (){
     Route::delete('userpage/delete/{id}', 'UserPageController@userPageDeleteAction')->where('n','[0-9]+')->name('user-page-delete-action');
   });
 
+  Route::group(['namespace' => 'Juridique'], function() {
+
+     Route::get('Confidentialité', 'ConfidentialiteController@confidentialite')->name('confidentialite');
+     Route::get('Mentions', 'MentionsController@mentions')->name('mentions');
+     Route::get('Conditions', 'ConditionsController@conditions')->name('conditions');
+  });
+
 });
 Auth::routes();
 
